@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="122px" viewBox="0 0 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cloud_native" transform="translate(-772.000000, -4692.000000)">
+            <g id="Group-24" transform="translate(773.000000, 4693.000000)">
+                <circle id="Oval" stroke="#E5E5E5" fill="#FFFFFF" cx="60" cy="60" r="60"></circle>
+                <g id="stats" transform="translate(22.000000, 27.000000)">
+                    <path d="M1.43763089,0.0892417454 L70.4439136,0.0892417454 C71.2378397,0.0892417454 71.8815445,0.728575142 71.8815445,1.51710967 L71.8815445,50.0646192 C71.8815445,50.8531537 71.2378397,51.4924871 70.4439136,51.4924871 L1.43763089,51.4924871 C0.643704802,51.4924871 0,50.8531537 0,50.0646192 L0,1.51710967 C0,0.728575142 0.643704802,0.0892417454 1.43763089,0.0892417454 Z" id="Path" stroke="#42566C" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" fill="#E0E4E8" x="4" y="4" width="64" height="44"></rect>
+                    <polygon id="Path" stroke="#42566C" stroke-width="2" fill="#E0E4E8" fill-rule="nonzero" points="53.192343 57.2039588 53.192343 62.9154305 18.6892016 62.9154305 18.6892016 57.2039588"></polygon>
+                    <polygon id="Path" stroke="#42566C" stroke-width="2" fill="#ACABB1" fill-rule="nonzero" points="31.6278796 51.4924871 40.2536649 51.4924871 40.2536649 57.2039588 31.6278796 57.2039588"></polygon>
+                    <polygon id="Path" stroke="#42566C" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" points="61 44.2843009 65.3135946 40 79.6892016 54.2786793 75.3763089 58.5629802"></polygon>
+                    <path d="M63.7642826,44.3382411 C57.7215574,49.5766131 48.8442296,49.8945179 42.4420951,45.1018764 C36.0407906,40.3092348 33.8444923,31.7017371 37.1688211,24.4281108 C40.49232,17.1544846 48.4366776,13.1810909 56.250718,14.8843296 C64.0647587,16.5875683 69.6343585,23.5067681 69.6294837,31.5041878 C69.646809,36.4346157 67.5036338,41.1243326 63.7642826,44.3382411 Z" id="Path" fill="#E83F67" fill-rule="nonzero"></path>
+                    <path d="M61.1443299,41.3157414 C56.5234224,45.3215553 49.7348776,45.5646589 44.8391277,41.8996978 C39.9440125,38.2347366 38.2644903,31.6525324 40.8066241,26.0903477 C43.3481232,20.5281629 49.4232202,17.4896853 55.3986629,18.792162 C61.3741057,20.0946387 65.6332115,25.3857915 65.6294837,31.5014654 C65.6427325,35.2717926 64.0038338,38.8580467 61.1443299,41.3157414 Z" id="Path" stroke="#42566C" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <polygon id="Path" stroke="#42566C" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" points="27.1902487 18.6515248 32.9407723 18.6515248 32.9407723 38.6416758 27.1902487 38.6416758"></polygon>
+                    <polygon id="Path" stroke="#42566C" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" points="15.6892016 28.6466003 21.4397251 28.6466003 21.4397251 38.6416758 15.6892016 38.6416758"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

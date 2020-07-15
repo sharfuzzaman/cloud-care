@@ -1,0 +1,636 @@
+.contentWrapper>* {
+    line-height: 40px
+}
+
+#header.moveHead img#normal, .menuSliderOuterWrapper.slideActive {
+    display: block
+}
+
+.moveHead .homelogoMob {
+    display: none
+}
+
+.moveHead span {
+    color: #000
+}
+
+.webSwitch, .mobileSwitch {
+    color: #000;
+    font-size: 17px
+}
+
+.backgroundScroll .bodyWrapper>*, #cloudList {
+    display: none
+}
+
+.menuSliderOuterWrapper, .rightMenuContainer {
+    height: calc(100vh - 266px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto
+}
+
+.main, .bannerboxWrapper:first-child, .bannerboxWrapper:last-child, .arrowRight:after, .arrow, .workSecondWrapper, .workThirdWrapper, .linkArrow, #navInquiryWrap .clientButton.inquiryButton, .getinTouchDesk, .clientButton.clientWeb, .videoSection {
+    display: none
+}
+
+.bannerHead {
+    line-height: 45px;
+    bottom: 45%
+}
+
+.arrowDown {
+    padding: 220px 0 60px 0
+}
+
+.bannerHead span:first-child {
+    font-size: 40px
+}
+
+.bannerHead span:nth-child(2) {
+    font-size: 25px
+}
+
+.bannerTextWrapper {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center
+}
+
+.bannerboxWrapper {
+    flex-basis: 50%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff
+}
+
+.bannerText {
+    width: 75%;
+    position: absolute;
+    bottom: -44%;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+
+.bannerboxWrapper .icon {
+    flex-direction: column;
+    padding: 20px
+}
+
+.bannerboxWrapper .icon:before {
+    padding-bottom: 20px;
+    padding-right: 0
+}
+
+.homeContentContainer figure {
+    text-align: center
+}
+
+.contentHead {
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.clientWrapper .contentHead, .workTextWrapper .contentHead {
+    text-align: left
+}
+
+.contentHead span:first-child {
+    margin-bottom: -22px
+}
+
+.containerWrapper {
+    width: 88%
+}
+
+.homeContentContainer {
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%
+}
+
+.homeContentContainer .arrowText {
+    flex-basis: 50%;
+    width: 49%;
+    display: inline-block
+}
+
+.homeContentContainer .arrowText, .socialIcons a {
+    text-align: center
+}
+
+.homeContentContainer .arrowTextSpan {
+    padding: 20px;
+    text-align: left
+}
+
+.contentText {
+    padding: 125px 0 20px 0
+}
+
+.contentText p {
+    text-align: center
+}
+
+.bannerboxWrapper .arrowTextSpan, .clientWrapper .arrowTextSpan, .clientMobButton .arrowTextSpan {
+    box-shadow: none;
+    display: inline-block
+}
+
+.arrowTextSpan {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.02), 0 22.3px 17.9px rgba(0, 0, 0, 0.04), 0 10.8px 33.4px rgba(0, 0, 0, 0.04), 0 20px 80px rgba(0, 0, 0, 0.05)
+}
+
+.clientButton.inquiryButton .arrowText, .linkArrowMobile .arrowRight:after, .viewallLocationWrapper .arrowRight:after {
+    display: inline-block
+}
+
+.linkArrowMobile .arrowRight:after, .viewallLocationWrapper .arrowRight:after {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg)
+}
+
+.linkArrowMobile .arrowText>span, .clientMobButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #da3a36
+}
+
+.linkArrowMobile .arrowText>span span:nth-child(2), .viewallLocationWrapper .arrowTextSpan>span {
+    padding-left: 20px
+}
+
+.footerBottomWrapper, .workFirstWrapper {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.workFirstWrapper {
+    padding-top: 150px
+}
+
+.workWrapper {
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 150px
+}
+
+.workImageInnerWrapper, .workThirdMobileWrapper {
+    display: flex;
+    flex-direction: row
+}
+
+.workThirdWrapperMobile {
+    display: flex;
+    flex-direction: column
+}
+
+.workImageInnerWrapper .imageBoxShadow {
+    flex: 1
+}
+
+.workImageInnerWrapper .imageBoxShadow:first-child {
+    margin-right: 20px;
+    position: relative
+}
+
+.workFirstWrapper .imageBoxShadow:first-child {
+    top: 30px
+}
+
+.workSecondWrapperMobile {
+    padding-top: 150px
+}
+
+#footer {
+
+}
+
+.workSecondWrapperMobile .imageBoxShadow:first-child {
+    top: -60px
+}
+
+.workImageInnerWrapper .imageBoxShadow:last-child, .workThirdMobileWrapper>div:last-child {
+    margin-left: 20px
+}
+
+.workThirdMobileWrapper>div:last-child {
+    position: relative;
+    top: 220px
+}
+
+.workThirdMobileWrapper>div:first-child {
+    margin-right: 20px
+}
+
+.workThirdMobileWrapper>div {
+    flex: 1
+}
+
+.threeReasonsWrapperHead {
+    font-size: 40px;
+    line-height: 50px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    margin-top: 100px
+}
+
+.threeReasonsWrapperHead span, .workWrapper img {
+    display: block
+}
+
+.workThirdMobileWrapper:first-child>div {
+    margin-bottom: 60px
+}
+
+.workWrapper .arrowTextSpan {
+    box-shadow: none
+}
+
+.workThirdMobileOuter {
+    position: relative
+}
+
+.workThirdMobileOuter:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 49%;
+    background-color: #000;
+    z-index: -10
+}
+
+.footerContent p {
+    font-size: 30px;
+    line-height: 40px
+}
+
+.footerAddrs, #footer p, .footerButtonWrapper {
+    align-items: center;
+    text-align: center
+}
+
+.socialIcons>div {
+    display: flex
+}
+
+.getinTouchMob {
+    text-align: center;
+    padding-bottom: 60px
+}
+
+.footerContent {
+    padding-top: 60px
+}
+
+.viewallLocationWrapper .arrowTextSpan {
+    color: #da3a36
+}
+
+.homeContentWrapper img {
+    max-width: 100%
+}
+
+.whyChoose {
+    font-size: 25px;
+    font-weight: 700
+}
+
+.workWrapper {
+    padding-bottom: 80px
+}
+
+.workSecondWrapperMobile {
+    padding-top: 100px
+}
+
+.homePageClientWrap span {
+    display: flex;
+    margin: auto;
+    height: 86px
+}
+
+.omronJP span, .natGeoJP span, .burberryJP span {
+    max-width: 204px
+}
+
+.omronJP span {
+    background-position: 0 0
+}
+
+.dellJP span {
+    max-width: 84px;
+    background-position: -208px 0
+}
+
+.natGeoJP span {
+    background-position: -293px 0
+}
+
+.burberryJP span {
+    background-position: -502px 0
+}
+
+.dellIndia span {
+    background-position: 0 1px
+}
+
+.bezIndia span {
+    background-position: -81px 4px
+}
+
+.dellIndia span, .bezIndia span, .dellAUS span, .dellOther span {
+    max-width: 84px
+}
+
+.omronIndia span, .concetrixIndia span {
+    height: 70px
+}
+
+.omronIndia span, .concetrixIndia span, .concentrixUAE span, .nyuUS span, .genesysUS span, .omronAUS span, .burberryUK span, .genesysOther span, .burberryOther span {
+    max-width: 204px
+}
+
+.omronIndia span {
+    background-position: -172px 3px
+}
+
+.concetrixIndia span {
+    background-position: -377px 0
+}
+
+.nyuUS span {
+    background-position: 0 0
+}
+
+.undpUS span {
+    background-position: -216px 2px;
+    max-width: 104px
+}
+
+.genesysUS span {
+    background-position: -332px 2px
+}
+
+.spectrumUS span {
+    background-position: -540px 2px;
+    max-width: 196px
+}
+
+.allianzAUS span {
+    background-position: 0 0;
+    max-width: 194px
+}
+
+.dellAUS span {
+    background-position: -192px 0
+}
+
+.omronAUS span {
+    background-position: -276px 0
+}
+
+.netsAUS span {
+    background-position: -488px 0;
+    max-width: 184px
+}
+
+.privateFlyUK span {
+    background-position: 0 0;
+    max-width: 150px
+}
+
+.burberryUK span {
+    background-position: -152px 0
+}
+
+.abbUK span {
+    background-position: -360px 0;
+    max-width: 142px
+}
+
+.emisUK span {
+    background-position: -502px 0;
+    max-width: 134px
+}
+
+.dmccUAE span {
+    background-position: 0 0;
+    max-width: 170px
+}
+
+.defDubaiUAE span {
+    background-position: -174px 0;
+    max-width: 172px
+}
+
+.concentrixUAE span {
+    background-position: -348px 0
+}
+
+.petrofacUAE span {
+    background-position: -554px 0;
+    max-width: 226px
+}
+
+.natgeoOther span {
+    background-position: 0 0;
+    max-width: 210px
+}
+
+.dellOther span {
+    background-position: -212px 0
+}
+
+.genesysOther span {
+    background-position: -292px 0
+}
+
+.burberryOther span {
+    background-position: -492px 0
+}
+
+.homePageClientWrap>div {
+    padding-bottom: 20px;
+    width: 49%;
+    display: inline-block
+}
+
+.clientMob {
+    padding: 20px 0
+}
+
+.footerAddrs, .footerContent>div, .inquiryButton, #copyright, .viewallLocationWrapper {
+    padding: 30px 20px
+}
+
+.icon:before {
+    font-size: 40px
+}
+
+.bannerboxWrapper .icon:before {
+    padding-bottom: 10px
+}
+
+.bannerSpan {
+    font-size: 12px
+}
+
+.homeBannerWrapper {
+    min-height: 350px;
+    background-image: url(../images/homeImg/bannerMobile.jpg)
+}
+
+.footerBottomWrapper.footerFlex {
+    align-items: initial
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .contentHead span:first-child {
+        margin-bottom: -12px
+    }
+    .workThirdWrapperMobile .workThirdMobileWrapper>div:first-child {
+        margin-bottom: 20px
+    }
+    .bannerHead {
+        line-height: 30px
+    }
+    .bannerHead span:first-child {
+        font-size: 30px
+    }
+    .homeContentContainer, .workImageInnerWrapper, .workThirdMobileWrapper {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column
+    }
+    .homeContentContainer .arrowText {
+        flex-basis: 100%;
+        width: 100%
+    }
+    .homeContentWrapper {
+        padding-bottom: 60px
+    }
+    .homeContentContainer .arrowText {
+        padding: 20px
+    }
+    .contentHead {
+        font-size: 22px
+    }
+    .contentHead span:first-child {
+        font-size: 60px
+    }
+    .workImageInnerWrapper .imageBoxShadow:first-child, .workThirdMobileWrapper>div:first-child, .workThirdMobileWrapper:last-child .imageBoxShadowBottom:first-child {
+        margin-right: 0;
+        margin-bottom: 60px
+    }
+    .workImageInnerWrapper .imageBoxShadow:last-child, .workThirdMobileWrapper>div:last-child {
+        margin-left: 0
+    }
+    .workFirstWrapper .imageBoxShadow:first-child, .workThirdMobileWrapper>div:last-child, .workSecondWrapperMobile .imageBoxShadow:first-child {
+        top: auto;
+        position: unset;
+        margin-bottom: 60px
+    }
+    .homeContentWrapper:nth-of-type(4) {
+        padding-bottom: 100px
+    }
+    .webSwitch {
+        display: none
+    }
+    .rightMenuContainer li, .bannerHead span:nth-child(2) {
+        font-size: 20px
+    }
+    .close-menu:before {
+        font-size: 24px
+    }
+    .rightMenuContainer>ul>li {
+        padding-bottom: 25px
+    }
+    .digitalTransformationMob>div span {
+        bottom: -28px
+    }
+    .threeReasonsWrapperHead {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        margin-top: 60px
+    }
+    .workWrapper .caseStudyTextWrapper, .workThirdMobileWrapper {
+        display: block
+    }
+    .workThirdMobileOuter:after {
+        height: 66%
+    }
+    .homePageClientWrap>div {
+        width: 100%
+    }
+    .workSecondWrapperMobile {
+        padding-top: 60px
+    }
+    #footer {
+        padding-top: 50px
+    }
+    .workWrapper.workThirdWrapperMobile {
+        padding-bottom: 0
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:400px) {
+    #navigation nav {
+        margin-left: 20px
+    }
+    .menuSliderOuterWrapper, .rightMenuContainer {
+        height: calc(100vh - 241px)
+    }
+    .digitalTransformationMob img {
+        width: 35px
+    }
+    .digitalContentWrapper>div:last-child img {
+        width: 20px
+    }
+    .digitalTransformationMob>div span {
+        font-size: 14px
+    }
+    .bannerText {
+        bottom: -50%
+    }
+    .arrowDown {
+        padding: 240px 0 60px 0
+    }
+}

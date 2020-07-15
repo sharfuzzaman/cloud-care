@@ -1,0 +1,1217 @@
+@font-face {
+  font-family: 'universCnd';
+  src: url('../fonts/Univers_Cons_bold/unvr67w-webfont.eot');
+  src: url('../fonts/Univers_Cons_bold/unvr67w-webfont-1.eot') format('embedded-opentype'), url('../fonts/Univers_Cons_bold/unvr67w-webfont.woff') format('woff'), url('../fonts/Univers_Cons_bold/unvr67w-webfont.ttf') format('truetype'), url('../fonts/Univers_Cons_bold/unvr67w-webfont.svg') format('svg');
+}
+#breadcrumb.openPositionBreadcrumb {
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.59);
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+#openPositions {
+  position: relative;
+  margin-top: -40px;
+  z-index: 1;
+}
+#openPositions #tripleSubNav {
+  width: 90%;
+  margin: 20px auto 50px
+}
+#openPositions .flex-control-nav {
+  display: none
+}
+#openPositions .open_dropdown {
+  position: relative;
+  width: 425px;
+  margin: 20px auto 40px
+}
+#jobsTable {
+  position: relative;
+  padding-bottom: 60px;
+}
+#jobsTable .noDetails {
+  padding: 0 40px 30px 40px;
+  color: #727272;
+}
+#jobsTable .advertisement {
+  position: absolute;
+  text-align: center;
+  margin: 20px 0;
+  top: 276px;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+}
+#jobsTable .advertisement img,
+.partnersSection .slaesforcePartnerLogo {
+  width: 100%
+}
+#openPositions #jobsTable ul li p {
+  display: table-cell;
+  vertical-align: middle
+}
+.careerHead li {
+  background-color: #e9e9e9;
+  border: 1px solid #d3d3d3
+}
+.careerHead .holder p,
+#openPositions #jobsTable .careerlists li .experience {
+  font-family: "OpenSansBold";
+  font-size: 14px
+}
+.careerHead .holder p {
+  font-size: 18px
+}
+.careerHead,
+.careerlists {
+  display: table;
+  width: 100%
+}
+.careerHead li,
+.careerlists li {
+  display: table;
+  height: auto;
+  padding: 20px 0;
+  vertical-align: middle;
+  width: 100%
+}
+#jobsTable li .holder {
+  display: table;
+  margin: 0 auto;
+  width: 95%
+}
+.careerlists li {
+  border: 1px solid #d3d3d3;
+  border-top: none;
+  background-color: #fff
+}
+.careerlists .careercontent li {
+  border: none;
+  margin-top: 10px;
+  height: auto
+}
+.careercontent .resumebtn {
+  background-color: #da3a36;
+  border: 0 none;
+  border-radius: 3px;
+  color: #FFF;
+  cursor: pointer;
+  font-family: 'OpenSansbold';
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: .15s all ease;
+}
+.careercontent .resumebtn:hover {
+  transform: scale(1.05);
+}
+.careercontent .linkedinbtn {
+  background: url(../images/responsive/company/career/openpositions/apply.png) no-repeat scroll left center transparent;
+  background-color: #e1e1e1;
+  border: 0 none;
+  border-radius: 3px;
+  color: #262626;
+  cursor: pointer;
+  font-family: 'OpenSansbold';
+  font-size: 14px;
+  padding: 8px 16px 8px 50px
+}
+.careerlists .toChild {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 29px;
+  text-align: center;
+  position: static
+}
+.careerlists .toChild:after {
+  content: "\e900";
+  font-family: 'icomoon'!important;
+  color: #000;
+  font-size: 24px;
+}
+.careerlists .toChild.activeMenu:after {
+  content: "\e901";
+  color: #da3a36;
+}
+.careercontent {
+  display: none;
+  width: 95%;
+  margin: 0 auto
+}
+.careercontent h1,
+.careercontent h2,
+.careercontent h3,
+.careercontent h4 {
+  color: #262626;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+}
+.careercontent h1,
+.careercontent h2,
+.careercontent h3 {
+  font-family: "OpenSansBold";
+}
+.careercontent h4 {
+  font-weight: 800;
+}
+#openPositions #jobsTable ul li .careercontent p {
+  display: table;
+  line-height: normal;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 100%
+}
+.careercontent.active {
+  display: block
+}
+.thirdParty,
+.jQueryPlugins {
+  width: 50%;
+  float: left
+}
+.thirdParty .listCont,
+.jQueryPlugins .listCont {
+  width: 87%
+}
+.thirdParty {
+  margin-top: -18px
+}
+.schoolList {
+  font-size: 14px
+}
+.bannerHead {
+  color: #FFF;
+  font-size: 46px;
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  width: 100%;
+  z-index: 10
+}
+#openPositions .innerBanner,
+#openPositions .banner {
+  height: auto;
+  position: relative
+}
+#openPositions .banner img {
+  max-height: none;
+  width: 100%
+}
+.innerBanner .flexslider {
+  overflow-y: hidden
+}
+.openHeadArea {
+  text-align: center
+}
+#openPositions #jobsTable ul li p:nth-child(2) {
+  width: 32%
+}
+#openPositions #jobsTable ul li p:nth-child(1) {
+  width: 44%
+}
+#openPositions #jobsTable .careerHead li p:nth-child(4) {
+  width: 25%
+}
+#openPositions #jobsTable .careerlists li p:nth-child(4) {
+  width: 22%
+}
+#openPositions #jobsTable .careerlists li p.toggler {
+  text-align: right;
+  width: 4%
+}
+.postresume form {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%
+}
+.postresume {
+  margin: 40px 0;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22%
+}
+.shareBox {
+  margin: 40px 0;
+  border-left: 1px solid #cdcdcd;
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: middle
+}
+.shareBox h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 0!important;
+  text-align: center
+}
+#jobsTable > .careerlists > li:nth-child(even) {
+  background-color: #f8f8f8
+}
+#jobsTable .careerlists li .careercontent ul,
+#jobsTable .careerlists li .careercontent .repo {
+  width: 100%
+}
+#jobsTable .careerlists li .careercontent ul li {
+  background: url(../images/responsive/company/career/openpositions/bullet.png) no-repeat scroll left 22px;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 95%;
+}
+#jobsTable .addthis_button_linkedin {
+  background: url(../images/responsive/company/career/openpositions/linkedIn.png) no-repeat center center
+}
+#jobsTable .addthis_button_twitter {
+  background: url(../images/responsive/company/career/openpositions/twitter.png) no-repeat center center
+}
+#jobsTable .addthis_button_facebook {
+  background: url(../images/responsive/company/career/openpositions/fb.png) no-repeat center center
+}
+#jobsTable .addthis_button_email {
+  background: url(../images/responsive/company/career/openpositions/email.png) no-repeat center center
+}
+#jobsTable .shareBox .addthis_toolbox {
+  text-align: center;
+  float: none
+}
+#jobsTable .shareBox .addthis_toolbox a {
+  display: inline-block;
+  float: none;
+  height: 28px;
+  width: 28px
+}
+#jobsTable .shareBox .addthis_toolbox a span {
+  background: none;
+  width: 28px;
+  height: 28px;
+  display: none
+}
+#openPositions #jobsTable ul li p.experience,
+#openPositions #jobsTable ul li p.location {
+  display: none
+}
+#resumeiframe {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+#iframeholder {
+  padding-bottom: 60px;
+}
+.careerlists li:nth-child(3) {
+  margin-bottom: 0 !important
+}
+.careerlists li .careercontent ul li:nth-child(3) {
+  margin-bottom: 0!important
+}
+.careerlists li .careercontent ul li:nth-child(4) {
+  border-top: none
+}
+.careercontent .separator {
+  display: none;
+  border-radius: 50% 50%;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 20px auto
+}
+#openPositions #jobsTable .careercontent .separator p {
+  display: table-cell;
+  margin: 0;
+  float: none;
+  padding: 0!important;
+  vertical-align: middle
+}
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out
+}
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none
+}
+.dropdown {
+  position: relative;
+  width: 100%;
+  padding: 8px 0;
+  text-align: left;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+#openPositions .dropdown {
+  border: 1px solid #BCBCBC
+}
+.dropdown.open {
+  z-index: 2
+}
+.dropdown .carat {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -4px;
+  border: 6px solid transparent;
+  border-top: 8px solid #000
+}
+.dropdown.open .carat {
+  margin-top: -10px;
+  border-top: 6px solid transparent;
+  border-bottom: 8px solid #000
+}
+.dropdown.disabled .carat {
+  border-top-color: #999
+}
+.dropdown .old {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden
+}
+.dropdown select {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+.dropdown.touch .old {
+  width: 100%;
+  height: 100%
+}
+.dropdown.touch select {
+  width: 100%;
+  height: 100%;
+  opacity: 0
+}
+.dropdown .selected,
+.dropdown li {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  color: #262626;
+  padding: 8px 12px;
+  overflow: hidden;
+  white-space: nowrap
+}
+.dropdown.disabled .selected {
+  color: #999
+}
+.dropdown .selected::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  border-radius: 0 2px 2px 0
+}
+.dropdown div {
+  position: absolute;
+  height: 0;
+  left: -1px;
+  right: -1px;
+  top: 100%;
+  margin-top: -1px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  opacity: 0
+}
+#openPositions .dropdown.open div {
+  opacity: 1;
+  z-index: 2;
+  height: 100% !important;
+  min-height: 130px;
+  overflow-y: scroll;
+}
+#openPositions .dropdown ul {
+  overflow: initial;
+}
+.dropdown.scrollable div::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px
+}
+.dropdown.scrollable.bottom div::after {
+  opacity: 0
+}
+.dropdown ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  overflow: hidden
+}
+.dropdown.scrollable.open ul {
+  overflow-y: auto
+}
+.dropdown li {
+  list-style: none;
+  padding: 8px 12px
+}
+.dropdown li.focus {
+  position: relative;
+  z-index: 3;
+  font-weight: 700
+}
+.dropdown li.active {
+  font-weight: 700
+}
+.errormsg {
+  background-color: #ffe6e7;
+  border: 2px solid #d16f74;
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  padding: 20px 50px;
+  left: 61%;
+  margin-left: -448px;
+  outline: medium none;
+  position: fixed;
+  text-align: center;
+  top: 300px;
+  vertical-align: middle;
+  width: 500px;
+  z-index: 10;
+  display: none;
+  opacity: 0
+}
+.errormsg p {
+  font-family: "OpenSansSemiboldItalic";
+  font-size: 18px;
+  color: #e8202a
+}
+.errorbkopacity {
+  background-color: #f2f2f2;
+  display: none;
+  margin: 0;
+  opacity: .5!important;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%
+}
+.entryLevelContent {
+  float: left;
+  margin-top: 30px;
+  width: 100%
+}
+.entryLevelContent.openBtmSectionTezzle a {
+  text-decoration: underline
+}
+.entryLevelContent.openBtmSectionTezzle {
+  padding-top: 30px;
+  float: none;
+  display: table
+}
+.rightEntryImage {
+  width: 43%;
+  float: right
+}
+.entryList {
+  width: 57%
+}
+.leftEntryImage {
+  float: left;
+  width: 44%
+}
+.entryListOffer {
+  float: right;
+  width: 49%;
+  margin-left: 7%;
+  margin-bottom: 25px
+}
+.aboutQB {
+  width: 100%;
+  margin: 0 auto
+}
+.abtbtmBorder {
+  border-bottom: 5px solid #F7F2F2
+}
+.secrgt .icon-VisionandMission {
+  font-size: 250px;
+  color: #f7c000
+}
+.secrgt {
+  width: 40%;
+  float: left;
+  text-align: right;
+  padding-top: 0
+}
+.seclft {
+  width: 60%;
+  float: left
+}
+.seclft div:first-child h2 {
+  color: #f7c000;
+  font-size: 50px;
+  line-height: 45px;
+  font-family: 'universCnd'
+}
+.seclft div:last-child {
+  margin-top: 30px;
+  padding-bottom: 0
+}
+.seclft div:last-child h2 {
+  color: #04baef;
+  font-size: 50px;
+  line-height: 45px;
+  font-family: 'universCnd'
+}
+.seclft div span {
+  font-size: 18px;
+  font-family: 'OpenSansLight'
+}
+.thrSection,
+.secSection,
+.sixSection {
+  margin: 50px auto;
+  width: 76%
+}
+.thrSection .thrrgt {
+  margin-top: 10px
+}
+.thrrgt {
+  width: 64%;
+  float: right;
+  text-align: center
+}
+.thrrgt h2 {
+  width: 100%;
+  display: block;
+  font-family: 'universCnd';
+  font-size: 50px;
+  color: #000;
+  text-align: center
+}
+.thrrgt ul {
+  width: 100%
+}
+.thrrgt ul li {
+  font-family: 'universCnd';
+  font-size: 32px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 1%;
+  color: #fff
+}
+.thrrgt ul li:first-child,
+.thrrgt ul li:nth-child(5),
+.thrrgt ul li:nth-child(7) {
+  margin-left: 0
+}
+.thrrgt ul li:first-child,
+.thrrgt ul li:nth-child(2),
+.thrrgt ul li:nth-child(3),
+.thrrgt ul li:nth-child(4) {
+  width: 19%
+}
+.thrrgt ul li:nth-child(7) {
+  width: 70%
+}
+.thrrgt ul li:first-child {
+  background-color: #e112ae;
+  border: 1px solid #e112ae
+}
+.thrrgt ul li:nth-child(2) {
+  background-color: #06b900
+}
+.thrrgt ul li:nth-child(3) {
+  background-color: #d7385d;
+  border: 1px solid #d7385d
+}
+.thrrgt ul li:nth-child(4) {
+  background-color: #04baef;
+  border: 1px solid #04baef
+}
+.thrrgt ul li#validationExp {
+  background-color: #f7c000;
+  border: 1px solid #f7c000;
+  width: 55%
+}
+.thrrgt ul li#biExp {
+  background-color: #a254d3;
+  border: 1px solid #a254d3;
+  width: 42%
+}
+.thrrgt ul li:nth-child(7) {
+  background-color: #10bf83;
+  border: 1px solid #10bf83
+}
+.frlft {
+  width: 20%;
+  float: left;
+  text-align: left
+}
+.frlft h2 {
+  width: 100%;
+  display: block;
+  font-size: 40px;
+  font-family: 'universCnd';
+  color: #000;
+  text-align: center;
+  margin-bottom: 0
+}
+.topVision {
+  background-image: url(../images/responsive/company/aboutUs/visionbg.jpg);
+  background-size: 100% 100%;
+  display: table;
+  width: 100%
+}
+.btmMission {
+  background-image: url(../images/responsive/company/aboutUs/m.jpg);
+  background-size: 100% 100%;
+  display: table;
+  width: 100%
+}
+.topVision div,
+.btmMission div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px
+}
+#visionTest {
+  float: right;
+  padding: 0;
+  width: 31%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 40px
+}
+#visionTest .testimonialTitle {
+  text-transform: none;
+  font-size: 24px
+}
+#managDesc h2 {
+  color: #000;
+  margin-top: 40px
+}
+.leftValues {
+  float: left;
+  width: 65%
+}
+.leftValues ul {
+  margin-top: 10px
+}
+.leftValues ul li {
+  line-height: 40px;
+}
+.rightEntryImage {
+  width: 43%;
+  float: right
+}
+.entryList {
+  width: 57%
+}
+.leftEntryImage {
+  float: left;
+  width: 44%
+}
+.entryListOffer {
+  float: right;
+  width: 49%;
+  margin-left: 7%;
+  margin-bottom: 25px
+}
+#contactForm input {
+  background-color: #F9F9F9;
+  border: 1px solid #C9C9C9;
+  border-radius: 3px;
+  color: #9c9c9c;
+  float: none;
+  font-family: 'OpenSansRegular';
+  margin-left: 0;
+  padding: 4px 10px;
+  width: 95%;
+  line-height: 24px;
+  font-size: 16px
+}
+#contactForm .leftSection {
+  float: left;
+  margin-right: 2%;
+  width: 46%
+}
+#contactForm .rightSection {
+  float: right;
+  margin-left: 2%;
+  width: 46%
+}
+#contactForm input.sendBtn {
+  background-color: #E8202A;
+  border: 0 none;
+  border-radius: 33px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'OpenSansBold';
+  height: 40px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 150px
+}
+.contactType ul li label,
+.contactType ul li label.active {
+  background-size: 29px 29px;
+  padding: 5px 25px 0 40px;
+  display: inline-block;
+  top: 0
+}
+.contactType ul li label {
+  color: #393939;
+  font-family: 'OpenSansRegular';
+  padding-top: 5px
+}
+#contactForm .formSect {
+  padding: 15px 5px 5px
+}
+.contactType .formLbl {
+  padding: 0 20px 0 12px
+}
+.applyForm.newinquiryspcng {
+  max-width: 1100px;
+  margin: 0 auto
+}
+.captchWrap .captcha {
+  float: left;
+  margin-right: 10px
+}
+#contactForm .captchWrap input {
+  width: 38%;
+  float: left;
+  min-width: 160px
+}
+#projectType select {
+  background-color: #F9F9F9;
+  border: 1px solid #C9C9C9;
+  color: #9c9c9c;
+  height: 41px
+}
+#projectType.styled-select {
+  margin-top: 10px;
+  width: 100%
+}
+#projectType.styled-select:before {
+  background-color: #F9F9F9;
+  border-color: transparent;
+  height: 35px
+}
+.firstCol {
+  padding-top: 10px
+}
+#contactForm input {
+  height: 29px
+}
+.sendBtnWrap {
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #e3e3e3;
+  margin-top: 40px;
+  padding: 40px 0
+}
+#contactForm #ucaptchaValMsg {
+  clear: both;
+  display: block
+}
+#contactForm .error_msg {
+  color: #E51E25;
+  display: block;
+  font-family: 'OpenSansItalic';
+  font-size: 14px;
+  margin: 10px 0 0;
+  padding-left: 11px
+}
+.linkedInApply,
+#jobsTable ul li .careercontent p.location {
+  display: none!important
+}
+.contact_content {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.americas {
+  background-image: url(../images/responsive/company/contact/americas.png);
+}
+.asiaPacific {
+  background-image: url(../images/responsive/company/contact/asiaPacificBg.png);
+}
+.europe {
+  background-image: url(../images/responsive/company/contact/europe.png);
+}
+.middleEast {
+  background-image: url(../images/responsive/company/contact/middleEast.png);
+}
+.southAsia {
+  background-image: url(../images/responsive/company/contact/southAsia.png);
+}
+.oceania {
+  background-image: url(../images/responsive/company/contact/oceania.png);
+}
+#footer {
+  position: relative;
+  z-index: 1;
+}
+#footer.afterRemove {
+  position: initial;
+}
+/* #footer:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: #fff;
+} */
+/*carrer landing*/
+.landingWrapper,
+.landingContentWrapper {
+  display: flex;
+}
+.landingLeftWrapper {
+  border-right: 1px solid #eaeaea;
+  flex: 1;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.landingHead {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 0;
+  color: #dcdcdc;
+}
+.landingList {
+  font-size: 18px;
+}
+.landingList span {
+  position: relative;
+  display: table;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.landingList span:before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: red;
+  bottom: -6px;
+  border-radius: 25%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.landingList span:hover:before,
+.landingList span.active:before {
+  height: 4px;
+  width: 60px;
+  border-radius: 20%;
+}
+.landingRightWrapper {
+  flex: 2;
+}
+.cloudMigartionStepContent {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+}
+.landingRightWrapper .innerSubHeading {
+  text-align: left;
+}
+.landingContentWrapper {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+.landingContentWrapper,
+.landingRightWrapper .innerSubHeading {
+  padding-left: 60px;
+}
+.landingImgWrapper figure {
+  padding-right: 30px;
+}
+.landingImgWrapper img {
+  max-width: 336px;
+}
+.cloudMigartionStepContent img, 
+.cloudMigartionStepContent h3 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cloudMigartionStepContent:not(:first-child) {
+  display: none;
+}
+.carrerBottomSection {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.carrerBottomSection .learnMoreContainerWeb {
+  display: block;
+}
+.learnMoreContainer {
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+  width: 100%;
+}
+.learnMoreLink {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-top: 0;
+  font-family: 'OpenSansBold';
+  font-size: 14px;
+  background-color: #da3a36;
+  color: #fff;
+  transform: scale(1);
+  transition: .15s all ease;
+  line-height: 18px;
+}
+.learnMoreContainerMob,
+.landingDropWrapper {
+  display: none;
+}
+.landingList span.active {
+  font-weight: 800;
+}
+.landingMobileHead {
+  display: none;
+}
+@media screen and (max-width:1305px) {
+  .landingContentWrapper,
+  .learnMoreContainerMob {
+    display: inline-block;
+  }
+  .landingImgWrapper figure {
+    float: left;
+  }
+  .learnMoreContainerWeb {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1041px) {
+  .contactPageWrapper .subMenus #mobMenuHolder {
+    display: block !important;
+    border: none;
+  }
+  .contactPageWrapper #postmapcont #mobMenuHolder li {
+    width: 16% !important;
+    text-align: center;
+  }
+  .contactPageWrapper #mobMenuHolder li:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .contactPageWrapper .subMenus #mobMenuHolder li {
+    border: 1px solid #d1d1d1;
+    border-right: 0;
+    float: left;
+  }
+  .contactPageWrapper .casesubNav .subMenus .menuSelected {
+    display: none;
+  }
+  .contactPageWrapper .casesubNav #mobMenuHolder li:last-child {
+    border-bottom: 1px solid #d1d1d1 !important;
+    border-right: 1px solid #d1d1d1;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .contactPageWrapper #postmapcont #mobMenuHolder .active {
+    background: #2d2d2d;
+    content: "";
+    border-bottom: 1px solid #2d2d2d;
+  }
+  .contactPageWrapper #postmapcont #mobMenuHolder .active p {
+    color: #fff;
+  }
+  .contactPageWrapper #postmapcont .subMenus ul li p {
+    padding: 0;
+  }
+  .contactPageWrapper #postmapcont #mobMenuHolder .active:after {
+    border-width: 10px;
+  }
+}
+@media screen and (max-width:1029px) {
+  #openPositions {
+    margin-top: 0;
+  }
+  #breadcrumb.openPositionBreadcrumb {
+    padding: 20px 0 0;
+    background-color: transparent;
+    width: 88%;
+  }
+  .bannerHead {
+    width: 88%;
+    margin: 20px auto 0 auto;
+  }
+  #openPositions .bannerHead {
+    width: 100%;
+  }
+}
+@media screen and (max-width:1024px) {
+  #openPositions .bannerHead {
+    width: 88%;
+  }
+  #footer:after {
+    content: none;
+  }
+  .learnMoreContainerWeb {
+    display: none;
+  }
+  .learnMoreContainerMob, 
+  .landingContentWrapper,
+  .landingContentWrapper {
+    display: block;
+  }
+  .landingImgWrapper {
+    padding-bottom: 40px;
+  }
+  .landingImgWrapper figure {
+    float: none;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width:767px) {
+  .landingDrop.list-unstyled:after {
+    content: "\e63e";
+    color: #da3a36;
+    top: 18px;
+    font-family: "icomoon";
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+  }
+  .landingDrop.drop.list-unstyled:after {
+    content: "\e63d";
+  }
+  .landingMobileHead {
+    margin-top: -40px;
+    display: block;
+  }
+  .landingImgWrapper img {
+    max-width: 100%;
+  }
+  .bannerHead {
+    margin-bottom: 0;
+  }
+  #iframeholder {
+    padding-bottom: 0;
+  }
+  .landingDropWrapper {
+    display: block;
+  }
+  .landingDropWrapper,
+  .contentOuterWrapper.landingContentOuterWrapper {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+  .landingDropWrapper {
+    padding-bottom: 40px;
+  }
+  .landingDropWrapper .list-unstyled {
+    color: #262626;
+    position: relative;
+    background-color: #fff;
+    font-size: 16px;
+    background-color: #fbfbfb;
+  }
+  .landingDrop {
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  .list-unstyled {
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+  }
+  .landingDrop.list-unstyled li:first-child {
+    padding: 15px 20px;
+  }
+  .landingDrop .init {
+    color: #da3a36;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .list-unstyled li {
+    padding: 10px 20px;
+    z-index: 2;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  .landingDrop li:not(.init) {
+    width: 100%;
+    display: none;
+  }
+  .landingDrop li {
+    cursor: pointer;
+  }
+  .landingDrop li.active {
+    background-color: #f4f4f4;
+    color: #666;
+    font-weight: 700;
+  }
+  .landingDrop li:not(.init) {
+    border-top: 1px solid #d1d1d1;
+  }
+  .landingRightWrapper .innerSubHeading,
+  .landingImgWrapper figure,
+  .learnMoreContainerMob {
+    text-align: center;
+  }
+  .landingRightWrapper .innerSubHeading {
+    padding-left: 0;
+  }
+  .landingContentWrapper {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+  .landingLeftWrapper {
+    display: none;
+  }
+  .carrerBottomSection {
+    padding-top: 60px;
+    border-top: 1px solid #d1d1d1;
+  }
+}

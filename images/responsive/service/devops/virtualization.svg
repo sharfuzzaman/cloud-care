@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="263px" height="260px" viewBox="0 0 263 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="devops" transform="translate(-1037.000000, -3161.000000)">
+            <g id="Group-34" transform="translate(240.000000, 3161.000000)">
+                <g id="Group-21" transform="translate(797.000000, 0.000000)">
+                    <circle id="Oval" fill="#EDF6FA" cx="133" cy="130" r="130"></circle>
+                    <g id="Group-36" transform="translate(0.000000, 39.000000)">
+                        <g id="Group-35" transform="translate(102.148438, 17.529297)">
+                            <polygon id="Path-4" fill="#06AAE9" points="0 137.299949 82.3788035 147.954192 82.3788035 0 0 10.2814635"></polygon>
+                            <polygon id="Path-5" fill="#0591C7" points="82.3788035 0 92.3873612 2.92537568 92.3873612 144.996435 82.3788035 147.954192"></polygon>
+                        </g>
+                        <g id="Group-35" opacity="0.800000012" transform="translate(57.148438, 9.529297)">
+                            <polygon id="Path-4" fill="#06AAE9" points="0 153.070889 91.2367393 164.948931 91.2367393 0 0 11.4624424"></polygon>
+                            <polygon id="Path-5" fill="#0591C7" points="91.2367393 0 102.321486 3.26139857 102.321486 161.651431 91.2367393 164.948931"></polygon>
+                        </g>
+                        <g id="Group-35" opacity="0.800000012">
+                            <polygon id="Path-4" fill="#06AAE9" points="0 169.769531 100.980469 182.943359 100.980469 0 0 12.7128906"></polygon>
+                            <polygon id="Path-5" fill="#0591C7" points="100.980469 0 113.249023 3.6171875 113.249023 179.286133 100.980469 182.943359"></polygon>
+                        </g>
+                        <g id="Group-37" transform="translate(18.776367, 67.595703)" fill="#FFFFFF">
+                            <polygon id="Path-6" points="0 7.09277344 19.0961914 4.23681641 19.0961914 23.4042969 0 23.4042969"></polygon>
+                            <polygon id="Path-15" points="20.9956055 4.23681641 46.7558594 -1.77635684e-15 46.7558594 23.4042969 20.9956055 23.4042969"></polygon>
+                            <polygon id="Path-16" points="0 25.4335938 19.0961914 25.4335938 19.0961914 45.8916016 0 42.3198242"></polygon>
+                            <polygon id="Path-17" points="20.9956055 25.4335938 46.7558594 25.4335938 46.7558594 50.7626953 20.9956055 45.8916016"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

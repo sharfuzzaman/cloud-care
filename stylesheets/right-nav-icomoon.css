@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/qburstHomeFonts/icomoon.eot");
+    src: url("../fonts/qburstHomeFonts/icomoon.eot") format("embedded-opentype"), url("../fonts/qburstHomeFonts/icomoon.ttf") format("truetype"), url("../fonts/qburstHomeFonts/icomoon.woff") format("woff"),
+        url("../fonts/qburstHomeFonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+.menuinquiry,
+.menuicon,
+.menusrchicon,
+.arrowRight .downarrow,
+.arrow .downarrow,
+.mainmenuContainer .close-menu,
+.close-menu,
+.icon-Awards,
+.rightArrow,
+.closeInquiry,
+.closesrch,
+.main-menu .activeMenu,
+.icon-replay {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.cloudMigrationImg:before {
+    content: "\e913";
+}
+.devops:before {
+    content: "\e906";
+}
+.cloudConsult:before {
+    content: "\e901";
+}
+.migrationStrategies:before {
+    content: "\e913";
+}
+.cloudSecurity:before {
+    content: "\e903";
+}
+.cloudNative:before {
+    content: "\e904";
+}
+.ecommerce:before {
+    content: "\e907";
+}
+.microservice:before {
+    content: "\e911";
+}
+.icon:before {
+    font-family: "icomoon";
+    font-size: 60px;
+    padding: 5px 20px 5px 0;
+}
+@media screen and (max-width: 1500px) and (min-width: 1025px){
+    .icon:before {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="28px" viewBox="0 0 21 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Scroll</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="QB_Homepage" transform="translate(-790.000000, -789.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="scroll" transform="translate(790.162859, 789.000000)">
+                <path d="M11.1305949,0.619171926 L11.1305027,23.8161719 L19.2517501,16.4872225 L20.6659637,17.901436 L10.4031861,27.1642136 L9.30950272,26.0701719 L0.217502717,17.675479 L1.57428786,16.2060797 L9.1305949,23.1825949 L9.1305949,0.619171926 L11.1305949,0.619171926 Z" id="Scroll"></path>
+            </g>
+        </g>
+    </g>
+</svg>

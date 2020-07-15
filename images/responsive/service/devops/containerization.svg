@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="260px" viewBox="0 0 272 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="devops" transform="translate(-1028.000000, -1921.000000)">
+            <g id="Group-30" transform="translate(240.000000, 1921.000000)">
+                <g id="Group-21" transform="translate(788.000000, 0.000000)">
+                    <circle id="Oval" fill-opacity="0.102901005" fill="#4AA7CD" cx="142" cy="130" r="130"></circle>
+                    <g id="container-(1)" transform="translate(0.000000, 71.000000)" fill-rule="nonzero">
+                        <polygon id="Path" fill="#29485A" points="53.8275862 0 0 26.9705882 0 107.882353 53.8275862 131 253 108.735294 253 30.1176471"></polygon>
+                        <polygon id="Path" fill="#06AAE9" points="0 26.9705882 0 107.882353 23.0689655 117.788265 23.0689655 15.4117647"></polygon>
+                        <polygon id="Path" fill="#0591C7" points="53.8275862 0 23.0689655 15.4117647 23.0689655 117.788265 53.8275862 131"></polygon>
+                        <g id="Group" transform="translate(7.689655, 50.088235)" fill="#29485A">
+                            <path d="M3.84482759,34.6764706 C1.72152155,34.6764706 0,32.9513162 0,30.8235294 L0,3.85294118 C0,1.72515441 1.72152155,0 3.84482759,0 C5.96813362,0 7.68965517,1.72515441 7.68965517,3.85294118 L7.68965517,30.8235294 C7.68965517,32.9513162 5.96813362,34.6764706 3.84482759,34.6764706 Z" id="Path"></path>
+                            <path d="M30.7586207,38.5294118 C28.6353147,38.5294118 26.9137931,36.8042574 26.9137931,34.6764706 L26.9137931,3.85294118 C26.9137931,1.72515441 28.6353147,0 30.7586207,0 C32.8819267,0 34.6034483,1.72515441 34.6034483,3.85294118 L34.6034483,34.6764706 C34.6034483,36.8042574 32.8819267,38.5294118 30.7586207,38.5294118 Z" id="Path"></path>
+                        </g>
+                        <polygon id="Path" fill="#0378A3" points="92.2758621 21.8346176 92.2758621 109.808824 115.344828 107.882353 115.344828 24.4006765"></polygon>
+                        <g id="Group" transform="translate(69.206897, 19.264706)" fill="#06AAE9">
+                            <polygon id="Path" points="0 0 0 92.4705882 23.0689655 90.5441176 23.0689655 2.56991176"></polygon>
+                            <polygon id="Path" points="46.137931 5.13597059 46.137931 88.6176471 69.2068966 86.6911765 69.2068966 7.70588235"></polygon>
+                        </g>
+                        <g id="Group" transform="translate(138.413793, 26.970588)">
+                            <polygon id="Path" fill="#0378A3" points="0 0 0 78.9852941 23.0689655 77.0588235 23.0689655 2.56991176"></polygon>
+                            <polygon id="Path" fill="#0378A3" points="69.2068966 7.70588235 46.137931 5.13597059 46.137931 75.1323529 69.2068966 73.2058824"></polygon>
+                            <polygon id="Path" fill="#06AAE9" points="92.0689655 10.5699118 69.2068966 7.70588235 69.2068966 73.2058824 92.0689655 71.5450368"></polygon>
+                            <polygon id="Path" fill="#0378A3" points="108.897242 12.9014821 92.0689655 10.5699118 92.0689655 71.5450368 108.897242 70.0382008"></polygon>
+                        </g>
+                        <polygon id="Path" fill="#06AAE9" points="161.482759 29.5405 161.482759 104.029412 184.551724 102.102941 184.551724 32.1065588"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
