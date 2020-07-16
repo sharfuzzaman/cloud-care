@@ -30,24 +30,15 @@
         href="stylesheets/homeIpad.min.4-4-1.427919087314284327.css">
     <link rel="stylesheet prefetch" media="screen and (max-width: 1024px)" type="text/css"
         href="stylesheets/homeMobile.min.4-4-1.427919087314284327.css">
+    <link rel="stylesheet prefetch" media="screen and (max-width: 1024px)" type="text/css"
+        href="stylesheets/messenger.css">
 <style>
-    .custom-load-fb{
-        position:absolute;
-        bottom:0;
-        right:0;
-    }
+    
 </style>
 
 </head>
 
 <body>
-    <div class="custom-load-fb" id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=160949731365789&autoLogAppEvents=1" nonce="NxLRst31"></script>
-    <div class="fb-page custom-load-fb" data-href="https://www.facebook.com/cloudcareint/" data-tabs="messages,timeline" data-width="380" data-height="100vh" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
-        <blockquote cite="https://www.facebook.com/cloudcareint/" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/cloudcareint/">Cloud Care International</a>
-        </blockquote>
-    </div>
     <div class="bodyWrapper">
         <header id="header">
             <!-- <div class="cookieWrapper">
@@ -631,7 +622,46 @@
 	</div> -->
     </footer>
 
-
+    <div id="fbmsg">
+        <div class="fbmsg-badge" style="right: 90px !important;">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" id="Facebook_Messenger" x="0px" y="0px" width="322px" height="324px" viewBox="96 93 322 324" style="enable-background:new 96 93 322 324;" xml:space="preserve" class="fbmsg-badge-btn">
+            <path style="fill:#0084FF;" d="M257,93c-88.918,0-161,67.157-161,150c0,47.205,23.412,89.311,60,116.807V417l54.819-30.273    C225.449,390.801,240.948,393,257,393c88.918,0,161-67.157,161-150S345.918,93,257,93z M273,295l-41-44l-80,44l88-94l42,44l79-44    L273,295z"/>
+            </svg>
+        </div>
+        <div class="wp-sheet">
+            <div class="wp-sheet-head">
+                <div class="wp-sheet-head-inner">
+                    Cloud Care international
+                </div>
+                <a href="#" class="wp-sheet-head-close">x</a>
+            </div>
+            <div class="wp-sheet-body"></div>
+            <div class="wp-sheet-content">
+                <div class="wp-sheet-content-inner">
+                    <div class="wp-sheet-content-part">
+                        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/cloudcareint/" data-tabs="messages,timeline" data-width="368" data-height="608" data-small-header="true" data-adapt-container-width="false" data-hide-cover="flase" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cloudcareint/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cloudcareint/">Cloud Care International</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wp-sheet-footer"></div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=160949731365789&autoLogAppEvents=1" nonce="NxLRst31"></script>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -664,6 +694,7 @@
     <script src="js/home.min.4-4-1.427919087314284327.js" defer="defer"></script>
     <script src="js/commonScript.min.4-4-1.427919087314284327.js" defer=""></script>
     <script src="ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+    <script src="js/messenger.js"></script>
 
 
 
@@ -744,34 +775,27 @@
                     }
                 }
             }
-            $(".cookiePolicyClose").click(function () {
-                var wH = $(window).height();
-                $(".main-menu, #openModal").css({
-                    "height": wH,
-                    "min-height": '100%'
-                });
-                $("#openModal, .searchHolder, .main-menu").css("top", 0);
+            // $(".cookiePolicyClose").click(function () {
+            //     var wH = $(window).height();
+            //     $(".main-menu, #openModal").css({
+            //         "height": wH,
+            //         "min-height": '100%'
+            //     });
+            //     $("#openModal, .searchHolder, .main-menu"date");
+            //         var cookieScroll,
+            //             scrollTop = $(this).scrollTop(),
+            //             cookiePolicyHeight = $("#cookiePolicy").outerHeight();
+            //         if (scrollTop <= cookiePolicyHeight) {
+            //             var cookieHeightNormal = $(".cookieWrapper").outerHeight();
+            //             $(".main-menu, .inquiryModel,.searchHolder").css("top", cookieHeightNormal);
+            //             var menuHeight = $(window).height() - cookieHeightNormal;
+            //             $(".main-menu, .inquiryModel").css(
+            //                 "height", menuHeight
+            //             );
+            //         }
+            //     }
 
-            })
-
-            $(window).bind("load resize scroll", function () {
-                if ($("#cookiePolicy").is(":visible")) {
-                    $("#header").css({ "padding": "0", "display": "block", "opacity": "1" });
-                    $("#headerWrapper").css("padding", "10px 0");
-                    var cookieScroll,
-                        scrollTop = $(this).scrollTop(),
-                        cookiePolicyHeight = $("#cookiePolicy").outerHeight();
-                    if (scrollTop <= cookiePolicyHeight) {
-                        var cookieHeightNormal = $(".cookieWrapper").outerHeight();
-                        $(".main-menu, .inquiryModel,.searchHolder").css("top", cookieHeightNormal);
-                        var menuHeight = $(window).height() - cookieHeightNormal;
-                        $(".main-menu, .inquiryModel").css(
-                            "height", menuHeight
-                        );
-                    }
-                }
-
-            });
+            // });
 
 
             var winwid = document.body.clientWidth;
