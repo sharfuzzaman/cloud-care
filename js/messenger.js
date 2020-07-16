@@ -38,9 +38,9 @@ jQuery(document).ready(function($) {
 
         $sheetContentPart.html(
           '<div class="fb-page" data-tabs="messages,timeline" data-href="https://www.facebookar.com/cloudceint/" data-width="' + width + '" data-height="' + height + '" data-href="https://www.facebookar.com/cloudceint/" data-small-header="true"  data-hide-cover="false" data-show-facepile="true" data-adapt-container-width="false">' +
-		    '<div class="fb-xfbml-parse-ignore">' +
-			  '<blockquote>Loading...</blockquote>' +
-		    '</div>' +
+		    '<blockquote cite="https://www.facebook.com/cloudcareint/" class="fb-xfbml-parse-ignore">' +
+			  ' <a href="https://www.facebook.com/cloudcareint/">Cloud Care International</a>' +
+		    '</blockquote>' +
 	      '</div>');
         if ('FB' in window) {
             FB.XFBML.parse();
