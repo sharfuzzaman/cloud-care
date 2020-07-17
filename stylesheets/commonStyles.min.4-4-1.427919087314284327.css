@@ -341,7 +341,7 @@ input:-webkit-autofill {
     display: block
 }
 .chrome{
-    background:#f0f2f5;
+    background:#f8f9fa;
 }
 .menuinquiry, .menusrchicon {
     font-size: 22px
@@ -6667,6 +6667,9 @@ iframe, object, embed {
 }
 .pl-3{
     padding-left:1rem;
+}
+.pt-16{
+    padding-top:16px;
 }
 .digitalTransformation li:last-child figure {
     width: 50px;

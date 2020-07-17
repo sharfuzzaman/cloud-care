@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="64" cy="64" r="64"></circle>
+        <filter x="-7.0%" y="-5.5%" width="114.1%" height="114.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.439509737   0 0 0 0 0.439509737   0 0 0 0 0.439509737  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(6.000000, 4.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#4FBF9F" stroke-width="4" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M39.9,83.3 L67.4,56.7 C68.200004,55.899996 69.033329,55.0500045 69.9,54.15 C70.766671,53.2499955 71.5499965,52.300005 72.25,51.3 C72.9500035,50.299995 73.533331,49.2500055 74,48.15 C74.466669,47.0499945 74.7,45.900006 74.7,44.7 C74.7,43.233326 74.4166695,41.933339 73.85,40.8 C73.2833305,39.666661 72.533338,38.700004 71.6,37.9 C70.666662,37.099996 69.5833395,36.4833355 68.35,36.05 C67.1166605,35.6166645 65.800007,35.4 64.4,35.4 C61.399985,35.4 58.933343,36.266658 57,38 C55.066657,39.733342 53.9,42.066652 53.5,45 L40.9,44 C41.166668,40.733317 41.9499935,37.8500125 43.25,35.35 C44.5500065,32.8499875 46.233323,30.766675 48.3,29.1 C50.366677,27.433325 52.766653,26.166671 55.5,25.3 C58.233347,24.433329 61.199984,24 64.4,24 C67.600016,24 70.5833195,24.4166625 73.35,25.25 C76.1166805,26.0833375 78.533323,27.3166585 80.6,28.95 C82.666677,30.5833415 84.299994,32.666654 85.5,35.2 C86.700006,37.733346 87.3,40.699983 87.3,44.1 C87.3,48.566689 86.2833435,52.4166505 84.25,55.65 C82.2166565,58.8833495 79.600016,61.966652 76.4,64.9 L54.5,85.2 L87.3,85.2 L87.3,96 L39.9,96 L39.9,83.3 Z" fill="#4FBF9F" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

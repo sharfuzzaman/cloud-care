@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="70px" viewBox="0 0 123 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>z</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.5%" y="-1000.0%" width="187.0%" height="2100.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Large-Device-Desktops" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-522.000000, -1090.000000)">
+        <g id="iot_solutions_manufacturing" transform="translate(220.000000, 697.000000)">
+            <g id="Group-6" transform="translate(4.000000, 305.000000)">
+                <g id="Group-15">
+                    <g id="Group-14">
+                        <g id="Group-23" transform="translate(270.000000, 88.000000)">
+                            <g id="z" transform="translate(55.000000, 0.000000)">
+                                <g id="Group-12">
+                                    <ellipse id="Oval-4" fill="#000000" opacity="0.1" filter="url(#filter-1)" cx="34.6559991" cy="68.5" rx="34.5" ry="1.5"></ellipse>
+                                    <g id="Group-20" transform="translate(3.000000, 0.000000)">
+                                        <rect id="Rectangle-9" fill="#425B68" x="30" y="2" width="16" height="11" rx="2"></rect>
+                                        <rect id="Rectangle-9" fill="#EA6148" x="0" y="0" width="19" height="13" rx="2.4000001"></rect>
+                                        <rect id="Rectangle-9" fill="#425B68" x="30" y="16" width="16" height="11" rx="2"></rect>
+                                        <rect id="Rectangle-9" fill="#425B68" x="30" y="29" width="16" height="11" rx="2"></rect>
+                                        <rect id="Rectangle-9" fill="#425B68" x="30" y="43" width="16" height="11" rx="2"></rect>
+                                        <rect id="Rectangle-9" fill="#425B68" x="30" y="56" width="16" height="11" rx="2"></rect>
+                                        <rect id="Rectangle-9" fill="#48A1AF" x="58" y="56" width="19" height="13" rx="2.4000001"></rect>
+                                        <path d="M48.453125,7.64355469 C57.2392578,7.18847656 61.6323242,9.52522786 61.6323242,14.6538086 C61.6323242,19.7823893 58.1394857,21.9326986 51.1538086,21.1047363" id="Path-3" stroke="#606060" stroke-width="1.2" stroke-linecap="round"></path>
+                                        <path d="M48.453125,34.6435547 C57.2192383,34.2371783 61.6022949,36.6226132 61.6022949,41.7998593 C61.6022949,46.9771054 58.0818278,49.3777626 51.0408936,49.0018311" id="Path-3" stroke="#606060" stroke-width="1.2" stroke-linecap="round"></path>
+                                        <path d="M14.2492676,20.6435547 C23.1713053,20.0010488 27.6323242,22.2440862 27.6323242,27.3726669 C27.6323242,32.5012476 24.0847168,34.6903391 16.989502,33.9399414" id="Path-3" stroke="#606060" stroke-width="1.2" stroke-linecap="round" transform="translate(20.940796, 27.309936) scale(-1, 1) translate(-20.940796, -27.309936) "></path>
+                                        <path d="M14.3654785,48.6435547 C23.2100423,48.0129378 27.6323242,50.2707826 27.6323242,55.417089 C27.6323242,60.5633954 24.1576335,62.7837407 17.208252,62.078125" id="Path-3" stroke="#606060" stroke-width="1.2" stroke-linecap="round" transform="translate(20.998901, 55.373022) scale(-1, 1) translate(-20.998901, -55.373022) "></path>
+                                        <path d="M22,7 L26.5341797,7" id="Path-4" stroke="#606060" stroke-width="1.2" stroke-linecap="round"></path>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" points="28 7 26 8 26 6"></polygon>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" points="27 34 25 35 25 33"></polygon>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" transform="translate(50.000000, 21.000000) scale(-1, -1) translate(-50.000000, -21.000000) " points="51 21 49 22 49 20"></polygon>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" transform="translate(50.000000, 49.000000) scale(-1, -1) translate(-50.000000, -49.000000) " points="51 49 49 50 49 48"></polygon>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" points="27 62 25 63 25 61"></polygon>
+                                        <polygon id="Triangle-3" stroke="#606060" stroke-width="1.2" fill="#606060" points="53 62 51 63 51 61"></polygon>
+                                        <path d="M47,62 L50.5341797,62" id="Path-4" stroke="#606060" stroke-width="1.2" stroke-linecap="round"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="webwatch24/7 is a round the clock SaaS that watches your server/url downtime for a specific interval set by you. webwatch24/7 can monitor protocols like HTTP, HTTPS, FTP and SMTP without any software installation or complicated configuration. You can sign-up and start using the service right away. webwatch24/7 lets you watch either a url like www.example.com/somepage or a server service which listens to a port like SMTP and FTP." />
+        <meta name="keywords" content="website and server downtime, uptime statistics, web site monitoring" />
+
+        <title>Webwatch24/7 - Stay alerted on Website downtime. Know your uptime statistics.</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://www.webwatch247.com/css/home/styles.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.webwatch247.com/css/jquery.gritter.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.webwatch247.com/css/redmond/jquery-ui-1.8.2.custom.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.webwatch247.com/css/fancybox/jquery.fancybox-1.3.4.css" />
+        <script type="text/javascript">
+            var baseurl = "https://www.webwatch247.com/";
+        </script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery-ui-1.8.2.custom.min.js"></script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery.gritter.min.js"></script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/jquery.fancybox-1.3.4.js"></script>
+        <script type="text/javascript">
+            /**
+             * General function to show the glitter
+             * which shows the message box for alerts etc
+             */
+            function showGlitter(title, text) {
+                $.gritter.add({
+                    title: title,
+                    text: text,
+                    time: 1500
+                });
+                $('#gritter-notice-wrapper').css({'top':'20px'}); 
+            }
+            $(document).ready(function(){
+                $("a[rel=group]").fancybox({
+                    'transitionIn'	: 'elastic',
+                    'transitionOut'	: 'elastic'
+                });
+            });
+        </script>
+        <script type="text/javascript" src="https://www.webwatch247.com/js/all-in-one.js"></script>
+    </head>
+    <body>
+        <div id="bodyContent">
+        <div class="border"></div>
+            <div class="page">
+                <div id="header">
+                    <div>
+                    <h1>
+                        <a class="logo" href="https://www.webwatch247.com/">
+                            <label class="invi">Web Watch</label>
+                        </a>
+                    </h1>
+                    </div>
+                    <div id="banner">
+                        <div class="coverpage">
+                            <div class="coverpage_heading_part1">
+                                WE WATCH YOUR
+                            </div>
+                    		<div class="coverpage_heading_part2">
+                    			NETWORK AND SERVERS 24X7
+                    		</div>
+                    		<div class="coverpage_content">
+                    			<ul>
+                    				<li><span>Website Uptime and Server Monitoring</span></li>
+                    				<li><span>Comprehensive Performance Reports</span></li>
+                    				<li><span>Instant Alerts via E-Mail</span></li>
+                    				<li><span>Historical Performance Metrics</span></li>
+                    				<li><span>Support for Multiple Protocols</span></li>                    				
+                    			</ul>
+                    		</div>
+                    	</div>
+                        <script type="text/javascript">
+    $(document).ready(function() {
+        
+                
+        $('#resetPassword').dialog({
+            autoOpen: false
+        });
+        $('#username').keydown(function() {
+            $('#username').removeClass("validate[custom[email]]");
+        });
+        $('#username').blur(function() {
+            var username = $('#username').val();      		
+        	
+        	$.post(baseurl+'/user/loginType',
+            { 'username':username},
+          	    function(result) {
+          	              		
+          		    if(result == 1) {
+          		    	showGlitter(
+                  		    'Message', 
+                  		    'You can use your LDAP password for Webwatch 24x7 login'
+                  		);
+          		    	$('#gritter-notice-wrapper').css({top:'200px'});
+                    }
+                    
+         	    }
+           			);
+        });
+        $('#loginSubmit').click(function () {
+        	if ($('div').hasClass('usernameformError')) {
+	       	    $('.usernameformError').children('.formErrorContent').empty();
+	            $('div.usernameformError').removeClass('formError usernameformError');        
+	        }
+        	$('#username').removeClass("validate[custom[email]]");
+            var username = $('#username').val();
+            re = /^[a-z]+$/;
+            if (username.length == 0) {
+                $('#username').addClass("validate[custom[email]]");             
+            } else if(!username.match(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i)) {
+          	    if ($('div').hasClass('usernameformError')) {
+    	       	    $('.usernameformError').children('.formErrorContent').empty();
+    	            $('div.usernameformError').removeClass('formError usernameformError');        
+    	        }
+                $('#username').removeClass("validate[custom[email]]");
+            	if(re.test(username)) {
+          		    if ($('div').hasClass('usernameformError')) {
+        	       	    $('.usernameformError').children('.formErrorContent').empty();
+        	            $('div.usernameformError').removeClass('formError usernameformError');          
+        	        }
+            	    $('#username').removeClass("validate[custom[email]]");
+            	} else {
+            		$('#username').addClass("validate[custom[email]]");
+            	}
+            }
+        });
+
+            $('#resetPassword1').dialog({
+                autoOpen: false,
+                title: 'Reset password',
+                show: 'fold',
+                height: 160,
+                width: 450,
+                modal: true,
+                buttons: {
+                    'Submit': function() {
+                        $("#resetForm").submit();
+                    },
+                    Cancel: function() {
+                        $(this).dialog('close');
+                    }
+                },
+                close: function() {
+                    $('#recover_email').val('');
+                    //allFields.val('').removeClass('ui-state-error');
+                }
+            });
+
+            $('#resetForm').submit(function() {
+                if ($('#resetForm').validationEngine({returnIsValid:true})) {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://www.webwatch247.com/user/reset',
+                        data: $('#resetForm').serialize(),
+                        beforeSend:function(){
+                            pushloader('Sending mail...', 'loading');
+                            overlay = $('<div></div>').prependTo('body').attr('id', 'overlay');
+                            //$('#resetPassword').html('<strong>Please wait</strong><br/><br/><img src="https://www.webwatch247.com/images/ajax-loader.gif" />');
+                        },
+                        success: function(data) {
+                            var obj = eval('(' + data + ')');
+                            showGlitter('Message', obj.msg);
+                            exitLoader('', 'loading');
+                            overlay.remove();
+                            $.fancybox.close();
+                        },
+                        failure: function() {
+                            showGlitter('Message', 'Failure');
+                            exitLoader('', 'loading');
+                            overlay.remove();
+                            $.fancybox.close();
+                        }
+                    });
+                }
+                return false;
+            });
+
+            $('#registerForm').dialog({
+                autoOpen: false
+            });
+
+            $("#resetForm").validationEngine({
+                promptPosition: "topRight"
+            });
+
+            $("#loginForm").validationEngine({
+                promptPosition: "topRight"
+            });
+
+            $("#username").focus();
+
+            $.fx.speeds._default = 500;
+
+            $('#reset_pass').fancybox({
+                titleShow       : false,
+                padding         : 0,
+                transitionIn    : 'elastic',
+                'onClosed'      : function(){$('.formError').hide()}
+            });
+
+            $('#reset_pass').click(function(){
+                $('#resetPassword_input').val('');
+            });
+
+
+            $("#register-button").fancybox({
+                titleShow       : false,
+                padding         : 0,
+                transitionIn    : 'elastic',
+                'onClosed'      : function(){$.validationEngine.closePrompt('.formError',true)}
+            });
+
+
+
+            $('#signup').click(function() {
+                $('#registerForm').html('<b>Loading</b><br><img src="https://www.webwatch247.com/images/ajax-loader.gif" />');
+                $('#registerForm').load('https://www.webwatch247.com/user/form/');
+                //$('#registerForm').dialog('open');
+            });
+        });
+</script>
+
+
+<div id="registerForm"></div>
+<div class="signin sigin-box">
+    <h2 class="login-head">LOGIN</h2>
+    <form method="post" id="loginForm">
+        <span class="wrap">
+            <input name="username" id="username" placeholder="Email ID" class="required border-rad" maxlength="45" type="text" />
+        </span>
+
+        <span class="wrap">
+            <input name="user_password" id="user_password" placeholder="Password" class="validate[reqdp,ajaxName] required border-rad" maxlength="32" type="password" /><br />
+            <span class="forgot_link"><a id="reset_pass" href="#resetPassword">Forgot Password</a></span>
+        </span>
+
+        <div class="actions login-act">
+            <input type="submit" value="LOGIN" id="loginSubmit" class="border-rad"/>
+        </div>
+        <div class="actions login-act">
+            <a href="#registerForm" id="register-button" id="signup" >
+                <div id="signup" class="loginRegister border-rad">REGISTER</div>
+            </a>
+        </div>
+    </form>
+</div><!-- sign-in ends here -->
+
+<div id="resetPassword">
+    <form method="post" id="resetForm">
+        <span id="resetPassword_header">Enter Your Email Address</span>
+        <input type="text" name="email_id" id="resetPassword_input" class="validate[custom[email]]" maxlength="45" size="30"/>
+        <input type="submit" name="" value="" id="recover_submit"/>
+    </form>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="screen">
+                    <h2>Have look around</h2>
+                    <div id="features">
+                        <p>
+                            <a class="grouped_elements" rel="group" title="Edit Watch" oncontextmenu="return false;" href="https://www.webwatch247.com/images/example/l_edit.jpg" id="example1"><img src="https://www.webwatch247.com/images/example/s_edit.jpg" alt="example1" /></a>
+                            <a class="grouped_elements" rel="group" title="Reports" oncontextmenu="return false;" href="https://www.webwatch247.com/images/example/l_reports.jpg" id="example2"><img src="https://www.webwatch247.com/images/example/s_reports.jpg" alt="example2" /></a>
+                            <a class="grouped_elements" rel="group" title="Watchlist" oncontextmenu="return false;" href="https://www.webwatch247.com/images/example/l_watchlist.jpg" id="example3"><img src="https://www.webwatch247.com/images/example/s_watchlist.jpg" alt="example3" /></a>
+                            <a class="grouped_elements" rel="group" title="Watch History" oncontextmenu="return false;" href="https://www.webwatch247.com/images/example/l_history.jpg" id="example4"><img src="https://www.webwatch247.com/images/example/s_history.jpg" alt="example4" /></a>
+                            <a class="grouped_elements" rel="group" title="Check Status" oncontextmenu="return false;" href="https://www.webwatch247.com/images/example/l_status.jpg" id="example5"><img src="https://www.webwatch247.com/images/example/s_status.jpg" alt="example5" /></a>
+                        </p>
+                    </div><!-- features ends here -->
+                </div><!-- screen ends here -->
+                <div id="about">
+                    <h2 id="about-head">What webwatch24x7 does </h2>
+                    <p> Every business requires round-the-clock availability of their website and services to customers and users. Website downtimes can lead to loss of reputation, revenue losses, and eventually loss of business. You need a 24x7 monitoring service that ensures that your servers are always up and running, and alerts you instantly when your website is unreachable. Webwatch 24x7 is a Software as a Service(Saas) solution that watches your server/url for downtime at specific intervals set by you. It supports multiple protocols like HTTP, HTTPS, FTP and SMTP without any software installation or complicated configuration. Our comprehensive reports include uptime/downtime charts, response time graphs, outage history and total downtimes. Sign up now to improve the performance of your website, applications and server.</p>
+                </div><!-- about ends here -->
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footerwapper">
+            <div class="footerTextTop"><a target="_blank" href="http://www.qburst.com"><img class="qblogo" src="https://www.webwatch247.com/images/version2/logo-QB@2x.png" ></a></div>
+                <div class="footerText">
+                    &copy; 2016 www.webwatch247.com | All rights reserved.
+                    <a href="https://www.webwatch247.com/user/terms" target="_blank">Terms of Service</a> |
+                    <a href="https://www.webwatch247.com/user/privacy" target="_blank">Privacy Policy</a>
+                </div>
+            </div>
+       </div>        
+        <div class="msgs"></div>
+    </body>
+</html>

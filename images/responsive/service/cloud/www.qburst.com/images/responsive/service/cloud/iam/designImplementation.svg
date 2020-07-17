@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="229px" viewBox="0 0 229 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="28.7999994" y="28.7999994" width="154.799997" height="154.799997" rx="11.5199998"></rect>
+        <filter x="-12.3%" y="-12.3%" width="124.7%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.07999998" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147235577 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iAM" transform="translate(-949.000000, -2942.000000)">
+            <g id="QB_services_in_identity" transform="translate(-37.000000, 2170.000000)">
+                <g id="design_implementation" transform="translate(307.000000, 778.000000)">
+                    <g id="Group-3" transform="translate(688.000000, 2.000000)">
+                        <g id="Group-16">
+                            <circle id="Oval" fill="#F1F1F1" cx="107.999998" cy="100.799998" r="92.1599982"></circle>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Rectangle" fill-rule="nonzero" transform="translate(106.199998, 106.199998) rotate(-30.000000) translate(-106.199998, -106.199998) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <use stroke="#F1F1F1" stroke-width="2.15999996" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="architecture" mask="url(#mask-2)" fill-rule="nonzero">
+                                <g transform="translate(52.000000, 43.000000)">
+                                    <rect id="Rectangle" fill="#C7E6F4" x="0" y="24.9599995" width="111.359998" height="72.9599986"></rect>
+                                    <polygon id="Path" fill="#85AABB" points="42.2399992 113.279998 47.999999 97.9199981 63.3599987 97.9199981 69.1199986 113.279998"></polygon>
+                                    <rect id="Rectangle" fill="#B2CEDB" x="0" y="90.2399982" width="111.359998" height="7.67999985"></rect>
+                                    <path d="M67.1999987,49.919999 L44.1599991,49.919999 C43.0996124,49.919999 42.2399992,49.0603857 42.2399992,47.999999 C42.2399992,46.9396123 43.0996124,46.0799991 44.1599991,46.0799991 L67.1999987,46.0799991 C68.2603854,46.0799991 69.1199986,46.9396123 69.1199986,47.999999 C69.1199986,49.0603857 68.2603854,49.919999 67.1999987,49.919999 Z" id="Path" fill="#617AA8"></path>
+                                    <path d="M55.6799989,24.9599995 L26.8799995,82.5599984 L26.8799995,82.5599984 C24.8430869,81.5416195 23.2941732,79.7557619 22.5740269,77.5953227 C21.8538805,75.4348835 22.0214968,73.0768492 23.0399995,71.0399986 L49.919999,17.2799997 L55.6799989,24.9599995 Z" id="Path" fill="#1486FC"></path>
+                                    <path d="M55.6799989,24.9599995 L84.4799983,82.5599984 L84.4799983,82.5599984 C86.5169109,81.5416195 88.0658245,79.7557619 88.7859709,77.5953227 C89.5061173,75.4348835 89.338501,73.0768492 88.3199982,71.0399986 L61.4399988,17.2799997 L55.6799989,24.9599995 Z" id="Path" fill="#1486FC"></path>
+                                    <rect id="Rectangle" fill="#1486FC" x="51.839999" y="0" width="7.67999985" height="17.2799997"></rect>
+                                    <path d="M47.999999,11.5199998 L47.999999,23.0399995 C47.999999,27.2815463 51.4384521,30.7199994 55.6799989,30.7199994 L55.6799989,30.7199994 C59.9215457,30.7199994 63.3599987,27.2815463 63.3599987,23.0399995 L63.3599987,11.5199998 L47.999999,11.5199998 Z" id="Path" fill="#6882B3"></path>
+                                    <path d="M55.6799989,23.0399995 C54.7750255,23.0309683 54.0019172,22.3851354 53.8319781,21.4962153 C53.6620391,20.6072951 54.1424021,19.7218302 54.980227,19.3796201 C55.8180519,19.0374099 56.7809673,19.3333667 57.2819584,20.0870684 C57.7829494,20.8407702 57.6830658,21.8431772 57.0431989,22.4831996 C56.6750523,22.8337244 56.1882745,23.0325492 55.6799989,23.0399995 L55.6799989,23.0399995 Z" id="Path" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

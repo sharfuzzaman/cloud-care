@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="229px" viewBox="0 0 228 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="29" y="29" width="154.799997" height="154.799997" rx="11.5199998"></rect>
+        <filter x="-12.3%" y="-12.3%" width="124.7%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.07999998" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147235577 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="docker_containerization" transform="translate(-232.000000, -1025.000000)">
+            <g id="Group-18" transform="translate(240.000000, 1033.000000)">
+                <g id="Group-3">
+                    <g id="Group-16">
+                        <circle id="Oval" fill="#F1F1F1" cx="107.999998" cy="100.799998" r="92.1599982"></circle>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle" fill-rule="nonzero" transform="translate(106.399998, 106.399998) rotate(-30.000000) translate(-106.399998, -106.399998) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use stroke="#F1F1F1" stroke-width="2.15999996" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="reuse" mask="url(#mask-2)">
+                            <g transform="translate(66.000000, 66.000000)" id="Group">
+                                <g>
+                                    <path d="M76.0478438,34.7782403 L72.7552006,5.17440004 L66.4048006,9.69024008 C59.1606405,3.43376323 49.7840004,0 40.1408003,0 C18.0790402,0 0,18.0790402 0,40.1408003 L0,42.4928004 L14.1120001,42.4928004 L14.1120001,40.1408003 C14.1120001,25.8875234 25.8875234,14.1120001 40.1408003,14.1120001 C45.1740804,14.1120001 50.2230404,15.5702401 54.3625605,18.2985602 L49.8468772,21.5440066 L76.0478438,34.7782403 Z" id="Path" fill="#BEC8DC" fill-rule="nonzero"></path>
+                                    <path d="M80.2816007,37.7888003 L80.2816007,40.1408003 C80.2816007,62.4848005 61.9673605,80.2816007 40.1408003,80.2816007 C30.4976003,80.2816007 21.1209602,76.8475239 13.8768001,70.5913606 L7.52624326,75.1070438 L4.23375684,45.5033604 L30.4347235,58.7371237 L25.9190402,61.9830405 C30.0585603,64.7113606 35.1075203,66.1696006 40.1408003,66.1696006 C54.3940773,66.1696006 66.1696006,54.3937637 66.1696006,40.1408003 L66.1696006,37.7888003 L80.2816007,37.7888003 Z" id="Path" fill="#10BDE0" fill-rule="nonzero"></path>
+                                </g>
+                                <g transform="translate(40.140800, 0.000000)">
+                                    <path d="M14.2217601,18.2985602 C10.0822401,15.5702401 5.03328004,14.1120001 0,14.1120001 L0,0 C9.64320008,0 19.0198402,3.43376323 26.2640002,9.69024008 L32.6145571,5.17424324 L35.9072003,34.7780835 L9.70623368,21.5440066 L14.2217601,18.2985602 Z" id="Path" fill="#96A5B9" fill-rule="nonzero"></path>
+                                    <path d="M40.1408003,37.7888003 L40.1408003,40.1408003 C40.1408003,62.4848005 21.8265602,80.2816007 0,80.2816007 L0,66.1696006 C14.2532769,66.1696006 26.0288002,54.3937637 26.0288002,40.1408003 L26.0288002,37.7888003 L40.1408003,37.7888003 Z" id="Path" fill="#0B96B2" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="clouds"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

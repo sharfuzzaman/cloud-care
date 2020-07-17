@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Device-Desktops" transform="translate(-693.000000, -1838.000000)">
+            <g id="Group-12" transform="translate(693.000000, 1838.000000)">
+                <circle id="Oval-3" stroke="#ED202A" stroke-width="2" fill="#FFFFFF" cx="27" cy="27" r="26"></circle>
+                <g id="down-arrow-(2)" transform="translate(13.000000, 20.000000)" fill="#ED202A" fill-rule="nonzero">
+                    <path d="M27.5931624,0.380952381 C27.2102564,1.40165657e-15 26.5880342,1.40165657e-15 26.2051282,0.380952381 L14,12.547619 L1.77094017,0.380952381 C1.38803419,1.40165657e-15 0.765811966,1.40165657e-15 0.382905983,0.380952381 C-4.02455846e-16,0.761904762 -4.02455846e-16,1.38095238 0.382905983,1.76190476 L13.2820513,14.5952381 C13.4735043,14.7857143 13.7128205,14.8809524 13.9760684,14.8809524 C14.2153846,14.8809524 14.4786325,14.7857143 14.6700855,14.5952381 L27.5692308,1.76190476 C27.9760684,1.38095238 27.9760684,0.761904762 27.5931624,0.380952381 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

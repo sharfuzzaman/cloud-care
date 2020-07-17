@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en-gb" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    
+<meta name="web-experience-app/config/environment" content="%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22contentSecurityPolicyMeta%22%3Atrue%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%5B%22'none'%22%5D%2C%22img-src%22%3A%5B%22'self'%22%2C%22http%3A%2F%2F*.mzstatic.com%22%2C%22*.mzstatic.com%22%2C%22*.apple.com%22%2C%22*.googleusercontent.com%22%2C%22data%3A%22%5D%2C%22style-src%22%3A%5B%22'self'%22%2C%22'unsafe-inline'%22%2C%22*.apple.com%22%5D%2C%22font-src%22%3A%5B%22'self'%22%2C%22http%3A%2F%2F*.apple.com%22%2C%22https%3A%2F%2F*.apple.com%22%5D%2C%22media-src%22%3A%5B%22'self'%22%2C%22blob%3A%22%2C%22http%3A%2F%2F*%22%2C%22https%3A%2F%2F*%22%5D%2C%22connect-src%22%3A%5B%22'self'%22%2C%22*.apple.com%22%2C%22https%3A%2F%2F*.mzstatic.com%22%2C%22*.mzstatic.com%22%5D%2C%22script-src%22%3A%5B%22'self'%22%2C%22'unsafe-inline'%22%2C%22'unsafe-eval'%22%2C%22*.apple.com%22%5D%2C%22frame-src%22%3A%5B%22'self'%22%2C%22*.apple.com%22%2C%22itmss%3A%22%2C%22itms-appss%3A%22%2C%22itms-bookss%3A%22%2C%22itms-itunesus%3A%22%2C%22itms-messagess%3A%22%2C%22itms-podcasts%3A%22%2C%22itms-watchs%3A%22%2C%22macappstores%3A%22%2C%22musics%3A%22%2C%22apple-musics%3A%22%2C%22podcasts%3A%22%2C%22videos%3A%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_JQUERY_INTEGRATION%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222026.2.0%2B6d672bc2%22%7D%2C%22MEDIA_API%22%3A%7B%22teamId%22%3A%22AMPWebPlay%22%2C%22keyId%22%3A%22WebPlayKid%22%2C%22privateKeyPath%22%3A%22ssl%2Fwebplayer.p8%22%2C%22token%22%3A%22eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IldlYlBsYXlLaWQifQ.eyJpc3MiOiJBTVBXZWJQbGF5IiwiaWF0IjoxNTkzMTA5OTE5LCJleHAiOjE2MDg2NjE5MTl9.3tmc6dKMe_czNMgcNSdV0QjHvUGhs4NNnlVbmlnhXT4X4KYntnQgIzXLmShXC0VZ6qcIlE1H7mis_cXDIkMT1g%22%7D%2C%22routerScroll%22%3A%7B%22targetElement%22%3A%22%23ember-app%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en-gb%22%2C%22useDevLoc%22%3Afalse%2C%22pathToLocales%22%3A%22dist%2Flocales%22%7D%2C%22moment%22%3A%7B%22includeLocales%22%3Atrue%2C%22includeTimezone%22%3A%22subset%22%7D%2C%22browserify%22%3A%7B%22transform%22%3A%5B%5B%22babelify%22%2C%7B%22presets%22%3A%5B%22env%22%5D%2C%22global%22%3Atrue%2C%22only%22%3A%7B%7D%7D%5D%5D%7D%2C%22API%22%3A%7B%22AppHost%22%3A%22https%3A%2F%2Famp-api.apps.apple.com%22%2C%22MZStore%22%3A%22https%3A%2F%2Fitunes.apple.com%22%2C%22PodcastHost%22%3A%22https%3A%2F%2Famp-api.podcasts.apple.com%22%2C%22StorePlatform%22%3A%22https%3A%2F%2Fuclient-api.itunes.apple.com%2FWebObjects%2FMZStorePlatform.woa%2Fwa%22%2C%22BookHost%22%3A%22https%3A%2F%2Famp-api.books.apple.com%22%2C%22globalElementsPath%22%3A%22%2Fglobal-elements%22%2C%22videoLocalizationPath%22%3A%22%2Fglobal%2Fac_media_player%2Fscripts%2Fac_media_languages%2F%22%2C%22appleAppsDomain%22%3A%22apps.apple.com%22%2C%22applePodcastsDomain%22%3A%22podcasts.apple.com%22%2C%22appleBooksDomain%22%3A%22books.apple.com%22%2C%22appleMusicDomain%22%3A%22music.apple.com%22%2C%22obcMetadataBaseUrl%22%3A%22%2Fapi%2Fbooks-metadata%22%7D%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%7B%7D%5D%7D%2C%22ember-a11y-testing%22%3A%7B%22componentOptions%22%3A%7B%22turnAuditOff%22%3Atrue%2C%22axeOptions%22%3A%7B%22rules%22%3A%7B%22color-contrast%22%3A%7B%22enabled%22%3Afalse%7D%7D%7D%7D%7D%2C%22ember-short-number%22%3A%7B%22locales%22%3A%5B%22ar-dz%22%2C%22ar-bh%22%2C%22ar-eg%22%2C%22ar-iq%22%2C%22ar-jo%22%2C%22ar-kw%22%2C%22ar-lb%22%2C%22ar-ly%22%2C%22ar-ma%22%2C%22ar-om%22%2C%22ar-qa%22%2C%22ar-sa%22%2C%22ar-sd%22%2C%22ar-sy%22%2C%22ar-tn%22%2C%22ar-ae%22%2C%22ar-ye%22%2C%22he-il%22%2C%22iw-il%22%2C%22ca-es%22%2C%22cs-cz%22%2C%22da-dk%22%2C%22de-ch%22%2C%22de-de%22%2C%22el-gr%22%2C%22en-au%22%2C%22en-ca%22%2C%22en-gb%22%2C%22en-us%22%2C%22es-419%22%2C%22es-es%22%2C%22es-mx%22%2C%22es-xl%22%2C%22et-ee%22%2C%22fi-fi%22%2C%22fr-ca%22%2C%22fr-fr%22%2C%22hi-in%22%2C%22hr-hr%22%2C%22hu-hu%22%2C%22id-id%22%2C%22is-is%22%2C%22it-it%22%2C%22iw-il%22%2C%22ja-jp%22%2C%22ko-kr%22%2C%22lt-lt%22%2C%22lv-lv%22%2C%22ms-my%22%2C%22nl-nl%22%2C%22no-no%22%2C%22no-nb%22%2C%22nb-no%22%2C%22pl-pl%22%2C%22pt-br%22%2C%22pt-pt%22%2C%22ro-ro%22%2C%22ru-ru%22%2C%22sk-sk%22%2C%22sv-se%22%2C%22th-th%22%2C%22tr-tr%22%2C%22uk-ua%22%2C%22vi-vi%22%2C%22vi-vn%22%2C%22zh-cn%22%2C%22zh-hans%22%2C%22zh-hant%22%2C%22zh-hk%22%2C%22zh-tw%22%2C%22ar%22%2C%22ca%22%2C%22cs%22%2C%22da%22%2C%22de%22%2C%22el%22%2C%22en%22%2C%22es%22%2C%22fi%22%2C%22fr%22%2C%22hi%22%2C%22hr%22%2C%22hu%22%2C%22id%22%2C%22is%22%2C%22it%22%2C%22ja%22%2C%22ko%22%2C%22lt%22%2C%22lv%22%2C%22ms%22%2C%22nb%22%2C%22nl%22%2C%22no%22%2C%22pl%22%2C%22pt%22%2C%22ro%22%2C%22ru%22%2C%22sk%22%2C%22sv%22%2C%22th%22%2C%22tr%22%2C%22uk%22%2C%22vi%22%2C%22zh%22%5D%7D%2C%22METRICS%22%3A%7B%22isEnabled%22%3Atrue%2C%22autoTrackingEnabled%22%3Atrue%2C%22topic%22%3A%22xp_amp_web_exp%22%2C%22appName%22%3A%22web-experience-app%22%2C%22metricsUrl%22%3A%22https%3A%2F%2Fxp.apple.com%2Freport%22%2C%22compoundSeparator%22%3A%22_%22%7D%2C%22MEDIA_SHELF%22%3A%7B%22GRID_CONFIG%22%3A%7B%22books-brick-row%22%3A%7B%22small%22%3A1%2C%22medium%22%3A2%2C%22large%22%3A3%7D%7D%2C%22MEDIA_QUERIES%22%3A%7B%22small%22%3A%22(max-width%3A%20735px)%22%2C%22medium%22%3A%22(min-width%3A%20736px)%20and%20(max-width%3A%201068px)%22%2C%22large%22%3A%22(min-width%3A%201069px)%22%7D%7D%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy-Report-Only%22%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' http://*.mzstatic.com *.mzstatic.com *.apple.com *.googleusercontent.com data:; style-src 'self' 'unsafe-inline' *.apple.com; font-src 'self' http://*.apple.com https://*.apple.com; media-src 'self' blob: http://* https://*; connect-src 'self' *.apple.com https://*.mzstatic.com *.mzstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.apple.com; frame-src 'self' *.apple.com itmss: itms-appss: itms-bookss: itms-itunesus: itms-messagess: itms-podcasts: itms-watchs: macappstores: musics: apple-musics: podcasts: videos:; ">
+<!-- EMBER_CLI_FASTBOOT_TITLE -->  <meta name="ember-cli-head-start" content><title>‎Kever on the App Store</title>
+<link rel="canonical" href="https://apps.apple.com/in/app/kever/id834793000">
+  <meta name="description" content="‎Read reviews, compare customer ratings, see screenshots and learn more about Kever. Download Kever and enjoy it on your iPhone, iPad and iPod touch." id="ember6491552" class="ember-view">
+
+  <meta name="keywords" content="Kever, QBurst Inc, Productivity, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes" id="ember6491554" class="ember-view">
+
+  <meta property="og:title" content="‎Kever" id="ember6491556" class="ember-view">
+
+  <meta property="og:description" content="‎Seamlessly manage Redmine projects and track issues on the go. 
+
+Kever helps to remotely track key aspects of a project in Redmine. The app integrates functionalities from Redmine to expedite bug fixes and track issues on the go. A simple and easy-to-use interface makes creating, assigning, commenti…" id="ember6491558" class="ember-view">
+
+  <meta property="og:site_name" content="App Store" id="ember6491560" class="ember-view">
+
+  <meta property="og:url" content="https://apps.apple.com/in/app/kever/id834793000" id="ember6491562" class="ember-view">
+
+  <meta property="og:image" content="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" id="ember6491564" class="ember-view">
+
+  <meta property="og:image:alt" content="Kever on the App Store" id="ember6491566" class="ember-view">
+
+  <meta property="og:image:secure_url" content="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" id="ember6491568" class="ember-view">
+
+  <meta property="og:image:type" content="image/png" id="ember6491570" class="ember-view">
+
+  <meta property="og:image:width" content="1200" id="ember6491572" class="ember-view">
+
+  <meta property="og:image:height" content="630" id="ember6491574" class="ember-view">
+
+  <meta property="og:type" content="website" id="ember6491576" class="ember-view">
+
+  <meta property="og:locale" content="en_US" id="ember6491578" class="ember-view">
+
+  <meta property="fb:app_id" content="116556461780510" id="ember6491580" class="ember-view">
+
+  <meta name="twitter:title" content="‎Kever" id="ember6491582" class="ember-view">
+
+  <meta name="twitter:description" content="‎Seamlessly manage Redmine projects and track issues on the go. 
+
+Kever helps to remotely track key aspects of a project in Redmine. The app integrates functionalities from Redmine to expedite bug fixes and track issues on the go. A simple and easy-to-use interface makes creating, assigning, commenti…" id="ember6491584" class="ember-view">
+
+  <meta name="twitter:site" content="@AppStore" id="ember6491586" class="ember-view">
+
+  <meta name="twitter:domain" content="AppStore" id="ember6491588" class="ember-view">
+
+  <meta name="twitter:image" content="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/600x600wa.png" id="ember6491590" class="ember-view">
+
+  <meta name="twitter:image:alt" content="Kever on the App Store" id="ember6491592" class="ember-view">
+
+  <meta name="twitter:card" content="summary_large_image" id="ember6491594" class="ember-view">
+
+  <meta name="apple-itunes-app" content="app-id=375380948, app-argument=https://apps.apple.com/in/app/kever/id834793000" id="ember6491596" class="ember-view">
+
+  <script name="schema:software-application" id="ember6491598" class="ember-view" type="application/ld+json">{"@context":"http://schema.org","@type":"SoftwareApplication","name":"Kever","description":"Seamlessly manage Redmine projects and track issues on the go. \n\nKever helps to remotely track key aspects of a project in Redmine. The app integrates functionalities from Redmine to expedite bug fixes and track issues on the go. A simple and easy-to-use interface makes creating, assigning, commenting, and editing tickets a breeze. \n\n\nFeatures:\n\n- Quick access to multiple Redmine servers\n- Covers key functionality around the bug and issue tracking\n- View, create, filter, search, update/edit, assign, and prioritize issues\n- Sort critical projects under “Favorites” \n- Dashboard view highlights issues and status for each project\n- Compatible with Redmine 3.4\n- Multiple projects support\n- Pie chart overview\n\nWhat is Redmine?\n\nRedmine is an open source flexible project management web application powered by Ruby on Rails framework. The cross-platform, cross-database application is released under the terms of the GNU General Public License v2 (GPL).\n\n\nYou can get more info about Redmine at http://www.redmine.org/","screenshot":["https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/300x0w.jpg","https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/300x0w.jpg","https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/300x0w.jpg","https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/300x0w.jpg","https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/300x0w.jpg"],"image":"https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png","applicationCategory":"Productivity","datePublished":"Mar 11, 2014","operatingSystem":"Requires iOS 10.0 or later. Compatible with iPhone, iPad and iPod touch.","author":{"@type":"Person","name":"QBurst Inc","url":"https://apps.apple.com/in/developer/qburst-inc/id386765519"},"aggregateRating":{"@type":"AggregateRating","ratingValue":3.7,"reviewCount":6},"offers":{"@type":"Offer","price":0,"priceCurrency":"INR","category":"free"}}
+</script>
+  <meta name="apple:content_id" content="834793000" id="ember6491600" class="ember-view">
+
+
+<meta name="ember-cli-head-end" content>
+
+    <meta name="version" content="2026.2.0">
+
+    <link integrity="" rel="stylesheet" href="/assets/web-experience-app-f1c50a018dab4bdb8c454bab56ac60a1.css" data-rtl="/assets/web-experience-rtl-app-bd50312cdbe2a58d742a5dbf295ff43a.css">
+
+    
+  </head>
+  <body class="no-js no-touch">
+    <div id="ember-app">
+      <script type="x/boundary" id="fastboot-body-start"></script><div class="ember-view" id="ember6491548"><!---->
+
+<!---->
+
+<!---->
+
+<main class="selfclear is-app-theme">
+  <style id="ember6491601" class="ember-view"><!----></style>
+
+  <!---->
+
+  <div id="ember6491602" class="focusing-outlet ember-view"><div id="ember6491604" class="focusing-outlet ember-view">
+  <input id="localnav-menustate" class="localnav-menustate" type="checkbox">
+<nav id="localnav" class="css-sticky we-localnav localnav we-localnav--app-store" role="navigation" data-sticky>
+  <div class="localnav-wrapper">
+    <div class="localnav-background we-localnav__background"></div>
+    <div class="localnav-content we-localnav__content">
+      <div class="localnav-title we-localnav__title">
+        <a href="https://www.apple.com/in/ios/app-store/" data-we-link-to-exclude><span class="we-localnav__title__product" data-test-we-localnav-store-title>App Store</span></a> <span class="we-localnav__title__qualifier" data-test-we-localnav-preview-title>Preview</span>
+      </div>
+      <div class="localnav-menu we-localnav__menu we-localnav__menu--app">
+<!---->        <div class="localnav-actions we-localnav__actions">
+<!---->            
+<!---->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<span class="we-localnav__shim" aria-hidden="true"></span>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+
+
+<div id="ember6491607" class="animation-wrapper is-visible ember-view">
+<!---->
+    <div id="ember6491608" style="display: none;" class="ember-view"><div class="l-content-width we-banner" role="alert">
+    <p class="we-banner__copy">This app is available only on the App Store for iPhone.</p>
+</div>
+</div>
+
+  <div id="ember6491609" class="ember-view"><section id="ember6491610" class="l-content-width section section--hero product-hero ember-view"><div class="l-row">
+  <div class="product-hero__media l-column small-5 medium-4 large-3 small-valign-top">
+      <picture id="ember6491611" class="we-artwork ember-view product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon">
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.png 2x">
+        <img class="we-artwork__image ember6491611" src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/23/b7/a8/23b7a8ae-17dd-06c6-bde4-06c838f0e58e/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png" style alt height="246" width="246">
+
+  <style>
+    .ember6491611, #ember6491611::before {
+          width: 246px;
+          height: 246px;
+        }
+        .ember6491611::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491611, #ember6491611::before {
+          width: 217px;
+          height: 217px;
+        }
+        .ember6491611::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491611, #ember6491611::before {
+          width: 230px;
+          height: 230px;
+        }
+        .ember6491611::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+  </div>
+
+  <div class="l-column small-7 medium-8 large-9 small-valign-top">
+    <header class="product-header app-header product-header--padded-start" role="banner">
+<!---->
+      <h1 class="product-header__title app-header__title">
+        Kever
+          <span class="badge badge--product-title">4+</span>
+      </h1>
+
+<!---->
+      <h2 class="product-header__identity app-header__identity">
+        <a href="https://apps.apple.com/in/developer/qburst-inc/id386765519" class="link" data-metrics-click="{&quot;actionDetails&quot;:{&quot;type&quot;:&quot;developer&quot;},&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/developer/qburst-inc/id386765519&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;386765519&quot;}" dir="auto">
+          QBurst Inc
+        </a>
+      </h2>
+
+        <ul class="product-header__list app-header__list">
+<!---->
+            <li class="product-header__list__item app-header__list__item--user-rating">
+              <ul class="inline-list inline-list--mobile-compact">
+                <li class="inline-list__item">
+                  <figure aria-label="3.7 out of 5" id="ember6491615" class="we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-3_5"></span>
+</span>
+  <figcaption class="we-rating-count star-rating__count">3.7, 6 Ratings</figcaption>
+</figure>
+                </li>
+              </ul>
+            </li>
+        </ul>
+
+      <ul class="product-header__list app-header__list">
+<!---->
+        <li class="product-header__list__item">
+          <ul class="inline-list inline-list--mobile-compact">
+              <li class="inline-list__item inline-list__item--bulleted app-header__list__item--price">Free</li>
+
+<!---->          </ul>
+        </li>
+
+<!---->
+<!---->      </ul>
+
+<!---->
+<!---->
+<!---->
+<!---->    </header>
+  </div>
+</div>
+</section>
+
+<!---->
+    <section class="l-content-width section section--bordered">
+      <h2 class="section__headline">iPhone Screenshots</h2>
+    <div id="ember6491617" class="we-screenshot-viewer ember-view"><div class="we-screenshot-viewer__screenshots">
+  <ul class="l-row l-row--peek we-screenshot-viewer__screenshots-list">
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember6491619" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait">
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/230x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/300x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/600x0w.png 2x">
+        <img class="we-artwork__image ember6491619" src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/7e/15/157e1541-26f7-f118-7906-3b66c9359739/pr_source.png/300x0w.png" style alt height="649" width="300">
+
+  <style>
+    .ember6491619, #ember6491619::before {
+          width: 300px;
+          height: 649px;
+        }
+        .ember6491619::before {
+          padding-top: 216.33333333333334%;
+        }
+@media (min-width: 736px) {
+          .ember6491619, #ember6491619::before {
+          width: 157px;
+          height: 339px;
+        }
+        .ember6491619::before {
+          padding-top: 215.92356687898092%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491619, #ember6491619::before {
+          width: 230px;
+          height: 497px;
+        }
+        .ember6491619::before {
+          padding-top: 216.08695652173915%;
+        }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember6491624" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait">
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/230x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/157x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/300x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/600x0w.png 2x">
+        <img class="we-artwork__image ember6491624" src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/2e/e6/31/2ee63141-b4f4-7095-287c-642a33175557/pr_source.png/300x0w.png" style alt height="649" width="300">
+
+  <style>
+    .ember6491624, #ember6491624::before {
+          width: 300px;
+          height: 649px;
+        }
+        .ember6491624::before {
+          padding-top: 216.33333333333334%;
+        }
+@media (min-width: 736px) {
+          .ember6491624, #ember6491624::before {
+          width: 157px;
+          height: 339px;
+        }
+        .ember6491624::before {
+          padding-top: 215.92356687898092%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491624, #ember6491624::before {
+          width: 230px;
+          height: 497px;
+        }
+        .ember6491624::before {
+          padding-top: 216.08695652173915%;
+        }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember6491629" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait">
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/230x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/157x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/300x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/600x0w.png 2x">
+        <img class="we-artwork__image ember6491629" src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/b0/66/85b06653-688b-bbed-cb7e-21a1e3454df1/pr_source.png/300x0w.png" style alt height="649" width="300">
+
+  <style>
+    .ember6491629, #ember6491629::before {
+          width: 300px;
+          height: 649px;
+        }
+        .ember6491629::before {
+          padding-top: 216.33333333333334%;
+        }
+@media (min-width: 736px) {
+          .ember6491629, #ember6491629::before {
+          width: 157px;
+          height: 339px;
+        }
+        .ember6491629::before {
+          padding-top: 215.92356687898092%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491629, #ember6491629::before {
+          width: 230px;
+          height: 497px;
+        }
+        .ember6491629::before {
+          padding-top: 216.08695652173915%;
+        }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember6491634" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait">
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/230x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/157x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/300x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/600x0w.png 2x">
+        <img class="we-artwork__image ember6491634" src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/da/37/fb/da37fb3a-4a16-f846-ec65-66f6b0875b15/pr_source.png/300x0w.png" style alt height="649" width="300">
+
+  <style>
+    .ember6491634, #ember6491634::before {
+          width: 300px;
+          height: 649px;
+        }
+        .ember6491634::before {
+          padding-top: 216.33333333333334%;
+        }
+@media (min-width: 736px) {
+          .ember6491634, #ember6491634::before {
+          width: 157px;
+          height: 339px;
+        }
+        .ember6491634::before {
+          padding-top: 215.92356687898092%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491634, #ember6491634::before {
+          width: 230px;
+          height: 497px;
+        }
+        .ember6491634::before {
+          padding-top: 216.08695652173915%;
+        }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember6491639" class="we-artwork ember-view we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone-6-5 we-artwork--screenshot-orientation-portrait">
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/230x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/460x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/157x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/300x0w.png 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/600x0w.png 2x">
+        <img class="we-artwork__image ember6491639" src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/4c/00/8e4c0093-bf6d-f7b6-861b-54834d8b52a5/pr_source.png/300x0w.png" style alt height="649" width="300">
+
+  <style>
+    .ember6491639, #ember6491639::before {
+          width: 300px;
+          height: 649px;
+        }
+        .ember6491639::before {
+          padding-top: 216.33333333333334%;
+        }
+@media (min-width: 736px) {
+          .ember6491639, #ember6491639::before {
+          width: 157px;
+          height: 339px;
+        }
+        .ember6491639::before {
+          padding-top: 215.92356687898092%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491639, #ember6491639::before {
+          width: 230px;
+          height: 497px;
+        }
+        .ember6491639::before {
+          padding-top: 216.08695652173915%;
+        }
+        }
+  </style>
+</picture>
+        </li>
+  </ul>
+<!----></div>
+</div>
+  </section>
+
+
+    <section class="l-content-width section section--bordered">
+      <div class="section__description">
+        <h2 class="section__headline visuallyhidden">Description</h2>
+        <div class="l-row">
+          <div id="ember6491643" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view l-column small-12 medium-9 large-8">      
+
+      <p dir=false data-test-bidi>Seamlessly manage Redmine projects and track issues on the go. <br /><br />Kever helps to remotely track key aspects of a project in Redmine. The app integrates functionalities from Redmine to expedite bug fixes and track issues on the go. A simple and easy-to-use interface makes creating, assigning, commenting, and editing tickets a breeze. <br /><br /><br />Features:<br /><br />- Quick access to multiple Redmine servers<br />- Covers key functionality around the bug and issue tracking<br />- View, create, filter, search, update/edit, assign, and prioritize issues<br />- Sort critical projects under “Favorites” <br />- Dashboard view highlights issues and status for each project<br />- Compatible with Redmine 3.4<br />- Multiple projects support<br />- Pie chart overview<br /><br />What is Redmine?<br /><br />Redmine is an open source flexible project management web application powered by Ruby on Rails framework. The cross-platform, cross-database application is released under the terms of the GNU General Public License v2 (GPL).<br /><br /><br />You can get more info about Redmine at http://www.redmine.org/</p>
+
+  
+
+
+<!----></div>
+        </div>
+      </div>
+    </section>
+
+<!---->
+  <section class="l-content-width section section--bordered whats-new">
+    <div class="section__nav section__nav--small">
+      <h2 class="whats-new__headline">What’s New</h2>
+        <div data-test-we-modal="page-overlay" id="ember6491646" class="ember-view version-history">  <button class="we-modal__show link" id="modal-trigger-ember6491646" data-metrics-click="{&quot;actionType&quot;:&quot;open&quot;,&quot;targetType&quot;:&quot;button&quot;,&quot;targetId&quot;:&quot;ModalVersionHistory&quot;}">Version History</button>
+
+<!----></div>
+    </div>
+    <div class="l-row whats-new__content">
+        <div class="l-column small-12 medium-3 large-4 small-valign-top whats-new__latest">
+          <div class="l-row">
+            <time data-test-we-datetime datetime="2020-06-26T07:00:00.000Z" aria-label="June 26, 2020" class="" >Jun 26, 2020</time>
+            <p class="l-column small-6 medium-12 whats-new__latest__version">Version 2.1.3</p>
+          </div>
+        </div>
+      <div class="l-column small-12 medium-9 large-8 small-valign-top">
+        <div id="ember6491648" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view">      
+
+      <p dir=false data-test-bidi>Bug fixes related to issue creating and editing.<br /></p>
+
+  
+
+
+<!----></div>
+      </div>
+    </div>
+  </section>
+
+      <section class="l-content-width section section--bordered">
+      <div class="section__nav">
+        <h2 class="section__headline">
+          Ratings and Reviews
+        </h2>
+
+        <a data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;button&quot;,&quot;targetId&quot;:&quot;SeeAllReviews&quot;}" rel="nofollow" data-we-link-to-exclude href="/in/app/kever/id834793000#see-all/reviews" id="ember6491652" style="display: none;" class="link section__nav__see-all-link ember-view">See All</a>
+      </div>
+
+        <div id="ember6491653" class="we-customer-ratings lockup ember-view"><div class="l-row">
+  <div class="we-customer-ratings__stats l-column small-4 medium-6 large-4">
+    <div class="we-customer-ratings__averages"><span class="we-customer-ratings__averages__display">3.7</span> out of 5</div>
+      <div class="we-customer-ratings__count small-hide medium-show">6 Ratings</div>
+  </div>
+  <div class=" l-column small-8 medium-6 large-4">
+    <figure class="we-star-bar-graph">
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--5"></span>
+          <div class="we-star-bar-graph__bar">
+            <div class="we-star-bar-graph__bar__foreground-bar" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--4"></span>
+          <div class="we-star-bar-graph__bar">
+            <div class="we-star-bar-graph__bar__foreground-bar" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--3"></span>
+          <div class="we-star-bar-graph__bar">
+            <div class="we-star-bar-graph__bar__foreground-bar" style="width: 17%;"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--2"></span>
+          <div class="we-star-bar-graph__bar">
+            <div class="we-star-bar-graph__bar__foreground-bar" style="width: 33%;"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars "></span>
+          <div class="we-star-bar-graph__bar">
+            <div class="we-star-bar-graph__bar__foreground-bar" style="width: 0%;"></div>
+          </div>
+        </div>
+    </figure>
+      <p class="we-customer-ratings__count medium-hide">6 Ratings</p>
+  </div>
+</div>
+</div>
+
+      <div class="l-row l-row--peek">
+              
+              <div id="ember6491661" class="ember-view small-valign-top l-column--equal-height l-column small-4 medium-6 large-4"><div data-test-we-modal="page-overlay" id="ember6491662" class="ember-view"><!---->
+<!----></div>
+
+
+                <div aria-labelledby="we-customer-review-28749" id="ember6491663" class="we-customer-review lockup ember-view"><figure aria-label="5 out of 5" id="ember6491664" class="we-star-rating ember-view we-customer-review__rating we-star-rating--large"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-5"></span>
+</span>
+<!----></figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  <span dir="ltr" id="ember6491665" class="we-truncate we-truncate--single-line ember-view we-customer-review__user">  Shah1988
+</span>
+
+  <span class="we-customer-review__separator">, </span>
+
+  <time data-test-customer-review-date datetime="2014-03-13T08:41:15.000Z" aria-label="March 13, 2014" class="we-customer-review__date" >13/03/2014</time>
+</div>
+
+<h3 dir="ltr" id="we-customer-review-28749" class="we-truncate we-truncate--single-line ember-view we-customer-review__title">  Amazing!!
+</h3>
+
+  <blockquote id="ember6491666" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view we-customer-review__body">      
+
+      <p dir=false data-test-bidi>The kever app just let me get access to all my redmine projects and issues in a simple and beautiful UI... Highly recommended...</p>
+
+  
+
+
+<!----></blockquote>
+
+<!----></div>
+              
+</div>
+          
+    
+              <div id="ember6491670" class="ember-view small-valign-top l-column--equal-height l-column small-4 medium-6 large-4"><div data-test-we-modal="page-overlay" id="ember6491671" class="ember-view"><!---->
+<!----></div>
+
+
+                <div aria-labelledby="we-customer-review-28750" id="ember6491672" class="we-customer-review lockup ember-view"><figure aria-label="2 out of 5" id="ember6491673" class="we-star-rating ember-view we-customer-review__rating we-star-rating--large"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-2"></span>
+</span>
+<!----></figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  <span dir="ltr" id="ember6491674" class="we-truncate we-truncate--single-line ember-view we-customer-review__user">  Uje_sh
+</span>
+
+  <span class="we-customer-review__separator">, </span>
+
+  <time data-test-customer-review-date datetime="2019-10-09T04:29:52.000Z" aria-label="October 8, 2019" class="we-customer-review__date" >08/10/2019</time>
+</div>
+
+<h3 dir="ltr" id="we-customer-review-28750" class="we-truncate we-truncate--single-line ember-view we-customer-review__title">  No full screen view in iPad
+</h3>
+
+  <blockquote id="ember6491675" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view we-customer-review__body">      
+
+      <p dir=false data-test-bidi>I have installed this on my iPad and the user experience was pathetic. The UI is okay, but this app is not working as full screen in my iPad Air.</p>
+
+  
+
+
+<!----></blockquote>
+
+<!----></div>
+              
+</div>
+          
+    
+              <div id="ember6491679" class="ember-view small-valign-top l-column--equal-height l-column small-4 medium-6 large-4"><div data-test-we-modal="page-overlay" id="ember6491680" class="ember-view"><!---->
+<!----></div>
+
+
+                <div aria-labelledby="we-customer-review-28751" id="ember6491681" class="we-customer-review lockup ember-view"><figure aria-label="2 out of 5" id="ember6491682" class="we-star-rating ember-view we-customer-review__rating we-star-rating--large"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-2"></span>
+</span>
+<!----></figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  <span dir="ltr" id="ember6491683" class="we-truncate we-truncate--single-line ember-view we-customer-review__user">  ForzaJube
+</span>
+
+  <span class="we-customer-review__separator">, </span>
+
+  <time data-test-customer-review-date datetime="2020-06-18T04:48:56.000Z" aria-label="June 17, 2020" class="we-customer-review__date" >17/06/2020</time>
+</div>
+
+<h3 dir="ltr" id="we-customer-review-28751" class="we-truncate we-truncate--single-line ember-view we-customer-review__title">  Good app
+</h3>
+
+  <blockquote id="ember6491684" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view we-customer-review__body">      
+
+      <p dir=false data-test-bidi>Very good design. But app crashes upon creating a new ticket.</p>
+
+  
+
+
+<!----></blockquote>
+
+<!----></div>
+              
+</div>
+          
+
+      </div>
+
+        <div class="l-row l-row--margin-top medium-hide">
+              
+<!---->          
+    
+<!---->          
+    
+<!---->          
+    
+<!---->          
+    
+<!---->          
+
+        </div>
+    </section>
+
+
+<!---->
+<!---->
+<section class="l-content-width section section--bordered">
+  <div class="l-row">
+    <div class="l-column small-12">
+      <h2 class="section__headline">Information</h2>
+      <dl class="information-list information-list--app medium-columns">
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Provider</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6">
+              QBurst Inc
+            </dd>
+          </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Size</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6" aria-label="32.6 megabytes">32.6 MB</dd>
+          </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Category</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6">
+                <a href="https://itunes.apple.com/in/genre/id6007" class="link" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://itunes.apple.com/in/genre/id6007&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;GenrePage&quot;}">
+                  Productivity
+                </a>
+            </dd>
+          </div>
+        <div class="information-list__item l-row">
+          <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Compatibility</dt>
+          <dd id="ember6491690" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view information-list__item__definition l-column medium-9 large-6">      
+
+      <p dir=false data-test-bidi>Requires iOS 10.0 or later. Compatible with iPhone, iPad and iPod touch.</p>
+
+  
+
+
+<!----></dd>
+        </div>
+<!---->        <div class="information-list__item l-row">
+          <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Languages</dt>
+          <dd id="ember6491693" class="information-list__item__definition l-column medium-9 large-6 we-truncate we-truncate--multi-line we-truncate--interactive ember-view">      
+
+      <p dir=false data-test-bidi>English</p>
+
+  
+
+
+<!----></dd>
+        </div>
+        <div class="information-list__item l-row">
+          <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Age Rating</dt>
+          <dd class="information-list__item__definition l-column medium-9 large-6">4+</dd>
+        </div>
+<!----><!---->        <div class="information-list__item l-row">
+          <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Copyright</dt>
+          <dd class="information-list__item__definition l-column medium-9 large-6 information-list__item__definition--copyright">© QBurst Technologies Inc</dd>
+        </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Price</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6">Free</dd>
+          </div>
+<!---->
+      </dl>
+    </div>
+    <div class="l-column small-hide medium-show medium-9 medium-offset-3 large-10 large-offset-2">
+      <ul class="inline-list inline-list--app-extensions">
+<!---->          <li class="inline-list__item inline-list__item--margin-inline-end-large">
+            <a class="link icon icon-after icon-external" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;LinkToAppSupport&quot;}" href="http://www.qburst.com/company/contact">
+              App Support
+            </a>
+          </li>
+<!---->          <li class="inline-list__item inline-list__item--margin-inline-end-large">
+            <a class="link icon icon-after icon-external" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;LinkToPrivacyPolicy&quot;}" href="https://www.qburst.com/products/Kever/">
+              Privacy Policy
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--link-list l-content-width medium-hide">
+  <ul class="link-list link-list--a">
+<!---->      <li class="link-list__item link-list__item--a">
+        <a class="link icon icon-after icon-external" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;LinkToAppSupport&quot;}" href="http://www.qburst.com/company/contact">
+          App Support
+        </a>
+      </li>
+<!---->      <li class="link-list__item link-list__item--a">
+        <a class="link icon icon-after icon-external" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;LinkToPrivacyPolicy&quot;}" href="https://www.qburst.com/products/Kever/">
+          Privacy Policy
+        </a>
+      </li>
+  </ul>
+</section>
+
+  <section class="l-content-width section section--bordered">
+    <div class="section__nav">
+      <h2 class="section__headline">Supports</h2>
+    </div>
+    <ul class="supports-list l-row">
+        <li class="supports-list__item l-column l-column--grid small-12 medium-6 large-4">
+          <img src="/assets/images/supports/supports-FamilySharing@2x-f58f31bc78fe9fe7be3565abccbecb34.png" class="supports-list__item__artwork" alt>
+          <div class="supports-list__item__copy">
+            <h3 dir="ltr" id="ember6491696" class="we-truncate we-truncate--single-line ember-view supports-list__item__copy__heading">  Family Sharing
+</h3>
+            <h4 id="ember6491697" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view supports-list__item__copy__description">      
+
+      <p dir=false data-test-bidi>Up to six family members will be able to use this app with Family Sharing enabled.</p>
+
+  
+
+
+<!----></h4>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+    <section class="l-content-width section section--bordered">
+      <div class="section__nav">
+        <h2 class="section__headline">
+          More By This Developer
+        </h2>
+        <a data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;button&quot;,&quot;targetId&quot;:&quot;SeeAllDeveloperOtherApps&quot;}" rel="nofollow" data-we-link-to-exclude href="/in/app/kever/id834793000#see-all/developer-other-apps" id="ember6491700" style="display: none;" class="link section__nav__see-all-link ember-view">See All</a>
+      </div>
+
+      <div class="l-row l-row--peek">
+            
+    
+          <a aria-labelledby="we-lockup-labelled-by-166349" data-metrics-location="{&quot;locationType&quot;:&quot;shelfDeveloperOtherApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/kitna/id1469890907&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;1469890907&quot;}" href="https://apps.apple.com/in/app/kitna/id1469890907" id="ember6491704" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491705" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/640x0w.png 2x">
+        <img class="we-artwork__image ember6491705" src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9a/a3/ea/9aa3ea93-11f8-bd4e-e25d-d183c729fa8a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491705, #ember6491705::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491705::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491705, #ember6491705::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491705::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491705, #ember6491705::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491705::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166349" class="we-lockup__title " aria-label="KITNA">
+        <div dir="ltr" id="ember6491709" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  KITNA
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491710" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Utilities
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166350" data-metrics-location="{&quot;locationType&quot;:&quot;shelfDeveloperOtherApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/piqup-scheduling-and-delivery/id1508488630&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;1508488630&quot;}" href="https://apps.apple.com/in/app/piqup-scheduling-and-delivery/id1508488630" id="ember6491712" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491713" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/146x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/157x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <source class="we-artwork__source" srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/320x0w.png 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/640x0w.png 2x">
+        <img class="we-artwork__image ember6491713" src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/52/47/ec5247bd-3310-f9fd-aaa0-2b1da6f0b414/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491713, #ember6491713::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491713::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491713, #ember6491713::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491713::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491713, #ember6491713::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491713::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166350" class="we-lockup__title " aria-label="PiQup-Scheduling and delivery">
+        <div dir="ltr" id="ember6491717" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  PiQup-Scheduling and delivery
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491718" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Shopping
+</div>
+<!----></div>
+</a>
+        
+
+
+
+      </div>
+    </section>
+
+    <section class="l-content-width section section--bordered">
+      <div class="section__nav">
+        <h2 class="section__headline">
+          You May Also Like
+        </h2>
+        <a data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;targetType&quot;:&quot;button&quot;,&quot;targetId&quot;:&quot;SeeAllCustomersAlsoBoughtApps&quot;}" rel="nofollow" data-we-link-to-exclude href="/in/app/kever/id834793000#see-all/customers-also-bought-apps" id="ember6491719" style="display: none;" class="link section__nav__see-all-link ember-view">See All</a>
+      </div>
+
+      <div class="l-row l-row--peek">
+            
+    
+          <a aria-labelledby="we-lockup-labelled-by-166351" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/issues/id393732889&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;393732889&quot;}" href="https://apps.apple.com/in/app/issues/id393732889" id="ember6491723" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491724" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491724" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491724" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491724, #ember6491724::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491724::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491724, #ember6491724::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491724::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491724, #ember6491724::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491724::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166351" class="we-lockup__title " aria-label="Issues">
+        <div dir="ltr" id="ember6491728" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  Issues
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491729" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166352" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/bugbranch/id618664008&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;618664008&quot;}" href="https://apps.apple.com/in/app/bugbranch/id618664008" id="ember6491731" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491732" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491732" src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491732" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491732, #ember6491732::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491732::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491732, #ember6491732::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491732::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491732, #ember6491732::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491732::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166352" class="we-lockup__title " aria-label="BugBranch">
+        <div dir="ltr" id="ember6491736" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  BugBranch
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491737" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166353" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/planio/id652346429&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;652346429&quot;}" href="https://apps.apple.com/in/app/planio/id652346429" id="ember6491739" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491740" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/146x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/146x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/157x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/157x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/320x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491740" src="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/320x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491740" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491740, #ember6491740::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491740::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491740, #ember6491740::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491740::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491740, #ember6491740::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491740::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166353" class="we-lockup__title " aria-label="Planio">
+        <div dir="ltr" id="ember6491744" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  Planio
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491745" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166354" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/mantisapp-mantis-bug-tracker/id730843063&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;730843063&quot;}" href="https://apps.apple.com/in/app/mantisapp-mantis-bug-tracker/id730843063" id="ember6491747" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491748" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/146x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/146x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/157x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/157x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491748" src="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491748" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491748, #ember6491748::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491748::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491748, #ember6491748::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491748::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491748, #ember6491748::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491748::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166354" class="we-lockup__title " aria-label="MantisApp - Mantis Bug Tracker">
+        <div dir="ltr" id="ember6491752" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  MantisApp - Mantis Bug Tracker
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491753" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166355" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/mintredmine/id871736775&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;871736775&quot;}" href="https://apps.apple.com/in/app/mintredmine/id871736775" id="ember6491755" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491756" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/146x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/157x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491756" src="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/320x0w.png 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491756" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491756, #ember6491756::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491756::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491756, #ember6491756::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491756::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491756, #ember6491756::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491756::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166355" class="we-lockup__title " aria-label="mintRedmine">
+        <div dir="ltr" id="ember6491760" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  mintRedmine
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491761" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+    
+    
+          <a aria-labelledby="we-lockup-labelled-by-166356" data-metrics-location="{&quot;locationType&quot;:&quot;shelfCustomersAlsoBoughtApps&quot;}" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/in/app/redminemanager/id887279644&quot;,&quot;targetType&quot;:&quot;card&quot;,&quot;targetId&quot;:&quot;887279644&quot;}" href="https://apps.apple.com/in/app/redminemanager/id887279644" id="ember6491763" class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top ember-view">    <picture dir="ltr" id="ember6491764" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/146x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/146x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/292x0w.png 2x" media="(min-width: 1069px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/157x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/157x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/314x0w.png 2x" media="(min-width: 736px)">
+<!---->
+
+        <noscript>
+            <source class="we-artwork__source" srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/320x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/640x0w.png 2x">
+            <img class="we-artwork__image ember6491764" src="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/320x0w.png" style alt>
+          <style>
+            .we-artwork__source--lazyload,
+            .we-artwork__image--lazyload {
+              display: none;
+            }
+          </style>
+        </noscript>
+
+        <source class="we-artwork__source we-artwork__source--lazyload" srcset data-srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/320x0w.png 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/640x0w.png 2x">
+        <img class="we-artwork__image we-artwork__image--lazyload ember6491764" src="data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 320 320%22 %2F%3E" data-src="https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/320x0w.png" style alt height="320" width="320">
+
+  <style>
+    .ember6491764, #ember6491764::before {
+          width: 320px;
+          height: 320px;
+        }
+        .ember6491764::before {
+          padding-top: 100%;
+        }
+@media (min-width: 736px) {
+          .ember6491764, #ember6491764::before {
+          width: 157px;
+          height: 157px;
+        }
+        .ember6491764::before {
+          padding-top: 100%;
+        }
+        }
+@media (min-width: 1069px) {
+          .ember6491764, #ember6491764::before {
+          width: 146px;
+          height: 146px;
+        }
+        .ember6491764::before {
+          padding-top: 100%;
+        }
+        }
+  </style>
+</picture>
+
+<!---->
+<div class="we-lockup__copy">
+<!---->    <div id="we-lockup-labelled-by-166356" class="we-lockup__title " aria-label="RedmineManager">
+        <div dir="ltr" id="ember6491768" class="we-truncate we-truncate--single-line ember-view targeted-link__target">  RedmineManager
+</div>
+    </div>
+
+    <div dir="ltr" id="ember6491769" class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target">  Productivity
+</div>
+<!----></div>
+</a>
+        
+
+
+
+      </div>
+    </section>
+</div>
+
+<!---->
+
+<!----></div>
+</div></div>
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+</main>
+</div><script type="fastboot/shoebox" id="shoebox-language-code">"en-gb"</script><script type="fastboot/shoebox" id="shoebox-ember-data-store">{"data":[{"id":"1014114910","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Beezwax","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"HiveMine","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/hivemine/id1014114910","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"1014114910-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/1014114910","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2016-01-14","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":824569891,"editorialArtwork":{},"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"net.beezwax.HiveMine","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© 2016 Beezwax Datatools Inc.","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"8.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Beezwax Datatools, Inc.","isSiriSupported":false,"languageList":["English"],"requiredCapabilities":"armv7 ","offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1014114910\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=824569891","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":19364864}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1014114910\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=824569891","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":19364864}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491506"}}}}]},"genres":{"href":"/v1/catalog/in/apps/1014114910/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6000","type":"media/genre","href":"/v1/catalog/in/genres/6000","attributes":{"url":"https://itunes.apple.com/in/genre/id6000","parentId":"36","name":"Business","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/1014114910/developer","data":{"id":"466007245","type":"media/developer","href":"/v1/catalog/in/developers/466007245"}}}},{"id":"871736775","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Sooyong WANG","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"mintRedmine","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/mintredmine/id871736775","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"871736775-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/871736775","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"},{"name":"Korean","tag":"ko"}],"supportsGameController":false,"releaseDate":"2014-05-08","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":811586566,"editorialArtwork":{},"requirementsString":"Requires iOS 7.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.mintshop.MintRedmine","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© mintshop llc","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"7.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Sooyong WANG","isSiriSupported":false,"languageList":["English","Korean"],"requiredCapabilities":"armv7 ","offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=871736775\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=811586566","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":3346432}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=871736775\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=811586566","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":3346432}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491507"}}}}]},"genres":{"href":"/v1/catalog/in/apps/871736775/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/871736775/developer","data":{"id":"847032928","type":"media/developer","href":"/v1/catalog/in/developers/847032928"}}}},{"id":"652346429","type":"media/app","attributes":{"userRating":{"value":5,"ratingCount":1,"ratingCountList":[0,0,0,0,1],"ariaLabelForRatings":"5.0 stars"},"artistName":"Planio","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"Planio","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/planio/id652346429","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"652346429-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/652346429","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2013-06-02","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":829063376,"editorialArtwork":{},"requirementsString":"Requires iOS 9.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.fnctions.planio","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© 2018 Planio GmbH","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"9.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Planio GmbH","isSiriSupported":false,"languageList":["English"],"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=652346429\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=829063376","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":24625152}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=652346429\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=829063376","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":24625152}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491508"}}}}]},"genres":{"href":"/v1/catalog/in/apps/652346429/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6000","type":"media/genre","href":"/v1/catalog/in/genres/6000","attributes":{"url":"https://itunes.apple.com/in/genre/id6000","parentId":"36","name":"Business","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/652346429/developer","data":{"id":"652346442","type":"media/developer","href":"/v1/catalog/in/developers/652346442"}}}},{"id":"887279644","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Gentle Soft","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"RedmineManager","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/redminemanager/id887279644","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"887279644-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/887279644","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2014-06-20","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":612434234,"editorialArtwork":{},"requirementsString":"Requires iOS 7.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"net.gentlesoft.RedmineManager","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© gentlesoft.net","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"7.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Shinji Kobayashi","isSiriSupported":false,"languageList":["English"],"requiredCapabilities":"armv7 ","offers":[{"buyParams":"productType=C\u0026price=249000\u0026salableAdamId=887279644\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=612434234","type":"buy","priceFormatted":"₹ 249","price":249,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":2244608}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=887279644\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=612434234","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":2244608}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491509"}}}}]},"genres":{"href":"/v1/catalog/in/apps/887279644/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6000","type":"media/genre","href":"/v1/catalog/in/genres/6000","attributes":{"url":"https://itunes.apple.com/in/genre/id6000","parentId":"36","name":"Business","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/887279644/developer","data":{"id":"291935296","type":"media/developer","href":"/v1/catalog/in/developers/291935296"}}}},{"id":"393732889","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Daniel Tull","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"Issues","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/issues/id393732889","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"393732889-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/393732889","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en-GB"}],"supportsGameController":false,"releaseDate":"2015-03-04","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":821734636,"editorialArtwork":{},"requirementsString":"Requires iOS 10.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"uk.co.danieltull.Issues","hasInAppPurchases":true,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© Daniel Tull","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"10.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Daniel Tull","isSiriSupported":false,"languageList":["English"],"requiredCapabilities":"armv7 ","offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=393732889\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=821734636","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":25118720}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=393732889\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=821734636","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":25118720}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491510"}}}}]},"genres":{"href":"/v1/catalog/in/apps/393732889/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/393732889/developer","data":{"id":"309229634","type":"media/developer","href":"/v1/catalog/in/developers/309229634"}}}},{"id":"618664008","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Tragicphantom Productions LLC","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"BugBranch","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/bugbranch/id618664008","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"618664008-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/618664008","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2013-04-22","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":824393597,"editorialArtwork":{},"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.tragicphantom.BugBranch","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© 2017 Tragicphantom Productions LLC","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"8.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Tragicphantom Productions LLC","isSiriSupported":false,"languageList":["English"],"requiredCapabilities":"armv7 ","offers":[{"buyParams":"productType=C\u0026price=159000\u0026salableAdamId=618664008\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=824393597","type":"buy","priceFormatted":"₹ 159","price":159,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":21492736}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=618664008\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=824393597","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":21492736}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491511"}}}}]},"genres":{"href":"/v1/catalog/in/apps/618664008/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/618664008/developer","data":{"id":"618664351","type":"media/developer","href":"/v1/catalog/in/developers/618664351"}}}},{"id":"730843063","type":"media/app","attributes":{"userRating":{"wasReset":true,"value":1,"ratingCount":2,"ratingCountList":[2,0,0,0,0],"ariaLabelForRatings":"1.0 stars"},"artistName":"Lars Bergelt","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"MantisApp - Mantis Bug Tracker","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/mantisapp-mantis-bug-tracker/id730843063","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"730843063-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/730843063","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"},{"name":"French","tag":"fr"},{"name":"German","tag":"de"},{"name":"Spanish","tag":"es"}],"supportsGameController":false,"releaseDate":"2013-11-19","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":835209162,"editorialArtwork":{},"requirementsString":"Requires iOS 11.0 or later. Compatible with iPhone, iPad and iPod touch.","subtitle":"Mantis Bug Tracker Client","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.lbergelt.MantisApp","hasInAppPurchases":true,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© Lars Bergelt - Visual Art \u0026 Design","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"11.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Lars Bergelt","isSiriSupported":false,"languageList":["English","French","German","Spanish"],"requiredCapabilities":"arm64 ","offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=730843063\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=835209162","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":11560960}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=730843063\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=835209162","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":11560960}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491512"}}}}]},"genres":{"href":"/v1/catalog/in/apps/730843063/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/730843063/developer","data":{"id":"294176951","type":"media/developer","href":"/v1/catalog/in/developers/294176951"}}}},{"id":"1473925033","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"NOUS Knowledge Management","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"REDMINE TIMETRACKING","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/redmine-timetracking/id1473925033","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"1473925033-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/1473925033","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"},{"name":"German","tag":"de"}],"supportsGameController":false,"releaseDate":"2019-08-06","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":832195535,"editorialArtwork":{},"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.nousguide.nousTimeTracking","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© NOUS Wissensmanagement GmbH","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"8.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"NOUS Knowledge Management","isSiriSupported":false,"languageList":["English","German"],"offers":[{"buyParams":"productType=C\u0026price=299000\u0026salableAdamId=1473925033\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=832195535","type":"buy","priceFormatted":"₹ 299","price":299,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":38047744}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1473925033\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=832195535","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":38047744}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491513"}}}}]},"genres":{"href":"/v1/catalog/in/apps/1473925033/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/1473925033/developer","data":{"id":"289487883","type":"media/developer","href":"/v1/catalog/in/developers/289487883"}}}},{"id":"1182326947","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Lean Walk Ltd.","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"Mobile JiM","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/mobile-jim/id1182326947","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"1182326947-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/1182326947","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2017-01-27","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":832808114,"editorialArtwork":{},"requirementsString":"Requires iOS 11.0 or later. Compatible with iPhone, iPad and iPod touch.","subtitle":"Client for Atlassian Jira","isDeliveredInIOSAppForWatchOS":false,"bundleId":"com.leanwalk.JiraInMotion","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© 2017 Lean Walk Ltd.","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"11.0","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Lean Walk Ltd.","isSiriSupported":false,"languageList":["English"],"requiredCapabilities":"arm64 ","offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1182326947\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=832808114","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":17478656}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1182326947\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=832808114","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":17478656}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491514"}}}}]},"genres":{"href":"/v1/catalog/in/apps/1182326947/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6000","type":"media/genre","href":"/v1/catalog/in/genres/6000","attributes":{"url":"https://itunes.apple.com/in/genre/id6000","parentId":"36","name":"Business","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/1182326947/developer","data":{"id":"1182326946","type":"media/developer","href":"/v1/catalog/in/developers/1182326946"}}}},{"id":"1416570202","type":"media/app","attributes":{"userRating":{"value":0,"ratingCount":0,"ratingCountList":[0,0,0,0,0],"ariaLabelForRatings":"0 stars"},"artistName":"Alex Montoanelli","contentRatingsBySystem":{"appsApple":{"name":"4+","value":100,"rank":1}},"deviceFamilies":["iphone","ipad","ipod"],"familyShareEnabledDate":"0001-04-23T00:00:00.000Z","hasEula":false,"isFirstPartyHideableApp":false,"isPreorder":false,"name":"UZabbix","reviewsRestricted":false,"sellerLabel":"Provider","supportsArcade":false,"url":"https://apps.apple.com/in/app/uzabbix/id1416570202","usesLocationBackgroundMode":false},"relationships":{"platforms":{"data":[{"id":"1416570202-ios","type":"media/app-platform","href":"/v1/catalog/in/apps/1416570202","attributes":{"requires32bit":false,"isDeliveredInIOSAppForZulu":false,"hasMessagesExtension":false,"hasPrivacyPolicyText":false,"supportedLocales":[{"name":"English","tag":"en"}],"supportsGameController":false,"releaseDate":"2018-08-02","hasSafariExtension":false,"isStandaloneForZulu":false,"externalVersionId":833371189,"editorialArtwork":{},"requirementsString":"Requires iOS 10.2 or later. Compatible with iPhone, iPad and iPod touch.","subtitle":"Another Zabbix Interface","isDeliveredInIOSAppForWatchOS":false,"bundleId":"br.com.unetvale.zabbix","hasInAppPurchases":false,"isAppleWatchSupported":false,"isStandaloneForWatchOS":false,"supportsPassbook":false,"copyright":"© 2019 Alex Montoanelli","requiresGameController":false,"isStandaloneWithCompanionForZulu":false,"isHiddenFromSpringboard":false,"isGameCenterEnabled":false,"minimumOSVersion":"10.2","hasFamilyShareableInAppPurchases":false,"is32bitOnly":false,"isStandaloneWithCompanionForWatchOS":false,"seller":"Alex Montoanelli","isSiriSupported":false,"languageList":["English"],"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1416570202\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=833371189","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":43152384}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1416570202\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=833371189","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":43152384}]}]},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491515"}}}}]},"genres":{"href":"/v1/catalog/in/apps/1416570202/genres","data":[{"id":"6007","type":"media/genre","href":"/v1/catalog/in/genres/6007","attributes":{"url":"https://itunes.apple.com/in/genre/id6007","parentId":"36","name":"Productivity","parentName":"Mobile Software Applications"}},{"id":"6002","type":"media/genre","href":"/v1/catalog/in/genres/6002","attributes":{"url":"https://itunes.apple.com/in/genre/id6002","parentId":"36","name":"Utilities","parentName":"Mobile Software Applications"}}]},"developer":{"href":"/v1/catalog/in/apps/1416570202/developer","data":{"id":"1416570201","type":"media/developer","href":"/v1/catalog/in/developers/1416570201"}}}}],"included":[{"id":"1014114910-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1014114910\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=824569891","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":19364864}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1014114910\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=824569891","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":19364864}]}],"bundleId":"net.beezwax.HiveMine","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2016-01-14T00:00:00.000Z","requiresGameController":false,"copyright":"© 2016 Beezwax Datatools Inc.","languageList":["English"],"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Beezwax Datatools, Inc.","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"8.0","requiredCapabilities":"armv7 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491506"}}}},{"id":"871736775-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=871736775\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=811586566","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":3346432}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=871736775\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=811586566","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":3346432}]}],"bundleId":"com.mintshop.MintRedmine","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2014-05-08T00:00:00.000Z","requiresGameController":false,"copyright":"© mintshop llc","languageList":["English","Korean"],"requirementsString":"Requires iOS 7.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Sooyong WANG","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"7.0","requiredCapabilities":"armv7 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491507"}}}},{"id":"652346429-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=652346429\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=829063376","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":24625152}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=652346429\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=829063376","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":24625152}]}],"bundleId":"com.fnctions.planio","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2013-06-02T00:00:00.000Z","requiresGameController":false,"copyright":"© 2018 Planio GmbH","languageList":["English"],"requirementsString":"Requires iOS 9.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Planio GmbH","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"9.0"},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491508"}}}},{"id":"887279644-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=249000\u0026salableAdamId=887279644\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=612434234","type":"buy","priceFormatted":"₹ 249","price":249,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":2244608}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=887279644\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=612434234","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":2244608}]}],"bundleId":"net.gentlesoft.RedmineManager","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2014-06-20T00:00:00.000Z","requiresGameController":false,"copyright":"© gentlesoft.net","languageList":["English"],"requirementsString":"Requires iOS 7.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Shinji Kobayashi","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"7.0","requiredCapabilities":"armv7 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491509"}}}},{"id":"393732889-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=393732889\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=821734636","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":25118720}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=393732889\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=821734636","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":25118720}]}],"bundleId":"uk.co.danieltull.Issues","editorialArtwork":{},"hasInAppPurchases":true,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2015-03-04T00:00:00.000Z","requiresGameController":false,"copyright":"© Daniel Tull","languageList":["English"],"requirementsString":"Requires iOS 10.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Daniel Tull","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"10.0","requiredCapabilities":"armv7 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491510"}}}},{"id":"618664008-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=159000\u0026salableAdamId=618664008\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=824393597","type":"buy","priceFormatted":"₹ 159","price":159,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":21492736}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=618664008\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=824393597","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":21492736}]}],"bundleId":"com.tragicphantom.BugBranch","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2013-04-22T00:00:00.000Z","requiresGameController":false,"copyright":"© 2017 Tragicphantom Productions LLC","languageList":["English"],"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Tragicphantom Productions LLC","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"8.0","requiredCapabilities":"armv7 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491511"}}}},{"id":"730843063-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=730843063\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=835209162","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":11560960}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=730843063\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=835209162","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":11560960}]}],"bundleId":"com.lbergelt.MantisApp","editorialArtwork":{},"hasInAppPurchases":true,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2013-11-19T00:00:00.000Z","requiresGameController":false,"subtitle":"Mantis Bug Tracker Client","copyright":"© Lars Bergelt - Visual Art \u0026 Design","languageList":["English","French","German","Spanish"],"requirementsString":"Requires iOS 11.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Lars Bergelt","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"11.0","requiredCapabilities":"arm64 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491512"}}}},{"id":"1473925033-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=299000\u0026salableAdamId=1473925033\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=832195535","type":"buy","priceFormatted":"₹ 299","price":299,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":38047744}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1473925033\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=832195535","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":38047744}]}],"bundleId":"com.nousguide.nousTimeTracking","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2019-08-06T00:00:00.000Z","requiresGameController":false,"copyright":"© NOUS Wissensmanagement GmbH","languageList":["English","German"],"requirementsString":"Requires iOS 8.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"NOUS Knowledge Management","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"8.0"},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491513"}}}},{"id":"1182326947-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1182326947\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=832808114","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":17478656}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1182326947\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=832808114","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":17478656}]}],"bundleId":"com.leanwalk.JiraInMotion","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2017-01-27T00:00:00.000Z","requiresGameController":false,"subtitle":"Client for Atlassian Jira","copyright":"© 2017 Lean Walk Ltd.","languageList":["English"],"requirementsString":"Requires iOS 11.0 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Lean Walk Ltd.","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"11.0","requiredCapabilities":"arm64 "},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491514"}}}},{"id":"1416570202-ios","type":"media/app-platform","attributes":{"hasMessagesExtension":false,"isHiddenFromSpringboard":false,"offers":[{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1416570202\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=833371189","type":"get","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":43152384}]},{"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1416570202\u0026pricingParameters=SWUPD\u0026pg=default\u0026appExtVrsId=833371189","type":"update","priceFormatted":"₹ 0","price":0,"currencyCode":"INR","assets":[{"flavor":"iosSoftware","size":43152384}]}],"bundleId":"br.com.unetvale.zabbix","editorialArtwork":{},"hasInAppPurchases":false,"isAppleWatchSupported":false,"isGameCenterEnabled":false,"isSiriSupported":false,"supportsGameController":false,"supportsPassbook":false,"releaseDate":"2018-08-02T00:00:00.000Z","requiresGameController":false,"subtitle":"Another Zabbix Interface","copyright":"© 2019 Alex Montoanelli","languageList":["English"],"requirementsString":"Requires iOS 10.2 or later. Compatible with iPhone, iPad and iPod touch.","seller":"Alex Montoanelli","isStandaloneForWatchOS":false,"is32bitOnly":false,"minimumOSVersion":"10.2"},"relationships":{"artwork":{"data":{"type":"image","id":"ember6491515"}}}},{"id":"ember6491506","type":"image","attributes":{"bgColor":"ffffff","height":1024,"textColor1":"520d12","textColor2":"5e0e15","textColor3":"753d42","textColor4":"7e3e43","url":"https://is2-ssl.mzstatic.com/image/thumb/Purple62/v4/27/c8/90/27c8906a-0194-be1d-2066-1e46e4db360c/mzm.xpmvxqej.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491507","type":"image","attributes":{"bgColor":"b51700","height":1024,"textColor1":"ffffff","textColor2":"f7e7e5","textColor3":"f0d0cb","textColor4":"eabeb7","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/bf/f7/08/bff708d9-25a8-65e2-e01c-6a9c0c59a8d3/mzl.xseoptes.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491508","type":"image","attributes":{"bgColor":"53a7c4","height":1024,"textColor1":"161616","textColor2":"161616","textColor3":"223339","textColor4":"223339","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/d1/d2/82d1d267-4f68-0fb4-54eb-70a236c76401/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491509","type":"image","attributes":{"height":1024,"url":"https://is4-ssl.mzstatic.com/image/thumb/Purple4/v4/db/73/be/db73bedf-e825-ed3b-3dd2-ec02ad93ebfe/mzl.rblegfnv.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491510","type":"image","attributes":{"bgColor":"fd8005","height":1024,"textColor1":"161413","textColor2":"161616","textColor3":"442a10","textColor4":"442b13","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/47/bb/e8/47bbe839-b607-e8a4-168c-32566fbb15cf/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491511","type":"image","attributes":{"bgColor":"ffffff","height":1024,"textColor1":"0f0d0e","textColor2":"322920","textColor3":"3f3e3e","textColor4":"5b544d","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/76/14/3f/76143fd4-1cd6-7156-6b13-4c6d5b26191f/AppIcon-1x_U007emarketing-85-220-6.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491512","type":"image","attributes":{"bgColor":"e7e7e7","height":1024,"textColor1":"000000","textColor2":"262626","textColor3":"2e2e2e","textColor4":"4d4d4d","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/14/a0/31/14a0313b-c88a-2b26-b448-57a98d34f28d/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491513","type":"image","attributes":{"bgColor":"ffffff","height":1024,"textColor1":"0e0a15","textColor2":"131208","textColor3":"3e3b43","textColor4":"424139","url":"https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/76/fa/10/76fa1061-26a7-d9da-c591-c649af696986/AppIcon-0-1x_U007emarketing-0-0-85-220-7.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491514","type":"image","attributes":{"bgColor":"005bb2","height":1024,"textColor1":"fdfdfe","textColor2":"ff9800","textColor3":"caddef","textColor4":"cb8b23","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/c3/1a/8e/c31a8eb0-8515-2e20-0f3b-ac0e0ab8c659/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}},{"id":"ember6491515","type":"image","attributes":{"bgColor":"ffffff","height":1024,"textColor1":"160300","textColor2":"160300","textColor3":"453533","textColor4":"453533","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/ef/ca/fa/efcafa12-1a8b-d2a5-6036-0f553971a01d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/{w}x{h}{c}.{f}","width":1024},"relationships":{}}]}</script><script type="x/boundary" id="fastboot-body-end"></script>
+    </div>
+    <div id="modal-container"></div>
+    <script integrity="" src="/assets/vendor-5715c00de8dadd4a8dd6d176ecd12d82.js"></script>
+    <script integrity="" src="/assets/web-experience-app-26d37fb2d982f3cfebb0a2498926aa6e.js"></script>
+    <script src="https://js-cdn.music.apple.com/-amp/v2/musickit.js"></script>
+
+    <div id="ember-basic-dropdown-wormhole"></div>
+  </body>
+</html>

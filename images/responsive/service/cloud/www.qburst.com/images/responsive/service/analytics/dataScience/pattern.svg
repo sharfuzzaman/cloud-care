@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="116px" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+        <filter x="-12.5%" y="-11.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127547554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Device-Desktops" transform="translate(-368.000000, -662.000000)">
+            <g id="Group-11" transform="translate(360.000000, 669.000000)">
+                <g id="Group-4" transform="translate(16.000000, 0.000000)">
+                    <g id="Group-3">
+                        <g id="Group-2">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-3" stroke="#42566C" stroke-width="1.5" x="9.2606383" y="43.7149562" width="13.393617" height="14.4574468" rx="4"></rect>
+                    <rect id="Rectangle-3" stroke="#42566C" stroke-width="1.5" x="77.3457447" y="43.7149562" width="13.393617" height="14.4574468" rx="4"></rect>
+                    <rect id="Rectangle-3" stroke="#42566C" stroke-width="1.5" fill="#FFFFFF" x="26.2819149" y="43.7149562" width="13.393617" height="14.4574468" rx="4"></rect>
+                    <rect id="Rectangle-3" stroke="#F86084" stroke-width="1.5" fill="#E83F67" x="43.3031915" y="43.7149562" width="13.393617" height="14.4574468" rx="4"></rect>
+                    <rect id="Rectangle-3" stroke="#42566C" stroke-width="1.5" fill="#607892" x="60.3244681" y="43.7149562" width="13.393617" height="14.4574468" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

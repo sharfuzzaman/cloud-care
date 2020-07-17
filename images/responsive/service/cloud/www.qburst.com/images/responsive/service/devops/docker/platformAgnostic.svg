@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="229px" viewBox="0 0 229 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="28.7999994" y="28.7999994" width="154.799997" height="154.799997" rx="11.5199998"></rect>
+        <filter x="-12.3%" y="-12.3%" width="124.7%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.07999998" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147235577 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="docker_containerization" transform="translate(-231.000000, -1555.000000)">
+            <g id="Group-18" transform="translate(240.000000, 1563.000000)">
+                <g id="Group-3">
+                    <g id="Group-16">
+                        <circle id="Oval" fill="#F1F1F1" cx="107.999998" cy="100.799998" r="92.1599982"></circle>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle" fill-rule="nonzero" transform="translate(106.199998, 106.199998) rotate(-30.000000) translate(-106.199998, -106.199998) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use stroke="#F1F1F1" stroke-width="2.15999996" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="cpu" mask="url(#mask-2)">
+                            <g transform="translate(59.000000, 60.000000)">
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="16.3582024 0 21.7582021 0 21.7582021 13.6539838 16.3582024 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="27.1673427 0 32.5673424 0 32.5673424 13.6539838 27.1673427 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="37.9757795 0 43.3757793 0 43.3757793 13.6539838 37.9757795 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="48.7842167 0 54.1842165 0 54.1842165 13.6539838 48.7842167 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="59.5926536 0 64.9926534 0 64.9926534 13.6539838 59.5926536 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="70.4017939 0 75.8017937 0 75.8017937 13.6539838 70.4017939 13.6539838"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="16.3582024 78.5060122 21.7582021 78.5060122 21.7582021 92.159996 16.3582024 92.159996"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="27.1673427 78.5060122 32.5673424 78.5060122 32.5673424 92.159996 27.1673427 92.159996"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="37.9757795 78.5060122 43.3757793 78.5060122 43.3757793 92.159996 37.9757795 92.159996"></polygon>
+                                <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(48.779998, 16.199999)">
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="0.00421883982 62.3060129 5.40421861 62.3060129 5.40421861 75.9599967 0.00421883982 75.9599967"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="10.8126557 62.3060129 16.2126555 62.3060129 16.2126555 75.9599967 10.8126557 75.9599967"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="21.621796 62.3060129 27.0217958 62.3060129 27.0217958 75.9599967 21.621796 75.9599967"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 0.158203073 43.3799981 0.158203073 43.3799981 5.55820284 29.7260143 5.55820284"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 10.9673434 43.3799981 10.9673434 43.3799981 16.3673431 29.7260143 16.3673431"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 21.7757802 43.3799981 21.7757802 43.3799981 27.17578 29.7260143 27.17578"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 32.5842174 43.3799981 32.5842174 43.3799981 37.9842172 29.7260143 37.9842172"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 43.3926543 43.3799981 43.3926543 43.3799981 48.7926541 29.7260143 48.7926541"></polygon>
+                                    <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="29.7260143 54.2017946 43.3799981 54.2017946 43.3799981 59.6017944 29.7260143 59.6017944"></polygon>
+                                </g>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 16.3582024 13.6539838 16.3582024 13.6539838 21.7582021 0 21.7582021"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 27.1673427 13.6539838 27.1673427 13.6539838 32.5673424 0 32.5673424"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 37.9757795 13.6539838 37.9757795 13.6539838 43.3757793 0 43.3757793"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 48.7842167 13.6539838 48.7842167 13.6539838 54.1842165 0 54.1842165"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 59.5926536 13.6539838 59.5926536 13.6539838 64.9926534 0 64.9926534"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="0 70.4017939 13.6539838 70.4017939 13.6539838 75.8017937 0 75.8017937"></polygon>
+                                <polygon id="Path" fill="#0B96B2" fill-rule="nonzero" points="82.2599965 9.89999957 46.079998 9.89999957 42.4771857 46.079998 46.079998 82.2599965 82.2599965 82.2599965"></polygon>
+                                <polygon id="Path" fill="#10BDE0" fill-rule="nonzero" points="9.89999957 9.89999957 46.079998 9.89999957 46.079998 82.2599965 9.89999957 82.2599965"></polygon>
+                                <polygon id="Path" fill="#96A5B9" fill-rule="nonzero" points="60.416013 31.7439831 46.079998 31.7439831 42.4771857 45.9253105 46.079998 60.416013 60.416013 60.416013"></polygon>
+                                <polygon id="Path" fill="#DEE3EF" fill-rule="nonzero" points="31.7439831 31.7439831 46.079998 31.7439831 46.079998 60.416013 31.7439831 60.416013"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="clouds"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

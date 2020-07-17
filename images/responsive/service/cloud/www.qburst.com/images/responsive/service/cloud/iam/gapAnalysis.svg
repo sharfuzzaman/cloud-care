@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="229px" viewBox="0 0 228 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="29" y="29" width="154.799997" height="154.799997" rx="11.5199998"></rect>
+        <filter x="-12.3%" y="-12.3%" width="124.7%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.07999998" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147235577 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iAM" transform="translate(-262.000000, -2621.000000)">
+            <g id="QB_services_in_identity" transform="translate(-37.000000, 2170.000000)">
+                <g id="gap_analysis" transform="translate(307.000000, 457.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 2.000000)">
+                        <g id="Group-16">
+                            <circle id="Oval" fill="#F1F1F1" cx="107.999998" cy="100.799998" r="92.1599982"></circle>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Rectangle" fill-rule="nonzero" transform="translate(106.399998, 106.399998) rotate(-30.000000) translate(-106.399998, -106.399998) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <use stroke="#F1F1F1" stroke-width="2.15999996" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="checklist" mask="url(#mask-2)">
+                                <g transform="translate(47.000000, 47.000000)">
+                                    <circle id="Oval" fill="#C7E6F4" fill-rule="nonzero" cx="58.9280036" cy="58.9280036" r="58.9280036"></circle>
+                                    <path d="M43.3376026,20.6016012 L43.3376026,30.1600018 C43.3376026,33.315202 40.7392025,35.9136022 37.5840023,35.9136022 L28.0256017,35.9136022 L28.0256017,91.4080055 C28.0256017,94.5632057 30.6240019,97.1616059 33.779202,97.1616059 L84.0768051,97.1616059 C87.2320053,97.1616059 89.8304054,94.5632057 89.8304054,91.4080055 L89.8304054,26.3552016 C89.8304054,23.2000014 87.2320053,20.6016012 84.0768051,20.6016012 L43.3376026,20.6016012 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                    <path d="M43.3376026,20.6016012 L28.0256017,36.0064022 L37.5840023,36.0064022 C40.7392025,36.0064022 43.3376026,33.408002 43.3376026,30.2528018 L43.3376026,20.6016012 Z" id="Path" fill="#E6E9EE" fill-rule="nonzero"></path>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(34.800002, 43.384003)">
+                                        <path d="M8.72320053,0.0464000028 L1.02080006,0.0464000028 C0.556800034,0.0464000028 0.0928000056,0.417600025 0.0928000056,0.974400059 L0.0928000056,8.67680053 C0.0928000056,9.14080055 0.464000028,9.60480058 1.02080006,9.60480058 L8.72320053,9.60480058 C9.18720056,9.60480058 9.65120059,9.23360056 9.65120059,8.67680053 L9.65120059,0.974400059 C9.65120059,0.510400031 9.18720056,0.0464000028 8.72320053,0.0464000028 Z M7.79520047,7.74880047 L1.94880012,7.74880047 L1.94880012,1.90240012 L7.79520047,1.90240012 L7.79520047,7.74880047 Z" id="Shape" fill="#1486FC" fill-rule="nonzero"></path>
+                                        <path d="M8.72320053,16.193601 L1.02080006,16.193601 C0.556800034,16.193601 0.0928000056,16.564801 0.0928000056,17.121601 L0.0928000056,24.8240015 C0.0928000056,25.2880015 0.464000028,25.7520016 1.02080006,25.7520016 L8.72320053,25.7520016 C9.18720056,25.7520016 9.65120059,25.3808015 9.65120059,24.8240015 L9.65120059,17.121601 C9.65120059,16.657601 9.18720056,16.193601 8.72320053,16.193601 Z M7.79520047,23.8960014 L1.94880012,23.8960014 L1.94880012,18.0496011 L7.79520047,18.0496011 L7.79520047,23.8960014 Z" id="Shape" fill="#1486FC" fill-rule="nonzero"></path>
+                                        <path d="M8.72320053,32.340802 L1.02080006,32.340802 C0.556800034,32.340802 0.0928000056,32.712002 0.0928000056,33.268802 L0.0928000056,40.9712025 C0.0928000056,41.4352025 0.464000028,41.8992025 1.02080006,41.8992025 L8.72320053,41.8992025 C9.18720056,41.8992025 9.65120059,41.5280025 9.65120059,40.9712025 L9.65120059,33.268802 C9.65120059,32.804802 9.18720056,32.340802 8.72320053,32.340802 Z M7.79520047,40.0432024 L1.94880012,40.0432024 L1.94880012,34.1968021 L7.79520047,34.1968021 L7.79520047,40.0432024 Z" id="Shape" fill="#1486FC" fill-rule="nonzero"></path>
+                                    </g>
+                                    <circle id="Oval" fill="#1486FC" fill-rule="nonzero" cx="75.7248046" cy="63.9392039" r="19.5808012"></circle>
+                                    <path d="M72.6624044,74.7968045 C72.1056044,74.7040045 71.5488043,74.3328045 71.1776043,73.8688045 L66.537604,67.8368041 C65.702404,66.8160041 65.888004,65.238404 67.0016041,64.4032039 C68.0224041,63.5680039 69.6000042,63.7536039 70.4352043,64.8672039 L73.0336044,68.2080041 L81.942405,55.2160033 C82.684805,54.1024033 84.1696051,53.8240033 85.2832052,54.5664033 C86.3968052,55.3088034 86.6752053,56.8864034 85.9328052,57.9072035 L75.1680046,73.7760045 C74.7040045,74.4256045 73.9616045,74.7968045 73.2192044,74.7968045 C73.0336044,74.8896045 72.8480044,74.8896045 72.6624044,74.7968045 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="clouds"></g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v9/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EbiusdUmj.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v9/NGSpv5_NC0k9P_v6ZUCbLRAHxK1ECSusdUmj.ttf) format('truetype');
+}

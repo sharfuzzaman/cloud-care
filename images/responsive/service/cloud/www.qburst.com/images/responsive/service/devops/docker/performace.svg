@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="229px" viewBox="0 0 229 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="28.7999994" y="28.7999994" width="154.799997" height="154.799997" rx="11.5199998"></rect>
+        <filter x="-12.3%" y="-12.3%" width="124.7%" height="124.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.07999998" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147235577 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="docker_containerization" transform="translate(-978.000000, -1820.000000)">
+            <g id="Group-15" transform="translate(240.000000, 1828.000000)">
+                <g id="Group-3" transform="translate(747.000000, 0.000000)">
+                    <g id="Group-16">
+                        <circle id="Oval" fill="#F1F1F1" cx="107.999998" cy="100.799998" r="92.1599982"></circle>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle" fill-rule="nonzero" transform="translate(106.199998, 106.199998) rotate(-30.000000) translate(-106.199998, -106.199998) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use stroke="#F1F1F1" stroke-width="2.15999996" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="diagram-(2)" mask="url(#mask-2)">
+                            <g transform="translate(54.000000, 53.000000)">
+                                <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 10.200000)">
+                                    <polygon id="Path" fill="#BEC8DC" fill-rule="nonzero" points="8.53340013 0.0364000005 30.7200005 0.0364000005 30.7200005 3.44980005 8.53340013 3.44980005"></polygon>
+                                    <polygon id="Path" fill="#BEC8DC" fill-rule="nonzero" points="8.53340013 6.8632001 30.7200005 6.8632001 30.7200005 10.2766002 8.53340013 10.2766002"></polygon>
+                                    <polygon id="Path" fill="#BEC8DC" fill-rule="nonzero" points="8.53340013 13.6898002 23.8934004 13.6898002 23.8934004 17.1032003 8.53340013 17.1032003"></polygon>
+                                    <polygon id="Path" fill="#BEC8DC" fill-rule="nonzero" points="8.53340013 20.5164003 23.8934004 20.5164003 23.8934004 23.9298004 8.53340013 23.9298004"></polygon>
+                                    <polygon id="Path" fill="#96A5B9" fill-rule="nonzero" points="0 88.7832013 102.400002 88.7832013 102.400002 92.1966014 0 92.1966014"></polygon>
+                                </g>
+                                <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(6.600000, 1.000000)">
+                                    <path d="M0.371800006,75.7964011 L0.0816000012,72.3830011 C35.7458005,69.292201 66.293401,45.5968007 78.1530012,11.8202002 L82.2490012,0.140000002 L85.4712013,1.26640002 L81.3752012,12.9468002 C69.075401,47.9966007 37.3790006,72.5896011 0.371800006,75.7964011 Z" id="Path" fill="#96A5B9" fill-rule="nonzero"></path>
+                                    <polygon id="Path" fill="#FF5770" fill-rule="nonzero" points="1.93340003 82.6232012 13.8800002 82.6232012 13.8800002 92.8632014 1.93340003 92.8632014"></polygon>
+                                </g>
+                                <polygon id="Path" fill="#FFB509" fill-rule="nonzero" points="27.3066004 78.5032012 39.2532006 78.5032012 39.2532006 93.8632014 27.3066004 93.8632014"></polygon>
+                                <polygon id="Path" fill="#FFD86E" fill-rule="nonzero" points="46.0800007 69.969801 58.0266009 69.969801 58.0266009 93.8632014 46.0800007 93.8632014"></polygon>
+                                <polygon id="Path" fill="#80E0DC" fill-rule="nonzero" points="64.853401 58.0232009 76.8000011 58.0232009 76.8000011 93.8632014 64.853401 93.8632014"></polygon>
+                                <polygon id="Path" fill="#10BDE0" fill-rule="nonzero" points="83.6266012 34.1298005 95.5732014 34.1298005 95.5732014 93.8632014 83.6266012 93.8632014"></polygon>
+                                <path d="M97.2800014,17.0632238 C96.6298014,17.0666003 96.0342014,16.7014002 95.7440014,16.1194002 L89.6820013,4.00200006 L77.5630012,10.0658001 C76.7200011,10.4874002 75.6942011,10.1444002 75.2726011,9.30120014 C74.8510011,8.45820013 75.1940011,7.43240011 76.0372011,7.0108001 L89.6906013,0.184200003 C90.5336013,-0.237400004 91.5594014,0.104000002 91.9810014,0.947000014 L91.9810014,0.948800014 L98.8076015,14.6022002 C99.2240015,15.4470002 98.8758015,16.4710002 98.0310015,16.8874003 C97.7972015,17.0016003 97.5412015,17.0632238 97.2800014,17.0632238 Z" id="Path" fill="#96A5B9" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

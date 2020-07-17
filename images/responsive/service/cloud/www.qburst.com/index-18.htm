@@ -1,0 +1,1686 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta name="google-site-verification" content="5hT-6CoNzJ0wCHwJYnRX_tv4TODNPYbrKJs5dM7Dlzg" />
+		
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="meta" href="https://www.networksolutions.com/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+		
+<meta name="robots" content="noodp, noydir">
+<meta name="analytics:environment" content="PROD">
+<meta name="analytics:isCsr" content="false">
+
+				<link rel="canonical" href="https://www.networksolutions.com" />
+			
+
+<!-- Insert page refresh parameters if not a landing page -->
+
+ 			  <noscript>
+ 				   <META HTTP-EQUIV="refresh" CONTENT="1800;URL='/timeout.html'" />
+ 				</noscript>
+ 			
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<link rel="icon" href="/favicon-120.png" size="120x120">
+<link rel="icon" href="/favicon-128.png" size="128x128">
+<link rel="icon" href="/favicon-152.png" size="152x152">
+<link rel="icon" href="/favicon-180.png" size="180x180">
+<link rel="icon" href="/favicon-196.png" size="196x196">
+<link rel="icon" href="/favicon-228.png" size="228x196">
+
+
+<link href="/styles/material/material-components-web.min.css" rel="stylesheet" />
+<script src="/styles/material/material-components-web.min.js"></script>
+
+<script type="text/javascript" src="/js/gzip_1546335588/bundles/ns-core.js" ></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/gzip_N36777675/bundles/ns-core.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700|Varela+Round' rel='stylesheet' type='text/css'>
+
+<!--[if lte IE 9]>
+	<style>
+		#mainNav #ns-nav > li { background: #000; }
+		#mainNav #ns-nav > li:before { background: transparent;}
+		#mainNav #ns-nav > li:hover { background: #6e6e6e; }
+		.ns-box.slideon { z-index: 0; }
+	</style>
+<![endif]-->
+<!--[if lte IE 8]>
+	<style>
+			body .screen { -ms-overflow-x: auto !important; overflow-x: auto; !important; min-width: 960px; }
+			body .row { width: 960px !important; }
+	</style>
+<![endif]-->
+<!--[if lte IE 7]>
+	<script src="//browser-update.org/update.min.js"></script>
+<![endif]-->
+
+
+
+
+
+<script>
+
+
+// tracking data layer object // aadl
+var digitalData = digitalData || {};
+digitalData.cart = {};
+digitalData.renewalData = [];
+digitalData.page = {
+	attributes: {
+		analytics: {
+			pageName: "networksolutions.com|index",
+			hostname: "www.networksolutions.com",
+			pagePath: "/index.jsp",
+			pageUrl: "https://www.networksolutions.com/index.jsp",
+			pageCanonical: "https://www.networksolutions.com/index.jsp",
+			category: "homepage",
+			hierarchy: "homepage",
+			referrer: "",
+			trkId: ""
+		}
+	}
+};
+digitalData.product = [];
+digitalData.search = {
+	domainSearchTerm: "",
+	internalSearchTerm: "",
+	searchResults: "",
+	searchType: "",
+	exactMatchAvailable: "",
+	premiumAvailable: "",
+	alternativeAvailable: ""
+};
+digitalData.user =  {
+	profile: {
+		loginId: "",
+		loginMethod: "",
+		loginStatus: "not logged in"
+	},
+	site: {
+	    id:"0"
+	},
+	session: {
+	    id: "F83F62254C1B774AFB50FC7406274ADB"
+	},
+};
+digitalData.target = [];
+digitalData.events = [];
+digitalData.component = [];
+digitalData.transaction = {};
+digitalData.cartAdditions = [];
+
+
+//eventPayload data layer object
+
+
+var newCartAdditions = [];
+
+var eventPayload = {
+	eventName: "page view", // page view, cart add, cart view, cart remove, purchase confirmation, purchase addon
+	eventType: "pageview", // pageview, custom, exit, download
+	attributes: {
+		cart: {
+			products: mapProducts([]),
+			transactionID: "",
+			state: "",
+			zip: ""
+		},
+		page: {
+			pageName: "networksolutions.com|index",
+			hostname: "www.networksolutions.com",
+			pagePath: "/index.jsp",
+			pageUrl: "https://www.networksolutions.com/index.jsp",
+			pageCanonical: "https://www.networksolutions.com/index.jsp",
+			category: "homepage",
+			hierarchy: "homepage",
+			referrer: "",
+			trkId: ""
+		},
+		search: {
+			domainSearchTerm: "",
+			internalSearchTerm: "",
+			searchResults: "",
+			searchType: "",
+			exactMatchAvailable: "",
+			premiumAvailable: "",
+			alternativeAvailable: ""
+		},
+		transaction: {
+			id: "",
+			state: "",
+			zip: "",
+			paymentMethod: "",
+            siteID: " 0"
+		},
+		user: {
+			loginId: "",
+			loginMethod: "",
+			loginStatus: "not logged in"
+		},
+		products: [],
+		custom: {}
+	},
+	processed: false // updated by event queue processor to prevent duplicates
+}
+
+function mapProducts(productObject) {
+	var products = [];
+	$.each(productObject, function (index, item) {
+		var newCartItem = {
+			"category": item.category.primaryCategory,
+			"sku": item.productSKU,
+			"quantity": item.quantity,
+			"price": item.price,
+			"termCode": item.termCode,
+			"termUnit": item.termUnit,
+			"chargeCode": item.chargeType,
+			"siteID": item.siteID,
+			"productInstanceID": item.productInstanceID
+		}
+        // since pageAdded is not available on the purchase event...............
+		if (typeof item.pageAdded === 'undefined' && window.location.href.indexOf('/purchase-it/order-receipt-ctb.jsp?isCTBFlow=true') >= 0) {
+			// if undefined, use referrer
+			newCartItem.pageAdded = "";
+		} else if (item.pageAdded) {
+			// if present, convert to relative path
+			newCartItem.pageAdded = "/" + item.pageAdded.split("/").slice(3).join("/").split("?")[0];
+		}
+		products.push(newCartItem);
+	});
+	return products;
+}
+
+
+</script>
+
+
+						<script type="text/javascript">
+						!function(e,t,n,i){function o(){return t.getElementsByTagName("head")[0]}!function(e,n,i){if(e){var o=t.createElement("style");o.id=n,o.innerHTML=i,e.appendChild(o)}}(o(),"at-body-style","body {opacity: 0 !important}"),setTimeout(function(){!function(e,n){if(e){var i=t.getElementById(n);i&&e.removeChild(i)}}(o(),"at-body-style")},1500)}(window,document);
+						</script>
+						<script src="//assets.adobedtm.com/530368109655/f1f8bc547915/launch-7859547d8660.min.js"></script>
+					<script type="text/javascript" src="/js/gzip_N2052076817/bundles/test-and-target.js" ></script>
+
+		<script>
+			
+		</script>
+	
+		<title>The World's First Domain Provider | Network Solutions</title>
+		<meta name="description" content="Partner with the world's first domain registrar and experience unparalleled support. Network Solutions offers reliable website services like domains, hosting, security, professional email and more.">
+		<meta name="keywords" content="website design and hosting, eCommerce store, domain name registration, online marketing, domain search">
+		<meta name="msvalidate.01" content="5C86E152D840B8C1963C0D5E90CFA6C7"/>
+		<link rel="meta" href="https://www.networksolutions.com/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/gzip_612011841/css/ns-core/pages/homepage/index-v3.css" />
+<script type="text/javascript" src="/js/gzip_N1761764516/js/ns-core/pages/homepage/index-v3.js" ></script>
+<!-- sfc:wms begin pageName=/index.jsp&elementName=style&rotationId=-1 --><!-- sfc:wms end -->
+
+
+	</head>
+	
+	<body>
+		
+		<div class="mboxDefault" id="ns_searchresult_pricereveal_coupon" style="display:none;"></div>
+
+		
+<div class="mboxDefault" style="display:none;"></div>
+<script type="text/javascript">
+	mboxCreate(
+		'ns_pageview',
+		'at_property=5107d4c0-17fd-6769-acb5-6598517e2767',
+		'isCsr=' + nstt.isCsr,
+		'isProduction=' + nstt.isProduction
+	);
+</script>
+
+<div class="mboxDefault" style="display:none;"></div>
+<script type="text/javascript">
+	mboxCreate(
+        'ns_gdpr_control',
+        'at_property=5107d4c0-17fd-6769-acb5-6598517e2767',
+        'isCsr=' + nstt.isCsr,
+        'isProduction=' + nstt.isProduction
+	);
+</script>
+
+
+
+
+
+<script>
+	
+	$("body").css("visibility","hidden");
+	$(document).ready(function(){
+		var oldNavList = [
+			"/manage-it/welcome.jsp",
+			"/manage-it/index.jsp",
+			"/manage-it/forget-login.jsp",
+			"/manage-it/challenge-questions.jsp",
+			"/manage-it/reset-",
+			"/manage-it/account-recovery.jsp",
+			"/manage-it/feedback.jsp",
+			"/manage-it/address-cleansed.jsp",
+			"/manage-it/create-user.jsp",
+			"/manage-it/create-login-info.jsp",
+			"/manage-it/additional-security-questions.jsp"
+		];
+		var count = 0;
+		for (var i = 0; i < oldNavList.length; i++) {
+			if (window.location.href.indexOf(oldNavList[i]) > -1) {
+				count++;
+				break;
+			}
+		}
+	
+		if(count > 0) {
+			$("#oldAMHeader").show();
+			$("#support-link-text").html("Support");
+			$("#cart").hide();
+			$("#blog").hide();
+			$("#oldAMHeader").addClass("am-content")
+		} else {
+			$("#support-link-text").html("Contact Us");
+			$("#cart").show();
+			$("#blog").show();
+			if(window.location.href.indexOf('/manage-it/') === -1) {
+				if(window.location.href.indexOf('/updateUserInfo.do') !== -1) {
+					$("#oldAMHeader").hide();
+				} else {
+					$("#oldAMHeader").show();
+				}
+			} else {
+				$("#oldAMHeader").hide();
+			}
+		}
+		$("body").css("visibility","visible");
+	});
+
+</script>
+
+
+
+<div class="screen">
+	<div class="ns-box">
+<!-- sfc:wms begin pageName=/fragments/ns-core/header.jsp&elementName=header&rotationId=-1 --><!-- sfc:wms end -->
+
+		<div id="oldAMHeader" style="display: none;">
+			<div class="container header reg-header am-old-navigation">
+				<div class="flex-box">
+
+					
+						<div class="header-hamburger">
+							<a href="#"></a>
+						</div>
+					
+
+					<div class="header-logo">
+						<a title="Network Solutions Home" href="/index.jsp">
+							<img border="0" id="header-logo" class="logo" alt="Network Solutions" src="/img/ns-core/netsol.svg">
+						</a>
+					</div>
+					<ul class="header-links reg-headerlinks">
+					<li id="blog" style="display: none;"><a href="https://www.networksolutions.com/blog/">Blog</a></li>
+						<li class="phone-link"><a href="tel:+1-866-908-3442" id="header-phone">1-866-908-3442</a></li>
+
+						
+							
+							<li class="support-link">
+								<a href="/contact/index.jsp" id="support-link-text"></a>
+							</li>
+							<li id="cart" class="cart-link" style="display: none;">
+								<a href="/purchase-it/view-your-order.jsp?headerlink=true" class="disabled" >Cart <span id="cart-total" class="empty">0</span></a>
+							</li>
+							
+									<li class="login-link">
+										
+										<a href="/manage-it/index.jsp" class="reg-login" rel="nofollow">Log In</a>
+									</li>
+								
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+
+		
+
+
+
+<script>
+	$(document).ready(function(){
+		var oldNavList = [
+			"/manage-it/welcome.jsp",
+			"/manage-it/index.jsp",
+			"/manage-it/forget-login.jsp",
+			"/manage-it/challenge-questions.jsp",
+			"/manage-it/reset-",
+			"/manage-it/account-recovery.jsp",
+			"/manage-it/feedback.jsp",
+			"/manage-it/address-cleansed.jsp",
+			"/manage-it/create-user.jsp",
+			"/manage-it/create-login-info.jsp",
+			"/manage-it/additional-security-questions.jsp"
+		];
+	
+		var count = 0;
+		for (var i = 0; i < oldNavList.length; i++) {
+			if (window.location.href.indexOf(oldNavList[i]) > -1) {
+				count++;
+				break;
+			}
+		}
+	
+		if(count > 0) {
+			$("#amOldNav").show();
+		} else {
+			if(window.location.href.indexOf('/manage-it/') === -1) {
+				if(window.location.href.indexOf('/updateUserInfo.do') !== -1) {
+					$("#amOldNav").hide();	
+				} else {
+					$("#amOldNav").show();
+				}
+			} else {
+				$("#amOldNav").hide();
+			}
+		}
+		$(".security-ssl-test-c").hide();
+	});
+
+</script>
+<style>
+.sub-head-text{
+font-weight: bold !important;
+}
+.sub-head ul{
+margin-left:20px!important;
+}
+.back-button{   
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+padding-left: 36px;
+padding-top:5px;
+padding-bottom:5px;
+background-color:#E5E5E5;
+color: #000000;
+    /* margin-left: 25px; */
+    background-image: url(/img/backgrounds/SSL-certificates/left-arrow-black.png);
+	background-repeat: no-repeat;
+	background-position: 16px 8px;
+	background-size: 14px;
+	cursor:pointer;
+	
+}
+@media (max-width: 1007px){
+#navResponsive #ns-nav li ul li a {
+    padding-right: 0;
+    font-weight: normal;
+    }
+  #navResponsive ul li#navbar-support a{
+      bottom:20px;
+      background-position: center left 13px;
+    padding-left: 50px;
+	}
+    #navResponsive li a{
+    font-weight:bold;
+    font-size:14px;
+    line-height:20px;
+    color:rgba(0, 0, 0, 0.87);
+    display:block;
+    padding:12px 28px;
+    }
+ }
+</style>
+<!-- sfc:wms begin pageName=/fragments/ns-core/navigation.jsp&elementName=navigation&rotationId=-1 -->
+	<div class="container navigation reg-navbar am-old-navigation" id="amOldNav" style="display: none;">
+		<ul id="ns-nav">
+			<li id="navbar-renew-mobile">
+				<a href="/manage-it/bulk-renewal.jsp" >Renew Services</a>
+			</li>
+			<li id="navbar-domain">
+				<a>Domains</a>
+				<ul>
+					<li><a href="/domain-name-registration/index.jsp">Domain Name Search</a></li>
+					<li><a href="/domain-transfer/index.jsp">Domain Transfer</a></li>
+					<li><a href="/build-it/forwarding.jsp">Domain Forwarding</a></li>
+					<li><a href="/domain-name-registration/private.jsp">Private Domain Registration</a></li>
+					<li><a href="/domain-name-registration/domain-protect.jsp">Domain Expiration Protection</a></li>
+					<li><a href="/domain-name-registration/domain-taken-center.jsp">Premium Domain Names</a></li>
+					<li><a href="/whois/index.jsp">WHOIS Search</a></li>
+				</ul>
+			</li>
+			<li id="navbar-website">
+				<a>Website &amp; eCommerce</a>
+				<ul class="two-columns">
+					<div class="column-1">
+						<li class="column-header">Website</li>
+						<li><a href="/website/website-offer.jsp">DIY - Website Builder</a></li>
+						<li><a href="/web-design-services/index.jsp">We Build It For You</a></li>
+					</div>
+					<div class="column">
+						<li class="column-header">eCommerce</li>
+						<li><a href="/e-commerce/index.jsp">eCommerce Website</a></li>
+						<li><a href="/e-commerce/take-a-payment.jsp">Accept Online Payment</a></li>
+					</div>
+				</ul>
+			</li>
+			<li id="navbar-hosting">
+				<a>Hosting</a>
+				<ul>
+					<li><a href="/hosting">Web Hosting</a></li>
+					<li><a href="/websites/wordpress">WordPress</a></li>
+				</ul>
+			</li>
+			
+		 <li id="navbar-security" class="security-ssl-test-ab">
+				<a>Security</a>
+				<ul>
+					<li><a href="/SSL-certificates/index.jsp">SSL Certificates</a></li>
+					<li><a href="/security-suite/site-confirm-seal.jsp">Trusted Site Seal</a></li>
+					<li><a href="/sitelock/sitelock-overview.jsp">Website Security</a></li>
+					<li><a href="/security/small-business-cyber-security">Cyber Security Solution</a></li>
+				</ul>
+			</li>
+			<li id="navbar-second-security" class="security-ssl-test-c">
+				<a>Security</a>
+				<ul class="two-columns">
+					<div class="column-1">
+						<li class="column-header">SSL Certificates</li>
+						<li class="no-hover"><a href="/SSL-certificates/index-v4.jsp" style="color:#007A33; text-decoration:underline;">Compare Products</a></li>
+						<li><a href="/SSL-certificates/domain-validation-v4.jsp">DV Certificates</a></li>
+						<li><a href="/SSL-certificates/ov-certificate-v4.jsp">OV Certificates</a></li>
+						<li><a href="/SSL-certificates/wildcard-certificate-v4.jsp">Wildcard Certificates</a></li>
+						<li><a href="/SSL-certificates/ev-certificate-v4.jsp">EV Certificates</a></li>
+					</div>
+					<div class="column">						
+						<li><a href="/security-suite/site-confirm-seal.jsp">Trusted Site Seal</a></li>
+						<li><a href="/sitelock/sitelock-overview.jsp">Website Security</a></li>
+						<li><a href="/security/small-business-cyber-security">Cyber Security Solution</a></li>
+					</div>
+				</ul>
+			</li>
+			
+			<li id="navbar-email">
+				<a>Email &amp; Office</a>
+				<ul class="two-columns">
+					<div class="column-1">
+						<li class="column-header">Email</li>
+						<li><a href="/email-account/personal-email.jsp">Professional Email</a></li>
+						<li><a href="/email-account/business-email.jsp">Professional Email Plus</a></li>
+						<!--<li class="mobile-only"><a href="/office365">Microsoft® Office 365</a></li>-->
+						<li><a href="/mobile-email/index.jsp">Mobile Email</a></li>
+						<li><a href="/email-account/hosted-exchange/index.jsp">Hosted Exchange Email</a></li>
+					</div>
+					<div class="column">
+					<li class="column-header">Office</li>
+						<!--<li class="desktop-only"><a href="/office365">Microsoft® Office 365</a></li>-->
+						<li><a href="/office365">Microsoft® Office 365</a></li>
+						<li class="no-hover compare-link"><a href="/email-account/index.jsp">Compare Products</a></li>				
+					</div>
+				</ul>
+			</li>
+			<li id="navbar-marketing">
+				<a>Online Marketing</a>
+				<ul>
+					<li><a target="_blank" href="https://www.web.com/online-marketing/get-my-business-listed-online">Local Business Listings</a></li>
+					<li><a href="/design-develop/facebook/index.jsp">Facebook Marketing</a></li>
+					<li><a href="/pay-per-click/index.jsp">Pay Per Click Marketing</a></li>
+					<li><a href="/search-engine-optimization/index.jsp">Search Engine Optimization</a></li>
+					<li><a href="/online-marketing/online-reputation/index.jsp">Online Review Management</a></li>
+					<li><a href="/email-marketing-campaigns/index.jsp">Email Marketing</a></li>
+				</ul>
+			</li>
+			<li id="navbar-it">
+				<a href="/mytime-tech-support/index.jsp" >IT Services</a>
+			</li>
+			<li id="navbar-renew-desktop">
+				<a href="/manage-it/bulk-renewal.jsp" >Renew Services</a>
+			</li>
+			<li id="navbar-support">
+				<a href="/contact/index.jsp">Support</a>
+			</li>
+		</ul>
+	</div>
+<!-- sfc:wms end -->
+
+
+
+
+
+     <!--    <div class="splOffer"><a href="/promotions-and-free-offers.jsp">Exclusive Sales & Special Offers - <a href="/promotions-and-free-offers.jsp" class="shopnow">Shop Now</a> <img src="/img/backgrounds/homepages/right-arrow.png" alt="Yes" border="0" /> </a></div> -->
+		<a class="splBanner" href="/promotions-and-free-offers.jsp"><div class="splOffer">Exclusive Sales & Special Offers - <span class="shopnow">Shop Now</span>  <img src="/img/backgrounds/homepages/right-arrow.png" alt="Yes" border="0" /></div></a>
+
+		
+		<div id="ns-hp-test" class="responsive-4">
+
+
+
+
+			<div class="container hpsearch">
+				<div class="row">
+					<div class="twelve custom-columns">
+
+						<div class="domain-search-bar">
+							<form id="ntldSubmitForm" action="/domainSearch.do" method="post" name="SearchRequestForm">
+								<input type="hidden" value="389a6fe17f113d0e5d1163ff17a7db60" name="org.apache.struts.taglib.html.TOKEN">
+								<input type="hidden" value="submit" name="default-method">
+								<input placeholder="Find your next domain name..." title="Find your next domain name..." class="domsrchinput auto-focus blur" id="ntldDomSrchInput" name="domainNames">
+								
+                                    <input type="hidden" name="productLevelChannelId" value="46085637" />
+                                
+								<input type="hidden" value="/domain-name-registration/domain-name-search-results.jsp" name="Search">
+								<input type="hidden" value="true" name="allowPriorityTlds">
+								<input type="hidden" value="false" name="allowBulk">
+								<input type="hidden" value="/" name="currentPage">
+								<input type="hidden" value="/index.jsp" name="formTargetPage">
+								<input type="hidden" value="true" name="nTldDomainSearchTest" />
+								<input type="submit" value="Search" name="submit-btn" class="bigBtn">
+								<input type="hidden" value="/index.jsp" name="currentPage">
+								<input type="hidden" value="/index.jsp" name="formTargetPage">
+								<div class="clearfix"></div>
+							</form>
+
+							<div class="error-display">
+								
+							</div>
+
+						</div>
+						
+						<!-- sfc:wms begin pageName=/index.jsp&elementName=hp-tld-special-offers&rotationId=-1 -->
+						<div class="tld-offers">
+							<div class="tld-promos">
+								<a href="/domain-name-registration/index.jsp?tld=site" class="site"><img src="/img/ns-core/pages/homepage/tld-site.svg" alt=".site" />&#36;2.99</a>
+								<a href="/domain-name-registration/index.jsp?tld=online" class="online"><img src="/img/ns-core/pages/homepage/tld-online.svg" alt=".online" />&#36;2.99</a>
+								<a href="/domain-name-registration/index.jsp?tld=website" class="website"><img src="/img/ns-core/pages/homepage/tld-website.svg" alt=".website" />&#36;2.99</a>
+							</div>
+							<div class="tld-promo-details">
+								<a id="tld-pricing-link" href="#">Promo Details</a>
+							</div>
+						</div>
+						<!-- sfc:wms end -->
+
+
+						<div class="clearfix"></div>
+						
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- sfc:wms begin pageName=/index.jsp&elementName=hero&rotationId=-1 -->
+			<div class="container hero">
+				<div class="row">
+					<div class="twelve custom-columns">
+						<div class="dynamic-hero">
+							<h2><span class="for-xlarge for-large">Web</span> Hosting You <br /> Can Count On</h2>
+							<p>Web hosting services in the cloud that <br /> offer flexible plans, live technical support, <br /> and a 99.9% uptime guarantee.</p>
+							<a class="cta-button" href="/hosting">See Plans</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=product-tiles&rotationId=-1 -->
+			<div class="container product-tiles">
+				<div class="row">
+					<div class="twelve custom-columns">
+						<h1>The World's First Domain Provider</h1>
+						<p class="heading">All You Need, In One Place</p>
+						<ul class="products">
+							<li><a href="/domain-name-registration/index.jsp">Domain <br class="show-for-small" /> Name <br class="hide-for-small" /> Search</a></li>
+							<li><a href="/hosting">Hosting <br /> Services</a></li>
+							<li><a href="/website/website-offer.jsp">Website <br /> Design</a></li>
+							<li><a href="/SSL-certificates/index.jsp">SSL <br /> Certificate</a></li>
+							<li><a href="/email-account/business-email.jsp">Business <br /> Email</a></li>
+							<li><a href="/e-commerce/index.jsp">eCommerce <br /> Store</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=featured-products&rotationId=-1 -->
+			<div class="container featured-products">
+				<div class="row">
+					<div class="twelve custom-columns">
+						<div class="round-box">
+							<div class="fp-graphic ssl desktop">
+							</div>
+							<div class="fp-description ssl">
+								<h3>Secure Your Site <br /> for 50% Off</h3>
+								<p>Certificates show customers that your website is encrypted.</p>
+								<div class="button">
+									<a href="/SSL-certificates/index.jsp?promo=PCMKT02226" class="btn">Secure Your Site</a>
+								</div>
+								<p class="promo-details"><a href="#">Promo Details</a></p>
+							</div>
+							<div class="fp-graphic ssl mobile">
+							</div>
+						</div>
+						<div class="round-box reverse">
+							<div class="fp-graphic sitelock desktop">
+							</div>
+							<div class="fp-description sitelock">
+								<h3>Help Secure Your Investment</h3>
+								<p>Take <strong>20% off</strong> and protect your website, customers, and reputation with SiteLock<sub>&reg;</sub> Defend</p>
+								<div class="button">
+									<a href="/sitelock/sitelock-overview.jsp?promo=PCMKT02228" class="btn">Secure Your Site</a>
+								</div>
+								<p class="promo-details"><a href="#">Promo Details</a></p>
+							</div>
+							<div class="fp-graphic sitelock mobile">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=hp-cta&rotationId=-1 -->
+			<div class="container cta">
+				<div class="row">
+					<div class="twelve custom-columns">
+						<div class="round-box">
+							<h2>How can we help you?</h2>
+							<p>Call us anytime. We're here to assist.</p>
+							<a class="phone-number" href="tel:1-866-908-3442">1-866-908-3442</a>
+							<a class="call-button" href="tel:1-866-908-3442">Give us a call</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=why-choose-ns&rotationId=-1 -->
+			<div class="container why-ns-2">
+				<div class="row">
+					<div class="twelve custom-columns">
+						<div class="round-box">
+							<h2 class="h2">Why Choose Network Solutions?</h2>
+							<ul>
+								<li>
+									<div class="choose-ns-icon worlds-first-icon"></div>
+									<div class="choose-ns-text text-uppercase">
+										World's 1st Domain Registrar
+									</div>
+									<div class="choose-ns-text">
+										with over 25 years of experience.
+									</div>
+								</li>
+								<li>
+									<div class="choose-ns-icon everything-you-need-icon"></div>
+									<div class="choose-ns-text text-uppercase">
+										Everything you need
+									</div>
+									<div class="choose-ns-text">
+										all in one place, whether you're a <br class="xlarge" /> Fortune 500 or just starting out.
+									</div>
+								</li>
+								<li>
+									<div class="choose-ns-icon peace-of-mind-icon"></div>
+									<div class="choose-ns-text text-uppercase">
+										Peace of mind
+									</div>
+									<div class="choose-ns-text">
+										to ensure you only get <br class="xlarge" /> exactly what you need.
+									</div>
+								</li>
+								<li>
+									<div class="choose-ns-icon secure-payments-icon"></div>
+									<div class="choose-ns-text text-uppercase">
+										Secure payments
+									</div>
+									<div class="choose-ns-text">
+										encrypted to protect your <br class="xlarge" /> personal and financial information.
+									</div>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=faqs-content&rotationId=-1 -->
+
+
+				<div class="container faqs-2">
+					<div class="row">
+						<div class="twelve custom-columns">
+
+							<div class="round-box">
+
+								<h2>FAQ's</h2>
+
+								<div class="faq-list">
+									<ul>
+										<li>
+											<div class="expander"></div>
+											<p class="q">How does Network Solutions charge for renewals?</p>
+											<p class="a">
+												Network Solutions has a process for renewals that is designed to protect our customers. When you <a href="/domain-name-registration/index.jsp">purchase a domain</a> product the account is automatically set to Auto Renew. This protects you from losing your domain name. Auto Renew ensures your domain name is safe by automatically charging the account approximately sixty (60) to ninety (90) days prior to the end of the term period.
+												<br><br>Before your product expires, you will receive an automatic renewal reminder letting you know the date that your card will be charged. You may be asked to update your payment information if your credit card on file is invalid.
+												<br><br>When an Automatic Renewal processes, you receive an email confirming the order and that the renewal was successful. This occurs 60 days before product expiration or if renewed on a later renewal attempt.
+												<br><br>An <strong>Order Payment Failure</strong> email is sent when an automatic renewal fails. This occurs 60 days before product expiration and every failed attempt after, which occurs every 14 days to give you plenty of time to fix the issue before the product or service expires.
+												<br><br>If Auto Renew is not set up, Network Solutions customers have to manually renew domain names through their <a href="/manage-it/index.jsp">Account Manager</a> portal. That is also the same place to change your renew status to either turn it on for automatic renewals or turn it off to control domain renewals manually.
+											</p>
+										</li>
+										<li>
+											<div class="expander"></div>
+											<p class="q">How can Network Solutions help me if I run into technical issues?</p>
+											<p class="a">
+												We are a team full of technical expertise to help you with anything you need related to our products and services. We are trained to troubleshoot and assist you to resolve any technical issues. Depending on the nature of the technical issue, you can call in and speak with a trained agent who can assist by remotely fixing the issue on our end. They will walk you through their work, step-by-step, to ensure you feel confident they know what they are doing. The agent will document their work and can provide you a ticket number to call in and track the progress of the work if the technical issue takes time to fix.
+												<br><br>We specialize in solving website problems! <a href="/contact/index.jsp">Contact the Network Solutions Customer Support</a> team at <a href="tel:18776288686">1-877-628-8686</a> or click on the link above to find the department that most applies to you.
+											</p>
+										</li>
+										<li>
+											<div class="expander"></div>
+											<p class="q">How can I move all of my existing website services to Network Solutions?</p>
+											<p class="a">
+												Network Solutions technical and support specialists can help you move any existing website service into our ecosystem. See the process for specific products below, but the best way is to contact us today at <a href="tel:18003337680">1-800-333-7680</a>.
+												<br><br><strong>Moving hosting services to Network Solutions:</strong>
+												<br>To move your hosting services to Network Solutions, you’ll first <a href="/hosting">purchase a hosting package</a> that meets your needs for the type of website you have.  Once purchased, you will get the FTP credentials needed to move your website hosting.  Now you can go ahead and download the content from your previous host to your local computer using an FTP application.  Once you have the content on your local computer, you can upload it to Network Solutions.  Keep in mind that if your website runs with a database that you will also need to transfer the database.  Once you have completed this, you can assign your domain name to your hosting package and update the DNS for your domain to make your site live with Network Solutions.
+												<br><br><strong>Migrating your website to Network Solutions:</strong>
+												<br>Network Solutions provides <a href="/website/website-offer.jsp">easy website builders</a> that allow you to re-create your existing website on our platform. This gives you access to a content management system so you can make future website updates at any time easily! If you need help migrating your website reach out to our general support line at <a href="tel:18003337680">1-800-333-7680</a>.
+												<br><br><strong>Moving your security over to Network Solutions:</strong>
+												<br>Our agents can assist you in moving your website security products to Network Solutions. First purchase the appropriate <a href="/SSL-certificates/index.jsp">SSL certificate</a> or <a href="/sitelock/sitelock-overview.jsp">SiteLock security product</a> from Network Solutions.  An online account manager can then walk you through the steps of validating the SSL certificate and having it installed on your Network Solutions hosting package.
+												<br><br><strong>Moving your business email over to Network Solutions:</strong>
+												<br>To setup email with Network Solutions, purchase what product best suits your needs.  Once that’s done, you can set up your email accounts with Network Solutions. We advise you to backup any valuable email content to your local computer, before moving your <a href="/email-account/index.jsp">business email</a>. Email products, services and backups can vary depending on the type of business and email needs you have.
+												<br><br><strong>Moving domain registration to Network Solutions:</strong>
+												<br>Network Solutions is the world’s first domain registrar. So, whether you are a new customer or an existing customer moving your domains to us, our trained Domain Support Agents can assist you with transferring your website services to Network Solutions.
+												<br><br>First, ensure your domain name has not been transferred or purchased more than 60 days prior. Remove any locks or security settings you may have in place on your domain. Contact your current registrar and request they provide you with an authorization code and that they change your domain settings to public.
+												<br><br>Check the email address associated with the domain name you are forwarding to get an approval email for the transfer. You may either call into our Domain Support Team at <a href="tel:18886420209">1-888-642-0209</a> or <a href="/domain-transfer/index.jsp">purchase a domain transfer</a> on the Network Solutions website.
+												<br><br>Login to the Network Solutions account manager and enter the authorization code, or provide the code to an agent if you choose to call in. You will receive an authorization email to the email address associated with your domain name once the process is complete. Now, Network Solutions can assist you with whatever you need with your domain name or the services attached to that domain name.
+											</p>
+										</li>
+										<li>
+											<div class="expander"></div>
+											<p class="q">How can Network Solutions help me get new customers to my online business?</p>
+											<p class="a">
+												Whether you’re a new online business or you’ve been around for a few years, every business needs new customers. We’re here to help. Network Solutions has a variety of online marketing services to suit every type of business, big or small.
+												<br><br>Our specialized Pay-Per-Click (PPC) agents are trained to assist businesses with online advertising in Google. This service allows a business to choose specific keywords and appear in Google’s ad positions at the top of search pages for those queries. Our <a href="/pay-per-click/index.jsp">PPC services</a> can work for businesses with any size budget, with campaigns locally, internationally or both!
+												<br><br>Our <a href="/design-develop/facebook/index.jsp">Facebook Marketing specialists</a> are trained to assist businesses with social media marketing and advertising. They can target specific people who have interests that match your services and market directly to them, on their personal social media pages. This form of marketing is very effective when paired with sales or discount offers. Often times, potential customers will “shop around” and look for the best deals on different platforms. Instead of waiting for them to find you, we’ll bring them to you using engaging posts that describe your business.
+												<br><br>Direct contact with customers from the business owner can add a personal touch to your social media pages, and potentially grow a more connected audience. Our social media marketing services give you the option to personally interact with customers if you choose. Ever wonder what people are saying about your business online? Network Solutions also offers <a href="/online-marketing/online-reputation/index.jsp">Reputation Alert monitoring services</a> to keep you in the know, every day.
+												<br><br>There are so many ways that we can work with you on your primary mission to get new customers online. So, if it’s not PPC or social media marketing, why not call us and ask us about our SEO or local business services? Network Solutions can help you grow your business, so reach out to us today to get the conversation started.
+											</p>
+										</li>
+										<li>
+											<div class="expander"></div>
+											<p class="q">What are the best Network Solutions products to help me get online right away?</p>
+											<p class="a">
+												Network Solutions offers everything you need to get online quickly. From website development to optimization, social media, online advertising and more, we’ll have your business online in no time.
+												<br><br>A personalized business website is the first step to getting your business online. We provide everything from simple do-it-yourself builders to <a href="/web-design-services/index.jsp">custom-built advanced websites</a> with all the bells and whistles. That means you can choose the right website for your business and your budget.
+												When building your online presence, it is also important that you factor in search engines and how people use them. Search Engine Optimization (SEO) is one of the only ways people who don’t already know your business can find it online. Without keywords and search engine optimization, customers and clients can only find you by searching for your exact business name or web address, or by searching on social media. That means you miss out on thousands of searches about your products and services every month that take place in Google, Bing, etc. We provide <a href="/search-engine-optimization/index.jsp">SEO services</a> for all different types of businesses to allow you to target local, national and international search engines.
+												<br><br>Once you have your website created and optimized for search engines, you need to look into digital marketing to amplify your online presence. When a new business goes online, it has to compete with older websites who have already worked to secure their space and ranking in the search engines. These websites once started where you are today but invested in marketing campaigns to find new customers.
+												<br><br>Without marketing, your potential customers have to do a lot of work to find your business. You are asking customers to search through all of the other businesses who do market themselves online and have been doing so for years, to find your company and use you.
+												Online marketing can take many forms. For local businesses with a storefront, we recommend social media marketing to drive clientele to you. Online ratings, engagement, and multiple social accounts factor into your overall local presence and we can help with all of that.
+												<br><br>For online businesses that need new customer leads now, we recommend Network Solutions Pay-Per-Click services that allow you to set aside a budget and advertise your business in the first one to four ad slots on Google. That means showing up at the top of search engine results pages today! Get in touch with our customer service to get your business online right away.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=hp-tld-special-offers-details&rotationId=-1 -->
+			<div id="promo-details-dialog" class="reveal-modal large" title="Pricing Details">
+				<div class="container dialog">
+					<div class="dialog-header">Pricing Details <span class="modal-cancel close-reveal-modal"></span></div>
+					<p>The promotional price for .online, .site, and .website is $2.99. The $2.99 price applies to the initial charge on a one-year term of an applicable domain name. This offer is valid until the time of the domain renewal. After the promotional period has ended, a recurring yearly fee for the service will automatically be billed to the payment method on file at the then-current rate plus applicable taxes. The rates for .site, .online, and .website are $39.99, $49.99, and $29.99 respectively. To cancel, <a target="_blank" href="https://www.networksolutions.com/contact/index.jsp">contact us</a> within the time designated to avoid renewal. These prices are subject to change at the sole discretion of Network Solutions. For additional details see <a target="_blank" href="https://legal.web.com/">Service Agreement.</a></p>		
+					<div class="dialog-buttons">
+						<a class="button modal-close close-reveal-modal">Close</a>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=sitelock-promo-details&rotationId=-1 -->
+			<div id="sitelock-promo-details" class="reveal-modal large" title="Promotion Details">
+				<div class="container dialog">
+					<div class="dialog-header">Promotion Details<span class="modal-cancel close-reveal-modal"></span></div>
+					
+							<p><!-- Begin Promo Term: s46064SLDoffer -->20% off discount applies to the first term for up to 5 SiteLock Defend products. Offer applies to a 1 year term only. After the first term, the recurring fee will automatically change to then current rate per billing cycle, billed to the credit card or payment method on file. The rate for a one year purchase of SiteLock Defend is $299.90. Subject to change at the sole discretion of Network Solutions. This product will auto-renew. Customers may cancel prior to the end of the promotional period or at any time thereafter by calling 1-855-326-3481. Offer is only valid for new online purchases at Network Solutions. Offer cannot be combined with another offer. Discount will be applied in shopping cart. To cancel, contact us before the service renewal date to avoid renewal. These prices are subject to change at the sole discretion of Network Solutions. For additional details, see<!-- End Promo Term --> <a target="_blank" href="https://legal.web.com/">Service Agreement</a>.</p>
+								
+					<div class="dialog-buttons">
+						<a class="button modal-close close-reveal-modal">Close</a>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/index.jsp&elementName=ssl-promo-details&rotationId=-1 -->
+			<div id="ssl-promo-details" class="reveal-modal large" title="Promotion Details">
+				<div class="container dialog">
+					<div class="dialog-header">Promo<span class="for-xlarge for-large for-medium">tion</span> Details<span class="modal-cancel close-reveal-modal"></span></div>
+					
+							<p><!-- Begin Promo Term: s46063SSLoffer -->50% off discount applies to the first term for up to 5 SSL certificates, including Xpress DV, Basic OV, Advanced OV, Wildcard, and EV. Offer applies to a 1 year term only. After the first term, the recurring fee will automatically change to then current rate per billing cycle, billed to the credit card or payment method on file. The rates for an Xpress DV, Basic OV, Advanced OV, Wildcard, and EV are $69.99, $139.00, $225.00, $649.00, and $549.00 per year respectively. Subject to change at the sole discretion of Network Solutions. This product will auto-renew. Customers may cancel prior to the end of the promotional period or at any time thereafter by calling 1-855-326-3481. Offer is only valid for new online purchases at Network Solutions. Offer cannot be combined with another offer. Discount will be applied in shopping cart. To cancel, contact us before the service renewal date to avoid renewal. These prices are subject to change at the sole discretion of Network Solutions. For additional details, see<!-- End Promo Term --> <a target="_blank" href="https://legal.web.com/">Service Agreement</a>.</p>
+								
+					<div class="dialog-buttons">
+						<a class="button modal-close close-reveal-modal">Close</a>
+					</div>
+				</div>
+			</div>
+			<!-- sfc:wms end -->
+
+
+			<div id="universal-dialog" class="reveal-modal large" title="Pricing Details">
+				<div class="container dialog">
+					<div class="dialog-header"><span id="universal-dialog-title">Title</span><span class="modal-cancel close-reveal-modal"></span></div>
+					<div id="universal-dialog-description">
+						<p>Description</p>
+					</div>
+					<div class="dialog-buttons">
+						<a class="button modal-close close-reveal-modal">Close</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="container footer-v2">
+			<div class="footer-row">
+				<div class="align-inline products-section">
+					<ul class="ul-heading products-heading not-small-view">
+						<li>Products</li>
+					</ul>
+					<ul class="ul-heading products-heading only-small-view collapsed clickable" id="products">
+						<li>Products</li>
+					</ul>
+					<ul class="ul-child products-child">
+						<li><a href="/domain-name-registration/index.jsp">Domain Names</a></li>
+						<li><a href="/website/diy-website-builder">Website</a></li>
+						<li><a href="/hosting">Hosting</a></li>
+						<li><a href="/e-commerce/index.jsp">Ecommerce</a></li>
+						<li><a href="/email-account/">Email & Office</a></li>
+						<li><a href="/SSL-certificates/index.jsp">SSL Certificates</a></li>
+						<li><a href="/security/small-business-cyber-security">Cyber Security Solution</a></li>
+						<li><a href="/promotions-and-free-offers">Special Offers</a></li>
+					</ul>
+				</div>
+				<div class="align-inline help-support-section">
+					<ul class="ul-heading help-support-heading not-small-view">
+						<li>Help & Support</li>
+					</ul>
+					<ul class="ul-heading help-support-heading only-small-view collapsed clickable" id="help-support">
+						<li>Help & Support</li>
+					</ul>
+					<ul class="ul-child help-support-child">
+						<li><a href="https://knowledge.web.com/" target="_blank">Help Center</a></li>
+						<li><a href="/contact/index.jsp">Contact Us</a></li>
+						<li><a href="https://abuse.web.com/" target="_blank">Report Abuse</a></li>
+						<li><a href="https://legal.web.com/Document/Get/DMCAPolicy" target="_blank">DMCA Policy</a></li>
+					</ul>
+				</div>
+				<div class="align-inline tools-section">
+					<ul class="ul-heading tools-heading not-small-view">
+						<li>Tools & Resources</li>
+					</ul>
+					<ul class="ul-heading tools-heading only-small-view collapsed clickable" id="tools">
+						<li>Tools & Resources</li>
+					</ul>
+					<ul class="ul-child tools-child">
+						<li><a href="/blog/">Network Solutions Blog</a></li>
+						<li><a href="/whois/index.jsp">WHOIS Search</a></li>
+						<li><a href="/site-map/index.jsp">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="align-inline programs-section">
+					<ul class="ul-heading programs-heading not-small-view">
+						<li>Programs</li>
+					</ul>
+					<ul class="ul-heading programs-heading only-small-view collapsed clickable" id="programs">
+						<li>Programs</li>
+					</ul>
+					<ul class="ul-child programs-child">
+						<li><a href="/affiliate-program/index.jsp">Affiliate Program</a></li>
+						<li><a href="https://www.srsplus.com/" target="_blank">Reseller Program</a></li>
+					</ul>
+				</div>
+				<div class="align-inline aboutus-section">
+					<ul class="ul-heading aboutus-heading not-small-view">
+						<li>About Us</li>
+					</ul>
+					<ul class="ul-heading aboutus-heading only-small-view collapsed clickable" id="aboutus">
+						<li>About Us</li>
+					</ul>
+					<ul class="ul-child aboutus-child">
+						<li><a href="https://www.web.com/about-us" target="_blank">About Us</a></li>
+						<li><a href="/why-choose-netsol/index.jsp">Why Choose Us</a></li>
+						<li><a href="https://www.web.com/about-us/careers/" target="_blank">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-row-2">
+				<div class="align-inline ns-logo-bottom-left">
+				</div>
+				<div class="align-inline fb-logo-white">
+					<a href="https://www.facebook.com/NetworkSolutions/" target="_blank">
+						<img src="/img/graphics/new-tlds/fb-icon-white.png">
+					</a>
+				</div>
+				<div class="align-inline twitter-logo-white">
+					<a href="https://twitter.com/netsolcares" target="_blank">
+						<img src="/img/graphics/new-tlds/twitter-icon-white.png">
+					</a>
+				</div>
+				<div class="align-inline linked-in-logo-white">
+					<a href="https://www.linkedin.com/company/network-solutions/" target="_blank">
+						<img src="/img/graphics/new-tlds/linked-in-icon-white.png">
+					</a>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="footer-row-3">
+					<div class="align-inline legalLinks">
+						<div>
+							<ul>
+								<li>
+									<a rel="nofollow" target="_blank" 
+										href="https://legal.web.com/">Legal</a>
+								</li>
+								<li>|</li>
+								<li>
+									<a rel="nofollow" target="_blank" 
+										href="https://assets.web.com/legal/English/PrivacyPolicy.pdf">Privacy Policy</a>
+								</li>
+								<li>|</li>
+								<li>
+									<a rel="nofollow" target="_blank" 
+										href="https://assets.web.com/legal/English/TermsOfUse.pdf">Terms of Use</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<p class="copyright">Copyright <sup>&copy;</sup> 2020 Network Solutions, LLC, A Web.com Company. All rights reserved.</p>
+						</div>
+						<div>
+							<p>Network Solutions<sup>&reg;</sup> and Web.com<sup>&reg;</sup> are registered trademarks of Web.com Group, Inc.<br> All other registered trademarks herein are the property of their respective owners.</p>
+						</div>
+					</div>
+					<div class="align-inline site-seal">
+						<script>
+				            try{
+				            	SiteSeal("/img/graphics/new-tlds/evrecgreen.png", "NETEV", "none");
+				            }catch(err){
+				            }
+				        </script>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+
+
+	</div>
+	
+</div>
+
+		<!-- standard/fallback chat -->
+		<!-- BoldChat Visitor Monitor HTML v4.00 (Website=Netsol,ChatButton=Netsol Floating Button,ChatInvitation=Netsol Ruleset) -->
+		<script type="text/javascript" class="optanon-category-3">
+		  var _bcvma = _bcvma || [];
+		  _bcvma.push(["setAccountID", "766666934454474037"]);
+		  _bcvma.push(["setParameter", "WebsiteDefID", "3324100691097574910"]);
+		  _bcvma.push(["setParameter", "InvitationDefID", "2726064460244981555"]);
+		  _bcvma.push(["setParameter", "VisitName", ""]);
+		  _bcvma.push(["setParameter", "VisitPhone", ""]);
+		  _bcvma.push(["setParameter", "VisitEmail", ""]);
+		  _bcvma.push(["setParameter", "VisitRef", ""]);
+		  _bcvma.push(["setParameter", "VisitInfo", ""]);
+		  _bcvma.push(["setParameter", "CustomUrl", ""]);
+		  _bcvma.push(["setParameter", "WindowParameters", ""]);
+		  _bcvma.push(["addFloat", {type: "chat", id: "400807737027041846"}]);
+		  _bcvma.push(["pageViewed"]);
+		  (function(){
+		    var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+		    vms.src = ('https:'==document.location.protocol?'https://':'http://') + "vmss.boldchat.com/aid/766666934454474037/bc.vms4/vms.js";
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+		  })();
+		</script>
+		<noscript>
+		<a href="http://www.boldchat.com" title="Live Support" target="_blank" class="optanon-category-3"><img alt="Live Support" src="https://vms.boldchat.com/aid/766666934454474037/bc.vmi?wdid=3324100691097574910&amp;vr=&amp;vi=&amp;vn=&amp;vp=&amp;ve=&amp;curl=" border="0" width="1" height="1" /></a>
+		</noscript>
+		<!-- /BoldChat Visitor Monitor HTML v4.00 -->
+	<!-- sfc:wms begin pageName=/fragments/nsfooter.jsp&elementName=TurnOffLSO&rotationId=-1 --><!--
+LSO turned off
+-->
+<script>
+// Check if a CoR (Change of Registrant) is occurring
+if (typeof corConfirm !== "undefined") {
+	corConfirm.checkIfCOROccurring = function()
+	{
+		var ctbLoginData = {
+				email:$('input[id=email]').val(),
+				phone:$('input[id=phone]').val(),
+				fn:"-99",
+				ln:"-99"
+		  }
+
+		var data = {
+				'default-method': 'isCOROccurring',
+				'data':JSON.stringify(ctbLoginData)
+		  }
+
+		$.ajax({
+			  url: "/jsonUpdateUserAction.do",
+			  data: data,
+			  type: 'post',
+			  dataType: 'json',
+			  error: function(){
+					//ctbe.showGenericError();
+					return false;
+			  },
+			  success: function(jsonData){
+
+					console.log("jsonData.isCOROccurring = " + jsonData.isCOROccurring);
+					corConfirm.isCOROccurring = jsonData.isCOROccurring;
+
+					if (corConfirm.isCOROccurring == true) {
+
+						corConfirm.corConfirmed = false;
+						
+						console.log("trying to show overlay...");
+						var data = {};
+
+						corConfirm.content.html('');
+						corConfirm.makeAjaxRequest(corConfirm.urls.corConfirmDialog,data);
+
+					corConfirm.loading.show();
+					corConfirm.showOverlay('#ctb-window');
+						
+						return false;
+					} else {
+						$(EDIT_USER_INFO_FORM_SELECTOR).unbind("submit").submit();
+			  }
+
+
+					
+			  }
+		});
+	}
+}
+</script><!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/fragments/nsfooter.jsp&elementName=BizoConfig&rotationId=-1 --><!--
+disable Bizo 2/24/2014
+--><!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/fragments/nsfooter.jsp&elementName=TurnOffBizo&rotationId=-1 --><!--
+disable Bizo 2/24/2014
+--><!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/fragments/nsfooter.jsp&elementName=TurnOffDotomi&rotationId=-1 -->
+	<script type="text/javascript" class="optanon-category-4">
+   		var products = ";";
+   		var productsArray = products.split(',');
+   		
+		var dotomiProductItems = "";
+		
+		for(var i = 0; i < productsArray.length; i++)
+		{
+			//change format  ;ACQ-DOM_COM-5.0-Y;1;64.95,;ACQ-DOM_NET-5.0-Y;1;64.95
+			//to format		ACQ-DOM_COM-5.0-Y;64.95|ACQ-DOM_NET-5.0-Y;64.95
+			var tmpString = productsArray[i];
+			var tmpProdData = tmpString.split(';');
+			if(tmpProdData.length == 4)
+			{
+				dotomiProductItems = dotomiProductItems + tmpProdData[1] + ";" + tmpProdData[3];
+				if (i<productsArray.length-1)
+				{
+					dotomiProductItems = dotomiProductItems + "|";
+				}				
+			}	
+		}		
+	</script>
+		
+    	
+	
+		<script type="text/javascript" class="optanon-category-4">
+		<!--
+		var dtmSrc = window.location.protocol + "//login.dotomi.com/ucm/UCMController?"+
+			"dtm_com=28&dtm_fid=101&dtm_cid=2448&dtm_cmagic=07a9d3&dtm_format=5";
+		
+		var dtmTag = new Array();
+		/* custom fields SUBSTITUTE DYNAMIC VALUES ONLY IN THIS BLOCK */
+		dtmTag.cli_promo_id = "1";
+		dtmTag.dtm_user_id = "-1";
+		dtmTag.dtmc_user_type = "EXISTING CUSTOMER";
+		dtmTag.dtmc_category = "networksolutions";
+		dtmTag.dtmc_sub_category = "/index.jsp";
+		dtmTag.dtmc_domain_name = "";
+		// added if then to fix undeclared value error
+		if (dotomiProductItems) {
+			dtmTag.dtm_items = dotomiProductItems;
+		} else {
+			dtmTag.dtm_items = "";
+		}
+		dtmTag.dtmc_domain_status = "";
+		dtmTag.dtmc_domain_variations = "";
+		dtmTag.dtmc_source = "";
+		/* custom fields end */
+				
+		dtmTag.dtmc_ref = document.referrer;
+		dtmTag.dtmc_loc = document.location.href;
+		for (var item in dtmTag){
+			if(typeof dtmTag[item] != "function" && typeof dtmTag[item] != "object")
+				dtmSrc += "&" + item + "=" + escape(dtmTag[item]);
+		}   
+		setTimeout('timeOutDotomi()',2000);
+		document.write('<div id="dtmdiv" style="display:none;">' +
+		'<iframe name="response_frame" src="' + dtmSrc + '"></iframe></div>');
+		
+		function timeOutDotomi() { document.getElementById("dtmdiv").innerHTML = "";}
+		//-->
+		</script>
+		
+	<!-- sfc:wms end -->
+<!-- sfc:wms begin pageName=/fragments/tag-manager.jsp&elementName=TurnOffCtm&rotationId=-1 -->
+		<script type="text/javascript">
+		<!--
+		var MasterTmsUdo = {};
+		(function() {
+		MasterTmsUdo = 
+		{
+				
+			"attribution":{
+				"ppc":{
+					"gclid":""
+				}
+			},
+			
+			"cart":{
+				"product":[]
+			},
+			
+			"environmentName":"PROD",
+		
+			"page":{
+				"language":"en-US",
+				"pageName":"/index.jsp", 
+				"destinationUrl": "/index.jsp",
+				"referringUrl": ""
+			},
+		
+			"transaction":{
+				"currency":"USD",
+				"transactionId": "0",
+				"transactionTotal": "$0.00"
+			},
+			
+			"user":{
+				"landingCode":"0",
+				"segment":"Direct to Site",
+				"userId":"-1"
+			},
+			
+			"version":1
+			};
+		});
+		</script>
+
+<script type="text/javascript">
+<!--
+/*DO NOT ALTER *** Network Solutions*/(function(e){var t="3174",n=document,r,i,s={http:"http://cdn.mplxtms.com/s/MasterTMS.min.js",https:"https://secure-cdn.mplxtms.com/s/MasterTMS.min.js"},o=s[/\w+/.exec(window.location.protocol)[0]];i=n.createElement("script"),i.type="text/javascript",i.async=!0,i.src=o+"#"+t,r=n.getElementsByTagName("script")[0],r.parentNode.insertBefore(i,r),i.readyState?i.onreadystatechange=function(){if(i.readyState==="loaded"||i.readyState==="complete")i.onreadystatechange=null}:i.onload=function(){try{e()}catch(t){}}})(function(){});
+-->
+
+</script>
+
+<!-- sfc:wms end -->
+<!-- 'NS_Page_Fragment_Version','' -->
+		<!-- OneTrust Cookies Consent Notice (Production CDN, networksolutions.com, en-US) start -->
+		<script src="https://cdn.cookielaw.org/consent/bfeb76fe-02bc-4103-846a-a7e36655d8ac.js" type="text/javascript" charset="UTF-8" class="optanon-category-1"></script>
+		<script type="text/javascript" class="optanon-category-1">
+		function OptanonWrapper() { }
+		</script>
+		<!-- OneTrust Cookies Consent Notice (Production CDN, networksolutions.com, en-US) end -->
+	
+
+<style>
+.footer-v2 {
+    background-color: #006272;
+    padding: 60px 0px 0px 0px;
+    height: 761px;
+}
+.footer-v2 .footer-row {
+	width: 1336px;
+	min-height: 386px;
+	margin: 0 auto;
+	padding: 0 0 0 134px;
+}
+.footer-v2 .bottom-footer {
+	width: 100%;
+	background: #FFFFFF;
+	min-height: 206px;
+}
+.footer-v2 .footer-row-2, 
+.footer-v2 .footer-row-3 {
+	width: 1336px;
+	margin: 0 auto;
+	padding: 0 0 0 134px;
+}
+.footer-v2 .footer-row-2 {
+	min-height: 109px;
+}
+.footer-v2 .align-inline {
+	display: inline-block;
+	float: left;
+}
+.footer-v2 .footer-row .align-inline .ul-child {
+	margin: 0px;
+}
+.footer-v2 .footer-row .align-inline .ul-heading {
+	margin: 0px 0px 20px 0px;
+}
+.footer-v2 .footer-row .ul-heading li, 
+.footer-v2 .footer-row .ul-child li {
+	list-style-type: none;
+}
+.footer-v2 .footer-row .ul-heading li {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	align-items: center;
+	letter-spacing: -0.1px;
+	color: #FFFFFF;
+}
+.footer-v2 .footer-row .ul-child li a, 
+.footer-v2 .footer-row .ul-child li a:hover {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 36px;
+	align-items: center;
+	color: #FFFFFF;
+}
+.footer-v2 .footer-row .ul-child li a {
+	text-decoration-line: none;
+}
+.footer-v2 .footer-row .ul-child li a:hover {
+	text-decoration-line: underline;
+}
+.footer-v2 .footer-row .products-section, 
+.footer-v2 .footer-row .help-support-section, 
+.footer-v2 .footer-row .tools-section, 
+.footer-v2 .footer-row .programs-section, 
+.footer-v2 .footer-row .aboutus-section {
+	width: 218px;
+}
+.footer-v2 .footer-row-2 .ns-logo-bottom-left {
+	width: 160px;
+	height: 61px;
+	background: url(/img/ns-logo-white.png) no-repeat 0px 0px;
+}
+.footer-v2 .footer-row-2 .fb-logo-white, 
+.footer-v2 .footer-row-2 .twitter-logo-white, 
+.footer-v2 .footer-row-2 .linked-in-logo-white {
+	width: 48px;
+	height: 48px;
+	margin: 6px 8px;
+}
+.footer-v2 .footer-row-2 .fb-logo-white a img, 
+.footer-v2 .footer-row-2 .twitter-logo-white a img, 
+.footer-v2 .footer-row-2 .linked-in-logo-white a img {
+	width: 48px;
+	height: 48px;
+}
+.footer-v2 .footer-row-2 .fb-logo-white {
+	margin-left: 714px;
+}
+.footer-v2 .footer-row-3 .legalLinks {
+	width: 506px;
+	height: 106px;
+}
+.footer-v2 .footer-row-3 .site-seal {
+	width: 176px;
+	height: 44px;
+	margin-left: 368px;
+}
+.footer-v2 .footer-row-3 {
+	padding-top: 36px;
+	
+}
+.footer-v2 .footer-row-3 .legalLinks div {
+	width: 100%;
+	margin-bottom: 10px;
+    min-height: 20px;
+}
+.footer-v2 .footer-row-3 .legalLinks ul li {
+	list-style-type: none;
+	float: left;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	align-items: center;
+	color: #212121;
+	margin-right: 16px;
+}
+.footer-v2 .footer-row-3 .legalLinks ul {
+	margin: 0px;
+}
+.footer-v2 .footer-row-3 .legalLinks ul li a, 
+.footer-v2 .footer-row-3 .legalLinks ul li a:hover {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	align-items: center;
+	color: #212121;
+	text-decoration: none;
+}
+.footer-v2 .footer-row-3 .legalLinks ul li a:hover {
+	text-decoration: underline;
+}
+.footer-v2 .footer-row-3 .legalLinks p {
+	font-weight: normal;
+	font-size: 12.5px;
+	line-height: 20px;
+	align-items: center;
+	color: #212121;
+	margin: 0px;
+}
+.footer-v2 .only-small-view {
+	display: none;
+}
+
+
+/* LARGE, step down */
+@media (max-width: 1335px) {
+	.footer-v2 {
+	    height: 804px;
+	}
+	.footer-v2 .footer-row {
+		width: 1008px;
+		min-height: 429px;
+		padding: 0 0 0 24px;
+	}
+	.footer-v2 .bottom-footer {
+		min-height: 194px;
+	}
+	.footer-v2 .footer-row-2, 
+	.footer-v2 .footer-row-3 {
+		width: 1008px;
+		padding: 0 0 0 24px;
+	}
+	.footer-v2 .footer-row-3 {
+	    padding-top: 36px;
+	}
+	.footer-v2 .footer-row-2 {
+		min-height: 121px;
+	}
+	.footer-v2 .footer-row .products-section {
+		width: 166px;
+	}
+	.footer-v2 .footer-row .help-support-section {
+		width: 162px;
+	}
+	.footer-v2 .footer-row .tools-section {
+		width: 246px;
+	}
+	.footer-v2 .footer-row .programs-section {
+		width: 164px;
+	}
+	.footer-v2 .footer-row .aboutus-section {
+		width: 130px;
+	}
+	.footer-v2 .footer-row-2 .fb-logo-white {
+		margin-left: 578px;
+	}
+	.footer-v2 .footer-row-3 .legalLinks {
+		width: 654px;
+	}
+	.footer-v2 .footer-row-3 .site-seal {
+		margin-left: 84px;
+	}
+}
+
+/* Medium, step down */
+@media (max-width: 1007px) {
+	.footer-v2 {
+	    height: 1168px;
+	    padding: 48px 0px 0px 0px;
+	}
+	.footer-v2 .footer-row {
+		width: 632px;
+		min-height: 768px;
+		padding: 0 0 0 48px;
+	}
+	.footer-v2 .bottom-footer {
+		min-height: 291px;
+	}
+	.footer-v2 .footer-row-2, 
+	.footer-v2 .footer-row-3 {
+		width: 632px;
+		padding: 0 0 0 48px;
+	}
+	.footer-v2 .footer-row-3 {
+	    padding-top: 30px;
+	}
+	.footer-v2 .footer-row-2 {
+		min-height: 109px;
+	}
+	.footer-v2 .footer-row .products-section, 
+	.footer-v2 .footer-row .help-support-section, 
+	.footer-v2 .footer-row .tools-section, 
+	.footer-v2 .footer-row .programs-section, 
+	.footer-v2 .footer-row .aboutus-section {
+		width: 246px;
+	}
+	.footer-v2 .footer-row .help-support-section {
+		height: 360px;
+	}
+	.footer-v2 .footer-row .programs-section {
+		margin-top: -140px;
+    	height: 330px;
+	}
+	.footer-v2 .footer-row-2 .fb-logo-white {
+		margin-left: 196px;
+	}
+	.footer-v2 .footer-row-3 .legalLinks {
+		width: 536px;
+		height: 109px;
+	}
+	.footer-v2 .footer-row-3 .site-seal {
+		margin-left: 0px;
+		margin-top: 44px;
+	}
+}
+
+/* Small, step down */
+@media (max-width: 631px) {
+	.footer-v2 {
+	    height: auto;
+	    min-height: 664px;
+	    padding: 36px 0px 0px 0px;
+	}
+	.footer-v2 .only-small-view {
+		display: block;
+	}
+	.collapsed {
+		background: url(/img/graphics/new-tlds/expand-icon-white.png) no-repeat 246px 4px;
+		cursor: pointer;
+	}
+	.expanded {
+		background: url(/img/graphics/new-tlds/collapse-icon-white.png) no-repeat 244px 4px;
+		cursor: pointer;
+	}
+	.footer-v2 .not-small-view, 
+	.footer-v2 .footer-row .ul-child {
+		display: none;
+	}
+	.footer-v2 .footer-row {
+		width: 320px;
+		height: 227px;
+		min-height: 227px;
+		padding: 0 0 0 30px;
+	}
+	.footer-v2 .bottom-footer {
+		min-height: 304px;
+	}
+	.footer-v2 .footer-row-2, 
+	.footer-v2 .footer-row-3 {
+		width: 320px;
+		padding: 0 0 0 30px;
+	}
+	.footer-v2 .footer-row-3 {
+	    padding: 16px;
+	}
+	.footer-v2 .footer-row-2 {
+		min-height: 97px;
+	}
+	.footer-v2 .footer-row .products-section, 
+	.footer-v2 .footer-row .help-support-section, 
+	.footer-v2 .footer-row .tools-section, 
+	.footer-v2 .footer-row .programs-section, 
+	.footer-v2 .footer-row .aboutus-section {
+		width: 260px;
+	}
+	.footer-v2 .footer-row .help-support-section {
+		height: auto;
+	}
+	.footer-v2 .footer-row .programs-section {
+		margin-top: 0px;
+    	height: auto;
+	}
+	.footer-v2 .footer-row-2 .ns-logo-bottom-left {
+		width: 120px;
+		height: 48px;
+		background: url(/img/ns-logo-white.png) no-repeat 0px 0px;
+		background-size: 120px;
+	}
+	.footer-v2 .footer-row-2 .fb-logo-white, 
+	.footer-v2 .footer-row-2 .twitter-logo-white, 
+	.footer-v2 .footer-row-2 .linked-in-logo-white {
+		width: 31px;
+		height: 31px;
+		margin: 8px 6px;
+	}
+	.footer-v2 .footer-row-2 .fb-logo-white a img, 
+	.footer-v2 .footer-row-2 .twitter-logo-white a img, 
+	.footer-v2 .footer-row-2 .linked-in-logo-white a img {
+		width: 31px;
+		height: 31px;
+	}
+	.footer-v2 .footer-row-2 .fb-logo-white {
+		margin-left: 23px;
+	}
+	.footer-v2 .footer-row-3 .legalLinks {
+		width: 288px;
+		height: 170px;
+	}
+	.footer-v2 .footer-row-3 .site-seal {
+		margin-left: 0px;
+		margin-top: 36px;
+	}
+	.footer-v2 .footer-row .ul-heading li {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.footer-v2 .footer-row .ul-child li a,
+	.footer-v2 .footer-row .ul-child li a:hover {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.footer-v2 .footer-row-3 .legalLinks ul li {
+	    margin-right: 12px;
+	}
+	.footer-v2 .footer-row .align-inline .ul-child {
+	    margin: 0px 0 28px 20px;
+	}
+	.footer-v2 .footer-row .ul-child li {
+	    margin-bottom: 24px;
+	}
+	.footer-v2 .footer-row .align-inline .ul-heading {
+	    margin: 0px 0px 24px 0px;
+	}
+}
+html, body {
+    background: #ffffff !important;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+	var divHeightFooterV2 = $(".footer-v2 .footer-row").height();
+	$(document.body).on('click', ".footer-v2 .footer-row ul.clickable",function () {
+		
+		$(".ul-heading.only-small-view").removeClass("expanded").addClass("collapsed");
+		$(".footer-v2 .footer-row").css("height", divHeightFooterV2+"px");
+		
+		if($("."+this.id+"-child").is(':visible')) {
+			$(".ul-child").hide();
+		} else {
+			var childHeight = $("."+this.id+"-child").height();
+			$("."+this.id+"-heading").removeClass("collapsed");
+			$("."+this.id+"-heading").addClass("expanded");
+			$(".ul-child").hide();
+			var updatedHeight = parseInt(divHeightFooterV2) + parseInt(childHeight);
+			$(".footer-v2 .footer-row").css("height", updatedHeight+"px");
+			$("."+this.id+"-child").show();
+		}
+		return false;
+	});
+	
+});
+</script>
+
+	</body>
+	
+	<style>
+
+    	.splOffer {
+            display:block;
+            background: #006BA6;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0px;
+
+        }
+        .splOffer a{
+            color : #fff;
+        }
+        .splOffer a:hover{
+             text-decoration:none;
+         }
+        .splOffer img{
+            position: absolute;
+            margin-top: 3px;
+            margin-left: 12px;
+            display:initial;
+        }
+        .splBanner:hover{
+            text-decoration:none;
+            }
+        .shopnow{
+            text-decoration:underline;
+        }
+        /* SMALL, step down */
+        @media (max-width: 631px) {
+            .splOffer {
+            text-align:left;
+            padding-left:10px;
+            letter-spacing: 0.2px;
+            font-size: 12px;
+            line-height: 20px;
+            }
+        }
+    	</style>
+</html>

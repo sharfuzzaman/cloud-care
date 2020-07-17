@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="imageBackerApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="/static/web_ui/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/web_ui/css/ekko-lightbox.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox-dark.css"> -->
+    <link rel="stylesheet" type="text/css" href="/static/web_ui/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/web_ui/css/style-template.css">
+    <link rel="stylesheet" type="text/css" href="/static/web_ui/css/style.css">
+    <!--
+    Sigma Template
+    http://www.templatemo.com/tm-479-sigma
+    -->
+
+
+    <!-- angular files -->
+    <!-- cdn imports
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-sanitize.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.js"></script><script src="/static/web_ui/js/app.js"></script>
+    -->
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/1.5.0-rc.0/angular-route.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/1.5.0-rc.0/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/1.5.0-rc.0/angular-animate.min.js"></script>
+    <!--ng-file-upload-->
+    <!-- cdn imports
+    <script type="text/javascript" src="http://angular-file-upload.appspot.com/js/ng-file-upload.js"></script><script src="/static/web_ui/js/app.js"></script>
+    <script type="text/javascript" src="http://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script><script src="/static/web_ui/js/app.js"></script>
+    -->
+    <script src="/static/web_ui/js/app.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/ng-file-upload/ng-file-upload.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/angularjs/ng-file-upload/ng-file-upload-shim.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/web_ui/js/bootstrap.min.js"></script>
+
+    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+    <!--<meta name="google-signin-client_id" content="1059972182575-3idiopmncd2hhkafsongut9i5j5592of.apps.googleusercontent.com">-->
+
+    <title>Slicer</title>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7061075886842339",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+
+<body>
+
+<!--<div style="float: right; margin-right: 100px; margin-top: 20px; ">-->
+<!--    <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+<!--</div>-->
+
+<!-- BEGIN: App-Loading Screen. -->
+<div class="m-app-loading">
+    <div class="center-screen center-screen-lodingdiv">
+        <div class="windows8">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END: App-Loading Screen. -->
+
+<!-- BEGIN: Content view. -->
+<div ng-view></div>
+<!-- END: Content view. -->
+
+</body>
+</html>

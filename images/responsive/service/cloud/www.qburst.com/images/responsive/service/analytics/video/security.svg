@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="301px" height="202px" viewBox="0 0 301 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.111243207">
+        <g id="Large-Device-Desktops" transform="translate(-1139.000000, -2081.000000)">
+            <g id="Group-17" transform="translate(1141.000000, 2083.000000)">
+                <g id="Group-14" transform="translate(153.614679, 99.956422)">
+                    <polygon id="Path-8" stroke="#42566C" stroke-width="2.74559988" fill="#C3C3C3" points="66.7537002 54.4822584 116.581899 81.2711999 116.581899 48.3559962 66.7537002 48.3559962"></polygon>
+                    <path d="M116.052161,18.3678662 L116.052161,0.439038758 L145.334423,0.439038758 L145.334423,98.2854004 L116.052161,98.2854004 L116.052161,53.2253149 L14.0236615,53.2253149 C-2.10868364,42.9058983 -3.48850299,31.5283315 9.88420343,19.0926144 L116.052161,18.3678662 Z" id="Path-7" stroke="#42566C" stroke-width="2.74559988" fill="#FFFFFF"></path>
+                    <ellipse id="Oval-2" fill="#E83F67" cx="23.3165138" cy="36.0573394" rx="8.2293578" ry="8.21559633"></ellipse>
+                </g>
+                <g id="Group-16">
+                    <polygon id="Path-5" stroke="#42566C" stroke-width="2.74559988" fill="#FFFFFF" points="22.4010245 38.9075256 22.4010245 81.7191532 36.2947628 81.7191532 36.2947628 38.9075256"></polygon>
+                    <polygon id="Path-4" stroke="#42566C" stroke-width="2.74559988" fill="#FFFFFF" points="220.994555 21.0529113 220.994555 83.5116348 36.125327 83.5116348 36.125327 19.1193579"></polygon>
+                    <polygon id="Path-9" fill="#C3C3C3" points="37.4942078 47.511058 130.605194 47.511058 149.031637 28.5031313 219.620107 28.5031313 219.620107 16.7070962 37.4942078 14.8958942"></polygon>
+                    <path d="M6.54303594,0.221079415 L245.585997,0.221079415 C252.928921,1.94692517 254.764652,5.62549052 251.09319,11.2567755 L242.006607,20.4605433 L150.069251,20.4605433 L129.735979,40.0367689 L24.3344682,40.0367689 L1.46799742,11.2567755 C-0.972414349,5.38925647 -0.00133941369,1.71069112 4.38122223,0.221079415 L6.54303594,0.221079415 Z" id="Path-3" stroke="#42566C" stroke-width="2.74559988" fill="#FFFFFF"></path>
+                    <path d="M142.413832,83.0777218 L142.413832,106.611314 C154.551152,105.691338 161.39578,109.539724 162.947714,118.156473 L191.806721,117.329431 C195.934348,108.504529 202.592127,104.931823 211.780058,106.611314 L211.732509,83.1044653 L142.413832,83.0777218 Z" id="Path-6" stroke="#42566C" stroke-width="2.74559988" fill="#E7EBEC"></path>
+                    <path d="M147.484852,42.9183786 L205.962315,42.9183786" id="Path-10" stroke="#E83F67" stroke-width="4.11839982" stroke-linecap="round"></path>
+                    <path d="M147.484852,53.8725071 L205.962315,53.8725071" id="Path-10" stroke="#E83F67" stroke-width="4.11839982" stroke-linecap="round"></path>
+                    <path d="M147.484852,64.8266355 L205.962315,64.8266355" id="Path-10" stroke="#E83F67" stroke-width="4.11839982" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

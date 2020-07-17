@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="161px" height="259px" viewBox="0 0 161 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>hospital (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
+        <g id="Large-Device-Desktops" transform="translate(0.000000, -818.000000)">
+            <g id="Group-14" transform="translate(-98.000000, 671.000000)">
+                <g id="hospital-(1)" transform="translate(0.000000, 147.000000)">
+                    <path d="M159.716667,56.1166667 L142.45,56.1166667 L142.45,38.85 C142.45,36.4661208 140.517213,34.5333333 138.133333,34.5333333 L120.866667,34.5333333 C118.482788,34.5333333 116.55,36.4661208 116.55,38.85 L116.55,56.1166667 L99.2833333,56.1166667 C96.8994542,56.1166667 94.9666667,58.0494542 94.9666667,60.4333333 L94.9666667,77.7 C94.9666667,80.0838792 96.8994542,82.0166667 99.2833333,82.0166667 L116.55,82.0166667 L116.55,99.2833333 C116.55,101.667213 118.482788,103.6 120.866667,103.6 L138.133333,103.6 C140.517213,103.6 142.45,101.667213 142.45,99.2833333 L142.45,82.0166667 L159.716667,82.0166667 C162.100546,82.0166667 164.033333,80.0838792 164.033333,77.7 L164.033333,60.4333333 C164.033333,58.0494542 162.100546,56.1166667 159.716667,56.1166667 Z" id="Shape" fill="#E83F67" fill-rule="nonzero"></path>
+                    <rect id="Rectangle-path" fill="#42566C" fill-rule="nonzero" x="77.7" y="112.233333" width="103.6" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#42566C" fill-rule="nonzero" x="77.7" y="129.5" width="103.6" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#42566C" fill-rule="nonzero" x="77.7" y="146.766667" width="103.6" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#42566C" fill-rule="nonzero" x="77.7" y="164.033333" width="103.6" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#42566C" fill-rule="nonzero" x="77.7" y="181.3" width="103.6" height="8.63333333"></rect>
+                    <rect id="Rectangle-4" fill="#DCDCDC" x="184" y="24" width="9" height="234"></rect>
+                    <rect id="Rectangle-4" fill="#DCDCDC" x="244" y="134" width="9" height="125"></rect>
+                    <path d="M254.683333,129.5 L198.566667,129.5 L198.566667,25.9 L207.2,25.9 C209.583879,25.9 211.516667,23.9672125 211.516667,21.5833333 L211.516667,4.31666667 C211.516667,1.9327875 209.583879,0 207.2,0 L51.8,0 C49.4161208,0 47.4833333,1.9327875 47.4833333,4.31666667 L47.4833333,21.5833333 C47.4833333,23.9672125 49.4161208,25.9 51.8,25.9 L60.4333333,25.9 L60.4333333,129.5 L4.31666667,129.5 C1.9327875,129.5 0,131.432788 0,133.816667 L0,254.683333 C0,257.067212 1.9327875,259 4.31666667,259 L254.683333,259 C257.067212,259 259,257.067212 259,254.683333 L259,133.816667 C259,131.432788 257.067212,129.5 254.683333,129.5 Z M60.4333333,250.366667 L8.63333333,250.366667 L8.63333333,138.133333 L60.4333333,138.133333 L60.4333333,250.366667 Z M56.1166667,17.2666667 L56.1166667,8.63333333 L202.883333,8.63333333 L202.883333,17.2666667 L56.1166667,17.2666667 Z M125.183333,250.366667 L112.233333,250.366667 L112.233333,207.2 L125.183333,207.2 L125.183333,250.366667 Z M146.766667,250.366667 L133.816667,250.366667 L133.816667,207.2 L146.766667,207.2 L146.766667,250.366667 Z M189.933333,250.366667 L155.4,250.366667 L155.4,202.883333 C155.4,200.499454 153.467212,198.566667 151.083333,198.566667 L107.916667,198.566667 C105.532787,198.566667 103.6,200.499454 103.6,202.883333 L103.6,250.366667 L69.0666667,250.366667 L69.0666667,25.9 L189.933333,25.9 L189.933333,250.366667 Z M250.366667,250.366667 L198.566667,250.366667 L198.566667,138.133333 L250.366667,138.133333 L250.366667,250.366667 Z" id="Shape" fill="#42566C" fill-rule="nonzero"></path>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="146.766667" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="146.766667" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="164.033333" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="164.033333" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="181.3" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="181.3" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="198.566667" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="198.566667" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="215.833333" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="215.833333" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="211.516667" y="233.1" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="228.783333" y="233.1" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="168.35" y="198.566667" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="168.35" y="215.833333" width="8.63333333" height="8.63333333"></rect>
+                    <rect id="Rectangle-path" fill="#E83F67" fill-rule="nonzero" x="168.35" y="233.1" width="8.63333333" height="8.63333333"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

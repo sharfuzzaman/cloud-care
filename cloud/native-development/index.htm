@@ -24,7 +24,8 @@
     <link href="../../css-3.css?family=Nunito:400,600,800,900" rel="stylesheet">
     <link href="../../css-1.css?family=Heebo:300,500&display=swap" rel="stylesheet">
     <link href="../../css-2.css?family=Heebo:700,800&display=swap" rel="stylesheet">
-    <link href="../../stylesheets/commonStyles.min.4-4-1.427919087314284327.css" rel="stylesheet prefetch" type="text/css" media="all">
+    <link href="../../stylesheets/commonStyles.min.4-4-1.427919087314284327.css" rel="stylesheet prefetch"
+        type="text/css" media="all">
     <link href="../../stylesheets/right-nav-icomoon.css" rel="stylesheet prefetch" type="text/css" media="all">
     <link href="../../stylesheets/services.4-4-1.427919087314284327.css" rel="stylesheet" type="text/css" media="all">
     <link href="../../stylesheets/mediaqueries.min.4-4-1.427919087314284327.css" rel="stylesheet prefetch"
@@ -33,6 +34,7 @@
         media="all">
     <link href="../../stylesheets/iPad.min.4-4-1.427919087314284327.css" rel="stylesheet" type="text/css"
         id="iPadcommon" media="all">
+    <link rel="stylesheet prefetch" type="text/css" href="../../stylesheets/messenger.css">
     <script src="../../js/jQuery.min.js"></script>
 
 </head>
@@ -80,17 +82,12 @@
                             </div>
                             <div class="clientButton inquiryButton">
                                 <a class="arrowText">
-                                    <span class="arrowTextSpan">GET IN TOUCH
+                                    <span class="arrowTextSpan">BOOK A CALL
                                         <span>
                                             <span class="arrowRight"></span>
                                         </span>
                                     </span>
                                 </a>
-                            </div>
-                        </nav>
-                        <nav id="searchWrap">
-                            <div class="searchWrapper">
-                                <span class="menusrchicon" title="Search"></span>
                             </div>
                         </nav>
                         <nav id="navMenuWrap">
@@ -114,447 +111,584 @@
         <section class="mainmenuContainer main-menu nocontent">
             <div class="mainmenuOuterContainer menuWeb">
                 <div class="menuSliderOuterWrapper">
-                    </div class="sliderOuterWrapper">
-                    <div class="rightMenuContainer">
-                        <div class="pl-5 pb-5">
-                            <h3 class="enableDigital">
-                                <span>Enabling Your</span>
-                                <span>Digital Transformation</span>
-                            </h3>  
-                        </div>
-                        <ul>
-                            <li>
-                                <a class="sideMenuLink" href="../index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/startegies.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Cloud Consulting</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../../devops/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/devops.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Cloud Devops</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../migration-services/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/consulting.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Cloud Migration</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../migration-strategies/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/startegies.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Migration Startegies</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../security/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/security.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Cloud Security Posture Management</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/native.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Cloud-Native Apps</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../../solutions/ecommerce/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/ecommerce.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Ecommerce Platform</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sideMenuLink" href="../../application/microservices/index.htm">
-                                    <span class="sideMenuLinkSpan">
-                                        <img class="nav-icon" src="../../images/icon/microservices.png" alt="">
-                                        <span class="sideMenuTextSpan pl-3">Microservices</span>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <span class="close-menu">
-                        </span>
+                </div class="sliderOuterWrapper">
+                <div class="rightMenuContainer">
+                    <div class="pl-5 pb-5">
+                        <h3 class="enableDigital">
+                            <span>Enabling Your</span>
+                            <span>Digital Transformation</span>
+                        </h3>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <script type="text/javascript">
-
-            function openListMenu(evt, menuListOpen) {
-                var i, menuMiddleList, tablinks;
-                menuMiddleList = document.getElementsByClassName("menuMiddleList");
-                console.log(menuMiddleList)
-                console.log(menuMiddleList.length)
-                for (i = 0; i < menuMiddleList.length; i++) {
-                    menuMiddleList[i].style.display = "none";
-                }
-                menuListClick = document.getElementsByClassName("menuListClick");
-                for (i = 0; i < menuListClick.length; i++) {
-                    menuListClick[i].className = menuListClick[i].className.replace(" active", "");
-                }
-                document.getElementById(menuListOpen).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-            function openListMobMenu(evt, menuListOpenMob) {
-                var i, menuMiddleListMob, tablinks;
-                menuMiddleListMob = document.getElementsByClassName("menuMiddleListMob");
-                console.log(menuMiddleListMob)
-                console.log(menuMiddleListMob.length)
-                for (i = 0; i < menuMiddleListMob.length; i++) {
-                    menuMiddleListMob[i].style.display = "none";
-                }
-                menuListClick = document.getElementsByClassName("menuListClick");
-                for (i = 0; i < menuListClick.length; i++) {
-                    menuListClick[i].className = menuListClick[i].className.replace(" active", "");
-                }
-                document.getElementById(menuListOpenMob).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script>
-
-        <section class="inquiryModel" id="openModal">
-
-            <script type="text/javascript" src="../../jsi18n/index.htm"></script>
-            <section class="inquiryHeader">
-                <section class="inquiryHeaderInner">
-                    <img class="inqimg" src="../../images/homeImg/inqicon.svg" alt="Inquiry icon">
-                    <h2>START A CONVERSATION</h2>
-                    <p>Share your requirements and we&#39;ll get back to you with how we can help.</p>
-                </section>
-                <a class="closeInquiry" title="Close"></a>
-            </section>
-            <section class="inquiryBody">
-                <div class="contactInquiry">
-                    <div class="applyForm_enquiry newinquiryspcng">
-                        <form id="career_ids" name="form_1"><input type='hidden' name='csrfmiddlewaretoken'
-                                value='DERQyGLsoc2Pn06DYGAe8Sn5J2dnWy5G'>
-                            <div class="inquiryFormLeft clearfix">
-                                <div class="formSectLeft">
-                                    <input type="hidden" name="hidden"> <input class="formInput_enquiry1 titleHintBox3"
-                                        id="id_inquiryName" name="inquiryName"
-                                        onkeypress="return validate_alphabet(event)"
-                                        onkeyup="limitText(this.form.inquiryName,240)" placeholder="Name *"
-                                        title="Enter your name here." type="text" autofocus="">
-                                    <span id="nameValMsg" class="error_msgInquiry">
-                                        <label id="nameValMsg1"></label>
-                                    </span>
-                                </div>
-                                <div class="formSectRight">
-                                    <input class="formInput_enquiry1 titleHintBox3" id="email_id" maxlength="70"
-                                        name="inquiryEmail" onkeyup="limitText(this.form.inquiryEmail,70)"
-                                        placeholder="Email *" title="Enter a valid email address." type="text">
-                                    <span id="emailValMsg" class="error_msgInquiry">
-                                        <label id="emailValMsg1"></label>
-                                    </span>
-                                </div>
-                                <div class="formSectLeft">
-                                    <span class="form_Input">
-                                        <input class="formInput_enquiry1" id="company_id" maxlength="70"
-                                            name="inquiryCompany" onkeypress="return validate_character(event)"
-                                            onkeyup="limitText(this.form.inquiryCompany,70)" placeholder="Company"
-                                            title="Enter the company name here." type="text">
-                                    </span>
-                                    <span id="compValMsg" class="error_msgInquiry">
-                                        <label id="compValMsg1"></label>
-                                    </span>
-                                </div>
-                                <div class="formSectRight">
-                                    <input class="formInput_enquiry1 titleHintBox3" id="phone_id" maxlength="20"
-                                        name="inquiryPhoneNumber" onkeyup="limitText(this.form.inquiryPhoneNumber,20)"
-                                        placeholder="Phone" title="Enter your phone number." type="text">
-                                    <span id="expValMsg" class="error_msgInquiry">
-                                        <label id="expValMsg1"></label>
-                                    </span>
-                                </div>
-                            </div>
-                            <section id="contactInquiryRight">
-                                <div class="formSect_right_description">
-                                    <div class="textareadiv">
-                                        <textarea class="autoExpand" cols="20" data-min-rows="1" id="descrtextarea"
-                                            maxlength="10000" name="inquiryDescription"
-                                            onkeyup="limitText(this.form.inquiryDescription,10000)"
-                                            placeholder="Brief description of your project/requirements" rows="1"
-                                            title="Give some details about your project.">
-</textarea>
-                                    </div>
-                                    <span id="descrValMsg" style="margin: 0 0 0 1px ;" class="error_msgInquiry">
-                                        <label id="descrValMsg1"></label>
-                                    </span>
-                                </div>
-                            </section>
-                            <div id="contentofsendinquiry" class="services">
-                                <section id="contactInquiryLeft">
-                                    <div class="styled-select">
-                                        <select title="Select a category from the list." class="selectbox placeholder"
-                                            name="inquiryTypeOfProject" id="protype_id" autocomplete="off">
-
-                                            <option value="Type of Project">Type of Project</option>
-
-                                            <option value="Web Development">Web Development</option>
-
-                                            <option value="Mobile Development">Mobile Development</option>
-
-                                            <option value="Big Data/Analytics">Big Data/Analytics</option>
-
-                                            <option value="AI/ Machine Learning">AI/ Machine Learning</option>
-
-                                            <option value="DevOps">DevOps</option>
-
-                                            <option selected="true" value="Cloud Computing / Cloud Migration">Cloud
-                                                Computing / Cloud Migration</option>
-
-                                            <option value="UX/Design">UX/Design</option>
-
-                                            <option value="Quality Assurance &amp; Testing">Quality Assurance &amp;
-                                                Testing</option>
-
-                                            <option value="SharePoint">SharePoint</option>
-
-                                            <option value="Salesforce">Salesforce</option>
-
-                                        </select>
-                                        <span id="dropdownValMsg" class="error_msgInquiry">
-                                            <label id="dropdownValMsg1"></label>
-                                        </span>
-                                    </div>
-                                </section>
-                                <div class="inquiryFormRight">
-                                    <div class="formSect_right_captcha">
-                                        <div id="recaptcha2"></div>
-                                        <span id="headerCaptchaValMsg" class="error_msgInquiry">
-                                            <label id="captchaValMsg1"></label>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inquirySbmt">
-                                <input class="switching" name="switching" type="hidden" value="false">
-                                <span><label id="JSONErrorMessage"></label></span>
-                                <button title='Send Inquiry' type="button" name="send" value='Send Inquiry'
-                                    id="submitbtn_id" class="sendInuiryBtn submitBtn innerInquiryFormSubmit"
-                                    onclick="validateForm();">Send Inquiry</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- thank you message -->
-                    <div id="prjInqryPopupSuccess">
-                        <div id="content">
-                            <div class="confmtnMsg">
-                                <div id="thankYouMessage"><span data-nosnippet="">Thank you for submitting your
-                                        request.</span></div>
-                                <div class="confmtnMsgAlign"><span data-nosnippet="">We will get back to you
-                                        shortly.</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <div class="wholecontentWrapper">
-
-            <div id="breadcrumb" class="cloudBreadcrumb">
-                <div id="breadcrumbInner">
-                    <span>
-                        <a href="../../services/index.htm">Services</a>
-                        <span class="breadcrumbSlash">/</span>
-                        <a href="../index.htm"> Cloud</a>
-                        <span class="breadcrumbSlash">/</span> Cloud Native
+                    <ul>
+                        <li>
+                            <a class="sideMenuLink" href="../index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/startegies.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Cloud Consulting</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../../devops/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/devops.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Cloud Devops</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../migration-services/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/consulting.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Cloud Migration</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../migration-strategies/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/startegies.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Migration Startegies</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../security/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/security.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3">Cloud Security Posture Management</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/native.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Cloud-Native Apps</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../../solutions/ecommerce/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/ecommerce.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Ecommerce Platform</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sideMenuLink" href="../../application/microservices/index.htm">
+                                <span class="sideMenuLinkSpan">
+                                    <img class="nav-icon" src="../../images/icon/microservices.png" alt="">
+                                    <span class="sideMenuTextSpan pl-3 ">Microservices</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="close-menu">
                     </span>
                 </div>
             </div>
+    </div>
+    </section>
 
-            <div class="clear"></div>
-            <section class="homeWrapper">
-                <div class="homeContent clearfix">
+    <script type="text/javascript">
 
-                    <div id="content" class="services">
-                        <div class="leftCnt privacy">
+        function openListMenu(evt, menuListOpen) {
+            var i, menuMiddleList, tablinks;
+            menuMiddleList = document.getElementsByClassName("menuMiddleList");
+            console.log(menuMiddleList)
+            console.log(menuMiddleList.length)
+            for (i = 0; i < menuMiddleList.length; i++) {
+                menuMiddleList[i].style.display = "none";
+            }
+            menuListClick = document.getElementsByClassName("menuListClick");
+            for (i = 0; i < menuListClick.length; i++) {
+                menuListClick[i].className = menuListClick[i].className.replace(" active", "");
+            }
+            document.getElementById(menuListOpen).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function openListMobMenu(evt, menuListOpenMob) {
+            var i, menuMiddleListMob, tablinks;
+            menuMiddleListMob = document.getElementsByClassName("menuMiddleListMob");
+            console.log(menuMiddleListMob)
+            console.log(menuMiddleListMob.length)
+            for (i = 0; i < menuMiddleListMob.length; i++) {
+                menuMiddleListMob[i].style.display = "none";
+            }
+            menuListClick = document.getElementsByClassName("menuListClick");
+            for (i = 0; i < menuListClick.length; i++) {
+                menuListClick[i].className = menuListClick[i].className.replace(" active", "");
+            }
+            document.getElementById(menuListOpenMob).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
+    <section class="inquiryModel" id="openModal">
+
+        <script type="text/javascript" src="../../jsi18n/index.htm"></script>
+        <section class="inquiryHeader">
+            <section class="inquiryHeaderInner">
+                <img class="inqimg" src="../../images/homeImg/inqicon.svg" alt="Inquiry icon">
+                <h2>START A CONVERSATION</h2>
+                <p>Share your requirements and we&#39;ll get back to you with how we can help.</p>
+            </section>
+            <a class="closeInquiry" title="Close"></a>
+        </section>
+        <section class="inquiryBody">
+            <div class="contactInquiry">
+                <div class="applyForm_enquiry newinquiryspcng">
+                    <form id="career_ids" name="form_1"><input type='hidden' name='csrfmiddlewaretoken'
+                            value='DERQyGLsoc2Pn06DYGAe8Sn5J2dnWy5G'>
+                        <div class="inquiryFormLeft clearfix">
+                            <div class="formSectLeft">
+                                <input type="hidden" name="hidden"> <input class="formInput_enquiry1 titleHintBox3"
+                                    id="id_inquiryName" name="inquiryName" onkeypress="return validate_alphabet(event)"
+                                    onkeyup="limitText(this.form.inquiryName,240)" placeholder="Name *"
+                                    title="Enter your name here." type="text" autofocus="">
+                                <span id="nameValMsg" class="error_msgInquiry">
+                                    <label id="nameValMsg1"></label>
+                                </span>
+                            </div>
+                            <div class="formSectRight">
+                                <input class="formInput_enquiry1 titleHintBox3" id="email_id" maxlength="70"
+                                    name="inquiryEmail" onkeyup="limitText(this.form.inquiryEmail,70)"
+                                    placeholder="Email *" title="Enter a valid email address." type="text">
+                                <span id="emailValMsg" class="error_msgInquiry">
+                                    <label id="emailValMsg1"></label>
+                                </span>
+                            </div>
+                            <div class="formSectLeft">
+                                <span class="form_Input">
+                                    <input class="formInput_enquiry1" id="company_id" maxlength="70"
+                                        name="inquiryCompany" onkeypress="return validate_character(event)"
+                                        onkeyup="limitText(this.form.inquiryCompany,70)" placeholder="Company"
+                                        title="Enter the company name here." type="text">
+                                </span>
+                                <span id="compValMsg" class="error_msgInquiry">
+                                    <label id="compValMsg1"></label>
+                                </span>
+                            </div>
+                            <div class="formSectRight">
+                                <input class="formInput_enquiry1 titleHintBox3" id="phone_id" maxlength="20"
+                                    name="inquiryPhoneNumber" onkeyup="limitText(this.form.inquiryPhoneNumber,20)"
+                                    placeholder="Phone" title="Enter your phone number." type="text">
+                                <span id="expValMsg" class="error_msgInquiry">
+                                    <label id="expValMsg1"></label>
+                                </span>
+                            </div>
+                        </div>
+                        <section id="contactInquiryRight">
+                            <div class="formSect_right_description">
+                                <div class="textareadiv">
+                                    <textarea class="autoExpand" cols="20" data-min-rows="1" id="descrtextarea"
+                                        maxlength="10000" name="inquiryDescription"
+                                        onkeyup="limitText(this.form.inquiryDescription,10000)"
+                                        placeholder="Brief description of your project/requirements" rows="1"
+                                        title="Give some details about your project.">
+</textarea>
+                                </div>
+                                <span id="descrValMsg" style="margin: 0 0 0 1px ;" class="error_msgInquiry">
+                                    <label id="descrValMsg1"></label>
+                                </span>
+                            </div>
+                        </section>
+                        <div id="contentofsendinquiry" class="services">
+                            <section id="contactInquiryLeft">
+                                <div class="styled-select">
+                                    <select title="Select a category from the list." class="selectbox placeholder"
+                                        name="inquiryTypeOfProject" id="protype_id" autocomplete="off">
+                                        <option value="None" selected="">Type of Project</option>
+                                        <option value="Web Development">Cloud Migration</option>
+                                        <option value="Mobile Development">Cloud Consultation</option>
+                                        <option value="Big Data/Analytics">Software Deployment to Cloud</option>
+                                        <option value="Machine Learning">Devops Solution</option>
+                                        <option value="DevOps">Applictaion Deployment Automation</option>
+                                        <option value="Cloud Migration">CICD Pipeline Solution</option>
+                                        <option value="UX/Design">Microservice Architecture Design</option>
+                                        <option value="Digital Marketing">Server Architecture Design</option>
+                                        <option value="SharePoint">Application Deployment Cost and Case Studies</option>
+                                    </select>
+                                    <span id="dropdownValMsg" class="error_msgInquiry">
+                                        <label id="dropdownValMsg1"></label>
+                                    </span>
+                                </div>
+                            </section>
+                            <div class="inquiryFormRight">
+                                <div class="formSect_right_captcha">
+                                    <div id="recaptcha2"></div>
+                                    <span id="headerCaptchaValMsg" class="error_msgInquiry">
+                                        <label id="captchaValMsg1"></label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inquirySbmt">
+                            <input class="switching" name="switching" type="hidden" value="false">
+                            <span><label id="JSONErrorMessage"></label></span>
+                            <button title='Send Inquiry' type="button" name="send" value='Send Inquiry'
+                                id="submitbtn_id" class="sendInuiryBtn submitBtn innerInquiryFormSubmit"
+                                onclick="validateForm();">Send Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- thank you message -->
+                <div id="prjInqryPopupSuccess">
+                    <div id="content">
+                        <div class="confmtnMsg">
+                            <div id="thankYouMessage"><span data-nosnippet="">Thank you for submitting your
+                                    request.</span></div>
+                            <div class="confmtnMsgAlign"><span data-nosnippet="">We will get back to you
+                                    shortly.</span></div>
                         </div>
                     </div>
-
-                    <section class="content">
-
-                    </section>
-
                 </div>
-            </section>
+            </div>
+        </section>
+    </section>
 
-            <section class="bigDataWrapper cloudMigrationFirstWrapper">
-                <div class="contentOuterWrapper">
-                    <div class="contentInnerWrapper commonBottomSection">
-                        <h1>Cloud-Native Applications</h1>
-                        <p>Companies are beginning to favor cloud-native solutions over traditional on-premises
-                            monoliths. The driver for this change is the desire to improve scalability, reliability,
-                            customer experience, and business velocity. Developing applications in the cloud increases
-                            agility (build and deploy faster), thereby reducing time to market. Early adopters of
-                            cloud-native also report increased revenue and reduced operating cost in addition to the
-                            vastly improved development velocity.</p>
+    <div class="wholecontentWrapper">
+
+        <div id="breadcrumb" class="cloudBreadcrumb">
+            <div id="breadcrumbInner">
+                <span>
+                    <a href="../../services/index.htm">Services</a>
+                    <span class="breadcrumbSlash">/</span>
+                    <a href="../index.htm"> Cloud</a>
+                    <span class="breadcrumbSlash">/</span> Cloud Native
+                </span>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <section class="homeWrapper">
+            <div class="homeContent clearfix">
+
+                <div id="content" class="services">
+                    <div class="leftCnt privacy">
+
                     </div>
                 </div>
-            </section>
-            <section class="bigDataWrapper cloudMaturityWrapper">
-                <div class="contentOuterWrapper">
-                    <div class="contentInnerWrapper commonBottomSection expandTitleWrapper">
-                        <h2 class="innerSubHeading"><span class="headingRedSplit">Building up</span> Cloud Maturity</h2>
-                        <figure class="cloudMaturityImg">
-                            <img src="../../images/responsive/service/cloud/cloudNative/cloudMaturity.png"
-                                alt="Cloud Maturity">
+
+                <section class="content">
+
+                </section>
+
+            </div>
+        </section>
+
+        <section class="bigDataWrapper cloudMigrationFirstWrapper">
+            <div class="contentOuterWrapper">
+                <div class="contentInnerWrapper commonBottomSection">
+                    <h1>Cloud-Native Applications</h1>
+                    <p>Companies are beginning to favor cloud-native solutions over traditional on-premises
+                        monoliths. The driver for this change is the desire to improve scalability, reliability,
+                        customer experience, and business velocity. Developing applications in the cloud increases
+                        agility (build and deploy faster), thereby reducing time to market. Early adopters of
+                        cloud-native also report increased revenue and reduced operating cost in addition to the
+                        vastly improved development velocity.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bigDataWrapper cloudMaturityWrapper">
+            <div class="contentOuterWrapper">
+                <div class="contentInnerWrapper commonBottomSection expandTitleWrapper">
+                    <h2 class="innerSubHeading"><span class="headingRedSplit">Building up</span> Cloud Maturity</h2>
+                    <figure class="cloudMaturityImg">
+                        <img src="../../images/responsive/service/cloud/cloudNative/cloudMaturity.png"
+                            alt="Cloud Maturity">
+                    </figure>
+                    <p>Rethinking application lifecycle management, from system architecture through app monitoring,
+                        in a manner conducive to cloud characteristics allows you to take full advantage of the
+                        cloud. We enable clients to move their systems through the various levels of cloud maturity
+                        by adopting application-centric design and automation along with managed services from
+                        mature cloud vendors.</p>
+                    <h3>Utilizing Cloud Services</h3>
+                    <p>Adoption of cloud services is the primary characteristic of any cloud-based system. At the
+                        very least, an application may use cloud storage, compute, or monitoring infrastructure.
+                        When an application is migrated to the cloud using the lift and shift approach, it
+                        makes use of just the basic building blocks. Such systems are at a low level of cloud
+                        maturity but enjoy the fundamental benefits of being on the cloud.</p>
+                    <p>While the lift and shift approach may be ideal in certain cases, such as at the outset of
+                        your cloud journey, we can take you through even higher levels of cloud maturity. Systems
+                        can be configured to utilize managed services for caching, load balancing, etc., or even
+                        advanced services such as serverless computing in addition to the rudimentary storage and
+                        compute options.</p>
+                    <p>Much of the “undifferentiated heavy lifting” done by your team can be transferred to the
+                        cloud vendor through the adoption of managed database services, load balancers, caching
+                        mechanisms, data warehouses, or search and automation tools. Managed services will enhance
+                        your team’s agility and allow them more time to focus on tasks that add business value.</p>
+                    <p>The highest level of cloud-native maturity is when everything required to run and scale your
+                        application is managed by the cloud vendor Serverless computing service, for instance, lets you
+                        run large
+                        applications without provisioning, scaling, or managing any servers. Using such managed
+                        services can enable some of the most advanced cloud-native architectures.</p>
+                    <div class="cloudMaturityFlow">
+                        <p>Basic cloud building blocks - compute, storage, networking, monitoring</p>
+                        <figure>
+                            <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
                         </figure>
-                        <p>Rethinking application lifecycle management, from system architecture through app monitoring,
-                            in a manner conducive to cloud characteristics allows you to take full advantage of the
-                            cloud. We enable clients to move their systems through the various levels of cloud maturity
-                            by adopting application-centric design and automation along with managed services from
-                            mature cloud vendors.</p>
-                        <h3>Utilizing Cloud Services</h3>
-                        <p>Adoption of cloud services is the primary characteristic of any cloud-based system. At the
-                            very least, an application may use cloud storage, compute, or monitoring infrastructure.
-                            When an application is migrated to the cloud using the lift and shift approach, it
-                            makes use of just the basic building blocks. Such systems are at a low level of cloud
-                            maturity but enjoy the fundamental benefits of being on the cloud.</p>
-                        <p>While the lift and shift approach may be ideal in certain cases, such as at the outset of
-                            your cloud journey, we can take you through even higher levels of cloud maturity. Systems
-                            can be configured to utilize managed services for caching, load balancing, etc., or even
-                            advanced services such as serverless computing in addition to the rudimentary storage and
-                            compute options.</p>
-                        <p>Much of the “undifferentiated heavy lifting” done by your team can be transferred to the
-                            cloud vendor through the adoption of managed database services, load balancers, caching
-                            mechanisms, data warehouses, or search and automation tools. Managed services will enhance
-                            your team’s agility and allow them more time to focus on tasks that add business value.</p>
-                        <p>The highest level of cloud-native maturity is when everything required to run and scale your
-                            application is managed by the cloud vendor Serverless computing service, for instance, lets you run large
-                            applications without provisioning, scaling, or managing any servers. Using such managed
-                            services can enable some of the most advanced cloud-native architectures.</p>
-                        <div class="cloudMaturityFlow">
-                            <p>Basic cloud building blocks - compute, storage, networking, monitoring</p>
-                            <figure>
-                                <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
-                            </figure>
-                            <p>Managed services - database, caching, directory services, load balancers, data
-                                warehouses, search, automation tools</p>
-                            <figure>
-                                <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
-                            </figure>
-                            <p>Advanced services such as serverless and AI/ML services</p>
-                        </div>
-                        <h3>Adopting Application-Centric Design</h3>
-                        <img src="../../images/responsive/service/cloud/cloudNative/centricDesign.svg"
-                            class="cetricDesignImage" alt="Application-Centric Design">
-                        <p>On-premises infrastructure is centralized with everything at a single location. In contrast,
-                            servers and databases are distributed in the cloud. Mirroring the structure of the cloud
-                            while designing and architecting your applications can make them better suited for the cloud
-                            platform.</p>
-                        <p>The 12-factor app is a
-                            design methodology for building applications such that they can be deployed to modern cloud
-                            environments and scaled up without much changes in the architecture, tools, or practices.
-                            Such apps will enjoy maximum portability and minimum divergence between environments.
-                            Designing your app based on the 12-factor methodology can ensure a higher level of
-                            cloud-native maturity.</p>
-                        <p>Many legacy applications have a monolithic architecture with all the components combined into
-                            a single unit. To grow in cloud-native maturity, applications need to have a modular
-                            structure. Microservices-based applications where each service is fully autonomous and has
-                            little or no dependency on other services (loosely coupled) are ideal for cloud computing.
-                        </p>
-                        <p>Other considerations for cloud-native architecture include built-in instrumentation,
-                            security, parallelization, and resiliency. Applications designed to execute processes in
-                            parallel will be better equipped to scale and designing for security allows smoother
-                            adoption of cloud security services. Instrumentation as a design consideration can lead to a
-                            self-aware application built to detect component failures or latency issues and
-                            automatically resolve them (self-healing capacity).</p>
-                        <h3>Leveraging Tools for Automation</h3>
-                        <p>To take full advantage of cloud offerings, you will need to automate the operational aspects
-                            of the application too. This involves developing code for environment setup and
-                            configuration.</p>
-                        <p>When a change in the environment becomes necessary, the infrastructure as code (IaC) can be
-                            executed to replace the existing infrastructure in full. Such an approach will give you an
-                            immutable infrastructure that allows for little or no configuration drift.</p>
-                        <p>In large and complex environments where full replacement of infrastructure is not always
-                            feasible, changes can be made at the component level. Using automated scripts will ensure
-                            changes are implemented with consistency.</p>
-                        <p>Infrastructure, when written as code, can be handled similar to application code using source
-                            control systems. We can configure tools for a
-                                fully automated deployment pipeline (CI/CD) that will automate both infrastructure
-                            and application code deployments giving you agility and consistency.</p>
-                        <p>At the next level, monitoring of the entire system and usage optimization of resources can be
-                            automated. Cloud monitoring services can be configured to detect traffic spikes and fire up
-                            additional instances or shut them down to balance the load (autoscaling). Automated
-                            compliance audit checks can also be implemented with logging frameworks built to analyze
-                            logs and detect anomalies in real time.</p>
-                        <p>At an even higher degree of automation, AI and ML can be used to predict how events could
-                            impact the system and take proactive measures to avoid performance or security degradation.
-                        </p>
-                        <div class="cloudMaturityFlow">
-                            <p>IaC, Immutable infrastructure, CI/CD</p>
-                            <figure>
-                                <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
-                            </figure>
-                            <p>Monitoring, compliance, and optimization through automation</p>
-                            <figure>
-                                <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
-                            </figure>
-                            <p>AI/ML: Predicting failures, self-healing, self-optimizing</p>
-                        </div>
+                        <p>Managed services - database, caching, directory services, load balancers, data
+                            warehouses, search, automation tools</p>
+                        <figure>
+                            <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
+                        </figure>
+                        <p>Advanced services such as serverless and AI/ML services</p>
+                    </div>
+                    <h3>Adopting Application-Centric Design</h3>
+                    <img src="../../images/responsive/service/cloud/cloudNative/centricDesign.svg"
+                        class="cetricDesignImage" alt="Application-Centric Design">
+                    <p>On-premises infrastructure is centralized with everything at a single location. In contrast,
+                        servers and databases are distributed in the cloud. Mirroring the structure of the cloud
+                        while designing and architecting your applications can make them better suited for the cloud
+                        platform.</p>
+                    <p>The 12-factor app is a
+                        design methodology for building applications such that they can be deployed to modern cloud
+                        environments and scaled up without much changes in the architecture, tools, or practices.
+                        Such apps will enjoy maximum portability and minimum divergence between environments.
+                        Designing your app based on the 12-factor methodology can ensure a higher level of
+                        cloud-native maturity.</p>
+                    <p>Many legacy applications have a monolithic architecture with all the components combined into
+                        a single unit. To grow in cloud-native maturity, applications need to have a modular
+                        structure. Microservices-based applications where each service is fully autonomous and has
+                        little or no dependency on other services (loosely coupled) are ideal for cloud computing.
+                    </p>
+                    <p>Other considerations for cloud-native architecture include built-in instrumentation,
+                        security, parallelization, and resiliency. Applications designed to execute processes in
+                        parallel will be better equipped to scale and designing for security allows smoother
+                        adoption of cloud security services. Instrumentation as a design consideration can lead to a
+                        self-aware application built to detect component failures or latency issues and
+                        automatically resolve them (self-healing capacity).</p>
+                    <h3>Leveraging Tools for Automation</h3>
+                    <p>To take full advantage of cloud offerings, you will need to automate the operational aspects
+                        of the application too. This involves developing code for environment setup and
+                        configuration.</p>
+                    <p>When a change in the environment becomes necessary, the infrastructure as code (IaC) can be
+                        executed to replace the existing infrastructure in full. Such an approach will give you an
+                        immutable infrastructure that allows for little or no configuration drift.</p>
+                    <p>In large and complex environments where full replacement of infrastructure is not always
+                        feasible, changes can be made at the component level. Using automated scripts will ensure
+                        changes are implemented with consistency.</p>
+                    <p>Infrastructure, when written as code, can be handled similar to application code using source
+                        control systems. We can configure tools for a
+                        fully automated deployment pipeline (CI/CD) that will automate both infrastructure
+                        and application code deployments giving you agility and consistency.</p>
+                    <p>At the next level, monitoring of the entire system and usage optimization of resources can be
+                        automated. Cloud monitoring services can be configured to detect traffic spikes and fire up
+                        additional instances or shut them down to balance the load (autoscaling). Automated
+                        compliance audit checks can also be implemented with logging frameworks built to analyze
+                        logs and detect anomalies in real time.</p>
+                    <p>At an even higher degree of automation, AI and ML can be used to predict how events could
+                        impact the system and take proactive measures to avoid performance or security degradation.
+                    </p>
+                    <div class="cloudMaturityFlow">
+                        <p>IaC, Immutable infrastructure, CI/CD</p>
+                        <figure>
+                            <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
+                        </figure>
+                        <p>Monitoring, compliance, and optimization through automation</p>
+                        <figure>
+                            <img src="../../images/responsive/service/cloud/cloudNative/arrow.svg" alt="arrow">
+                        </figure>
+                        <p>AI/ML: Predicting failures, self-healing, self-optimizing</p>
                     </div>
                 </div>
-            </section>
-            <section class="bigDataWrapper bestPracticeWrapper">
-                <div class="contentOuterWrapper">
-                    <div class="contentInnerWrapper commonBottomSection">
-                        <h2 class="innerSubHeading"><span class="headingRedSplit">Best Practices for</span> Building
-                            Cloud-Native Apps</h2>
-                        <div class="sharepointTwoSection">
-                            <div class="sharepointColumn cloudNativeColumn">
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/development.svg"
-                                        alt="Develeopment">
-                                    <h3>Development</h3>
+            </div>
+        </section>
+        <section class="bigDataWrapper bestPracticeWrapper">
+            <div class="contentOuterWrapper">
+                <div class="contentInnerWrapper commonBottomSection">
+                    <h2 class="innerSubHeading"><span class="headingRedSplit">Best Practices for</span> Building
+                        Cloud-Native Apps</h2>
+                    <div class="sharepointTwoSection">
+                        <div class="sharepointColumn cloudNativeColumn">
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/development.svg"
+                                    alt="Develeopment">
+                                <h3>Development</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Design applications with microservice architecture</span>
+                                    </li>
+                                    <li><span></span><span>Place business functions behind APIs</span></li>
+                                    <li><span></span><span>Use stateless services and event-driven approach</span>
+                                    </li>
+                                    <li><span></span><span>Automate tests - unit, API, acceptance</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/storage.svg" alt="Storage">
+                                <h3>Storage</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Establish a storage lifecycle policy</span></li>
+                                    <li><span></span><span>Organize data based on attributes such as
+                                            frequency-of-access and planned retention period</span></li>
+                                    <li><span></span><span>Enforce retention policies using code (and OS properties,
+                                            where possible)</span></li>
+                                    <li><span></span><span>Implement a cloud storage data aging management mechanism
+                                            that tracks the state of data and moves it to a different cloud storage
+                                            device or deletes it after a defined lifecycle</span></li>
+                                    <li><span></span><span>Automate backup</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/security.svg"
+                                    alt="Security">
+                                <h3>Security</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Adopt DevSecOps approach</span></li>
+                                    <li><span></span><span>Architect the solution based on applicable security
+                                            standards</span></li>
+                                    <li><span></span><span>Implement logic-based security solutions with custom
+                                            scripting</span></li>
+                                    <li><span></span><span>Encrypt sensitive data</span></li>
+                                    <li><span></span><span>Harden servers and containers</span></li>
+                                    <li><span></span><span>Use managed services such as web application
+                                            firewall</span></li>
+                                    <li><span></span><span>Integrate application security testing into CI/CD</span>
+                                    </li>
+                                    <li><span></span><span>Define cloud-based backup and disaster recovery
+                                            strategy</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sharepointColumn cloudNativeColumn">
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/infractructure.svg"
+                                    alt="Infrastructure">
+                                <h3>Infrastructure</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Utilize managed services such as RDS, Aurora, DynamoDB,
+                                            and Redshift.</span></li>
+                                    <li><span></span><span>Take advantage of autoscaling—automatically adjust
+                                            resources</span></li>
+                                    <li><span></span><span>Build resilient services to ensure auto-redundancy</span>
+                                    </li>
+                                    <li><span></span><span>Use serverless technologies such as AWS Lambda and Azure
+                                            Functions</span></li>
+                                    <li><span></span><span>Benefit from multiple data centers to ensure business
+                                            continuity</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/operations.svg"
+                                    alt="Operations">
+                                <h3>Operations</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Maintain infrastructure as code using tools such as AWS
+                                            CloudFormation</span></li>
+                                    <li><span></span><span>Plan for immutable infrastructure</span></li>
+                                    <li><span></span><span>Automate code deployment pipeline</span></li>
+                                    <li><span></span><span>Deploy services/applications in containers</span></li>
+                                    <li><span></span><span>Use orchestration tools such as Kubernetes, Swarm</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../../images/responsive/service/cloud/cloudNative/monitoring.svg"
+                                    alt="Monitoring">
+                                <h3>Monitoring</h3>
+                                <ul class="hexList">
+                                    <li><span></span><span>Ensure continuous monitoring and threat prediction with
+                                            stacks such as ELK and OSSEC</span></li>
+                                    <li><span></span><span>Automate detection of environment/configuration
+                                            drift</span></li>
+                                    <li><span></span><span>Create compliance as code framework and automate audit
+                                            checks</span></li>
+                                    <li><span></span><span>Use white box monitoring methods in addition to external
+                                            polling</span></li>
+                                    <li><span></span><span>Adopt tools, such as Prometheus, to monitor a wide
+                                            variety of custom metrics</span></li>
+                                    <li><span></span><span>Track all related requests with request tracing tools
+                                            such as Jaeger and Zipkin</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="awsDropdown migrationDropDown">
+                        <div class="collapse-content machineLearningContentWrapper crossPLinks">
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Development</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
+                                </div>
+                                <div class="xtraP">
                                     <ul class="hexList">
-                                        <li><span></span><span>Design applications with microservice architecture</span>
-                                        </li>
+                                        <li><span></span><span>Design applications with Microservices
+                                                architecture</span></li>
                                         <li><span></span><span>Place business functions behind APIs</span></li>
-                                        <li><span></span><span>Use stateless services and event-driven approach</span>
-                                        </li>
+                                        <li><span></span><span>Use stateless services and event-driven
+                                                approach</span></li>
                                         <li><span></span><span>Automate tests - unit, API, acceptance</span></li>
                                     </ul>
                                 </div>
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/storage.svg"
-                                        alt="Storage">
-                                    <h3>Storage</h3>
+                            </div>
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Infrastructure</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
+                                </div>
+                                <div class="xtraP">
+                                    <ul class="hexList">
+                                        <li><span></span><span>Utilize managed services such as RDS, Aurora,
+                                                DynamoDB, and Redshift.</span></li>
+                                        <li><span></span><span>Take advantage of autoscaling—automatically adjust
+                                                resources</span></li>
+                                        <li><span></span><span>Build resilient services to ensure auto-redundancy
+                                            </span></li>
+                                        <li><span></span><span>Use serverless technologies such as AWS Lambda and
+                                                Azure Functions</span></li>
+                                        <li><span></span><span>Benefit from multiple data centers to ensure business
+                                                continuity</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Storage</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
+                                </div>
+                                <div class="xtraP">
                                     <ul class="hexList">
                                         <li><span></span><span>Establish a storage lifecycle policy</span></li>
                                         <li><span></span><span>Organize data based on attributes such as
                                                 frequency-of-access and planned retention period</span></li>
-                                        <li><span></span><span>Enforce retention policies using code (and OS properties,
-                                                where possible)</span></li>
-                                        <li><span></span><span>Implement a cloud storage data aging management mechanism
-                                                that tracks the state of data and moves it to a different cloud storage
-                                                device or deletes it after a defined lifecycle</span></li>
+                                        <li><span></span><span>Enforce retention policies using code (and OS
+                                                properties, where possible)</span></li>
+                                        <li><span></span><span>Implement a cloud storage data aging management
+                                                mechanism that tracks the state of data and moves it to a different
+                                                cloud storage device or deletes it after a defined lifecycle</span>
+                                        </li>
                                         <li><span></span><span>Automate backup</span></li>
+                                        <li><span></span><span>Utilize</span></li>
                                     </ul>
                                 </div>
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/security.svg"
-                                        alt="Security">
-                                    <h3>Security</h3>
+                            </div>
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Operations</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
+                                </div>
+                                <div class="xtraP">
+                                    <ul class="hexList">
+                                        <li><span></span><span>Maintain infrastructure as code using tools such as
+                                                AWS CloudFormation</span></li>
+                                        <li><span></span><span>Plan for immutable infrastructure</span></li>
+                                        <li><span></span><span>Automate code deployment pipeline</span></li>
+                                        <li><span></span><span>Deploy services/applications in containers</span>
+                                        </li>
+                                        <li><span></span><span>Use orchestration tools such as Kubernetes,
+                                                Swarm</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Security</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
+                                </div>
+                                <div class="xtraP">
                                     <ul class="hexList">
                                         <li><span></span><span>Adopt DevSecOps approach</span></li>
                                         <li><span></span><span>Architect the solution based on applicable security
@@ -565,59 +699,29 @@
                                         <li><span></span><span>Harden servers and containers</span></li>
                                         <li><span></span><span>Use managed services such as web application
                                                 firewall</span></li>
-                                        <li><span></span><span>Integrate application security testing into CI/CD</span>
-                                        </li>
+                                        <li><span></span><span>Integrate application security testing into
+                                                CI/CD</span></li>
                                         <li><span></span><span>Define cloud-based backup and disaster recovery
                                                 strategy</span></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="sharepointColumn cloudNativeColumn">
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/infractructure.svg"
-                                        alt="Infrastructure">
-                                    <h3>Infrastructure</h3>
-                                    <ul class="hexList">
-                                        <li><span></span><span>Utilize managed services such as RDS, Aurora, DynamoDB,
-                                                and Redshift.</span></li>
-                                        <li><span></span><span>Take advantage of autoscaling—automatically adjust
-                                                resources</span></li>
-                                        <li><span></span><span>Build resilient services to ensure auto-redundancy</span>
-                                        </li>
-                                        <li><span></span><span>Use serverless technologies such as AWS Lambda and Azure
-                                                Functions</span></li>
-                                        <li><span></span><span>Benefit from multiple data centers to ensure business
-                                                continuity</span></li>
-                                    </ul>
+                            <div class="desktop-view-content machineLearningContent">
+                                <div class="mobile-collapse-content">
+                                    <h3 class="mobile-collapse-contenting">Monitoring</h3><span
+                                        class="iconArrow icon-Close collapse-icon"></span>
                                 </div>
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/operations.svg"
-                                        alt="Operations">
-                                    <h3>Operations</h3>
+                                <div class="xtraP">
                                     <ul class="hexList">
-                                        <li><span></span><span>Maintain infrastructure as code using tools such as AWS
-                                                CloudFormation</span></li>
-                                        <li><span></span><span>Plan for immutable infrastructure</span></li>
-                                        <li><span></span><span>Automate code deployment pipeline</span></li>
-                                        <li><span></span><span>Deploy services/applications in containers</span></li>
-                                        <li><span></span><span>Use orchestration tools such as Kubernetes, Swarm</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <img src="../../images/responsive/service/cloud/cloudNative/monitoring.svg"
-                                        alt="Monitoring">
-                                    <h3>Monitoring</h3>
-                                    <ul class="hexList">
-                                        <li><span></span><span>Ensure continuous monitoring and threat prediction with
-                                                stacks such as ELK and OSSEC</span></li>
+                                        <li><span></span><span>Ensure continuous monitoring and threat prediction
+                                                with stacks such as ELK and OSSEC</span></li>
                                         <li><span></span><span>Automate detection of environment/configuration
                                                 drift</span></li>
-                                        <li><span></span><span>Create compliance as code framework and automate audit
-                                                checks</span></li>
-                                        <li><span></span><span>Use white box monitoring methods in addition to external
-                                                polling</span></li>
-                                        <li><span></span><span>Adopt tools, such as Prometheus, to monitor a wide
+                                        <li><span></span><span>Create compliance as code framework and automate
+                                                audit checks</span></li>
+                                        <li><span></span><span>Use white box monitoring methods in addition to
+                                                external polling</span></li>
+                                        <li><span></span><span>Adopt tools such as Prometheus to monitor a wide
                                                 variety of custom metrics</span></li>
                                         <li><span></span><span>Track all related requests with request tracing tools
                                                 such as Jaeger and Zipkin</span></li>
@@ -625,423 +729,326 @@
                                 </div>
                             </div>
                         </div>
-                        <section class="awsDropdown migrationDropDown">
-                            <div class="collapse-content machineLearningContentWrapper crossPLinks">
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Development</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Design applications with Microservices
-                                                    architecture</span></li>
-                                            <li><span></span><span>Place business functions behind APIs</span></li>
-                                            <li><span></span><span>Use stateless services and event-driven
-                                                    approach</span></li>
-                                            <li><span></span><span>Automate tests - unit, API, acceptance</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Infrastructure</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Utilize managed services such as RDS, Aurora,
-                                                    DynamoDB, and Redshift.</span></li>
-                                            <li><span></span><span>Take advantage of autoscaling—automatically adjust
-                                                    resources</span></li>
-                                            <li><span></span><span>Build resilient services to ensure auto-redundancy
-                                                </span></li>
-                                            <li><span></span><span>Use serverless technologies such as AWS Lambda and
-                                                    Azure Functions</span></li>
-                                            <li><span></span><span>Benefit from multiple data centers to ensure business
-                                                    continuity</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Storage</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Establish a storage lifecycle policy</span></li>
-                                            <li><span></span><span>Organize data based on attributes such as
-                                                    frequency-of-access and planned retention period</span></li>
-                                            <li><span></span><span>Enforce retention policies using code (and OS
-                                                    properties, where possible)</span></li>
-                                            <li><span></span><span>Implement a cloud storage data aging management
-                                                    mechanism that tracks the state of data and moves it to a different
-                                                    cloud storage device or deletes it after a defined lifecycle</span>
-                                            </li>
-                                            <li><span></span><span>Automate backup</span></li>
-                                            <li><span></span><span>Utilize</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Operations</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Maintain infrastructure as code using tools such as
-                                                    AWS CloudFormation</span></li>
-                                            <li><span></span><span>Plan for immutable infrastructure</span></li>
-                                            <li><span></span><span>Automate code deployment pipeline</span></li>
-                                            <li><span></span><span>Deploy services/applications in containers</span>
-                                            </li>
-                                            <li><span></span><span>Use orchestration tools such as Kubernetes,
-                                                    Swarm</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Security</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Adopt DevSecOps approach</span></li>
-                                            <li><span></span><span>Architect the solution based on applicable security
-                                                    standards</span></li>
-                                            <li><span></span><span>Implement logic-based security solutions with custom
-                                                    scripting</span></li>
-                                            <li><span></span><span>Encrypt sensitive data</span></li>
-                                            <li><span></span><span>Harden servers and containers</span></li>
-                                            <li><span></span><span>Use managed services such as web application
-                                                    firewall</span></li>
-                                            <li><span></span><span>Integrate application security testing into
-                                                    CI/CD</span></li>
-                                            <li><span></span><span>Define cloud-based backup and disaster recovery
-                                                    strategy</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="desktop-view-content machineLearningContent">
-                                    <div class="mobile-collapse-content">
-                                        <h3 class="mobile-collapse-contenting">Monitoring</h3><span
-                                            class="iconArrow icon-Close collapse-icon"></span>
-                                    </div>
-                                    <div class="xtraP">
-                                        <ul class="hexList">
-                                            <li><span></span><span>Ensure continuous monitoring and threat prediction
-                                                    with stacks such as ELK and OSSEC</span></li>
-                                            <li><span></span><span>Automate detection of environment/configuration
-                                                    drift</span></li>
-                                            <li><span></span><span>Create compliance as code framework and automate
-                                                    audit checks</span></li>
-                                            <li><span></span><span>Use white box monitoring methods in addition to
-                                                    external polling</span></li>
-                                            <li><span></span><span>Adopt tools such as Prometheus to monitor a wide
-                                                    variety of custom metrics</span></li>
-                                            <li><span></span><span>Track all related requests with request tracing tools
-                                                    such as Jaeger and Zipkin</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                    </section>
                 </div>
-            </section>
-            <section class="bigDataWrapper smoothCloudWrapper">
-                <div class="contentOuterWrapper">
-                    <div class="contentInnerWrapper">
-                        <h2 class="innerSubHeading"><span class="headingRedSplit">For a Smooth Landing</span> on the
-                            Cloud</h2>
-                        <p class="expandTitle">A landing zone can be the starting point for your cloud journey. It is an
-                            adaptable foundation built according to best practices before deploying any workloads.
-                            Delivered as infrastructure as code, it is a repeatable process with a prescriptive set of
-                            instructions for deploying a baseline cloud environment with some core services.</p>
-                        <p class="expandTitle">The baseline environment will dramatically reduce your deployment times
-                            for future accounts/environments. By implementing a cloud landing zone, we enable clients to
-                            deploy to production quickly with sound governance and reduced operational costs.</p>
-                        <div class="smoothCloud">
-                            <p>The technical and operational aspects taken care of when building a landing zone are</p>
-                            <div class="smoothCloudListing">
-                                <ul class="hexList">
-                                    <li><span></span><span>Account structure design</span></li>
-                                    <li><span></span><span>Virtual network configuration</span></li>
-                                    <li><span></span><span>Security and audit requirements</span></li>
-                                </ul>
-                                <ul class="hexList">
-                                    <li><span></span><span>Identity and access management</span></li>
-                                    <li><span></span><span>Central shared services</span></li>
-                                    <li><span></span><span>Automation framework and versioned infrastructure</span></li>
-                                </ul>
-                            </div>
+            </div>
+        </section>
+        <section class="bigDataWrapper smoothCloudWrapper">
+            <div class="contentOuterWrapper">
+                <div class="contentInnerWrapper">
+                    <h2 class="innerSubHeading"><span class="headingRedSplit">For a Smooth Landing</span> on the
+                        Cloud</h2>
+                    <p class="expandTitle">A landing zone can be the starting point for your cloud journey. It is an
+                        adaptable foundation built according to best practices before deploying any workloads.
+                        Delivered as infrastructure as code, it is a repeatable process with a prescriptive set of
+                        instructions for deploying a baseline cloud environment with some core services.</p>
+                    <p class="expandTitle">The baseline environment will dramatically reduce your deployment times
+                        for future accounts/environments. By implementing a cloud landing zone, we enable clients to
+                        deploy to production quickly with sound governance and reduced operational costs.</p>
+                    <div class="smoothCloud">
+                        <p>The technical and operational aspects taken care of when building a landing zone are</p>
+                        <div class="smoothCloudListing">
+                            <ul class="hexList">
+                                <li><span></span><span>Account structure design</span></li>
+                                <li><span></span><span>Virtual network configuration</span></li>
+                                <li><span></span><span>Security and audit requirements</span></li>
+                            </ul>
+                            <ul class="hexList">
+                                <li><span></span><span>Identity and access management</span></li>
+                                <li><span></span><span>Central shared services</span></li>
+                                <li><span></span><span>Automation framework and versioned infrastructure</span></li>
+                            </ul>
                         </div>
-                        <p>To maximize the benefits of migrating to the cloud, businesses need to adopt cloud-native
-                            engineering and best practices. Our cloud consultants with proven experience in major cloud
-                            platforms can help streamline your cloud-native journey. We can help you adopt modular
-                            application architecture and establish DevOps practices to deploy easily scalable enterprise
-                            applications on the cloud.</p>
-                        <a class="page-links buttonHover">
-                            <button id="inqBtn" class="casestudiesBtn InquiryBtn">Connect with Us</button>
-                        </a>
                     </div>
+                    <p>To maximize the benefits of migrating to the cloud, businesses need to adopt cloud-native
+                        engineering and best practices. Our cloud consultants with proven experience in major cloud
+                        platforms can help streamline your cloud-native journey. We can help you adopt modular
+                        application architecture and establish DevOps practices to deploy easily scalable enterprise
+                        applications on the cloud.</p>
+                    <a class="page-links buttonHover">
+                        <button id="inqBtn" class="casestudiesBtn InquiryBtn">Connect with Us</button>
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
 
+    </div>
+
+    <footer id="footer">
+        <div class="footerContentWrapper footerFlex">
+            <div class="footerAddress">
+                <p class="footerAddrs" style="color:white;" itemprop="address" itemscope=""
+                    itemtype="http://schema.org/PostalAddress">
+                    <span>
+                        <span class="location"></span>
+                        <b>7th Floor, Ganga, Phase III Campus Technopark, Trivandrum - 695583</b>
+                    </span>
+                    <span class="py-3">
+                        <span class="footer-icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3317"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M917 1364c112 202 241 396 409 573 168 178 377 340 648 478 20 10 39 10 56 3 26-10 52-31 78-57 20-20 45-52 71-87 104-137 233-307 415-222 4 2 7 4 11 6l607 349c2 1 4 3 6 4 80 55 113 140 114 236 0 98-36 208-89 301-70 123-173 204-292 258-113 52-239 80-360 98-190 28-368 10-550-46-178-55-357-146-553-267l-14-9c-90-56-187-116-282-187-349-263-704-643-935-1061C63 1383-43 1004 15 643c32-198 117-378 265-497C409 42 583-15 808 5c26 2 49 17 61 39l389 658c57 74 64 147 33 220-26 60-78 115-149 167-21 18-46 36-72 55-87 63-186 136-152 222zm294 682c-179-189-316-394-433-606-2-3-4-7-5-11-86-202 68-315 203-414 23-17 45-33 65-50 1-1 2-2 4-3 50-37 86-72 100-104 8-18 5-39-13-61-3-4-6-7-8-11L754 159c-159-7-283 36-374 110-115 93-182 238-208 399-52 323 47 667 225 990 219 397 558 759 891 1010 92 69 184 126 269 179l14 9c185 115 353 200 517 251 159 49 316 65 481 40 109-16 220-40 317-85 91-42 169-103 221-193 41-72 69-153 68-223 0-44-13-82-44-104l-604-347c-67-29-153 84-222 175-30 39-58 76-86 104-40 40-85 74-135 93-58 22-119 23-183-10-288-146-510-319-691-510z"
+                                    fill-rule="nonzero" /></svg>
+                        </span>
+                        <b>017xxxxxxx</b>
+                    </span>
+                    <span>
+                        <span class="footer-icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 2410"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M191 0h2951c53 0 100 22 135 56 35 35 56 83 56 135v2028c0 40-12 77-33 107-4 10-10 19-18 27-5 5-11 9-18 13-33 28-76 45-122 45H191c-53 0-100-22-135-56-35-35-56-82-56-135V192C0 139 21 92 56 57S138 1 191 1zm-45 2139l1034-1037L146 259v1880zm1148-944L228 2264h2867L2076 1195l-336 286c-26 23-66 24-94 1l-353-287zm894-95l998 1047V250l-998 850zM240 147l1452 1184L3081 147H240z"
+                                    fill-rule="nonzero" /></svg>
+                        </span>
+                        <b>cloud@gmail.com</b>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="footerBottomWrapper footerFlex">
+            <div class="copyrightWrapper">
+                <div id="copyright">
+                    <p>© QBurst 2020. All Rights Reserved. <a class="focus-footer"
+                            href="privacypolicy/index.htm">Privacy & Cookies Policy</a></p>
+                    <p class="salesforceFooterText">All trademarks are of <a href="in/index.htm?ir=1"
+                            target="_blank">salesforce.com</a>, inc. and used here with permission.</p>
+                </div>
+            </div>
+            <div class="socialIcons" style="flex:.4;">
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/cloudcareint"
+                    title="QBurst on Facebook" class="facebook"></a>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/thecloudcare/"
+                    title="QBurst on Linkdin" class="linkdin"></a>
+            </div>
         </div>
 
-        <footer id="footer">
-            <div class="footerContentWrapper footerFlex">
-                <div class="footerAddress">
-                    <p class="footerAddrs" style="color:white;" itemprop="address" itemscope=""
-                        itemtype="http://schema.org/PostalAddress">
-                        <span>
-                            <span class="location"></span>
-                            <b>7th Floor, Ganga, Phase III Campus Technopark, Trivandrum - 695583</b>
-                        </span>
-                        <span class="py-3">
-                            <span class="footer-icon-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3317"
-                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
-                                    <path
-                                        d="M917 1364c112 202 241 396 409 573 168 178 377 340 648 478 20 10 39 10 56 3 26-10 52-31 78-57 20-20 45-52 71-87 104-137 233-307 415-222 4 2 7 4 11 6l607 349c2 1 4 3 6 4 80 55 113 140 114 236 0 98-36 208-89 301-70 123-173 204-292 258-113 52-239 80-360 98-190 28-368 10-550-46-178-55-357-146-553-267l-14-9c-90-56-187-116-282-187-349-263-704-643-935-1061C63 1383-43 1004 15 643c32-198 117-378 265-497C409 42 583-15 808 5c26 2 49 17 61 39l389 658c57 74 64 147 33 220-26 60-78 115-149 167-21 18-46 36-72 55-87 63-186 136-152 222zm294 682c-179-189-316-394-433-606-2-3-4-7-5-11-86-202 68-315 203-414 23-17 45-33 65-50 1-1 2-2 4-3 50-37 86-72 100-104 8-18 5-39-13-61-3-4-6-7-8-11L754 159c-159-7-283 36-374 110-115 93-182 238-208 399-52 323 47 667 225 990 219 397 558 759 891 1010 92 69 184 126 269 179l14 9c185 115 353 200 517 251 159 49 316 65 481 40 109-16 220-40 317-85 91-42 169-103 221-193 41-72 69-153 68-223 0-44-13-82-44-104l-604-347c-67-29-153 84-222 175-30 39-58 76-86 104-40 40-85 74-135 93-58 22-119 23-183-10-288-146-510-319-691-510z"
-                                        fill-rule="nonzero" /></svg>
-                            </span>
-                            <b>017xxxxxxx</b>
-                        </span>
-                        <span>
-                            <span class="footer-icon-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 2410"
-                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
-                                    <path
-                                        d="M191 0h2951c53 0 100 22 135 56 35 35 56 83 56 135v2028c0 40-12 77-33 107-4 10-10 19-18 27-5 5-11 9-18 13-33 28-76 45-122 45H191c-53 0-100-22-135-56-35-35-56-82-56-135V192C0 139 21 92 56 57S138 1 191 1zm-45 2139l1034-1037L146 259v1880zm1148-944L228 2264h2867L2076 1195l-336 286c-26 23-66 24-94 1l-353-287zm894-95l998 1047V250l-998 850zM240 147l1452 1184L3081 147H240z"
-                                        fill-rule="nonzero" /></svg>
-                            </span>
-                            <b>cloud@gmail.com</b>
-                        </span>
-                    </p>
-                </div>
-            </div>
-            <div class="footerBottomWrapper footerFlex">
-                <div class="copyrightWrapper">
-                    <div id="copyright">
-                        <p>© QBurst 2020. All Rights Reserved. <a class="focus-footer"
-                                href="privacypolicy/index.htm">Privacy & Cookies Policy</a></p>
-                        <p class="salesforceFooterText">All trademarks are of <a href="in/index.htm?ir=1"
-                                target="_blank">salesforce.com</a>, inc. and used here with permission.</p>
-                    </div>
-                </div>
-                <div class="socialIcons" style="flex:.4;">
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/cloudcareint"
-                        title="QBurst on Facebook" class="facebook"></a>
-                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/thecloudcare/"
-                        title="QBurst on Linkdin" class="linkdin"></a>
-                </div>
-            </div>
-
-            <!-- <div class="footerBottom">
+        <!-- <div class="footerBottom">
 		<div id="copyright">
 			<p>© QBurst 2020. All Rights Reserved. <a class="focus-footer" href="/privacypolicy/">Privacy & Cookies Policy</a></p>
 			<p class="salesforceFooterText">All trademarks are of <a href="https://www.salesforce.com/in/?ir=1" target="_blank">salesforce.com</a>, inc. and used here with permission.</p>
 		</div>
 		<div></div>
 	</div> -->
-        </footer>
+    </footer>
+    <div id="fbmsg">
+        <div class="fbmsg-badge" style="right: 90px !important;">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1"
+                id="Facebook_Messenger" x="0px" y="0px" width="322px" height="324px" viewBox="96 93 322 324"
+                style="enable-background:new 96 93 322 324;" xml:space="preserve" class="fbmsg-badge-btn">
+                <path style="fill:#0084FF;"
+                    d="M257,93c-88.918,0-161,67.157-161,150c0,47.205,23.412,89.311,60,116.807V417l54.819-30.273    C225.449,390.801,240.948,393,257,393c88.918,0,161-67.157,161-150S345.918,93,257,93z M273,295l-41-44l-80,44l88-94l42,44l79-44    L273,295z" />
+            </svg>
+        </div>
+        <div class="wp-sheet">
+            <div class="wp-sheet-head">
+                <div class="wp-sheet-head-inner">
+                    Cloud Care international
+                </div>
+                <a href="#" class="wp-sheet-head-close">x</a>
+            </div>
+            <div class="wp-sheet-body"></div>
+            <div class="wp-sheet-content">
+                <div class="wp-sheet-content-inner">
+                    <div class="wp-sheet-content-part">
+                        <div class="fb-page" data-href="https://www.facebook.com/cloudcareint/"
+                            data-tabs="messages,timeline" data-width="368" data-height="608" data-small-header="true"
+                            data-adapt-container-width="false" data-hide-cover="flase" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cloudcareint/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cloudcareint/">Cloud Care International</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wp-sheet-footer"></div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=160949731365789&autoLogAppEvents=1"
+        nonce="NxLRst31"></script>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4375023-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "zPnLs1kx0820/9", domain: "qburst.com", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="../../atrk.gif?account=zPnLs1kx0820/9" style="display:none" height="1" width="1"
+            alt=""></noscript>
+    <!-- End Alexa Certify Javascript -->
 
 
-        <script type="text/javascript">
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-4375023-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-
-        <!-- Start Alexa Certify Javascript -->
-        <script type="text/javascript">
-            _atrk_opts = { atrk_acct: "zPnLs1kx0820/9", domain: "qburst.com", dynamic: true };
-            (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
-        </script>
-        <noscript><img src="../../atrk.gif?account=zPnLs1kx0820/9" style="display:none" height="1" width="1"
-                alt=""></noscript>
-        <!-- End Alexa Certify Javascript -->
-
-
-        <script src="../../js/jquery.carousal.min.js"></script>
-        <script type="text/javascript">
-            jQuery.browser = {};
-            (function () {
-                jQuery.browser.msie = false;
-                jQuery.browser.version = 0;
-                if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-                    jQuery.browser.msie = true;
-                    jQuery.browser.version = RegExp.$1;
-                }
-            })();
-        </script>
+    <script src="../../js/jquery.carousal.min.js"></script>
+    <script type="text/javascript">
+        jQuery.browser = {};
+        (function () {
+            jQuery.browser.msie = false;
+            jQuery.browser.version = 0;
+            if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+                jQuery.browser.msie = true;
+                jQuery.browser.version = RegExp.$1;
+            }
+        })();
+    </script>
 
 
 
-        <script src="../../js/validation.min.4-4-1.427919087314284327.js" async="" defer=""></script>
-        <script src="../../js/script.min.4-4-1.427919087314284327.js"></script>
-        <script type="text/javascript" src="../../js/plugin.js"></script>
-        <script src="../../js/jsonRPC.min.4-4-1.427919087314284327.js"></script>
-        <script type="text/javascript">
-            var window_prop = '/cloud/native-development/'
-            var path = '/company/career/openings/'
-            load_job_table(window_prop, path);
-        </script>
+    <script src="../../js/validation.min.4-4-1.427919087314284327.js" async="" defer=""></script>
+    <script src="../../js/script.min.4-4-1.427919087314284327.js"></script>
+    <script type="text/javascript" src="../../js/plugin.js"></script>
+    <script src="../../js/jsonRPC.min.4-4-1.427919087314284327.js"></script>
+    <script src="../../js/messenger.js"></script>
+    <script type="text/javascript">
+        var window_prop = '/cloud/native-development/'
+        var path = '/company/career/openings/'
+        load_job_table(window_prop, path);
+    </script>
 
-        <!-- 
+    <!-- 
         <script src="/js/commonScript.min.4-4-1.427919087314284327.js"></script>
          -->
 
-        <script type="text/javascript">
-            var widgetId1;
-            var widgetId2;
-            var recaptchaValidationMessage = function (resp) {
-                $("#headerCaptchaValMsg label").text('');
-                $("#captchaVal label").text('');
-            };
-            var myCaptchaCallback = function () {
-                widgetId2 = grecaptcha.render(
-                    'recaptcha2', {
-                    'sitekey': '6LfLnx8TAAAAABGETqhyg1kaAFHBvmbuqbldmgDF',
-                    'callback': recaptchaValidationMessage
-                });
-            };
-        </script>
-        <script src="../../recaptcha/api.js?onload=myCaptchaCallback&render=explicit" defer=""></script>
+    <script type="text/javascript">
+        var widgetId1;
+        var widgetId2;
+        var recaptchaValidationMessage = function (resp) {
+            $("#headerCaptchaValMsg label").text('');
+            $("#captchaVal label").text('');
+        };
+        var myCaptchaCallback = function () {
+            widgetId2 = grecaptcha.render(
+                'recaptcha2', {
+                'sitekey': '6LfLnx8TAAAAABGETqhyg1kaAFHBvmbuqbldmgDF',
+                'callback': recaptchaValidationMessage
+            });
+        };
+    </script>
+    <script src="../../recaptcha/api.js?onload=myCaptchaCallback&render=explicit" defer=""></script>
 
 
 
-        <script type="text/javascript">
-            function openListMenu(evt, menuListOpen) {
-                var i, menuMiddleList, tablinks;
-                menuMiddleList = document.getElementsByClassName("menuMiddleList");
-                for (i = 0; i < menuMiddleList.length; i++) {
-                    menuMiddleList[i].style.display = "none";
-                }
-                menuListClick = document.getElementsByClassName("menuListClick");
-                for (i = 0; i < menuListClick.length; i++) {
-                    menuListClick[i].className = menuListClick[i].className.replace(" active", "");
-                }
-                document.getElementById(menuListOpen).style.display = "block";
-                evt.currentTarget.className += " active";
+    <script type="text/javascript">
+        function openListMenu(evt, menuListOpen) {
+            var i, menuMiddleList, tablinks;
+            menuMiddleList = document.getElementsByClassName("menuMiddleList");
+            for (i = 0; i < menuMiddleList.length; i++) {
+                menuMiddleList[i].style.display = "none";
             }
-            function openListMobMenu(evt, menuListOpenMob) {
-                var i, menuMiddleListMob, tablinks;
-                menuMiddleListMob = document.getElementsByClassName("menuMiddleListMob");
-                for (i = 0; i < menuMiddleListMob.length; i++) {
-                    menuMiddleListMob[i].style.display = "none";
-                }
-                menuListClick = document.getElementsByClassName("menuListClick");
-                for (i = 0; i < menuListClick.length; i++) {
-                    menuListClick[i].className = menuListClick[i].className.replace(" active", "");
-                }
-                document.getElementById(menuListOpenMob).style.display = "block";
-                evt.currentTarget.className += " active";
+            menuListClick = document.getElementsByClassName("menuListClick");
+            for (i = 0; i < menuListClick.length; i++) {
+                menuListClick[i].className = menuListClick[i].className.replace(" active", "");
             }
-            function openList(evt, menuListOpen) {
-                var i, menuMiddleList, tablinks;
-                menuMiddleList = document.getElementsByClassName("menuMiddleList");
-                for (i = 0; i < menuMiddleList.length; i++) {
-                    menuMiddleList[i].style.display = "none";
-                }
-                menuListClick = document.getElementsByClassName("menuListClick");
-                for (i = 0; i < menuListClick.length; i++) {
-                    menuListClick[i].className = menuListClick[i].className.replace(" active", "");
-                }
-                document.getElementById(menuListOpen).style.display = "block";
-                evt.currentTarget.className += " active";
+            document.getElementById(menuListOpen).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function openListMobMenu(evt, menuListOpenMob) {
+            var i, menuMiddleListMob, tablinks;
+            menuMiddleListMob = document.getElementsByClassName("menuMiddleListMob");
+            for (i = 0; i < menuMiddleListMob.length; i++) {
+                menuMiddleListMob[i].style.display = "none";
             }
-            $(document).ready(function () {
-                var domain_url = "https://www.qburst.com".slice(8);
-                au_domain_url = "https://www.qburst.com.au".slice(8);
-                jp_domain_url = "https://www.qburst.co.jp".slice(8);
-                if (window.location.host != domain_url) {
-                    if ((window.location.host != au_domain_url) && (window.location.host != jp_domain_url)) {
-                        var defaultCookie = getCookie('domainname');
-                        if (defaultCookie == null || defaultCookie == '') {
-                            $(".cookieWrapper").css("display", "block");
-                        } else {
-                            $(".cookieWrapper").css("display", "none");
-                        }
+            menuListClick = document.getElementsByClassName("menuListClick");
+            for (i = 0; i < menuListClick.length; i++) {
+                menuListClick[i].className = menuListClick[i].className.replace(" active", "");
+            }
+            document.getElementById(menuListOpenMob).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function openList(evt, menuListOpen) {
+            var i, menuMiddleList, tablinks;
+            menuMiddleList = document.getElementsByClassName("menuMiddleList");
+            for (i = 0; i < menuMiddleList.length; i++) {
+                menuMiddleList[i].style.display = "none";
+            }
+            menuListClick = document.getElementsByClassName("menuListClick");
+            for (i = 0; i < menuListClick.length; i++) {
+                menuListClick[i].className = menuListClick[i].className.replace(" active", "");
+            }
+            document.getElementById(menuListOpen).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        $(document).ready(function () {
+            var domain_url = "https://www.qburst.com".slice(8);
+            au_domain_url = "https://www.qburst.com.au".slice(8);
+            jp_domain_url = "https://www.qburst.co.jp".slice(8);
+            if (window.location.host != domain_url) {
+                if ((window.location.host != au_domain_url) && (window.location.host != jp_domain_url)) {
+                    var defaultCookie = getCookie('domainname');
+                    if (defaultCookie == null || defaultCookie == '') {
+                        $(".cookieWrapper").css("display", "block");
+                    } else {
+                        $(".cookieWrapper").css("display", "none");
                     }
                 }
-                $(".cookiePolicyClose").click(function () {
-                    var wH = $(window).height();
-                    $(".main-menu, #openModal").css({
-                        "height": wH,
-                        "min-height": '100%'
-                    });
-                    $("#openModal, .searchHolder, .main-menu").css("top", 0);
-
-                })
-
-                $(window).bind("load resize scroll", function () {
-                    if ($("#cookiePolicy").is(":visible")) {
-                        $("#header").css({ "padding": "0", "display": "block", "opacity": "1" });
-                        $("#headerWrapper").css("padding", "10px 0");
-                        var cookieScroll,
-                            scrollTop = $(this).scrollTop(),
-                            cookiePolicyHeight = $("#cookiePolicy").outerHeight();
-                        if (scrollTop <= cookiePolicyHeight) {
-                            var cookieHeightNormal = $(".cookieWrapper").outerHeight();
-                            $(".main-menu, .inquiryModel,.searchHolder").css("top", cookieHeightNormal);
-                            var menuHeight = $(window).height() - cookieHeightNormal;
-                            $(".main-menu, .inquiryModel").css(
-                                "height", menuHeight
-                            );
-                        }
-                    }
-
+            }
+            $(".cookiePolicyClose").click(function () {
+                var wH = $(window).height();
+                $(".main-menu, #openModal").css({
+                    "height": wH,
+                    "min-height": '100%'
                 });
+                $("#openModal, .searchHolder, .main-menu").css("top", 0);
+
+            })
+
+            $(window).bind("load resize scroll", function () {
+                if ($("#cookiePolicy").is(":visible")) {
+                    $("#header").css({ "padding": "0", "display": "block", "opacity": "1" });
+                    $("#headerWrapper").css("padding", "10px 0");
+                    var cookieScroll,
+                        scrollTop = $(this).scrollTop(),
+                        cookiePolicyHeight = $("#cookiePolicy").outerHeight();
+                    if (scrollTop <= cookiePolicyHeight) {
+                        var cookieHeightNormal = $(".cookieWrapper").outerHeight();
+                        $(".main-menu, .inquiryModel,.searchHolder").css("top", cookieHeightNormal);
+                        var menuHeight = $(window).height() - cookieHeightNormal;
+                        $(".main-menu, .inquiryModel").css(
+                            "height", menuHeight
+                        );
+                    }
+                }
+
+            });
 
 
-                var winwid = document.body.clientWidth;
-                var device = navigator.userAgent;
-                var version_no = '4-4-1.427919087314284327';
-                var pagePath = location.pathname;
+            var winwid = document.body.clientWidth;
+            var device = navigator.userAgent;
+            var version_no = '4-4-1.427919087314284327';
+            var pagePath = location.pathname;
 
-                if (pagePath != "/") {
-                    $(window).resize(function () {
-                        var winwid = document.body.clientWidth;
-                        if (device.indexOf("KFJWI") > -1 || device.indexOf("Xoom") > -1 && winwid == "1280" ||
-                            device.indexOf("GT") > -1 && winwid == "1280" || device.indexOf("Nexus 10") > -1 && winwid == "1280" || (winwid > 1010 && winwid < 1025)) {
-                            if (!$("link[href='/stylesheets/maintain.css']").length) {
-                                $('<link href="/stylesheets/maintain.css" id="style1" rel="stylesheet">').appendTo("head");
-                            }
-                        } else {
-                            if (!$("link[href='/stylesheets/maintain.css']").length) {
-                                $('#style1').remove();
-                            }
-                        }
-                        if ($("#iPadcommon").length == 0 && location.pathname != "/") {
-                            if (winwid > 750 && winwid < 1025) {
-                                $('<link href="/stylesheets/iPad.min.' + version_no + '.css" rel="stylesheet prefetch" type="text/css" media="all" id="ipadCss" />').appendTo("head");
-                            } else {
-                                $('#ipadCss').remove();
-                            }
-                        }
-                        var screen_width = screen.width;
-                        var domain = window.location.hostname;
-
-                    });
+            if (pagePath != "/") {
+                $(window).resize(function () {
+                    var winwid = document.body.clientWidth;
                     if (device.indexOf("KFJWI") > -1 || device.indexOf("Xoom") > -1 && winwid == "1280" ||
                         device.indexOf("GT") > -1 && winwid == "1280" || device.indexOf("Nexus 10") > -1 && winwid == "1280" || (winwid > 1010 && winwid < 1025)) {
                         if (!$("link[href='/stylesheets/maintain.css']").length) {
@@ -1052,44 +1059,65 @@
                             $('#style1').remove();
                         }
                     }
-                }
-
-                $(window).load(function () {
-                    if (pagePath != "/") {
-                        if ($("#iPadcommon").length == 0 && location.pathname != "/") {
-                            if (winwid > 750 && winwid < 1025) {
-                                $('<link href="/stylesheets/iPad.min.' + version_no + '.css" rel="stylesheet prefetch" type="text/css" media="all" id="ipadCss" />').appendTo("head");
-                            } else {
-                                $('#ipadCss').remove();
-                            }
+                    if ($("#iPadcommon").length == 0 && location.pathname != "/") {
+                        if (winwid > 750 && winwid < 1025) {
+                            $('<link href="/stylesheets/iPad.min.' + version_no + '.css" rel="stylesheet prefetch" type="text/css" media="all" id="ipadCss" />').appendTo("head");
+                        } else {
+                            $('#ipadCss').remove();
                         }
                     }
+                    var screen_width = screen.width;
+                    var domain = window.location.hostname;
+
                 });
-
-            });
-        </script>
-        <script>
-            function setCookie(cname, cvalue, exdays) {
-                var defaultCookie = getCookie('domainname');
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires=" + d.toGMTString();
-                document.cookie = cname + "=" + cvalue + "; " + expires;
-            }
-
-            function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') c = c.substring(1);
-                    if (c.indexOf(name) == 0) {
-                        return c.substring(name.length, c.length);
+                if (device.indexOf("KFJWI") > -1 || device.indexOf("Xoom") > -1 && winwid == "1280" ||
+                    device.indexOf("GT") > -1 && winwid == "1280" || device.indexOf("Nexus 10") > -1 && winwid == "1280" || (winwid > 1010 && winwid < 1025)) {
+                    if (!$("link[href='/stylesheets/maintain.css']").length) {
+                        $('<link href="/stylesheets/maintain.css" id="style1" rel="stylesheet">').appendTo("head");
+                    }
+                } else {
+                    if (!$("link[href='/stylesheets/maintain.css']").length) {
+                        $('#style1').remove();
                     }
                 }
-                return "";
             }
-        </script>
+
+            $(window).load(function () {
+                if (pagePath != "/") {
+                    if ($("#iPadcommon").length == 0 && location.pathname != "/") {
+                        if (winwid > 750 && winwid < 1025) {
+                            $('<link href="/stylesheets/iPad.min.' + version_no + '.css" rel="stylesheet prefetch" type="text/css" media="all" id="ipadCss" />').appendTo("head");
+                        } else {
+                            $('#ipadCss').remove();
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            var defaultCookie = getCookie('domainname');
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
 
     </div>
 </body>

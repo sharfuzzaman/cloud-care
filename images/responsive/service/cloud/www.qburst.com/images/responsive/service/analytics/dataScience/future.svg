@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="116px" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+        <filter x="-12.5%" y="-11.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127547554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Device-Desktops" transform="translate(-660.000000, -662.000000)">
+            <g id="Group-12" transform="translate(632.000000, 669.000000)">
+                <g id="Group-5" transform="translate(36.000000, 0.000000)">
+                    <g id="Oval" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="graph-(1)" transform="translate(16.235294, 19.176471)">
+                        <g id="Capa_1">
+                            <g id="Group">
+                                <g transform="translate(11.338296, 21.780822)" fill="#42566C" fill-rule="nonzero" id="Shape">
+                                    <path d="M9.4007739,2.45808219 L0.292538974,18.1560137 C-0.0978458,18.5470137 -0.0978458,19.1790137 0.292538974,19.5700137 C0.487232147,19.7650137 0.742829339,19.8630137 0.998426531,19.8630137 C1.25402372,19.8630137 1.50962092,19.7650137 1.70431409,19.5700137 L10.812549,3.87208219 C11.2029338,3.48108219 11.2029338,2.84908219 10.812549,2.45808219 C10.4221642,2.06708219 9.79016025,2.06808219 9.4007739,2.45808219 Z"></path>
+                                    <path d="M13.8502549,0.814246575 C13.4598701,0.423246575 12.8288646,0.423246575 12.4384798,0.814246575 C12.048095,1.20524658 12.048095,1.83724658 12.4384798,2.22824658 L32.4046169,20.5820137 C32.5993101,20.7770137 32.8549073,20.8750137 33.1105045,20.8750137 C33.3661017,20.8750137 33.6216989,20.7770137 33.816392,20.5820137 C34.2067768,20.1910137 34.2067768,19.5590137 33.816392,19.1680137 L13.8502549,0.814246575 Z"></path>
+                                </g>
+                                <path d="M2.99527959,60 C2.44314972,60 1.99685306,59.553 1.99685306,59 L1.99685306,1 C1.99685306,0.447 2.44314972,0 2.99527959,0 C3.54740947,0 3.99370612,0.447 3.99370612,1 L3.99370612,59 C3.99370612,59.553 3.54740947,60 2.99527959,60 Z" id="Shape" fill="#42566C" fill-rule="nonzero"></path>
+                                <path d="M64.6515372,58 L0.998426531,58 C0.446296659,58 0,57.553 0,57 C0,56.447 0.446296659,56 0.998426531,56 L64.6515372,56 C65.203667,56 65.6499637,56.447 65.6499637,57 C65.6499637,57.553 65.203667,58 64.6515372,58 Z" id="Shape" fill="#42566C" fill-rule="nonzero"></path>
+                                <path d="M59.4952796,13.5616438 L45.5446623,43.1506849" id="Line" stroke="#607892" stroke-width="2.5" fill="#42566C" stroke-linecap="square" stroke-dasharray="5"></path>
+                                <ellipse id="Oval" fill="#E83F67" fill-rule="nonzero" cx="10.994673" cy="42.988" rx="4.99213266" ry="5"></ellipse>
+                                <ellipse id="Oval" fill="#E83F67" fill-rule="nonzero" cx="23.7844348" cy="21.9589041" rx="4.99213266" ry="5"></ellipse>
+                                <ellipse id="Oval" fill="#44596E" fill-rule="nonzero" cx="61.3006536" cy="9.91780822" rx="4.99213266" ry="5"></ellipse>
+                                <ellipse id="Oval" fill="#E83F67" fill-rule="nonzero" cx="44.9702251" cy="43.1780822" rx="4.99213266" ry="5"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

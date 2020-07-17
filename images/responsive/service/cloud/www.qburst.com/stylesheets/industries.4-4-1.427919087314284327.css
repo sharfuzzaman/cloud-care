@@ -1,0 +1,1860 @@
+.educationAppClients .view p {
+  background-image: url(../images/homeImg/client.png);
+}
+.engineeringSol .view p {
+  background-image: url(../images/responsive/Industry/engineering/engineeringSprite.png)
+}
+.retailClientLogos .view.viewAllWrapper p,
+.educationAppClients .view.viewAllWrapper p,
+.financeClientList .view.viewAllWrapper p,
+.engineeringSol .view.viewAllWrapper p {
+  background-image: none;
+  display: inherit;
+  vertical-align: middle;
+}
+.engineeringSol .view.viewAllWrapper .viewlink {
+  display: table-cell;
+  vertical-align: middle;
+}
+.retailClientLogos .view p,
+.educationAppClients .view p,
+.financeClientList .view p,
+.engineeringSol .view p {
+  height: 94px;
+  margin: auto;
+  display: flex;
+}
+.retailClientLogos .view p {
+  background-image: url(../images/responsive/Industry/retail/retailSprites.png);
+}
+.financeClientList .view p {
+  background-image: url(../images/responsive/commons/logoListSprites.png);
+}
+.financeClientList .view:nth-child(3) p,
+.financeClientList .view:first-child p {
+  max-width: 130px;
+}
+.engineeringSol .view p {
+  height: 70px;
+}
+.engineeringSol .view:first-child p {
+  max-width: 238px;
+  background-position: -18px -80px;
+}
+.engineeringSol .view:nth-child(2) p {
+  max-width: 110px;
+  background-position: -262px -75px;
+}
+.engineeringSol .view:first-child:hover p {
+  background-position: -18px -11px;
+}
+.engineeringSol .view:nth-child(2):hover p {
+  background-position: -262px -6px;
+}
+.engineeringSol .view:nth-child(3) p {
+  background-position: -380px -72px;
+  max-width: 170px;
+}
+.engineeringSol .view:nth-child(1) {
+  width: 26%;
+}
+.engineeringSol .view:nth-child(3):hover p {
+  background-position: -380px -4px;
+}
+.financeClientList .view:first-child,
+.financeClientList .view:nth-child(3) {
+  width: 15%;
+}
+.financeClientList .view:nth-child(4) {
+  width: 26%;
+}
+.financeClientList .view:nth-child(2) {
+  width: 23%;
+}
+.financeClientList .view:first-child p {
+  background-position: -1462px 99px;
+}
+.financeClientList .view:first-child:hover p {
+  background-position: -1462px 201px;
+}
+.financeClientList .view:nth-child(2) p {
+  background-position: -3050px 104px;
+  max-width: 220px;
+}
+.financeClientList .view:nth-child(2):hover p {
+  background-position: -3050px 188px;
+}
+.financeClientList .view:nth-child(3) p {
+  background-position: -3260px 106px;
+}
+.financeClientList .view:nth-child(3):hover p {
+  background-position: -3260px 186px;
+}
+.financeClientList .view:nth-child(4) p {
+  background-position: -4116px 106px;
+  max-width: 245px;
+}
+.financeClientList .view:nth-child(4):hover p {
+  background-position: -4116px 192px;
+}
+.retailClientLogos .view:nth-child(4) p,
+.retailClientLogos .view:first-child p {
+  max-width: 138px;
+}
+.educationAppClients .view:first-child p {
+  background-position: -190px -104px;
+}
+.educationAppClients .view:first-child:hover p {
+  background-position: -190px 0;
+}
+.educationAppClients .view:nth-child(2) p {
+  background-position: -5950px -104px;
+}
+.educationAppClients .view:nth-child(2):hover p {
+  background-position: -5950px 0;
+}
+.educationAppClients .view:nth-child(3) p {
+  background-position: -1240px -104px;
+}
+.educationAppClients .view:nth-child(3):hover p {
+  background-position: -1240px 0;
+}
+.educationAppClients .view:nth-child(4) p {
+  background-position: -888px -104px;
+}
+.educationAppClients .view:nth-child(4):hover p {
+  background-position: -888px 0;
+}
+.retailClientLogos .view:first-child p {
+  background-position: 1px 92px;
+}
+.retailClientLogos .view:first-child:hover p {
+  background-position: 1px 200px;
+}
+.retailClientLogos .view:nth-child(2) p {
+  background-position: -180px 82px;
+  max-width: 75px;
+  height: 82px;
+}
+.retailClientLogos .view:nth-child(2):hover p {
+  background-position: -180px 4px;
+}
+.retailClientLogos .view:nth-child(3) p {
+  background-position: -260px 86px;
+  max-width: 120px;
+  height: 86px;
+}
+.retailClientLogos .view:nth-child(3):hover p {
+  background-position: -260px 190px;
+}
+.retailClientLogos .view:nth-child(4) p {
+  background-position: -2860px 104px;
+}
+.retailClientLogos .view:nth-child(4):hover p {
+  background-position: -2860px -11px;
+}
+.educationAppClients .view:first-child p,
+.educationAppClients .view:nth-child(2) p,
+.educationAppClients .view:nth-child(3) p,
+.educationAppClients .view:nth-child(4) p {
+  max-width: 180px;
+}
+.associateicons {
+  background: url("../images/responsive/Industry/sprite.png") no-repeat;
+  height: 88px;
+  width: 110px;
+  margin: auto;
+}
+.associateicons.webicon {
+  background-position: -650px -88px;
+}
+.associatedServices .view:hover > .associateicons.webicon {
+  background-position: -650px 12px;
+}
+.associateicons.ecmicon {
+  background-position: -110px -88px;
+}
+.associatedServices .view:hover > .associateicons.ecmicon {
+  background-position: -110px 12px;
+}
+.associateicons.ioticon {
+  background-position: -1510px -88px;
+}
+.associatedServices .view:hover > .associateicons.ioticon {
+  background-position: -1510px 12px;
+}
+.associateicons.cloudicon {
+  background-position: 0 -88px;
+}
+.associatedServices .view:hover > .associateicons.cloudicon {
+  background-position: 0 12px;
+}
+.associateicons.elearnicon {
+  background-position: -218px -88px;
+}
+.associatedServices .view:hover > .associateicons.elearnicon {
+  background-position: -218px 12px;
+}
+.associateicons.gameicon {
+  background-position: -332px -88px;
+}
+.associatedServices .view:hover > .associateicons.gameicon {
+  background-position: -332px 12px;
+}
+.associateicons.mobicon {
+  background-position: -430px -88px;
+}
+.associatedServices .view:hover > .associateicons.mobicon {
+  background-position: -430px 12px;
+}
+.associateicons.dataicon {
+  background-position: -538px -88px;
+}
+.associatedServices .view:hover > .associateicons.dataicon {
+  background-position: -538px 12px;
+}
+.associateicons.analyticsicon {
+  background-position: -755px -88px;
+}
+.associatedServices .view:hover > .associateicons.analyticsicon {
+  background-position: -755px 12px;
+}
+.associateicons.contexticon {
+  background-position: -865px -88px;
+}
+.associatedServices .view:hover > .associateicons.contexticon {
+  background-position: -865px 12px;
+}
+.associateicons.ecommereceicon {
+  background-position: -975px -88px;
+}
+.associatedServices .view:hover > .associateicons.ecommereceicon {
+  background-position: -975px 12px;
+}
+.associateicons.rtlsicon {
+  background-position: -1080px -88px;
+}
+.associatedServices .view:hover > .associateicons.rtlsicon {
+  background-position: -1080px 12px;
+}
+.associateicons.smicon {
+  background-position: -1295px -88px;
+}
+.associatedServices .view:hover > .associateicons.smicon {
+  background-position: -1295px 12px;
+}
+.associateicons.wsicon {
+  background-position: -1405px -88px;
+}
+.associatedServices .view:hover > .associateicons.wsicon {
+  background-position: -1405px 12px;
+}
+
+/* New healthcare page under industries */
+
+.featuredApps.pharmacyApp {
+  background-image: url("../images/responsive/resource/pharmacyApp.png");
+}
+.featuredApps.fitnessApp {
+  background-image: url("../images/responsive/resource/fitness.png");
+}
+.featuredApps.doctorsApp {
+  background-image: url("../images/responsive/resource/casestudy/healthcareApp.png");
+}
+section.solutions.bigDataWrapper {
+  width: 75%;
+}
+section.solutions {
+  margin: 60px auto 0;
+  width: 91%;
+  max-width: 1500px;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.solutions .leftSection,
+.solutions .rightSection {
+  width: 50%;
+  text-align: left;
+}
+.solutions h2 {
+  padding-bottom: 20px;
+}
+.viewLeftArrow {
+  font-size: 20px;
+  vertical-align: sub;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+/* New engineering page under industries*/
+
+.clientstory {
+  overflow: auto;
+  margin: auto;
+  width: 91%;
+  max-width: 1500px;
+}
+.clientstory.bigDataWrapper {
+  width: 75%;
+}
+.rightTextData.engineering {
+  background: #f6f6f6;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.rightTextData.engineering h2 {
+  padding-bottom: 20px;
+}
+.rightTextData.engineering .listText li {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.clientstorycontent {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.rightTextData.engineering .icon-checkmark {
+  font-size: 18px;
+}
+.associatedServices.engineering {
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+}
+.associatedServicesWrapper {
+  padding: 60px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.associatedServices {
+  width: 91%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  text-align: center;
+  padding: 60px 0 20px;
+}
+.associatedServices p {
+  padding: 10px 0;
+  font-weight: 600;
+  color: #000;
+}
+.associatedServices p img {
+  height: 70px;
+}
+.viewlink {
+  display: inline-block;
+}
+.umbracoButtons.engieeringinq {
+  padding-bottom: 60px;
+}
+
+/* New education page under industries */
+
+.associatedServices.educaton .view {
+  width: 20%;
+}
+.featuredApps.learningApp {
+  background-image: url("../images/responsive/resource/casestudy/elearningApp.png");
+}
+.featuredApps.schoolApp {
+  background-image: url("../images/responsive/resource/casestudy/schoolApp.png");
+}
+.featuredApps.portalApp {
+  background-image: url("../images/responsive/resource/featuredProjects/Qlearn.png");
+}
+
+/*New Retail page in Industries */
+
+.featuredApps.shoppingApp {
+  background-image: url("../images/responsive/resource/featuredProjects/shoppingAssist.png");
+}
+.featuredApps.CustomerApp {
+  background-image: url("../images/responsive/resource/featuredProjects/customerFeedback.png");
+}
+.featuredApps.magentoApp {
+  background-image: url("../images/responsive/resource/featuredProjects/optics.png");
+}
+
+/*new finacial landing page */
+
+.featuredApps.insuranceApp {
+  background-image: url("../images/responsive/resource/casestudy/Slices/insurance.png");
+}
+.featuredApps.bussinessApp {
+  background-image: url("../images/responsive/Industry/financial/bussiness.png");
+}
+.featuredApps.aemApp {
+  background-image: url("../images/responsive/Industry/financial/AEM.png");
+}
+.financialMobApp .mobileAppCasestudiesLast button {
+  width: 280px;
+}
+
+/*common css for new industries and service landing pages*/
+
+.bannerImageWrapper {
+  text-align: center;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.bannerImageWrapper p {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+.bannerImageWrapper h1 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  right: 5%;
+  color: #fff;
+}
+.healthBannerImg,
+.retailBannerImg,
+.educationBannerImg,
+.engineeringBannerImg,
+.financialBannerImg {
+  margin-top: -64px;
+  z-index: 1;
+}
+#breadcrumb.healthBreadcrumb {
+  padding: 10px 0;
+  background-color: rgba(255,255,255,0.70);
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.bannerImageWrapper img {
+  width: 100%;
+}
+.mobileappContent {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 40px 0 0;
+}
+.mobileAppCasestudiesWrapper {
+  margin: 30px auto;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  text-align: center;
+}
+.mobileAppCasestudies {
+  width: 45%;
+  margin: 20px auto 25px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.mobileAppCasestudies a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.mobileAppCasestudies p {
+  padding: 10px 0;
+}
+.clientsays {
+  margin: 60px 0;
+}
+.clientsays #testiSection {
+  width: 91%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.clientContent {
+  display: table;
+  width: 88%;
+  max-width: 1500px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+.clientImg {
+  width: 20%;
+  max-width: 250px;
+  padding-right: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 1px solid #CCC;
+}
+.clientImg img {
+  max-width: 220px;
+}
+.clientComment {
+  display: table-cell;
+  vertical-align: middle;
+}
+.clientComment .pageUrlLinkAfter {
+  display: block;
+}
+.viewallClient {
+  text-align: right;
+  width: 88%;
+  margin: auto;
+  max-width: 1500px;
+  padding-bottom: 20px;
+}
+.clientComment .client {
+  text-align: right;
+  font-style: normal;
+  padding-top: 15px;
+}
+.clientComment p {
+  font-style: italic;
+}
+.clientComment .client p {
+  font-style: normal;
+  margin-left: 10px;
+  align-self: center;
+  -ms-align-self: center;
+  -webkit-align-self: center;
+}
+.viewallClient p {
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px 0;
+  display: inline-block;
+}
+.viewallClient span {
+  color: #b8b8b8;
+}
+.featuredClients {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  width: 91%;
+  margin: auto;
+  text-align: center;
+  max-width: 1500px;
+  padding: 20px 0;
+}
+.view {
+  width: 21%;
+  align-self: center;
+  -ms-align-self: center;
+  -webkit-align-self: center;
+}
+.featuredClients .view:last-child {
+  width: 95px;
+  padding-bottom: 0;
+  margin-top: 30px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.featuredClients .view:last-child p {
+  color: #da3a36;
+  font-size: 15px;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 800;
+  height: auto;
+  padding-top: 25px;
+}
+.featuredStory {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  width: 91%;
+  margin: auto;
+  max-width: 1500px;
+}
+.featuredApps {
+  width: 33%;
+  max-width: 350px;
+  text-align: center;
+  height: 250px;
+  background-size: cover;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  position: relative;
+  cursor: pointer;
+}
+.featuredApps:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .6;
+}
+.featuredApps h3 {
+  width: 100%;
+  align-self: center;
+  -ms-align-self: center;
+  -webkit-align-self: center;
+  color: #FFF;
+  position: relative;
+  z-index: 1;
+}
+.featuredApps p {
+  width: 100%;
+  align-self: flex-end;
+  -ms-align-self: flex-end;
+  -webkit-align-self: flex-end;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  padding: 10px 20px;
+  text-align: left;
+}
+.featuredApps:hover > h3 {
+  display: none;
+}
+.featuredApps:hover > p {
+  display: block;
+}
+.featuredApps:hover:after {
+  opacity: 0;
+}
+.featuredStoryWrapper h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+.resourceWrapper {
+  text-align: center;
+  padding: 50px 0 60px;
+  background-color: #F6F6F6;
+  margin-top: 60px;
+}
+.resources {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  padding-top: 30px;
+  width: 91%;
+  margin: auto;
+  max-width: 1500px;
+}
+.security {
+  width: 46%;
+  max-width: 550px;
+  background-color: #FFF;
+  padding-bottom: 60px;
+  margin: 0 2%;
+  position: relative;
+}
+.security a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: default;
+}
+.security img {
+  width: 100%;
+}
+.security h3 {
+  padding: 20px;
+  text-align: left;
+}
+.security p {
+  padding-bottom: 20px;
+  line-height: 30px;
+  margin: 0 20px;
+  text-align: left;
+}
+.security button,
+.industriesButton a {
+  background: #FFF;
+  width: auto;
+  line-height: 30px;
+  font-weight: 800;
+  font-size: 14px;
+  outline: none;
+  background-color: #da3a36;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  display: inline-block;
+  transform: scale(1);
+  transition: 0.15s all ease;
+}
+.security button:hover,
+.industriesButton a:hover {
+  transform: scale(1.05);
+}
+.security button.largeBtn {
+  width: 220px;
+}
+/*healthcare page*/
+.bannerImageWrapper.healthBannerImg h1 {
+  left: 18%;
+  right: auto;
+}
+.bannerImageWrapper.healthBannerImg h1 span:first-child {
+  font-size: 34px;
+}
+.bannerImageWrapper.healthBannerImg h1.indutsriesBannerHead span:first-child {
+  font-size: 30px;
+}
+.bannerImageWrapper.healthBannerImg h1 span:nth-child(2) {
+  font-weight: 600;
+}
+.bannerImageWrapper.healthBannerImg h1 span {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+}
+.healthcareFirstSection {
+  padding-top: 60px;
+}
+.healthcareContentSection .listText li {
+  line-height: 15px;
+}
+.healthcareContentSection .listTextCommon li span {
+  line-height: 20px;
+}
+.RTLSHealth {
+  border: 1px solid #e5e5e5;
+  padding: 45px 35px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.RTLSHealth.healthcareSecondAnalyse {
+  margin-top: 0;
+}
+.RTLSHealth p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.RTLSHealth h3,
+.healthcareFirstAnalyse h3 {
+  color: #000;
+}
+.healthcareContentSection .industriesButton a {
+  text-transform: initial;
+}
+.industriesButton {
+  text-align: center;
+  padding-top: 20px;
+}
+.healthcareContentColored {
+  background-color: #f6f9fe;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.healthcareContentSection {
+  padding-bottom: 60px;
+}
+.healthcareContentColored .RTLSHealth {
+  background-color: #fff;
+}
+.healthcareAnalyticsWrapper {
+  display: flex;
+  flex-flow: row;
+}
+.healthcareAnalyticsWrapper>div {
+  flex: 50%;
+}
+.healthcareAnalyticsWrapper>div:nth-of-type(1) {
+  margin-right: 25px;
+}
+.healthcareAnalyticsWrapper>div:nth-of-type(2) {
+  margin-left: 25px;
+}
+.healthcareFirstAnalyse h2 {
+  text-align: left;
+}
+.healthcareFirstAnalyse h3 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.RTLSHealth p:not(:nth-of-type(1)) {
+  padding-top: 10px;
+}
+.clinetQuoteDataWrapper {
+  border-bottom: 1px solid #e5e5e5;
+}
+.clinetQuoteData {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+}
+.clinetQuoteData q {
+  line-height: 26px;
+}
+.clientName {
+  font-family: 'OpenSansBold';
+  color: #333;
+}
+.clinetQuoteData .hillknowltonLogo {
+  padding-top: 15px;
+}
+.clinetQuoteData .hillknowltonLogo, .clinetQuoteData .elementLink {
+  display: block;
+}
+.clinetQuoteData .elementLink {
+  padding-top: 10px;
+}
+.dataResourceWrapper {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+.featuredStoryWrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cloudFeaturedApp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+.cloudFeaturedApp .cloudFeatured {
+  width: 25%;
+  max-width: 370px;
+  text-align: center;
+  height: 270px;
+  background-size: cover;
+  display: table;
+  position: relative;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+  -moz-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+  box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  padding: 40px 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0 3%;
+}
+.healthcare {
+  background-image: url(../images/responsive/resource/casestudy/healthcare-iot-thumbnail.png);
+}
+.mobileBI {
+  background-image: url(../images/responsive/resource/featuredProjects/BIsolution.jpg);
+}
+.bigData {
+  background-image: url(../images/responsive/resource/casestudy/liveVideoStreaming.jpg);
+}
+.moreStoryContent {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: 110px;
+}
+.thumbnailText {
+  position: absolute;
+  bottom: -170px;
+  padding-left: 20px;
+  text-align: left;
+  transition: top ease 0.5s;
+  padding-right: 20px;
+}
+.cloudFeatured .thumbnailText h3 {
+  position: relative;
+  top: 15px;
+  transition: top ease 0.5s;
+  padding: 0;
+  width: 100%;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.cloudFeatured .thumbnailText p {
+  margin: 0;
+}
+.thumbnailText .xtraContent {
+  display: none;
+}
+.security p {
+  padding-bottom: 20px;
+  line-height: 30px;
+  margin: 0 20px;
+  text-align: left;
+}
+.thumbnailText .xtraContent span {
+  font-size: 22px;
+  vertical-align: middle;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 800;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+.cloudFeatured:hover .xtraContent {
+  display: block;
+  position: relative;
+  top: 20px;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 800;
+  color: #fff;
+}
+.cloudFeatured:hover {
+  top: -20px;
+}
+.cloudFeatured:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .5;
+  border-radius: 4px;
+}
+.cloudFeatured:hover:after {
+  opacity: .7;
+}
+.quoteClientSection img {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.quoteClientSection img:nth-child(2) {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.hospital,
+.AIMedical,
+.healthcareAnalytics,
+.patient,
+.streamlined,
+.effiecientManufacturing,
+.operational {
+  position: relative;
+}
+.streamlined img,
+.effiecientManufacturing img,
+.operational img {
+  position: absolute;
+  top: 20%;
+  width: 170px;
+}
+.hospital img,
+.AIMedical img,
+.healthcareAnalytics img,
+.patient img {
+  position: absolute;
+  top: 20%;
+  width: 300px;
+  background-repeat: no-repeat;
+}
+.hospital img,
+.healthcareAnalytics img.
+.streamlined img,
+.operational img {
+  left: 0;
+}
+.AIMedical img,
+.patient img,
+.effiecientManufacturing img {
+  right: 0;
+}
+.manufacuringLogos .view p {
+  background-image: url(../images/responsive/Industry/manufacturing/manufacturingSprite.png);
+  height: 90px;
+  margin-left: 0;
+}
+.healthcareLogos .view p {
+  background-image: url(../images/responsive/Industry/health/sprite.png);
+  height: 62px;
+}
+.healthcareLogos .view p  {
+  margin: auto;
+}
+.healthcareLogos .view {
+  width: 22%;
+}
+.manufacuringLogos .view:nth-child(1) p {
+  background-position: -10px 104px;
+  max-width: 115px;
+}
+.manufacuringLogos .view:nth-child(1):hover p {
+  background-position: -10px -17px;
+}
+.manufacuringLogos .view:nth-child(2) p {
+  background-position: -134px 104px;
+  max-width: 238px;
+}
+.manufacuringLogos .view:nth-child(2):hover p {
+  background-position: -134px -17px;
+}
+.manufacuringLogos .view:nth-child(3) p {
+  background-position: -380px -15px;
+  max-width: 120px;
+}
+.manufacuringLogos .view:nth-child(3):hover p {
+  background-position: -380px 106px;
+}
+.manufacuringLogos .view:nth-child(4) p {
+  background-position: -519px 106px;
+  max-width: 172px;
+}
+.manufacuringLogos .view:nth-child(4):hover p {
+  background-position: -519px -15px;
+}
+.manufacuringLogos .view.viewAllWrapper p {
+  background-image: none;
+}
+.healthcareLogos .view:nth-child(1) p {
+  background-position: -14px -16px;
+  max-width: 121px;
+}
+.healthcareLogos .view:nth-child(1):hover p {
+  background-position: -14px -75px;
+}
+.healthcareLogos .view:nth-child(2) p {
+  background-position: -146px -11px;
+  max-width: 121px;
+}
+.healthcareLogos .view:nth-child(2):hover p {
+  background-position: -146px -70px;
+}
+.healthcareLogos .view:nth-child(3) p {
+  background-position: -274px -8px;
+  max-width: 154px;
+}
+.healthcareLogos .view:nth-child(3):hover p {
+  background-position: -274px -70px;
+}
+.healthcareLogos .view:nth-child(4) p {
+  background-position: -436px -6px;
+  max-width: 170px;
+}
+.healthcareLogos .view:nth-child(4):hover p {
+  background-position: -436px -65px;
+}
+.healthcareLogos .viewAllWrapper p {
+  background-image: none;
+}
+.healthcareLogos .view:nth-child(1) {
+  width: 18%;
+}
+.healthcareLogos .view:nth-child(2) {
+  width: 20%;
+}
+.healthcareLogos .view:nth-child(3) {
+  width: 21%;
+}
+.healthcareLogos .view:nth-child(4) {
+  width: 28%;
+}
+.bannerImageWrapper.healthBannerImg h1 {
+  top: 40%;
+}
+/*Manufacturing*/
+.manufacturingTwoSection {
+  display: flex;
+  flex-direction: row;
+}
+.manufacturingTwoSection>div {
+  flex: 50%;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 3% 2%;
+  background-color: #fff;
+}
+.manufacturingTwoSection>div:first-child {
+  margin-right: 15px;
+}
+.manufacturingTwoSection>div:nth-child(2) {
+  margin-left: 15px;
+}
+.manufacturingTwoSection>div>* {
+  padding-bottom: 20px;
+}
+.manufacturingTwoSection>div p:last-child {
+  font-weight: 600;
+  color: #000;
+}
+.manufacuringClients .clinetQuoteData q {
+  display: inline-block;
+  line-height: 30px;
+}
+.manufacuringClients .clinetQuoteData q:first-child {
+  font-size: 20px;
+  color: #000;
+  padding-bottom: 20px;
+}
+.industrialIot {
+  background-image: url(../images/responsive/resource/white/Choosing_an_IIoT_Platform.png);
+}
+.fleetManagement {
+  background-image: url(../images/responsive/resource/casestudy/gorillaSafety.jpg);
+}
+.inspection {
+  background-image: url(../images/responsive/resource/casestudy/mobileInspection.png);
+}
+.manufacuringLogos .view:nth-child(1) {
+  width: 19%;
+}
+.manufacuringLogos .view:nth-child(2) {
+  width: 29%;
+}
+.manufacuringLogos .view:nth-child(3) {
+  width: 19%;
+}
+.operational .healthcareContentSection {
+  padding-bottom: 0;
+}
+/*renewable page*/
+.renewFirstWrapper {
+  background-image: url(../images/responsive/Industry/renewable/renewBg.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.renewSeeMyMachine {
+  background-image: url(../images/responsive/Industry/renewable/seeMyMachineBg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 60px;
+}
+.renewableContent,
+.renewSMMWrapper {
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.renewableContent>div,
+.renewSMMWrapper>div {
+  -webkit-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  -ms-flex: 1;
+  -moz-flex: 1;
+  box-sizing: border-box;
+}
+.renewSMMWrapper>div {
+  border: 1px solid #eeeeef;
+  border-radius: 10px;
+  position: relative;
+}
+.renewableContent>a:first-child {
+  padding-right: 40px;
+}
+.renewableContent>a:last-child {
+  padding-left: 40px;
+}
+.renewTechnology {
+  background-color: #f6f9fe;
+  padding: 60px 0;
+}
+.renewTechWrapper {
+  border: 1px solid #eeeeef;
+  border-radius: 10px;
+  background-color: #fff;
+  display: table;
+}
+.renewTechWrapper>a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 25%;
+}
+.renewTechWrapper>a:last-child div {
+  border: none;
+}
+.hoverImg,
+.renewTechWrapper>a:hover .hoverOutImg,
+.renewSeeMyMachine .mobilitySolutionsMobile {
+  display: none;
+}
+.renewTechWrapper>a:hover .hoverImg,
+.hoverOutImg {
+  display: inline-block;
+}
+.renewableBorder h3 {
+  color: #000;
+}
+.renewTechWrapper>a:hover h3 {
+  color: #fff;
+}
+.renewTechWrapper>a:hover {
+  background-color: #da3a36;
+}
+.renewTechWrapper>a:hover .renewableBorder {
+  border-right: 1px solid transparent;
+}
+.renewableBorder {
+  padding: 70px 20px;
+  border-right: 1px solid #eeeeef;
+  margin: 20px 0;
+  min-height: 140px;
+}
+.hexList li {
+  display: inline-block;
+  width: 100%;
+  color: #262626;
+  padding: 10px 0;
+}
+.hexList li span:first-child {
+  position: relative;
+  height: 5px;
+  background-color: #da3a36;
+  margin: 10px 0;
+  width: 8px;
+  float: left;
+  display: inline-block;
+  top: -2px;
+}
+.mobilitySolutionsMobile .hexList li span:first-child {
+  top: 2px;
+}
+.hexList li span:nth-child(2) {
+  padding-left: 20px;
+  display: block;
+  box-sizing: border-box;
+}
+.hexList li span:first-child:before,
+.hexList li span:first-child:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.hexList li span:first-child:before {
+  bottom: 100%;
+  border-bottom: 2px solid #da3a36;
+}
+.hexList > li span:first-child:after {
+  top: 100%;
+  border-top: 2px solid #da3a36;
+}
+.renewSMMWrapper ul {
+  padding: 60px 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+.renewSMMWrapper>div {
+  margin-right: 20px;
+}
+.renewSMMWrapper>div:last-child {
+  margin-right: 0;
+}
+.renewSMMWrapper>div:first-child h3 {
+  background-color: #f5a622;
+}
+.renewSMMWrapper>div:nth-child(2) h3 {
+  background-color: #53c4c2;
+}
+.renewSMMWrapper>div:last-child h3 {
+  background-color: #ee5164;
+}
+.renewSMMWrapper h3 {
+  max-width: 240px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: -42px;
+  font-size: 20px;
+}
+.inquirySection p {
+  margin-bottom: 30px;
+}
+.inquirySection {
+  padding-top: 60px;
+  text-align: center;
+}
+.renewResourceWrapper.dataResourceWrapper {
+  padding-top: 0;
+}
+.windFarm {
+  background-image: url(../images/responsive/resource/casestudy/windFarmIoTFolution.jpg);
+}
+.predictiveAnalys {
+  background-image: url(../images/responsive/resource/featuredProjects/predictive-landing.png);
+}
+.renewableContent>div:first-child {
+  padding-right: 50px;
+}
+.renewableContent>div:last-child {
+  padding-left: 50px;
+}
+.renewFirstWrapper .contentInnerWrapper {
+  padding: 80px 0;
+}
+.renewableContent:first-child div {
+  padding-bottom: 60px;
+}
+.renewTechnology h2,
+.renewSeeMyMachine h2 {
+  line-height: 45px;
+  padding-bottom: 40px;
+}
+.renewSeeMyMachine .textColorRedBlock {
+  color: #262626;
+}
+.renewSMMWrapper {
+  padding-top: 100px;
+}
+.renewResourceWrapper .cloudFeaturedApp .cloudFeatured {
+  width: 40%;
+}
+.renewableContent h3 {
+  padding-bottom: 10px;
+}
+@media screen and (max-width:2000px) {
+  .hospital img,
+  .AIMedical img,
+  .healthcareAnalytics img,
+  .patient img {
+    width: 180px;
+    top: 30%;
+  }
+}
+@media screen and (max-width:1670px) {
+  .renewableBorder {
+    min-height: 175px;
+  }
+}
+@media screen and (max-width:1510px) {
+  .renewableBorder {
+    min-height: 210px;
+  }
+}
+@media screen and (max-width:1400px) {
+  .renewSMMWrapper h3 {
+    font-size: 18px;
+    max-width: 190px;
+    top: -37px;
+  }
+}
+@media screen and (max-width:1320px) {
+  .renewableBorder {
+    min-height: 195px;
+  }
+}
+@media screen and (max-width:1200px) { 
+  .manufacuringLogos .view:nth-child(1), 
+  .manufacuringLogos .view:nth-child(2),
+  .manufacuringLogos .view:nth-child(3),
+  .manufacuringLogos .view,
+  .healthcareLogos .view:nth-child(1),
+  .healthcareLogos .view:nth-child(2),
+  .healthcareLogos .view:nth-child(3),
+  .healthcareLogos .view:nth-child(4) {
+    width: 50%;
+  }
+  .manufacuringLogos .view p,
+  .manufacuringLogos .viewAllWrapper,
+  .featuredClients.healthcareLogos .view:last-child {
+    margin: auto;
+  }
+  .featuredClients.healthcareLogos .view:last-child {
+    margin-top: 30px;
+  }
+  .bigDataReource .cloudFeaturedApp .cloudFeatured {
+    width: 27%;
+  }
+  .bigDataReource .cloudFeaturedApp {
+    width: 100%;
+  }
+  .healthcareLogos .view:nth-child(1),
+  .healthcareLogos .view:nth-child(2) {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width:1175px) {
+  .renewSMMWrapper h3 {
+    font-size: 15px;
+    max-width: 168px;
+    top: -34px;
+  }
+}
+@media screen and (max-width:1039px) {
+  .hospital img,
+  .AIMedical img,
+  .healthcareAnalytics img,
+  .patient img {
+    width: 135px;
+  }
+  .renewSMMWrapper h3 {
+    font-size: 15px;
+    top: -32px;
+  }
+}
+@media screen and (max-width:1024px) {
+  /*renewable*/
+  .mobile-collapse-contenting {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .renewSeeMyMachine .iconArrow {
+    font-size: 24px;
+  }
+  .mobilitySolutionsMobile {
+    margin-top: 20px;
+  }
+  .renewableBorder {
+    min-height: auto;
+  }
+  .renewSMMWrapper {
+    display: none;
+  }
+  .renewFirstWrapper,
+  .renewSeeMyMachine {
+    background-image: none;
+  }
+  .renewableContent,
+  .renewTechnology .textColorRedBlock,
+  .renewSMMWrapper .textColorRedBlock,
+  .renewTechWrapper,
+  .renewTechWrapper>a,
+  .renewSeeMyMachine .mobilitySolutionsMobile {
+    display: block;
+  }
+  .renewableContent>div:first-child {
+    padding-right: 0;
+  }
+  .renewableContent>div:last-child {
+    padding-left: 0;
+  }
+  .renewableContent:last-child div:first-child {
+    padding-bottom: 60px;
+  }
+  .renewTechWrapper>a {
+    width: 100%;
+  }
+  .renewableBorder {
+    border-right: 0;
+    border-bottom: 1px solid #eeeeef;
+    margin: 0 20px;
+  }
+  .renewSeeMyMachine .desktop-view-content {
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #2d2d2d;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .renewSeeMyMachine .mobile-collapse-content {
+    padding: 20px 0;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .renewSeeMyMachine .mobile-collapse-contenting {
+    margin-right: 10px;
+  }
+  .renewSeeMyMachine .iconArrow {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+  .renewSeeMyMachine .xtraP {
+    opacity: 0;
+    transition: opacity .7s ease;
+    transition: height 1.5s ease;
+    transition: padding .7s ease;
+    height: 0;
+  }
+  .renewSeeMyMachine .xtraP .hexList {
+    display: none;
+  }
+  .renewSeeMyMachine .xtraP.active .hexList {
+    display: block;
+  }
+  .bigDataReource .cloudFeaturedApp .cloudFeatured {
+    width: 25%;
+  }
+  .bigDataReource .cloudFeaturedApp,
+  .bigDataWrapper.bigDataReource {
+    width: 100%;
+  }
+  .streamlined img, 
+  .effiecientManufacturing img, 
+  .operational img {
+    width: 100px;
+  }
+  .manufacuringLogos .view:nth-child(1) p {
+    background-position: -10px -17px;
+    max-width: 115px;
+  }
+  .manufacuringLogos .view:nth-child(2) p {
+    background-position: -134px -17px;
+  }
+  .manufacuringLogos .view:nth-child(3) p {
+    background-position: -380px 106px;
+  }
+  .manufacuringLogos .view:nth-child(4) p,
+  .manufacuringLogos .view:nth-child(4):hover p {
+    background-position: -519px 6px;
+  }
+  .thumbnailText {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bannerImageWrapper.healthBannerImg h1 {
+    left: 13%;
+  }
+  .bannerImageWrapper h1 {
+    top: 35%;
+  }
+  .RTLSHealth {
+    padding: 30px 12px;
+  }
+  .hospital img, 
+  .AIMedical img, 
+  .healthcareAnalytics img, 
+  .patient img {
+    display: none;
+  }
+  .healthcareLogos .view:nth-child(1) p {
+    background-position: -14px -75px;
+  }
+  .healthcareLogos .view:nth-child(2) p {
+    background-position: -146px -70px;
+  }
+  .healthcareLogos .view:nth-child(3) p {
+    background-position: -274px -70px;
+  }
+  .healthcareLogos .view:nth-child(4) p {
+    background-position: -436px -65px;
+  }
+  .dataClientLogos.featuredClients .view:last-child {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .bannerImageWrapper h1 {
+    font-size: 28px;
+  }
+  .bannerImageWrapper.healthBannerImg h1 span:first-child {
+    font-size: 26px;
+  }
+  .bannerImageWrapper.healthBannerImg h1.indutsriesBannerHead span:first-child {
+    font-size: 24px;
+  }
+  .healthBreadcrumb #breadcrumbInner {
+    display: block;
+  }
+  .retailClientLogos .view,
+  .financeClientList .view,
+  .engineeringSol .view,
+  .engineeringSol .view:nth-child(1),
+  .financeClientList .view:first-child,
+  .financeClientList .view:nth-child(2),
+  .financeClientList .view:nth-child(3),
+  .financeClientList .view:nth-child(4),
+  .featuredClients.retailClientLogos .view:last-child {
+    width: 50%;
+  }
+  .retailClientLogos .view:first-child,
+  .retailClientLogos .view:nth-child(2) {
+    padding-bottom: 40px;
+  }
+  .engineeringSol .view {
+    height: 100px;
+  }
+  .featuredClients.engineeringSol .view:last-child {
+    width: 30%;
+  }
+  .engineeringSol .view:first-child p,
+  .engineeringSol .view:first-child:hover p {
+    background-position: -18px -11px;
+  }
+  .engineeringSol .view:nth-child(2) p,
+  .engineeringSol .view:nth-child(2):hover p {
+    background-position: -262px -6px;
+  }
+  .engineeringSol .view:nth-child(3) p,
+  .engineeringSol .view:nth-child(3):hover p {
+    background-position: -380px -4px;
+  }
+  .financeClientList .view:first-child p,
+  .financeClientList .view:first-child:hover p {
+    background-position: -1462px 201px;
+  }
+  .financeClientList .view:nth-child(2) p,
+  .financeClientList .view:nth-child(2):hover p {
+    background-position: -3050px 188px;
+  }
+  .financeClientList .view:nth-child(3) p,
+  .financeClientList .view:nth-child(3):hover p {
+    background-position: -3260px 186px;
+  }
+  .financeClientList .view:nth-child(4) p,
+  .financeClientList .view:nth-child(4):hover p {
+    background-position: -4116px 186px;
+  }
+  .educationAppClients .view:first-child p,
+  .educationAppClients .view:first-child:hover p {
+    background-position: -190px 0;
+  }
+  .educationAppClients .view:nth-child(2) p,
+  .educationAppClients .view:nth-child(2):hover p {
+    background-position: -5950px 0;
+  }
+  .educationAppClients .view:nth-child(3) p,
+  .educationAppClients .view:nth-child(3):hover p {
+    background-position: -1240px 0;
+  }
+  .educationAppClients .view:nth-child(4) p,
+  .educationAppClients .view:nth-child(4):hover p {
+    background-position: -888px 0;
+  }
+  .retailClientLogos .view:first-child p,
+  .retailClientLogos .view:first-child:hover p {
+    background-position: 1px 200px;
+  }
+  .retailClientLogos .view:nth-child(2) p,
+  .retailClientLogos .view:nth-child(2):hover p {
+    background-position: -180px 4px;
+  }
+  .retailClientLogos .view:nth-child(3) p,
+  .retailClientLogos .view:nth-child(3):hover p {
+    background-position: -260px 190px;
+  }
+  .retailClientLogos .view:nth-child(4) p,
+  .retailClientLogos .view:nth-child(4):hover p {
+    background-position: -2860px -11px;
+  }
+  .featuredClients.financeClientList .view:last-child {
+    text-align: right;
+    margin-right: 1%;
+    width: 99%;
+  }
+}
+@media screen and (min-width:280px) and (max-width:767px) {
+  .bannerImageWrapper.healthBannerImg h1 span:nth-child(2),
+  .bannerImageWrapper.healthBannerImg h1 span {
+    font-weight: 400;
+  }
+  .renewFirstWrapper .contentInnerWrapper {
+    padding-top: 0;
+  }
+  .manufacturingTwoSection>div {
+    padding: 10% 5%;
+  }
+  .manufacturingTwoSection>div:first-child {
+    margin-bottom: 40px;
+  }
+  .manufacturingTwoSection>div:first-child,
+  .manufacturingTwoSection>div:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .RTLSHealth.healthcareSecondAnalyse {
+    margin-top: 40px;
+  }
+  .healthcareContentSection .industriesButton a {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+  #breadcrumb.healthBreadcrumb {
+    padding: 20px 0 0;
+  }
+  .bannerImageWrapper img,
+  .thumbnailText .xtraContent span,
+  .streamlined img, 
+  .effiecientManufacturing img, 
+  .operational img {
+    display: none;
+  }
+  .bannerImageWrapper h1,
+  .bannerImageWrapper.healthBannerImg h1 span:nth-child(2),
+  .bannerImageWrapper.healthBannerImg h1 span:first-child,
+  .bannerImageWrapper.healthBannerImg h1.indutsriesBannerHead span:first-child {
+    position: static;
+    font-size: 32px;
+  }
+  .engineeringSol .view:first-child p,
+  .engineeringSol .view:first-child:hover p {
+    background-position: -18px -11px;
+  }
+  .engineeringSol .view:nth-child(2) p,
+  .engineeringSol .view:nth-child(2):hover p {
+    background-position: -262px -6px;
+  }
+  .engineeringSol .view:nth-child(3) p,
+  .engineeringSol .view:nth-child(3):hover p {
+    background-position: -380px -4px;
+  }
+  .associatedServices .view,
+  .educationAppClients .view {
+    width: 50%;
+  }
+  section.solutions.bigDataWrapper,
+  .clientstory.bigDataWrapper,
+  .bigDataWrapper.bigDataReource  {
+    width: 88%;
+  }
+  .associatedServices.educaton .view {
+    width: 50%;
+  }
+  .associatedServicesWrapper h2 {
+    width: 88%;
+  }
+  .associatedServices.engineering {
+    justify-content: space-between;
+    -ms-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+  }
+  .engineeringSol .view.viewAllWrapper .viewlink,
+  .healthcareAnalyticsWrapper,
+  .manufacturingTwoSection {
+    display: block;
+  }
+  .retailClientLogos .view,
+  .financeClientList .view,
+  .engineeringSol .view,
+  .engineeringSol .view:nth-child(1),
+  .featuredClients.engineeringSol .view.viewAllWrapper:last-child,
+  .contentInnerWrapper,
+  .healthcareLogos .view:nth-child(1),
+  .healthcareLogos .view:nth-child(2),
+  .healthcareLogos .view:nth-child(3),
+  .healthcareLogos .view:nth-child(4),
+  .manufacuringLogos .view:nth-child(1),
+  .manufacuringLogos .view:nth-child(2), 
+  .manufacuringLogos .view:nth-child(3), 
+  .manufacuringLogos .view,
+  .financeClientList .view:first-child,
+  .financeClientList .view:nth-child(2),
+  .financeClientList .view:nth-child(3),
+  .financeClientList .view:nth-child(4) {
+    width: 100%;
+  }
+  .engineeringSol .view {
+    height: auto;
+  }
+  .featuredClients.retailClientLogos .view:last-child,
+  .featuredClients.financeClientList .view:last-child,
+  .healthcareFirstAnalyse h2 {
+    text-align: center;
+  }
+  .bannerImageWrapper.healthBannerImg h1 span {
+    display: inline;
+    text-align: center;
+  }
+  .healthcareFirstSection {
+    padding-top: 0;
+  }
+  .cloudFeaturedApp {
+    width: 91%;
+  }
+  .cloudFeaturedApp .cloudFeatured:first-child, 
+  .cloudFeaturedApp .cloudFeatured:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .cloudFeaturedApp .cloudFeatured,
+  .clinetQuoteData,
+  .bigDataReource .cloudFeaturedApp .cloudFeatured,
+  .renewResourceWrapper .cloudFeaturedApp .cloudFeatured {
+    display: block;
+    width: 100%;
+  }
+  .cloudFeatured .thumbnailText {
+    top: -130px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  .cloudFeatured .thumbnailText .xtraContent {
+    display: inline;
+    position: relative;
+    top: 100px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 140px;
+    color: #fff;
+    font-family: 'OpenSansBold';
+  }
+  .cloudFeatured:hover {
+    top: inherit;
+  }
+  .cloudFeatured.security:hover:after {
+    position: absolute;
+    opacity: .5;
+  }
+  .healthcareAnalyticsWrapper>div:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .healthcareAnalyticsWrapper>div:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .retailClientLogos .view:first-child,
+  .retailClientLogos .view:nth-child(2) {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width:280px) and (max-width:400px) {
+  .associatedServices .view,
+  .associatedServices.educaton .view {
+    width: 100%;
+  }
+}

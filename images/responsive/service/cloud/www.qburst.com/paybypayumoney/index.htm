@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org/" ng-app="paybypayumoneyapp">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="canonical" href="https://www.payumoney.com/paybypayumoney/"/>
+  <title>PayUMoney</title>
+  <link href="//media.payumoney.com/index.php?f=media/css/jquery.timepicker.css,A/jquery-ui/themes/base/jquery-ui.css,media/css/header_footer.css,media/font/font.css,media/css/payby_payumoney/payby_payumoney.css,media/css/common/popup.css,media/css/payby_payumoney/payby_payumoney_res.css" rel="stylesheet" type="text/css" />
+  <link href="https://file.payumoney.com/images/favicon_index.ico" rel="shortcut icon" type='image/x-icon' sizes="16x16"/>
+  <script async="true" type="text/javascript">
+   var _reqM = [//@wiki sequence is neccessary.
+     'A/jquery/jquery.min.js',
+     'A/angular.min.js',
+     'A/angular-route.min.js',
+     // 'E/tiny_mce/tiny_mce.min.js',
+     'A/jquery-ui/ui/minified/jquery.ui.core.min.js',
+     'A/jquery-ui/ui/minified/jquery.ui.widget.min.js',
+     'A/jquery-ui/ui/minified/jquery.ui.datepicker.min.js',
+     'A/jquery-ui/ui/minified/jquery.iframe-transport.min.js',
+     'A/jquery-ui/ui/minified/jquery.fileupload.min.js',
+     'A/jquery-ui/ui/minified/jquery.timepicker.min.js',
+     'A/storage.js',
+     'A/angular-cookies.min.js',
+     'A/angular-resource.min.js',
+     'A/polyfill.js',
+     'Application/models/payuMoneyButtonModel.js',
+     'Application/models/paymentModel.js',
+     'Application/directives/ng-datepicker.js',
+     'Application/directives/merchant/ng-user.js',
+     'paybypayumoney/route.js',
+     'Application/controllers/paybypayumoney/payToMerchantController.js',
+      'Application/service/clevertapService.js'
+   ];
+   (function(document) {
+      var ng = document.createElement('script'); ng.type = 'text/javascript'; ng.async = true;
+      ng.src = '//ux.payumoney.com/index.php?f=' + _reqM.join(',');
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ng, s);
+   })(window.document);
+   try {
+      var _vwo_code = (function () {
+        var account_id = 327045,
+          settings_tolerance = 5000,
+          library_tolerance = 5000,
+          use_existing_jquery = false,
+          /* DO NOT EDIT BELOW THIS LINE */
+          f = false, d = document; return { use_existing_jquery: function () { return use_existing_jquery; }, library_tolerance: function () { return library_tolerance; }, finish: function () { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } }, finished: function () { return f; }, load: function (a) { var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function () { _vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init: function () { settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance); var a = d.createElement('style'), b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random()); return settings_timer; } };
+      }()); _vwo_settings_timer = _vwo_code.init();
+    } catch (e) {}
+  </script>
+    <link rel="stylesheet" type="text/css" href="../media/assets/css/intermediate.css">
+</head>
+<body>
+<ng:view></ng:view>
+</body>
+</html>
