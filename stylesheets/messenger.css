@@ -124,7 +124,7 @@
     bottom: 40px !important;
     width: 56px !important;
     height: 56px !important;
-    z-index: 19999 !important;
+    z-index: 19 !important;
   }
   
   #fbmsg .fbmsg-badge-btn {
@@ -149,4 +149,9 @@
   
   #fbmsg .fbmsg-badge-btn:hover path {
     fill: #0066ff !important;
+  }
+  @media screen and (max-width:1024px){
+     #fbmsg .fbmsg-badge {
+    right: 20px !important;
+    }
   }

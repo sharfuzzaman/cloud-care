@@ -9373,14 +9373,13 @@ ul.listTextCommon li {
     display: flex;
     flex-direction: column;
 }
-
+.footer{
+   background-image: url("../images/homeImg/footer-image.jpg");
+   background-size:cover;
+}
 .footerFlex {
     display: flex;
     align-items: flex-end
-}
-
-.footerFlex>figure, .footerFlex>div {
-    flex: 1
 }
 
 #footer img {
@@ -9436,7 +9435,6 @@ ul.listTextCommon li {
 }
 
 .footerBottomWrapper.footerFlex {
-    background-color: #000;
     align-items: stretch
 }
 
@@ -9456,9 +9454,8 @@ ul.listTextCommon li {
 }
 
 .socialIcons {
-    background-color: #fff;
     display: flex;
-    width: 100%
+    width: 170px;
 }
 
 .socialIcons>div {
@@ -9519,7 +9516,12 @@ ul.listTextCommon li {
 .frontendTabWrapper .owl-stage-outer {
     width: 99.8%
 }
-
+@media screen and (max-width:1024px){
+    .socialIcons {
+        width: 110px;
+        margin:auto;
+    }
+}
 @media screen and (min-width:1024px) {
     .subMenus #mobMenuHolder {
         opacity: 1!important;

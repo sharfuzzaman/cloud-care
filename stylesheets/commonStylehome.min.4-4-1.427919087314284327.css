@@ -1402,6 +1402,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.footer{
+   background-image: url("../images/homeImg/footer-image.jpg");
+   background-size:cover;
+}
 .footerContent p {
     font-weight: 700;
     line-height: 60px;
@@ -1459,16 +1463,14 @@ body {
     content: "\e918";
 }
 .footerBottomWrapper.footerFlex {
-    background-color: #000;
     align-items: center;
 }
 .footerBottomWrapper > div {
     padding: 30px 0;
 }
 .socialIcons {
-    background-color: #fff;
     display: flex;
-    width: 100%;
+    width: 170px;
 }
 .footerButtonWrapper {
     padding-bottom: 100px;
@@ -1481,6 +1483,12 @@ body {
 .figure-block{
     vertical-align:Sub;
     display:inline-block;
+}
+@media screen and (max-width:1024px){
+    .socialIcons {
+        width: 110px;
+        margin:auto;
+    }
 }
 @media screen and (min-width: 768px) {
     .privacyWrapper img,

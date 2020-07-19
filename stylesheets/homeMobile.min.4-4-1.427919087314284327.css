@@ -45,7 +45,8 @@
 }
 
 .bannerHead span:first-child {
-    font-size: 40px
+    font-size: 40px;
+    color:#ffffff;
 }
 
 .bannerHead span:nth-child(2) {
