@@ -59,19 +59,19 @@ function show_contacts_tab(option) {
     if ($('#' + optionid).hasClass("active")) {
         $('#' + optionid).siblings().removeClass("active");
         $("#postmapcont .subMenus .menuSelected li p span").text(optiontext);
-        $('#'+optionid).addClass("active").siblings().removeClass("active");
-        $(".addrs_section ul li:first-child").css({"border":"1px dashed #e2292f", "border-radius": "10px"});
+        $('#' + optionid).addClass("active").siblings().removeClass("active");
+        $(".addrs_section ul li:first-child").css({ "border": "1px dashed #e2292f", "border-radius": "10px" });
         $(".addrs_section ul li:first-child").mouseleave(function() {
-            $(".addrs_section ul li:first-child").css({"border-right":"1px dashed #cdcdcd", "border-bottom": "1px dashed #cdcdcd", "border-left":"1px solid transparent", "border-top": "1px solid transparent", "border-radius": "0"});
+            $(".addrs_section ul li:first-child").css({ "border-right": "1px dashed #cdcdcd", "border-bottom": "1px dashed #cdcdcd", "border-left": "1px solid transparent", "border-top": "1px solid transparent", "border-radius": "0" });
         })
         $(".addrs_section ul li").mouseover(function() {
-            $(".addrs_section ul li:first-child").css({"border-right":"1px dashed #cdcdcd", "border-bottom": "1px dashed #cdcdcd", "border-left":"1px solid transparent", "border-top": "1px solid transparent", "border-radius": "0"});
+            $(".addrs_section ul li:first-child").css({ "border-right": "1px dashed #cdcdcd", "border-bottom": "1px dashed #cdcdcd", "border-left": "1px solid transparent", "border-top": "1px solid transparent", "border-radius": "0" });
         })
         $(".addrs_section ul li:first-child").mouseover(function() {
-            $(".addrs_section ul li:first-child").css({"border":"1px dashed #e2292f", "border-radius": "10px"});
+            $(".addrs_section ul li:first-child").css({ "border": "1px dashed #e2292f", "border-radius": "10px" });
         })
         $(".addrs_section ul li").mouseleave(function() {
-            $(".addrs_section ul li:first-child").css({"border":"1px dashed #e2292f", "border-radius": "10px"});
+            $(".addrs_section ul li:first-child").css({ "border": "1px dashed #e2292f", "border-radius": "10px" });
         })
         $(".addrs_section.Asia-Pacific-Contacts ul li:nth-child(2)").mouseover(function() {
             $(".addrs_section.Asia-Pacific-Contacts ul li:first-child").addClass("japan");
@@ -79,8 +79,8 @@ function show_contacts_tab(option) {
         $(".addrs_section.Asia-Pacific-Contacts ul li:nth-child(2)").mouseleave(function() {
             $(".addrs_section.Asia-Pacific-Contacts ul li:first-child").removeClass("japan");
         })
-        if(windw < 1025) {
-           $("#postmapcont .subMenus #mobMenuHolder").css("display","none");
+        if (windw < 1025) {
+            $("#postmapcont .subMenus #mobMenuHolder").css("display", "block");
         }
     } else {
         $('#' + optionid).addClass("active").siblings().removeClass("active");
@@ -155,7 +155,7 @@ function show_contacts_tab(option) {
 
         $("#postmapcont .subMenus .menuSelected li p span").text(optiontext);
         if (windw < 1025) {
-            $("#postmapcont .subMenus #mobMenuHolder").css("display", "none");
+            $("#postmapcont .subMenus #mobMenuHolder").css("display", "block");
         }
     }
     if ($('.' + optionid + '-Contacts').hasClass("active")) {

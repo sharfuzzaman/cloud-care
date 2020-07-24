@@ -1,4 +1,6 @@
-.homelogoMob, .clientButton.clientMobButton, .mobileSwitch {
+.homelogoMob,
+.clientButton.clientMobButton,
+.mobileSwitch {
     display: none
 }
 
@@ -16,7 +18,10 @@ img {
     max-width: 1500px
 }
 
-#navigation span:hover, .viewallLocationWrapper .arrowText:hover .arrowTextSpan, .arrowText:hover .icon:before, .arrowText:hover .arrowRight:after {
+#navigation span:hover,
+.viewallLocationWrapper .arrowText:hover .arrowTextSpan,
+.arrowText:hover .icon:before,
+.arrowText:hover .arrowRight:after {
     color: #03AEEF
 }
 
@@ -48,16 +53,10 @@ img {
 }
 
 #video {
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
     position: absolute;
     top: 50%;
-    transform: translate(-60%, -30%);
-    -webkit-transform: translate(-60%, -30%);
-    -moz-transform: translate(-60%, -30%);
-    -ms-transform: translate(-60%, -30%);
-    -o-transform: translate(-60%, -30%)
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .video_overlays {
@@ -100,7 +99,8 @@ img {
     border-right: 0
 }
 
-.bannerText>div:first-child, .bannerText>div:last-child {
+.bannerText>div:first-child,
+.bannerText>div:last-child {
     flex: .5
 }
 
@@ -111,11 +111,22 @@ img {
 }
 
 .bannerHead span:first-child {
-    font-size: 72px
+    font-size: 72px;
+    display: table;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
 }
 
 .bannerHead span:nth-child(2) {
-    font-size: 48px
+    font-size: 48px;
+    display: table;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mt-2 {
+    margin-top: 5px;
 }
 
 .containerWrapper {
@@ -169,7 +180,8 @@ img {
     bottom: 10%
 }
 
-.workTextWrapper .arrowText, .viewallLocationWrapper .arrowText {
+.workTextWrapper .arrowText,
+.viewallLocationWrapper .arrowText {
     max-width: 210px;
     padding-left: 15px
 }
@@ -257,7 +269,10 @@ img {
     align-items: center
 }
 
-.homeContentContainer figure, .contentText, .workWrapper>div, .workImageInnerWrapper>div {
+.homeContentContainer figure,
+.contentText,
+.workWrapper>div,
+.workImageInnerWrapper>div {
     flex: 1
 }
 
@@ -294,7 +309,8 @@ img {
     cursor: hand
 }
 
-.slick-slider .slick-list, .slick-slider .slick-track {
+.slick-slider .slick-list,
+.slick-slider .slick-track {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -312,7 +328,8 @@ img {
     align-items: center
 }
 
-.slick-track:after, .slick-track:before {
+.slick-track:after,
+.slick-track:before {
     display: table;
     content: ''
 }
@@ -342,7 +359,9 @@ img {
     margin: auto
 }
 
-.slick-slide.slick-loading img, .linkArrowMobile, .slick-arrow.slick-hidden {
+.slick-slide.slick-loading img,
+.linkArrowMobile,
+.slick-arrow.slick-hidden {
     display: none
 }
 
@@ -447,12 +466,14 @@ img {
     border: 1px solid transparent
 }
 
-.workWrapper, .workImageInnerWrapper {
+.workWrapper,
+.workImageInnerWrapper {
     display: flex;
     justify-content: space-between
 }
 
-.workImageInnerWrapper>div:first-child, .blogContentSection .imageBoxShadow:first-child {
+.workImageInnerWrapper>div:first-child,
+.blogContentSection .imageBoxShadow:first-child {
     margin-right: 50px
 }
 
@@ -460,7 +481,8 @@ img {
     margin-left: 50px
 }
 
-.workWrapper.workSecondWrapper .workImageWrapper, .workSecondWrapper .workImageInnerWrapper>div:first-child {
+.workWrapper.workSecondWrapper .workImageWrapper,
+.workSecondWrapper .workImageInnerWrapper>div:first-child {
     margin: 0
 }
 
@@ -499,7 +521,8 @@ img {
     left: -300px
 }
 
-.threeReasonsWrapperHead span, .contentText h2 span {
+.threeReasonsWrapperHead span,
+.contentText h2 span {
     display: block
 }
 
@@ -507,11 +530,13 @@ img {
     flex-direction: row-reverse
 }
 
-.homeContentWrapper:first-child figure, .homeContentWrapper:nth-child(3) figure {
+.homeContentWrapper:first-child figure,
+.homeContentWrapper:nth-child(3) figure {
     padding-right: 40px
 }
 
-.homeContentWrapper:nth-child(2) figure, .homeContentWrapper:nth-child(4) figure {
+.homeContentWrapper:nth-child(2) figure,
+.homeContentWrapper:nth-child(4) figure {
     padding-left: 40px;
     text-align: right
 }
@@ -524,7 +549,12 @@ img {
     border-right: 1px solid #ededed
 }
 
-.workSecondWrapperMobile, .workThirdWrapperMobile, .getinTouchMob, #menuIconInquiry.inquiryMobile, .clientMob, .clientButton.clientMobButton {
+.workSecondWrapperMobile,
+.workThirdWrapperMobile,
+.getinTouchMob,
+#menuIconInquiry.inquiryMobile,
+.clientMob,
+.clientButton.clientMobButton {
     display: none
 }
 
@@ -562,7 +592,8 @@ img {
     padding: 80px 20px 0 80px
 }
 
-.inquiryButton, #copyright {
+.inquiryButton,
+#copyright {
     padding: 0 0 0 25%
 }
 
@@ -585,7 +616,8 @@ img {
 }
 
 @media screen and (min-width:3000px) {
-    .contentInnerWrapper, #headerWrapper {
+    .contentInnerWrapper,
+    #headerWrapper {
         max-width: none
     }
     h2 {
@@ -595,7 +627,9 @@ img {
         font-size: 35px;
         line-height: 70px
     }
-    .menuinquiry, .menusrchicon, .menuicon {
+    .menuinquiry,
+    .menusrchicon,
+    .menuicon {
         font-size: 55px
     }
     #headerWrapper {
@@ -605,12 +639,13 @@ img {
         margin-left: 120px
     }
     #headerWrapper .logoHolder .logo {
-        width: 300px
+        width: 300px;
     }
     #header #normal {
         top: -40px
     }
-    #header, #header.moveHead {
+    #header,
+    #header.moveHead {
         padding: 60px 0
     }
 }
@@ -618,13 +653,6 @@ img {
 @media screen and (min-width:1025px) and (max-width:1500px) {
     .arrowText {
         padding: 0 20px
-    }
-    #video {
-        transform: translate(-68%, -35%);
-        -webkit-transform: translate(-68%, -35%);
-        -moz-transform: translate(-68%, -35%);
-        -ms-transform: translate(-68%, -35%);
-        -o-transform: translate(-68%, -35%)
     }
     .icon:before {
         font-size: 40px
@@ -641,15 +669,7 @@ img {
     }
 }
 
-@media screen and (min-height:775px) {
-    #video {
-        transform: translate(-60%, -35%);
-        -webkit-transform: translate(-60%, -35%);
-        -moz-transform: translate(-60%, -35%);
-        -ms-transform: translate(-60%, -35%);
-        -o-transform: translate(-60%, -35%)
-    }
-}
+@media screen and (min-height:775px) {}
 
 @media screen and (max-height:775px) {
     .bannerHead {

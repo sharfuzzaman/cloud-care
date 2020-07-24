@@ -75,15 +75,16 @@
     font-weight: normal;
     font-style: normal
 }
+
 @font-face {
     font-family: "icomoon";
     src: url("../fonts/qburstHomeFonts/icomoon.eot");
-    src: url("../fonts/qburstHomeFonts/icomoon.eot") format("embedded-opentype"), url("../fonts/qburstHomeFonts/icomoon.ttf") format("truetype"), url("../fonts/qburstHomeFonts/icomoon.woff") format("woff"),
-        url("../fonts/qburstHomeFonts/icomoon.svg") format("svg");
+    src: url("../fonts/qburstHomeFonts/icomoon.eot") format("embedded-opentype"), url("../fonts/qburstHomeFonts/icomoon.ttf") format("truetype"), url("../fonts/qburstHomeFonts/icomoon.woff") format("woff"), url("../fonts/qburstHomeFonts/icomoon.svg") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: auto;
 }
+
 .menuinquiry,
 .menuicon,
 .menusrchicon,
@@ -106,49 +107,99 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+
 .cloudMigrationImg:before {
     content: "\e913";
 }
+
 .devops:before {
     content: "\e906";
 }
+
 .cloudConsult:before {
     content: "\e901";
 }
+
 .migrationStrategies:before {
     content: "\e913";
 }
+
 .cloudSecurity:before {
     content: "\e903";
 }
+
 .cloudNative:before {
     content: "\e904";
 }
+
 .ecommerce:before {
     content: "\e907";
 }
+
 .microservice:before {
     content: "\e911";
 }
+
 .icon:before {
     font-family: "icomoon";
     font-size: 24px;
     padding: 5px 20px 5px 0;
 }
-@media screen and (max-width: 1500px) and (min-width: 1025px){
+
+@media screen and (max-width: 1500px) and (min-width: 1025px) {
     .icon:before {
         font-size: 24px;
     }
 }
+
 .figure-block {
     vertical-align: Sub;
     display: inline-block;
 }
+
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset!important
 }
 
-.arrow .downarrow, .close-menu, .icon-Awards, .rightArrow, .closeInquiry, .closesrch, .main-menu .activeMenu, .icon-replay, .icon-bigDataLink, .icon-mobileDev, .icon-cloudLink, .icon-health, .icon-smart, .icon-crane, .icon-remote, .icon-predictive, .icon-intergrated, .icon-decisions, .icon-windmill, .icon-water, .icon-power, .icon-mapping, .icon-inspection, .icon-maintanance, .icon-operational, .icon-client, .icon-testimonial, .icon-energy, .icon-fraud, .icon-predictive, .icon-annotation, .icon-healthinfo, .icon-medical, .icon-intelligent, .icon-productrec, .icon-sentiment, .icon-saveTime, .icon-group, .icon-crossStats {
+.arrow .downarrow,
+.close-menu,
+.icon-Awards,
+.rightArrow,
+.closeInquiry,
+.closesrch,
+.main-menu .activeMenu,
+.icon-replay,
+.icon-bigDataLink,
+.icon-mobileDev,
+.icon-cloudLink,
+.icon-health,
+.icon-smart,
+.icon-crane,
+.icon-remote,
+.icon-predictive,
+.icon-intergrated,
+.icon-decisions,
+.icon-windmill,
+.icon-water,
+.icon-power,
+.icon-mapping,
+.icon-inspection,
+.icon-maintanance,
+.icon-operational,
+.icon-client,
+.icon-testimonial,
+.icon-energy,
+.icon-fraud,
+.icon-predictive,
+.icon-annotation,
+.icon-healthinfo,
+.icon-medical,
+.icon-intelligent,
+.icon-productrec,
+.icon-sentiment,
+.icon-saveTime,
+.icon-group,
+.icon-crossStats {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -299,11 +350,14 @@ input:-webkit-autofill {
     content: "\e605"
 }
 
-.menusrchicon:before, .menuinquiry:before, .menuicon:before {
+.menusrchicon:before,
+.menuinquiry:before,
+.menuicon:before {
     font-family: "icomoonHome"
 }
 
-.viewLeftArrow, .pageUrlLinkAfter:after {
+.viewLeftArrow,
+.pageUrlLinkAfter:after {
     font-size: 20px;
     vertical-align: sub;
     font-family: 'Nunito', sans-serif;
@@ -327,23 +381,30 @@ input:-webkit-autofill {
     content: "\e606"
 }
 
-.closesrch:before, .closeInquiry:before {
+.closesrch:before,
+.closeInquiry:before {
     content: "\e604";
     right: 0;
     position: absolute
 }
 
-.inqy-open .bodyWrapper>*, .smr-open .bodyWrapper>*, .smr-open #footer {
+.inqy-open .bodyWrapper>*,
+.smr-open .bodyWrapper>*,
+.smr-open #footer {
     display: none
 }
 
-.inqy-open .bodyWrapper .inquiryModel>*, .smr-open .bodyWrapper .main-menu>* {
+.inqy-open .bodyWrapper .inquiryModel>*,
+.smr-open .bodyWrapper .main-menu>* {
     display: block
 }
-.chrome{
-    background:#f8f9fa;
+
+.chrome {
+    background: #f8f9fa;
 }
-.menuinquiry, .menusrchicon {
+
+.menuinquiry,
+.menusrchicon {
     font-size: 22px
 }
 
@@ -352,7 +413,9 @@ input:-webkit-autofill {
     display: block
 }
 
-.menuinquiry, .menuicon, .menusrchicon {
+.menuinquiry,
+.menuicon,
+.menusrchicon {
     cursor: pointer;
     color: #000;
     -webkit-font-smoothing: antialiased!important
@@ -374,7 +437,87 @@ input:-webkit-autofill {
     color: #fec244
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     border: 0 none;
     font: inherit;
     margin: 0;
@@ -382,7 +525,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block
 }
 
@@ -404,7 +557,8 @@ ul {
     list-style-type: none
 }
 
-.clr, .clear {
+.clr,
+.clear {
     clear: both
 }
 
@@ -428,7 +582,8 @@ body {
     color: #03AEEF
 }
 
-button::-moz-focus-inner, .search .searchBtn::-moz-focus-inner {
+button::-moz-focus-inner,
+.search .searchBtn::-moz-focus-inner {
     border: none!important;
     outline: none!important
 }
@@ -454,7 +609,8 @@ button {
     top: 0!important
 }
 
-#header .cookieWrapper, #header .logoHolder .homelogoMob {
+#header .cookieWrapper,
+#header .logoHolder .homelogoMob {
     display: none
 }
 
@@ -475,8 +631,8 @@ button {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    width: 200px;
-    height: 43px
+    width: 246px;
+    height: 48px;
 }
 
 #header #normal {
@@ -490,7 +646,12 @@ button {
     width: 100%;
 }
 
-.slider .next, .navigationArrow li:last-child, #scroller .next, #scrollerTestimonial .next, .navigationArrow, .formSectRight input {
+.slider .next,
+.navigationArrow li:last-child,
+#scroller .next,
+#scrollerTestimonial .next,
+.navigationArrow,
+.formSectRight input {
     float: right
 }
 
@@ -507,7 +668,8 @@ button {
     display: none
 }
 
-.searchHolder.absoluteelement, .inquiryModel.absoluteelement {
+.searchHolder.absoluteelement,
+.inquiryModel.absoluteelement {
     position: absolute;
     width: 0;
     height: 0
@@ -573,7 +735,34 @@ button {
     opacity: 0
 }
 
-.inquirybtnHolder, #partnersMobileWrapper, #navMenu, #blog, #fb, #twitter, .homeContent .hor_testimonial, .testimonial .flex-control-nav, .rightCnt .flex-control-nav, #filters, #filtersRegion, .case-study-filter, .casesubNav .subMenus .menuSelected, .sixcontmob, .testimonialCnt, #horizontalLine, .arrow_down, .selectBox, .selectOptions, #hor_testimonial .testimonialTitle, .mobBorder, #searchNav, #hor_testimonial .flex-control-nav, .rightCnt .flex-control-nav, #readLess, .bookMeeting .mobExpand, .flex-control-nav, .iterativeTestingMob {
+.inquirybtnHolder,
+#partnersMobileWrapper,
+#navMenu,
+#blog,
+#fb,
+#twitter,
+.homeContent .hor_testimonial,
+.testimonial .flex-control-nav,
+.rightCnt .flex-control-nav,
+#filters,
+#filtersRegion,
+.case-study-filter,
+.casesubNav .subMenus .menuSelected,
+.sixcontmob,
+.testimonialCnt,
+#horizontalLine,
+.arrow_down,
+.selectBox,
+.selectOptions,
+#hor_testimonial .testimonialTitle,
+.mobBorder,
+#searchNav,
+#hor_testimonial .flex-control-nav,
+.rightCnt .flex-control-nav,
+#readLess,
+.bookMeeting .mobExpand,
+.flex-control-nav,
+.iterativeTestingMob {
     display: none
 }
 
@@ -582,7 +771,8 @@ body {
     overflow-y: auto
 }
 
-body.smr-open, body.inqy-open {
+body.smr-open,
+body.inqy-open {
     overflow-y: hidden!important
 }
 
@@ -720,11 +910,14 @@ body.smr-open, body.inqy-open {
     -o-animation: 1.5s linear 0s normal none infinite scaling
 }
 
-.moveHead .menuicon, .moveHead .menusrchicon {
+.moveHead .menuicon,
+.moveHead .menusrchicon {
     color: #000
 }
 
-.menuicon, .menusrchicon, .menuinquiry {
+.menuicon,
+.menusrchicon,
+.menuinquiry {
     color: #000
 }
 
@@ -815,11 +1008,17 @@ body {
     transform: scale(1.05)
 }
 
-.salesforceFooterText, .devopsTransText {
+.salesforceFooterText,
+.devopsTransText {
     display: none
 }
 
-#scroller .previous, #scrollerTestimonial .previous, .navigationArrow li:first-child, .frrgts ul, .leftbusinesscontent, .space {
+#scroller .previous,
+#scrollerTestimonial .previous,
+.navigationArrow li:first-child,
+.frrgts ul,
+.leftbusinesscontent,
+.space {
     float: left
 }
 
@@ -849,7 +1048,8 @@ body {
     transform: scale(1.05)
 }
 
-.submitBtn, .InquiryBtn {
+.submitBtn,
+.InquiryBtn {
     cursor: pointer;
     font-family: 'OpenSansbold';
     background-color: #03AEEF;
@@ -861,13 +1061,17 @@ body {
     border-radius: 5px
 }
 
-.buttonHover .InquiryBtn, .buttonHover button, .decideMigration .InquiryBtn {
+.buttonHover .InquiryBtn,
+.buttonHover button,
+.decideMigration .InquiryBtn {
     border-radius: 40px;
     transform: scale(1);
     transition: .15s all ease
 }
 
-.buttonHover .InquiryBtn:hover, .buttonHover button:hover, .decideMigration .InquiryBtn:hover {
+.buttonHover .InquiryBtn:hover,
+.buttonHover button:hover,
+.decideMigration .InquiryBtn:hover {
     transform: scale(1.05);
     outline: 0
 }
@@ -930,7 +1134,8 @@ p .InquiryBtn {
     padding-bottom: 10px
 }
 
-.testimonialCnt .rmArrow, .tabcontent .rmArrow {
+.testimonialCnt .rmArrow,
+.tabcontent .rmArrow {
     background: 0;
     padding-right: 3px
 }
@@ -944,7 +1149,8 @@ p .InquiryBtn {
     height: 16px
 }
 
-.safari-mac.inqy-open, .safari-mac body.inqy-open {
+.safari-mac.inqy-open,
+.safari-mac body.inqy-open {
     overflow: hidden!important
 }
 
@@ -1096,7 +1302,9 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     border-radius: 0
 }
 
-.selectbox, .formSectLeft input, .formSectRight input {
+.selectbox,
+.formSectLeft input,
+.formSectRight input {
     width: 100%;
     color: #2d2d2d;
     outline: 0;
@@ -1108,7 +1316,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     padding: 3px 0 9px 8px
 }
 
-.mobileSwitch, .dropDownMobile {
+.mobileSwitch,
+.dropDownMobile {
     display: none
 }
 
@@ -1120,7 +1329,9 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .inquiryFormLeft input, .inquiryFormLeft input:focus, input[type="text"]:hover {
+    .inquiryFormLeft input,
+    .inquiryFormLeft input:focus,
+    input[type="text"]:hover {
         font-size: 16px
     }
     .searchBorder input[type="text"]:hover {
@@ -1128,13 +1339,17 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     }
 }
 
-.howtocontact ul li label, .contactType ul li label {
+.howtocontact ul li label,
+.contactType ul li label {
     font-family: 'OpenSansLightItalic';
     font-size: 14px;
     position: relative
 }
 
-.howtocontact ul, .howtocontact ul li, .contactType ul, .contactType ul li {
+.howtocontact ul,
+.howtocontact ul li,
+.contactType ul,
+.contactType ul li {
     display: inline-block;
     float: right
 }
@@ -1145,7 +1360,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     float: left
 }
 
-.howtocontact ul li label input, .contactType ul li label input {
+.howtocontact ul li label input,
+.contactType ul li label input {
     float: left;
     height: 34px;
     left: 1px;
@@ -1162,13 +1378,15 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     font-weight: bold
 }
 
-.howtocontact ul li label, .contactType ul li label {
+.howtocontact ul li label,
+.contactType ul li label {
     background: url("../images/responsive/commons/headinqradiobuttonoff.png") no-repeat;
     background-size: 22px 22px;
     padding: 3px 0 5px 25px
 }
 
-.howtocontact ul li label.active, .contactType ul li label.active {
+.howtocontact ul li label.active,
+.contactType ul li label.active {
     background: url("../images/responsive/commons/headinqradiobuttonon.png") no-repeat;
     background-size: 22px 22px;
     padding: 2px 0 5px 25px
@@ -1182,7 +1400,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     margin: 0
 }
 
-#contactInquiryLeft p, .howtocontact .formLbl_new_contact {
+#contactInquiryLeft p,
+.howtocontact .formLbl_new_contact {
     color: #2d2d2d;
     float: left;
     font-family: 'OpenSansBold';
@@ -1190,7 +1409,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     margin-right: 15px
 }
 
-.howtocontact .formLbl_new_contact, .contactType label {
+.howtocontact .formLbl_new_contact,
+.contactType label {
     float: none
 }
 
@@ -1276,7 +1496,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     margin-bottom: 12px
 }
 
-.formSectLeft, .formSectRight {
+.formSectLeft,
+.formSectRight {
     display: inline-block;
     height: 59px;
     width: 45%
@@ -1336,7 +1557,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     text-decoration: underline
 }
 
-.elementLink a, #hor_testimonial .elementLink a {
+.elementLink a,
+#hor_testimonial .elementLink a {
     color: #03AEEF;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
@@ -1350,7 +1572,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     font-family: 'OpenSansRegular'
 }
 
-.icon_right_thin, #hor_testimonial .elementLink i.icon_right_thin {
+.icon_right_thin,
+#hor_testimonial .elementLink i.icon_right_thin {
     margin: 0 0 0 5px;
     top: 1px;
     position: relative;
@@ -1383,7 +1606,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     margin-top: 20px
 }
 
-.error_msgInquiry, #expValMsg {
+.error_msgInquiry,
+#expValMsg {
     font-size: 12px;
     margin-top: 3px;
     clear: both;
@@ -1396,7 +1620,8 @@ body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
     padding: 0 9px 5px
 }
 
-#expValMsg, #emailValMsg {
+#expValMsg,
+#emailValMsg {
     padding: 0 2px 5px
 }
 
@@ -1484,7 +1709,8 @@ h2 {
     line-height: normal
 }
 
-h2.expandText, .titleHead {
+h2.expandText,
+.titleHead {
     color: #262626;
     line-height: normal
 }
@@ -1503,7 +1729,8 @@ h3 {
     max-width: none
 }
 
-.landingPageBlock, .modelLevel {
+.landingPageBlock,
+.modelLevel {
     color: #262626;
     display: table;
     font-family: 'OpenSansRegular';
@@ -1525,11 +1752,13 @@ h3 {
     box-sizing: border-box
 }
 
-.element .elementText, .element .elementLink {
+.element .elementText,
+.element .elementLink {
     margin-top: 5px
 }
 
-p, .pageUrlLink {
+p,
+.pageUrlLink {
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
     line-height: 30px;
@@ -1542,13 +1771,33 @@ p {
     color: #262626
 }
 
-.commonInnerWrapper, .bigDataWrapper, .content .bigDataService, .openProductsSection.bigDataWrapper, .bookMeeting.bigDataWrapper, .bookMeetSection.bigDataWrapper, .featuredBlock.bigDataWrapper, .bigDataWrapper.openBtmSection.ruby, .nodeContent.shareContent.bigDataWrapper, .graphAccordion.docAccordion.bigdataAcc.featuredAppAccWrapper, .graphAccordion.docAccordion.colAccordion.featuredAppAccWrapper, .graphAccordion.bigdataAcc.featuredAppAccWrapper, #collapsable-wrapper.bigDataWrapper.machineCollapse.percentageCollapse, .graphAccordion.docAccordion.featuredAppCordova.featuredAppAccWrapper, .cordovaWork.insideIonic .workDescription, .cordovaFeaturedContent.featuredAppAccWrapper, .development.cordovaFeaturedContent.featuredAppAccWrapper, #collapsable-wrapper.collapsable-container.machineCollapse.cordovaCollapse.percentageCollapse {
+.commonInnerWrapper,
+.bigDataWrapper,
+.content .bigDataService,
+.openProductsSection.bigDataWrapper,
+.bookMeeting.bigDataWrapper,
+.bookMeetSection.bigDataWrapper,
+.featuredBlock.bigDataWrapper,
+.bigDataWrapper.openBtmSection.ruby,
+.nodeContent.shareContent.bigDataWrapper,
+.graphAccordion.docAccordion.bigdataAcc.featuredAppAccWrapper,
+.graphAccordion.docAccordion.colAccordion.featuredAppAccWrapper,
+.graphAccordion.bigdataAcc.featuredAppAccWrapper,
+#collapsable-wrapper.bigDataWrapper.machineCollapse.percentageCollapse,
+.graphAccordion.docAccordion.featuredAppCordova.featuredAppAccWrapper,
+.cordovaWork.insideIonic .workDescription,
+.cordovaFeaturedContent.featuredAppAccWrapper,
+.development.cordovaFeaturedContent.featuredAppAccWrapper,
+#collapsable-wrapper.collapsable-container.machineCollapse.cordovaCollapse.percentageCollapse {
     width: 75%;
     margin-left: auto;
     margin-right: auto
 }
 
-.featuredBlock.bigDataWrapper, .nodeContent.shareContent.bigDataWrapper, .graphAccordion.docAccordion.bigdataAcc.featuredAppAccWrapper, .graphAccordion.docAccordion.colAccordion.featuredAppAccWrapper {
+.featuredBlock.bigDataWrapper,
+.nodeContent.shareContent.bigDataWrapper,
+.graphAccordion.docAccordion.bigdataAcc.featuredAppAccWrapper,
+.graphAccordion.docAccordion.colAccordion.featuredAppAccWrapper {
     float: none;
     clear: both
 }
@@ -1564,7 +1813,8 @@ p {
     padding-top: 10px
 }
 
-.landingPageBlock .elementLast, .bigDataService.developmentWrap {
+.landingPageBlock .elementLast,
+.bigDataService.developmentWrap {
     width: 100%
 }
 
@@ -1631,11 +1881,15 @@ p {
     width: 91%
 }
 
-.casesubContent h2, .bigDataContent h2, .crsPltfrm h2 {
+.casesubContent h2,
+.bigDataContent h2,
+.crsPltfrm h2 {
     line-height: 50px
 }
 
-#featureBox, #ios_container .leftContainer, .winMobRight {
+#featureBox,
+#ios_container .leftContainer,
+.winMobRight {
     width: 98%;
     border: 5px solid #ebebeb;
     background-color: #fbfbfb;
@@ -1644,7 +1898,8 @@ p {
     float: left
 }
 
-#ios_container .leftContainer, .winMobRight {
+#ios_container .leftContainer,
+.winMobRight {
     margin: 30px auto 20px
 }
 
@@ -1794,7 +2049,9 @@ p {
     position: relative
 }
 
-#filters, #filtersRegion, .case-study-filter {
+#filters,
+#filtersRegion,
+.case-study-filter {
     font-size: 13px;
     display: none;
     border: 1px solid #d1d1d1;
@@ -1817,11 +2074,13 @@ p {
     width: 52%
 }
 
-.clientFilter #filters, .clientFilter #filtersRegion {
+.clientFilter #filters,
+.clientFilter #filtersRegion {
     width: 100%!important
 }
 
-.partnersSection .rightcontainer span.partnerheading, .innerLinkedinInquiry .linkedin-mobile {
+.partnersSection .rightcontainer span.partnerheading,
+.innerLinkedinInquiry .linkedin-mobile {
     display: none
 }
 
@@ -1830,7 +2089,9 @@ p {
     padding: 10px 8px
 }
 
-#filters li, #filtersRegion li, .case-study-filter li {
+#filters li,
+#filtersRegion li,
+.case-study-filter li {
     padding: 0 10px;
     border-bottom: 1px solid #d1d1d1;
     cursor: pointer;
@@ -1850,11 +2111,15 @@ p {
     font-size: 18px
 }
 
-#filters li p, #filtersRegion li p, .case-study-filter li p {
+#filters li p,
+#filtersRegion li p,
+.case-study-filter li p {
     padding-top: 10px
 }
 
-#filters li:last-child, #filtersRegion li:last-child, .case-study-filter li:last-child {
+#filters li:last-child,
+#filtersRegion li:last-child,
+.case-study-filter li:last-child {
     border-bottom: 0
 }
 
@@ -1884,7 +2149,8 @@ p {
     z-index: 1
 }
 
-.isotope, .isotope .isotope-item {
+.isotope,
+.isotope .isotope-item {
     -webkit-transition-duration: .8s;
     -moz-transition-duration: .8s;
     -ms-transition-duration: .8s;
@@ -1908,7 +2174,9 @@ p {
     transition-property: transform, opacity
 }
 
-.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
     -webkit-transition-duration: 0s;
     -moz-transition-duration: 0s;
     -ms-transition-duration: 0s;
@@ -1952,7 +2220,8 @@ p {
     display: table-cell
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table
 }
@@ -2006,7 +2275,8 @@ p {
     font-family: 'OpenSansRegular'
 }
 
-.rightcontainer span.heading, .rightcontainer .sub-heading {
+.rightcontainer span.heading,
+.rightcontainer .sub-heading {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     color: #363636;
@@ -2057,7 +2327,8 @@ p {
     right: 0
 }
 
-.menuSelected.a .iconHomedown, .filterSelected .reverse {
+.menuSelected.a .iconHomedown,
+.filterSelected .reverse {
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -2069,7 +2340,8 @@ p {
     clear: both
 }
 
-.subMenus, .subMenuWrapper.subMenumobileAppWrapper {
+.subMenus,
+.subMenuWrapper.subMenumobileAppWrapper {
     width: 94%;
     margin: 0 auto
 }
@@ -2113,7 +2385,8 @@ p {
     border-top-right-radius: 4px
 }
 
-#mobMenuHolder li:hover, #productsNav .subMenus .wrapper1 ul li:hover {
+#mobMenuHolder li:hover,
+#productsNav .subMenus .wrapper1 ul li:hover {
     background-color: #f7f7f7
 }
 
@@ -2121,7 +2394,8 @@ p {
     background: transparent
 }
 
-#mobMenuHolder .active:hover, #productsNav .subMenus .wrapper1 ul .active:hover {
+#mobMenuHolder .active:hover,
+#productsNav .subMenus .wrapper1 ul .active:hover {
     background-color: #fdfdfd
 }
 
@@ -2156,7 +2430,8 @@ p {
     border-right: 1px solid #d1d1d1
 }
 
-.elements .caseStudyImage, .elements .blockelemimage {
+.elements .caseStudyImage,
+.elements .blockelemimage {
     display: block!important;
     vertical-align: top!important
 }
@@ -2176,7 +2451,12 @@ p {
     height: auto
 }
 
-#filters .parent, #filtersRegion .parent, #filters li:hover, #filtersRegion li:hover, .case-study-filter .parent, .case-study-filter li:hover {
+#filters .parent,
+#filtersRegion .parent,
+#filters li:hover,
+#filtersRegion li:hover,
+.case-study-filter .parent,
+.case-study-filter li:hover {
     background-color: #f4f4f4
 }
 
@@ -2231,7 +2511,8 @@ p {
     line-height: 30px
 }
 
-.resourcesTab, .servicesTab {
+.resourcesTab,
+.servicesTab {
     display: table-cell;
     font-size: 30px;
     vertical-align: middle
@@ -2267,13 +2548,162 @@ p {
     margin-top: 1px
 }
 
-#mobMenuHolder .active a, #mobMenuHolder .active .resourcesTab, #mobMenuHolder .active .servicesTab, .activeColor {
+#mobMenuHolder .active a,
+#mobMenuHolder .active .resourcesTab,
+#mobMenuHolder .active .servicesTab,
+.activeColor {
     color: #03AEEF;
     font-family: 'Nunito', sans-serif;
     font-weight: 700
 }
 
-.icon-Webcast, .icon-globe, .icon-Featured-Projects, .icon-Case-studies, .icon-Cross-Pltfm, .icon-Dev, .icon-Architecture, .icon-PenQ, .icon-Crickees, .icon-WWatch, .icon-Articles, .icon-untitled, .icon-Galapagos, .icon-Design, .icon-earth, .icon-quick, .icon-play, .iconListingArrow, .icon_Homeminus, .icon_Homeplus, .icon_HomeCall, .icon-Read-More, .icon_HomeRight, .icon_HomeLeft, .icon_HomeTestimonial, .icon_Homeleft, .iconHomeRight, .iconHomedown, .activeMenu, .toChild, .activeMenu, .toChild, .icon-Web-Apps, .icon-cart, .icon-Websites--CMS, .icon-RIA, .icon-privatecloud, .icon-windows8, .icon-apple, .icon-android, .icon-BB, .icon-Mobile-Web, .icon-Cross-platform, .icon-Healthcare, .icon-Media, .icon-datatypes, .icon-star, .icon-flexibledesign, .icon-datastores, .icon-capture, .icon-connect, .icon-interpret, .icon-Transportation, .icon-Banking, .icon-Insurance, .icon-Education, .icon-Travel, .icon-Retail, .icon-IT-Infra, .icon-bars, .icon-Check-Bullet, .icon-Bullet-1, .icon-Bullet-2, .icon-checkmark, .icon-VisionandMission, .icon-Mission, .icon-Linkedin, .analyticsBI, .icon-bigData, .icon-businessIntelligence, .icon-dataVisualization, .icon-Tools, .icon-aws, .icon-googleApp, .icon-Cost-Savings, .icon-Skilled-Resources, .icon-Eazy-Collaboration, .icon-alarm, .icon-Inq, .icon-contact-map, .icon-Book-MeetingRoom, .icon-Clear-Console, .icon-Mob-DevKit, .icon-Highlight, .icon-SecondSight, .icon-Prev, .icon-Next, .icon-Download, .icon-ContextIQ, .icon-SignUp, .icon-mobile, .icon-Cricket, .icon-Portfolio, .icon-All, .icon-ppweb, .icon-ppmob, .icon-ppbro, .icon-Research, .icon-Analyze, .icon-Develop, .icon-Kever, .icon-TopArrow, .icon-Plus, .icon-Equal, .icon-scrollTp, .icon-machineLearning, .icon-functional, .icon-Performance, .icon-Security, .icon-Compatibility, .icon-versionControl, .icon-mobileWeb, .icon-mobileApp, .icon-Defect, .icon-unit, .icon-testManagement, .icon-contIntegration, .icon-iPhone, .icon-iPod, .icon-iPad, .icon-androidPhone, .icon-ServerOrchestration, .icon-androidTablet, .icon-windows, .icon-blackberry, .icon-ContinuousIntegration, .icon-sharepoint, .icon-Virtualisation, .icon-devPlus, .icon-devMinus, .devIcon, .activeIcon, .icon-uniE63A, .icon-uniE63B, .icon-Close, .icon-Open, .Child, .child, .devActive, .icon-review, .icon-migrate, .icon-note, .icon-settings, .icon-rotate, .icon-speed, .icon-iot, .icon-warranty {
+.icon-Webcast,
+.icon-globe,
+.icon-Featured-Projects,
+.icon-Case-studies,
+.icon-Cross-Pltfm,
+.icon-Dev,
+.icon-Architecture,
+.icon-PenQ,
+.icon-Crickees,
+.icon-WWatch,
+.icon-Articles,
+.icon-untitled,
+.icon-Galapagos,
+.icon-Design,
+.icon-earth,
+.icon-quick,
+.icon-play,
+.iconListingArrow,
+.icon_Homeminus,
+.icon_Homeplus,
+.icon_HomeCall,
+.icon-Read-More,
+.icon_HomeRight,
+.icon_HomeLeft,
+.icon_HomeTestimonial,
+.icon_Homeleft,
+.iconHomeRight,
+.iconHomedown,
+.activeMenu,
+.toChild,
+.activeMenu,
+.toChild,
+.icon-Web-Apps,
+.icon-cart,
+.icon-Websites--CMS,
+.icon-RIA,
+.icon-privatecloud,
+.icon-windows8,
+.icon-apple,
+.icon-android,
+.icon-BB,
+.icon-Mobile-Web,
+.icon-Cross-platform,
+.icon-Healthcare,
+.icon-Media,
+.icon-datatypes,
+.icon-star,
+.icon-flexibledesign,
+.icon-datastores,
+.icon-capture,
+.icon-connect,
+.icon-interpret,
+.icon-Transportation,
+.icon-Banking,
+.icon-Insurance,
+.icon-Education,
+.icon-Travel,
+.icon-Retail,
+.icon-IT-Infra,
+.icon-bars,
+.icon-Check-Bullet,
+.icon-Bullet-1,
+.icon-Bullet-2,
+.icon-checkmark,
+.icon-VisionandMission,
+.icon-Mission,
+.icon-Linkedin,
+.analyticsBI,
+.icon-bigData,
+.icon-businessIntelligence,
+.icon-dataVisualization,
+.icon-Tools,
+.icon-aws,
+.icon-googleApp,
+.icon-Cost-Savings,
+.icon-Skilled-Resources,
+.icon-Eazy-Collaboration,
+.icon-alarm,
+.icon-Inq,
+.icon-contact-map,
+.icon-Book-MeetingRoom,
+.icon-Clear-Console,
+.icon-Mob-DevKit,
+.icon-Highlight,
+.icon-SecondSight,
+.icon-Prev,
+.icon-Next,
+.icon-Download,
+.icon-ContextIQ,
+.icon-SignUp,
+.icon-mobile,
+.icon-Cricket,
+.icon-Portfolio,
+.icon-All,
+.icon-ppweb,
+.icon-ppmob,
+.icon-ppbro,
+.icon-Research,
+.icon-Analyze,
+.icon-Develop,
+.icon-Kever,
+.icon-TopArrow,
+.icon-Plus,
+.icon-Equal,
+.icon-scrollTp,
+.icon-machineLearning,
+.icon-functional,
+.icon-Performance,
+.icon-Security,
+.icon-Compatibility,
+.icon-versionControl,
+.icon-mobileWeb,
+.icon-mobileApp,
+.icon-Defect,
+.icon-unit,
+.icon-testManagement,
+.icon-contIntegration,
+.icon-iPhone,
+.icon-iPod,
+.icon-iPad,
+.icon-androidPhone,
+.icon-ServerOrchestration,
+.icon-androidTablet,
+.icon-windows,
+.icon-blackberry,
+.icon-ContinuousIntegration,
+.icon-sharepoint,
+.icon-Virtualisation,
+.icon-devPlus,
+.icon-devMinus,
+.devIcon,
+.activeIcon,
+.icon-uniE63A,
+.icon-uniE63B,
+.icon-Close,
+.icon-Open,
+.Child,
+.child,
+.devActive,
+.icon-review,
+.icon-migrate,
+.icon-note,
+.icon-settings,
+.icon-rotate,
+.icon-speed,
+.icon-iot,
+.icon-warranty {
     font-family: 'icomoon'!important;
     speak: none;
     font-style: normal;
@@ -2343,11 +2773,14 @@ p {
     font-size: 30px
 }
 
-.mobilitySolutionsMobile .icon-Close:before, .machineLearningStaging .icon-Close:before, .machineLearningContentWrapper .icon-Close:before {
+.mobilitySolutionsMobile .icon-Close:before,
+.machineLearningStaging .icon-Close:before,
+.machineLearningContentWrapper .icon-Close:before {
     content: "\e900"
 }
 
-.icon-Close:before, .child:before {
+.icon-Close:before,
+.child:before {
     content: "\e900"
 }
 
@@ -2359,12 +2792,17 @@ p {
     padding-top: 8px!important
 }
 
-.mobilitySolutionsMobile .icon-Open:before, .machineLearningStaging .icon-Open:before, .machineLearningContentWrapper .icon-Open:before {
+.mobilitySolutionsMobile .icon-Open:before,
+.machineLearningStaging .icon-Open:before,
+.machineLearningContentWrapper .icon-Open:before {
     content: "\e901";
     color: #03AEEF
 }
 
-.icon-Open:before, .Child:before, .devActive:before, .upArrow.collapse-icon:before {
+.icon-Open:before,
+.Child:before,
+.devActive:before,
+.upArrow.collapse-icon:before {
     content: "\e901";
     color: #03AEEF
 }
@@ -2374,11 +2812,13 @@ p {
     color: #fff
 }
 
-.toggleIcon .child:before, .toggleIcon .devIcon:before {
+.toggleIcon .child:before,
+.toggleIcon .devIcon:before {
     content: "\e63e"
 }
 
-.toggleIcon .child.devActive:before, .toggleIcon .devIcon.activeIcon:before {
+.toggleIcon .child.devActive:before,
+.toggleIcon .devIcon.activeIcon:before {
     content: "\e63d";
     color: #fff
 }
@@ -2650,7 +3090,8 @@ p {
     content: "\e63e"
 }
 
-.icon-Bullet-1:before, .red-bullet li:before {
+.icon-Bullet-1:before,
+.red-bullet li:before {
     content: "\e048";
     font-family: 'icomoon'
 }
@@ -2659,7 +3100,8 @@ p {
     content: "\e049"
 }
 
-.icon-checkmark:before, .red-check li:before {
+.icon-checkmark:before,
+.red-check li:before {
     content: "\e04a";
     font-family: 'icomoon'
 }
@@ -2940,7 +3382,12 @@ p {
     padding-bottom: 10px
 }
 
-.icon-Bullet-1, .icon-checkmark, .icon-Bullet-2, .icon-Highlight, .red-bullet li:before, .red-check li:before {
+.icon-Bullet-1,
+.icon-checkmark,
+.icon-Bullet-2,
+.icon-Highlight,
+.red-bullet li:before,
+.red-check li:before {
     font-size: 6px;
     margin: 9px 10px 0 0;
     display: inline-block;
@@ -2952,11 +3399,13 @@ p {
     font-size: 14px
 }
 
-.red-bullet li:before, .red-check li:before {
+.red-bullet li:before,
+.red-check li:before {
     margin: 2px 10px 0 0
 }
 
-.red-bullet li span, .red-check li span {
+.red-bullet li span,
+.red-check li span {
     display: inline-block;
     width: calc(100% - 30px)
 }
@@ -2965,7 +3414,8 @@ p {
     font-size: 5px
 }
 
-.icon-checkmark, .icon-Highlight {
+.icon-checkmark,
+.icon-Highlight {
     font-size: 14px;
     margin-top: 4px
 }
@@ -2976,7 +3426,8 @@ p {
     padding-top: 2px
 }
 
-.clrcon_lft .icon-checkmark, .clrcon_lft .icon-Highlight {
+.clrcon_lft .icon-checkmark,
+.clrcon_lft .icon-Highlight {
     margin-top: 6px
 }
 
@@ -3053,7 +3504,8 @@ p {
     line-height: 30px
 }
 
-#bigDataFramewrk, .rightData {
+#bigDataFramewrk,
+.rightData {
     width: auto;
     border: 5px solid #ebebeb;
     background-color: #fbfbfb;
@@ -3077,7 +3529,9 @@ p {
     font-size: 40px
 }
 
-.content .subMenus .mobileNav, #mobileWebNav #mobMenuHolder, .content .subMenus .approachNav {
+.content .subMenus .mobileNav,
+#mobileWebNav #mobMenuHolder,
+.content .subMenus .approachNav {
     width: 100%
 }
 
@@ -3093,7 +3547,8 @@ p {
     width: 18%
 }
 
-#mobileWebNav #mobMenuHolder li:nth-child(3), #mobileWebNav #mobMenuHolder li:nth-child(5) {
+#mobileWebNav #mobMenuHolder li:nth-child(3),
+#mobileWebNav #mobMenuHolder li:nth-child(5) {
     width: 22%
 }
 
@@ -3117,7 +3572,11 @@ p {
     color: #009fe3
 }
 
-.headingRed, .iconApple, .iconMobWeb, .icon-quick, .headingRedSplit {
+.headingRed,
+.iconApple,
+.iconMobWeb,
+.icon-quick,
+.headingRedSplit {
     color: #03AEEF
 }
 
@@ -3157,7 +3616,8 @@ p {
     color: #0042af
 }
 
-.icon-ContinuousIntegration, .icon-Virtualisation {
+.icon-ContinuousIntegration,
+.icon-Virtualisation {
     color: #659027
 }
 
@@ -3177,7 +3637,8 @@ p {
     width: 49.5%
 }
 
-.levels .elementLink, .lftConright .elementLink {
+.levels .elementLink,
+.lftConright .elementLink {
     margin-top: 5px
 }
 
@@ -3187,7 +3648,11 @@ p {
     max-width: 1500px
 }
 
-.contentWrapper.entryLevelWrapper, .featuredBlock.featuredBlockCommon, .bookMeetSection.featuredBlockCommon, .bigDataService.featuredBlockCommon, .leftBottom {
+.contentWrapper.entryLevelWrapper,
+.featuredBlock.featuredBlockCommon,
+.bookMeetSection.featuredBlockCommon,
+.bigDataService.featuredBlockCommon,
+.leftBottom {
     padding-bottom: 60px
 }
 
@@ -3234,11 +3699,13 @@ p {
     line-height: 45px
 }
 
-.designing .floralLeftfirst, .business .floralLeftfirst {
+.designing .floralLeftfirst,
+.business .floralLeftfirst {
     margin: 3px auto 20px
 }
 
-.designing .floralLeftfirst p, .designing .rightHolder p {
+.designing .floralLeftfirst p,
+.designing .rightHolder p {
     margin-bottom: 20px
 }
 
@@ -3254,7 +3721,8 @@ p {
     overflow: hidden
 }
 
-.bigDataContent, .featuredBlock {
+.bigDataContent,
+.featuredBlock {
     float: left;
     width: 100%;
     margin: 20px 0 40px 0;
@@ -3294,18 +3762,24 @@ p {
     margin-top: 12px
 }
 
-.bigDataContent p, .dataVisContent p {
+.bigDataContent p,
+.dataVisContent p {
     margin-top: 12px
 }
 
-.bigDataContent span.elementLink a, .openProductsSection span.elementLink a, .openBtmSection span.elementLink a, .leftBottom span.elementLink a, .bookMeetSection .elementLink a {
+.bigDataContent span.elementLink a,
+.openProductsSection span.elementLink a,
+.openBtmSection span.elementLink a,
+.leftBottom span.elementLink a,
+.bookMeetSection .elementLink a {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 15px;
     text-decoration: underline
 }
 
-.bigDataContent .block, .featuredBlock .block {
+.bigDataContent .block,
+.featuredBlock .block {
     width: 100%;
     margin-top: 40px;
     display: table
@@ -3337,7 +3811,8 @@ p {
     margin-top: 10px
 }
 
-.dataVisContent .leftData, .integrationPara {
+.dataVisContent .leftData,
+.integrationPara {
     float: left;
     width: 49%
 }
@@ -3356,7 +3831,8 @@ p {
     top: 21px
 }
 
-.rightDataVis, .dataVisContent .rightData {
+.rightDataVis,
+.dataVisContent .rightData {
     float: right;
     width: 49%;
     position: relative;
@@ -3523,15 +3999,21 @@ p {
     text-align: center
 }
 
-.content #featureBox .dataCost, .content #featureBox .dataAccess, .content #featureBox .dataEasy, .content #featureBox .dataQuick, .content #featureBox .dataCostsec {
+.content #featureBox .dataCost,
+.content #featureBox .dataAccess,
+.content #featureBox .dataEasy,
+.content #featureBox .dataQuick,
+.content #featureBox .dataCostsec {
     margin-left: 0
 }
 
-.content #featureBox .dataQuick, .content #featureBox .dataCostsec {
+.content #featureBox .dataQuick,
+.content #featureBox .dataCostsec {
     border-top: 1px solid #ebebeb
 }
 
-.content #featureBox .dataCost, .content #featureBox .dataCostsec {
+.content #featureBox .dataCost,
+.content #featureBox .dataCostsec {
     width: 36%
 }
 
@@ -3603,7 +4085,9 @@ p {
     margin-top: 15px
 }
 
-#mobileNewsCaseouter h2, .analysisContent h2, .jarusContent h2 {
+#mobileNewsCaseouter h2,
+.analysisContent h2,
+.jarusContent h2 {
     line-height: 70px;
     padding: 0!important
 }
@@ -3649,7 +4133,8 @@ p {
     width: 92%
 }
 
-.analyticsleftcontent p, .penQPara {
+.analyticsleftcontent p,
+.penQPara {
     text-align: justify;
     padding-bottom: 20px
 }
@@ -3753,7 +4238,8 @@ sup {
     line-height: 26px
 }
 
-.bigDataContent h3, .bigdatasersection h3 {
+.bigDataContent h3,
+.bigdatasersection h3 {
     font-family: 'OpenSansRegular';
     font-size: 22px;
     line-height: 26px
@@ -3769,7 +4255,8 @@ sup {
     margin-right: 15px
 }
 
-.leftContainer .lftConleft, .leftContainer .lftConright {
+.leftContainer .lftConleft,
+.leftContainer .lftConright {
     display: table-cell;
     float: none
 }
@@ -3779,7 +4266,9 @@ sup {
     width: 55%
 }
 
-.leftContainer .lftConright h2, .lftConbottom h2, .winMobRight .lftConbottom h2 {
+.leftContainer .lftConright h2,
+.lftConbottom h2,
+.winMobRight .lftConbottom h2 {
     margin-bottom: 15px
 }
 
@@ -3802,12 +4291,16 @@ sup {
     line-height: 26px
 }
 
-#ios_container .rightContainer .listText, .rightOpenDiv .listText, .leftOpenDiv .listText {
+#ios_container .rightContainer .listText,
+.rightOpenDiv .listText,
+.leftOpenDiv .listText {
     margin-top: 15px;
     font-family: 'OpenSansRegular'
 }
 
-#ios_container .rightContainer .listText li, .rightOpenDiv .listText li, .leftOpenDiv .listText li {
+#ios_container .rightContainer .listText li,
+.rightOpenDiv .listText li,
+.leftOpenDiv .listText li {
     padding-bottom: 15px
 }
 
@@ -3817,7 +4310,8 @@ sup {
     box-sizing: border-box
 }
 
-.leftContainer .lftContop, .winMobRight .lftContop {
+.leftContainer .lftContop,
+.winMobRight .lftContop {
     display: block;
     text-align: center;
     width: 100%
@@ -3906,7 +4400,9 @@ sup {
     overflow: hidden
 }
 
-.videoContainer iframe, .videoContainer object, .videoContainer embed {
+.videoContainer iframe,
+.videoContainer object,
+.videoContainer embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -3956,11 +4452,13 @@ sup {
     margin-top: 30px
 }
 
-.leftOpenDiv p, .rightOpenDiv p {
+.leftOpenDiv p,
+.rightOpenDiv p {
     margin-top: 12px
 }
 
-.openBtmSection, .leftBottom {
+.openBtmSection,
+.leftBottom {
     border-top: 1px solid #ebebeb;
     padding-top: 24px
 }
@@ -3977,7 +4475,8 @@ sup {
     width: auto
 }
 
-.openBtmSection .leftOpenDiv p, .openBtmSection .rightOpenDiv p {
+.openBtmSection .leftOpenDiv p,
+.openBtmSection .rightOpenDiv p {
     margin-top: 0
 }
 
@@ -4109,7 +4608,8 @@ sup {
     padding-bottom: 0!important
 }
 
-#productsNav #liquid1, #productsNav .subMenus .wrapper1 {
+#productsNav #liquid1,
+#productsNav .subMenus .wrapper1 {
     overflow: hidden
 }
 
@@ -4193,7 +4693,8 @@ sup {
     font-weight: normal
 }
 
-.visionUl, .visionnUl {
+.visionUl,
+.visionnUl {
     list-style-type: disc;
     margin-left: 25px;
     padding: 6px 0;
@@ -4340,7 +4841,8 @@ sup {
     font-family: "OpenSansItalic"
 }
 
-.rightImageTop h2, .quickPicksRightBottomData h2 {
+.rightImageTop h2,
+.quickPicksRightBottomData h2 {
     text-align: left
 }
 
@@ -4435,7 +4937,9 @@ sup {
     padding-top: 20px
 }
 
-.contextLeft .mobExpand, .partnersSection .rightcontainer span.partnerheading, #crsLink {
+.contextLeft .mobExpand,
+.partnersSection .rightcontainer span.partnerheading,
+#crsLink {
     display: none
 }
 
@@ -4455,7 +4959,8 @@ sup {
     color: #6c1f1f
 }
 
-.careerContent .leftContent, .careerContent .rightContent {
+.careerContent .leftContent,
+.careerContent .rightContent {
     float: left;
     width: 50%
 }
@@ -4527,7 +5032,11 @@ sup {
     font-style: italic
 }
 
-.listText .icon-windows8, .listText .icon-mobile, .listText .icon-BB, .listText .icon-apple, .listText .icon-android {
+.listText .icon-windows8,
+.listText .icon-mobile,
+.listText .icon-BB,
+.listText .icon-apple,
+.listText .icon-android {
     top: 6px;
     position: relative;
     font-size: 25px;
@@ -4570,7 +5079,8 @@ sup {
     width: 100%
 }
 
-#horizontalLine hr, #crickeeBox #horizontalLine hr {
+#horizontalLine hr,
+#crickeeBox #horizontalLine hr {
     border: 0;
     border-top: 1px solid #ebebeb;
     color: #ebebeb;
@@ -4611,12 +5121,15 @@ sup {
     margin-top: 20px
 }
 
-.crossSubDescription p, .crossSubDescription figure {
+.crossSubDescription p,
+.crossSubDescription figure {
     display: table-cell;
     vertical-align: middle
 }
 
-.crossSubDescription .senchaLogo, .crossSubDescription .konyLogo, #pythonCont .pythonLogo {
+.crossSubDescription .senchaLogo,
+.crossSubDescription .konyLogo,
+#pythonCont .pythonLogo {
     padding-right: 5%;
     box-sizing: border-box
 }
@@ -4633,7 +5146,9 @@ sup {
     width: 263px
 }
 
-.content .konyNav .subMenus ul, .cordovaWork.defaultWrapper.insideIonic, .graphAccordion.docAccordion.featuredAppCordova {
+.content .konyNav .subMenus ul,
+.cordovaWork.defaultWrapper.insideIonic,
+.graphAccordion.docAccordion.featuredAppCordova {
     width: 91%
 }
 
@@ -4653,26 +5168,47 @@ sup {
     padding-right: 20px
 }
 
-.bigDataService.serverBorder .leftTextData, .serverMaintainWrapper .leftTextData, .dataVisContent .leftData, .columnarContent .leftTextData, .graphContent .leftTextData, .graphFeatures .leftTextData, .bigDataService.mobWebTesting .leftTextData, .bigDataService.integrateList .leftTextData, .webWatchLevels .levels:first-child {
+.bigDataService.serverBorder .leftTextData,
+.serverMaintainWrapper .leftTextData,
+.dataVisContent .leftData,
+.columnarContent .leftTextData,
+.graphContent .leftTextData,
+.graphFeatures .leftTextData,
+.bigDataService.mobWebTesting .leftTextData,
+.bigDataService.integrateList .leftTextData,
+.webWatchLevels .levels:first-child {
     padding-right: 20px
 }
 
-.bigDataService.serverBorder .rightTextData, .serverMaintainWrapper .rightTextData, .dataVisContent .rightData, .columnarContent .rightTextData, .graphContent .rightTextData, .graphFeatures .rightTextData, .bigDataService.mobWebTesting .rightTextData, .bigDataService.integrateList .rightTextData, .webWatchLevels .levels:nth-child(2) {
+.bigDataService.serverBorder .rightTextData,
+.serverMaintainWrapper .rightTextData,
+.dataVisContent .rightData,
+.columnarContent .rightTextData,
+.graphContent .rightTextData,
+.graphFeatures .rightTextData,
+.bigDataService.mobWebTesting .rightTextData,
+.bigDataService.integrateList .rightTextData,
+.webWatchLevels .levels:nth-child(2) {
     padding-left: 20px
 }
 
-.leftTextData, .rightTextData, .leftData, .rightData {
+.leftTextData,
+.rightTextData,
+.leftData,
+.rightData {
     float: left;
     width: 50%;
     margin-top: 20px;
     box-sizing: border-box
 }
 
-.leftTextData p, .rightTextData p {
+.leftTextData p,
+.rightTextData p {
     width: 96%
 }
 
-.leftTextData h2, .rightTextData h2 {
+.leftTextData h2,
+.rightTextData h2 {
     text-align: left
 }
 
@@ -4700,15 +5236,21 @@ sup {
     width: 100%
 }
 
-.senchaFeaturedSection h2, .industriaBlock, .surveyBuzDescHead, .innerSubHead, .innerSubHeading {
+.senchaFeaturedSection h2,
+.industriaBlock,
+.surveyBuzDescHead,
+.innerSubHead,
+.innerSubHeading {
     text-align: center
 }
 
-.innerSubHead, .innerSubHeading {
+.innerSubHead,
+.innerSubHeading {
     padding-bottom: 20px
 }
 
-.totalLabel, #total_cost {
+.totalLabel,
+#total_cost {
     font-family: "OpenSansSemiBold";
     font-size: 20px;
     width: 27%!important
@@ -4722,19 +5264,30 @@ sup {
     margin-top: 20px
 }
 
-.plusnetleftfirst h2, .plusnetleftthird h2, .plusnetrightfourth h2 {
+.plusnetleftfirst h2,
+.plusnetleftthird h2,
+.plusnetrightfourth h2 {
     padding-top: 16px
 }
 
-.plusnetleftfirst p, .plusnetleftthird p, .plusnetrightsecond p {
+.plusnetleftfirst p,
+.plusnetleftthird p,
+.plusnetrightsecond p {
     padding-bottom: 36px
 }
 
-.plusnetleftfourth .plusnetlist, .plusnetrightfourth .plusnetlist {
+.plusnetleftfourth .plusnetlist,
+.plusnetrightfourth .plusnetlist {
     margin-top: 20px
 }
 
-.plusnetleftfirst, .plusnetleftsecond, .plusnetleftthird, .plusnetleftfourth, .plusnetrightsecond, .plusnetrightthird, .plusnetrightfourth {
+.plusnetleftfirst,
+.plusnetleftsecond,
+.plusnetleftthird,
+.plusnetleftfourth,
+.plusnetrightsecond,
+.plusnetrightthird,
+.plusnetrightfourth {
     float: left;
     width: 100%
 }
@@ -4822,30 +5375,41 @@ sup {
     padding-left: 0
 }
 
-.packages .stdplan, .packages .enhcedplan, .packages .premplan {
+.packages .stdplan,
+.packages .enhcedplan,
+.packages .premplan {
     width: 20%;
     float: left
 }
 
-.packages .enhcedplan ul li, .packages .stdplan ul li, .packages .premplan ul li {
+.packages .enhcedplan ul li,
+.packages .stdplan ul li,
+.packages .premplan ul li {
     text-align: center
 }
 
-.packages .enhcedplan ul li, .packages .signbtn .enhcedplan ul li:first-child {
+.packages .enhcedplan ul li,
+.packages .signbtn .enhcedplan ul li:first-child {
     background-color: #ece3d4
 }
 
-.packages .enhcedplan ul li *, .packages .stdplan ul li *, .packages .premplan ul li * {
+.packages .enhcedplan ul li *,
+.packages .stdplan ul li *,
+.packages .premplan ul li * {
     padding-left: 0
 }
 
-.packages .enhcedplan ul li:first-child p, .packages .stdplan ul li:first-child p, .packages .premplan ul li:first-child p, .packages .packset li:first-child p {
+.packages .enhcedplan ul li:first-child p,
+.packages .stdplan ul li:first-child p,
+.packages .premplan ul li:first-child p,
+.packages .packset li:first-child p {
     padding-left: 0;
     padding-top: 0;
     font-size: 18px
 }
 
-.packages .stdplan ul li:first-child, .packages .premplan ul li:first-child {
+.packages .stdplan ul li:first-child,
+.packages .premplan ul li:first-child {
     background-color: #a7a7a7;
     text-align: center;
     display: table
@@ -4857,7 +5421,9 @@ sup {
     display: table
 }
 
-.packages .enhcedplan ul li:first-child p, .packages .stdplan ul li:first-child p, .packages .premplan ul li:first-child p {
+.packages .enhcedplan ul li:first-child p,
+.packages .stdplan ul li:first-child p,
+.packages .premplan ul li:first-child p {
     color: #FFF;
     font-family: "OpenSansBold";
     display: table-cell;
@@ -4907,7 +5473,8 @@ sup {
     width: 100%
 }
 
-.packages .packset li, .signbtn .packset ul li:first-child {
+.packages .packset li,
+.signbtn .packset ul li:first-child {
     background-color: #f2f2f2;
     font-size: 15px
 }
@@ -4923,7 +5490,8 @@ sup {
     vertical-align: middle
 }
 
-.signbtn .stdplan ul li:first-child, .signbtn .premplan ul li:first-child {
+.signbtn .stdplan ul li:first-child,
+.signbtn .premplan ul li:first-child {
     background-color: #ececec
 }
 
@@ -5073,7 +5641,8 @@ select::-moz-focus-inner {
     width: 35px
 }
 
-.sales_signup select, .sales_signup input.salesforceinput {
+.sales_signup select,
+.sales_signup input.salesforceinput {
     background-color: #FFF;
     border: 1px solid #c9c9c9;
     color: #000;
@@ -5216,7 +5785,9 @@ select::-moz-focus-inner {
     width: 45%
 }
 
-iframe, object, embed {
+iframe,
+object,
+embed {
     max-width: 100%!important
 }
 
@@ -5306,7 +5877,10 @@ iframe, object, embed {
     padding: 0
 }
 
-.toggleHead .toChild, .content .salesDataLeft .salesData h2 .toChild, .testimain .caseText, .link img {
+.toggleHead .toChild,
+.content .salesDataLeft .salesData h2 .toChild,
+.testimain .caseText,
+.link img {
     display: none
 }
 
@@ -5322,7 +5896,8 @@ iframe, object, embed {
     width: 100%
 }
 
-.airone, .designpart {
+.airone,
+.designpart {
     display: table;
     margin-top: 30px
 }
@@ -5331,7 +5906,8 @@ iframe, object, embed {
     margin-bottom: 60px
 }
 
-.airone p, .airleft {
+.airone p,
+.airleft {
     border-right: 3px solid #03AEEF;
     display: table-cell;
     padding-right: 20px;
@@ -5353,7 +5929,8 @@ iframe, object, embed {
     margin-top: 0
 }
 
-.airone ul li span:nth-child(2), .designpart ul li span:nth-child(2) {
+.airone ul li span:nth-child(2),
+.designpart ul li span:nth-child(2) {
     display: inline-block;
     width: 90%;
     font-family: 'Nunito', sans-serif;
@@ -5447,7 +6024,8 @@ iframe, object, embed {
     margin: 6px 10px 0 0
 }
 
-.silversection .airleft p, .designpart .designleft p {
+.silversection .airleft p,
+.designpart .designleft p {
     padding-top: 10px
 }
 
@@ -5506,7 +6084,8 @@ iframe, object, embed {
     font-style: italic
 }
 
-.linker, .videolinker {
+.linker,
+.videolinker {
     background-color: #03AEEF;
     border-radius: 3px;
     color: #fff!important;
@@ -5524,7 +6103,8 @@ iframe, object, embed {
     transition: .15s all ease
 }
 
-.linker:hover, .videolinker:hover {
+.linker:hover,
+.videolinker:hover {
     transform: scale(1.05)
 }
 
@@ -5902,7 +6482,10 @@ iframe, object, embed {
     color: #e57700
 }
 
-.icon-All, .icon-ppweb, .icon-ppmob, .icon-ppbro {
+.icon-All,
+.icon-ppweb,
+.icon-ppmob,
+.icon-ppbro {
     color: #000
 }
 
@@ -5947,7 +6530,8 @@ iframe, object, embed {
     line-height: 24px
 }
 
-.designpart .listhold, .designpart .designright {
+.designpart .listhold,
+.designpart .designright {
     display: table-cell;
     padding-left: 20px;
     vertical-align: middle;
@@ -6048,7 +6632,8 @@ iframe, object, embed {
     vertical-align: middle
 }
 
-.iaimg figure:last-child, .solutionSection figure:last-child {
+.iaimg figure:last-child,
+.solutionSection figure:last-child {
     padding: 0
 }
 
@@ -6087,13 +6672,17 @@ iframe, object, embed {
     text-decoration: underline
 }
 
-.riahtml5left, .solutionsLeft, #fullwidthWrapper .leftdata {
+.riahtml5left,
+.solutionsLeft,
+#fullwidthWrapper .leftdata {
     width: 45%;
     margin-right: 5%;
     float: left
 }
 
-.riahtml5right, .solutionsRight, #fullwidthWrapper .rghtdata {
+.riahtml5right,
+.solutionsRight,
+#fullwidthWrapper .rghtdata {
     width: 50%;
     float: right
 }
@@ -6277,7 +6866,8 @@ iframe, object, embed {
     cursor: pointer
 }
 
-#postmapcont #mobMenuHolder li:after, #postmapcont #mobMenuHolder .active:after {
+#postmapcont #mobMenuHolder li:after,
+#postmapcont #mobMenuHolder .active:after {
     content: "";
     border: 10px solid #2d2d2d;
     border-color: #2d2d2d transparent transparent transparent;
@@ -6398,7 +6988,8 @@ iframe, object, embed {
     pointer-events: none
 }
 
-.contactDetail ul li:hover img, .contactDetail ul li.active img {
+.contactDetail ul li:hover img,
+.contactDetail ul li.active img {
     opacity: 1
 }
 
@@ -6423,7 +7014,14 @@ iframe, object, embed {
     border-bottom: 1px dashed transparent!important
 }
 
-.contactDetail ul li.active, .addrs_section ul li:first-child.hoverAdd.active, .contactDetail ul li:hover, .contactDetail ul li:active, .contactDetail ul li:nth-last-child(2):hover, .contactDetail ul li:nth-last-child(2):active, .contactDetail .South-Asia-Contacts ul li:nth-last-child(3):hover, .contactDetail .South-Asia-Contacts ul li:nth-last-child(3):active {
+.contactDetail ul li.active,
+.addrs_section ul li:first-child.hoverAdd.active,
+.contactDetail ul li:hover,
+.contactDetail ul li:active,
+.contactDetail ul li:nth-last-child(2):hover,
+.contactDetail ul li:nth-last-child(2):active,
+.contactDetail .South-Asia-Contacts ul li:nth-last-child(3):hover,
+.contactDetail .South-Asia-Contacts ul li:nth-last-child(3):active {
     border: 1px dashed #03AEEF;
     border-right: 1px dashed #03AEEF!important;
     border-radius: 10px
@@ -6437,11 +7035,22 @@ iframe, object, embed {
     border-bottom: 1px dashed #cdcdcd
 }
 
-.contactDetail .Americas-Contacts ul li:nth-last-child(2):hover, .contactDetail .Americas-Contacts ul li.active, .contactDetail .South-Asia-Contacts ul li.active:nth-last-child(2), .contactDetail .South-Asia-Contacts ul li:nth-last-child(2):hover, .contactDetail .Americas-Contacts ul li.active:nth-last-child(2), .contactDetail .Americas-Contacts ul li:nth-last-child(2):hover, .contactDetail .Asia-Pacific-Contacts ul li.active:nth-last-child(2), .contactDetail .Asia-Pacific-Contacts ul li:nth-last-child(2):hover, .contactDetail .South-Asia-Contacts ul li.active:nth-last-child(3) {
+.contactDetail .Americas-Contacts ul li:nth-last-child(2):hover,
+.contactDetail .Americas-Contacts ul li.active,
+.contactDetail .South-Asia-Contacts ul li.active:nth-last-child(2),
+.contactDetail .South-Asia-Contacts ul li:nth-last-child(2):hover,
+.contactDetail .Americas-Contacts ul li.active:nth-last-child(2),
+.contactDetail .Americas-Contacts ul li:nth-last-child(2):hover,
+.contactDetail .Asia-Pacific-Contacts ul li.active:nth-last-child(2),
+.contactDetail .Asia-Pacific-Contacts ul li:nth-last-child(2):hover,
+.contactDetail .South-Asia-Contacts ul li.active:nth-last-child(3) {
     border-bottom: 1px dashed #03AEEF
 }
 
-.contactDetail .South-Asia-Contacts ul li:nth-last-child(2), .contactDetail .Asia-Pacific-Contacts ul li:nth-last-child(2), .contactDetail .Americas-Contacts ul li:nth-last-child(2), .contactDetail .South-Asia-Contacts ul li:nth-last-child(3) {
+.contactDetail .South-Asia-Contacts ul li:nth-last-child(2),
+.contactDetail .Asia-Pacific-Contacts ul li:nth-last-child(2),
+.contactDetail .Americas-Contacts ul li:nth-last-child(2),
+.contactDetail .South-Asia-Contacts ul li:nth-last-child(3) {
     border-bottom: 1px solid transparent
 }
 
@@ -6565,7 +7174,8 @@ iframe, object, embed {
     -webkit-flex-basis: 50%
 }
 
-.slideMenuWrapper>div, .slideMenuWrapper {
+.slideMenuWrapper>div,
+.slideMenuWrapper {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -6574,7 +7184,8 @@ iframe, object, embed {
     justify-content: flex-end
 }
 
-.slideMenuWrapper>div, .rightMenuContainer {
+.slideMenuWrapper>div,
+.rightMenuContainer {
     padding-top: 80px;
     padding-bottom: 80px
 }
@@ -6611,7 +7222,8 @@ iframe, object, embed {
     display: flex;
     align-items: center
 }
-.sideMenuLink{
+
+.sideMenuLink {
     max-width: 100%;
     /* border: 2px solid #03AEEF; */
     /* padding: 15px 25px; */
@@ -6631,7 +7243,8 @@ iframe, object, embed {
     box-sizing: border-box;
     width: 100%;
 }
-.sideMenuLinkSpan{
+
+.sideMenuLinkSpan {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -6644,33 +7257,42 @@ iframe, object, embed {
     font-weight: 400;
     font-size: 18px;
 }
-.sideMenuTextSpan{
-    color:#000000;
-    font-weight:300;
+
+.sideMenuTextSpan {
+    color: #000000;
+    font-weight: 300;
 }
-.py-5{
-    padding-left:40px;
-    padding-right:30px;
+
+.py-5 {
+    padding-left: 40px;
+    padding-right: 30px;
 }
-.px-5{
-    padding-top:40px;
-    padding-bottom:40px;
+
+.px-5 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.pl-5{
-    padding-left:40px;
+
+.pl-5 {
+    padding-left: 40px;
 }
-.pt-5{
-    padding-top:40px;
+
+.pt-5 {
+    padding-top: 40px;
 }
-.pb-5{
-    padding-bottom:40px;
+
+.pb-5 {
+    padding-bottom: 40px;
 }
-.pl-3{
-    padding-left:1rem;
+
+.pl-3 {
+    padding-left: 1rem;
 }
-.pt-16{
-    padding-top:16px;
+
+.pt-16 {
+    padding-top: 16px;
 }
+
 .digitalTransformation li:last-child figure {
     width: 50px;
     text-align: center
@@ -6688,13 +7310,15 @@ iframe, object, embed {
     line-height: 24px
 }
 
-.digitalTransformation h3, .digitalTransformation>ul {
+.digitalTransformation h3,
+.digitalTransformation>ul {
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box
 }
 
-.slideMenuWrapper a, .dropMenu .menuListClick {
+.slideMenuWrapper a,
+.dropMenu .menuListClick {
     font-weight: 300;
     font-size: 16px;
     cursor: pointer
@@ -6757,7 +7381,8 @@ iframe, object, embed {
     line-height: 38px
 }
 
-.slideMenuWrapper a, .dropMenu .menuListClick {
+.slideMenuWrapper a,
+.dropMenu .menuListClick {
     font-weight: 300;
     font-size: 16px
 }
@@ -6766,13 +7391,17 @@ iframe, object, embed {
     max-height: 300px
 }
 
-.backArrow, .main-menu .collapse-content, .bodyWrapper .main-menu .digitalTransformationMob {
+.backArrow,
+.main-menu .collapse-content,
+.bodyWrapper .main-menu .digitalTransformationMob {
     display: none
 }
-img.nav-icon{
-    height:24px;
-    width:24px;
+
+img.nav-icon {
+    height: 24px;
+    width: 24px;
 }
+
 .rightMenuContainer {
     background: #ffffff;
     color: #000000;
@@ -6798,7 +7427,8 @@ img.nav-icon{
     padding-left: 0
 }
 
-.slideMenuWrapper>div, .rightMenuContainer {
+.slideMenuWrapper>div,
+.rightMenuContainer {
     padding-top: 80px;
     padding-bottom: 80px
 }
@@ -6849,7 +7479,9 @@ img.nav-icon{
     padding-top: 10px
 }
 
-.slideMenuWrapper a, .dropMenu .menuListClick, .menuListClickTag {
+.slideMenuWrapper a,
+.dropMenu .menuListClick,
+.menuListClickTag {
     font-weight: 300;
     font-size: 16px
 }
@@ -6859,7 +7491,8 @@ img.nav-icon{
     padding-bottom: 20px
 }
 
-@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+@media screen and (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
     .addrs_section ul li {
         flex: 40%;
         -webkit-flex: 40%;
@@ -6961,7 +7594,8 @@ img.nav-icon{
     display: table
 }
 
-.leftData, .rgtData {
+.leftData,
+.rgtData {
     float: left;
     width: 49%
 }
@@ -6998,7 +7632,11 @@ img.nav-icon{
     background-color: transparent
 }
 
-#caseouterContent .outerSecond h2, .bigDataContent h2, #mobileNewsCaseouter .outerSecond h2, .mobBlck h2, .featuredBlock h2 {
+#caseouterContent .outerSecond h2,
+.bigDataContent h2,
+#mobileNewsCaseouter .outerSecond h2,
+.mobBlck h2,
+.featuredBlock h2 {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -7023,7 +7661,9 @@ img.nav-icon{
     width: 29%
 }
 
-.leftTextData p, .rightTextData p, .machineNaturalData p {
+.leftTextData p,
+.rightTextData p,
+.machineNaturalData p {
     margin-top: 10px
 }
 
@@ -7031,7 +7671,8 @@ img.nav-icon{
     margin-top: 20px
 }
 
-.machineNaturalData h3, .medactivusthird .heading {
+.machineNaturalData h3,
+.medactivusthird .heading {
     color: #262626;
     font-size: 22px;
     margin-bottom: 10px;
@@ -7194,13 +7835,15 @@ img.nav-icon{
     width: 41%
 }
 
-.approachTextandroid, .approachTextiPhone {
+.approachTextandroid,
+.approachTextiPhone {
     display: inline-block;
     float: left;
     padding-right: 20px
 }
 
-.approachTextandroid p, .approachTextiPhone p {
+.approachTextandroid p,
+.approachTextiPhone p {
     margin-top: 10px
 }
 
@@ -7316,7 +7959,8 @@ img.nav-icon{
     margin-bottom: -25px!important
 }
 
-.microsoftMenu .menuSelected .icon-sharepoint, .microsoftMenu .menuSelected .iconWindows {
+.microsoftMenu .menuSelected .icon-sharepoint,
+.microsoftMenu .menuSelected .iconWindows {
     width: 6%
 }
 
@@ -7642,7 +8286,9 @@ a.js-close-modal:after {
     width: 49%
 }
 
-.rightTextData.developmentBox h3, .developmentImg h3, .devColor h3 {
+.rightTextData.developmentBox h3,
+.developmentImg h3,
+.devColor h3 {
     color: #262626;
     font-size: 22px;
     margin-bottom: 10px;
@@ -7690,7 +8336,8 @@ a.js-close-modal:after {
     transition: all linear .15s
 }
 
-.development, .development * {
+.development,
+.development * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
@@ -7769,7 +8416,12 @@ a.js-close-modal:after {
     width: 92%
 }
 
-.devIcon, .mobhead, .hide, #CntProjInqry, .approachAnimation .devBullet, .graphAccordion .accordion-section-content.firstcontent {
+.devIcon,
+.mobhead,
+.hide,
+#CntProjInqry,
+.approachAnimation .devBullet,
+.graphAccordion .accordion-section-content.firstcontent {
     display: none
 }
 
@@ -7801,7 +8453,8 @@ a.js-close-modal:after {
     margin: 30px
 }
 
-.Child, .child {
+.Child,
+.child {
     font-size: 11px;
     padding-top: 7.5px!important
 }
@@ -7892,7 +8545,8 @@ a.js-close-modal:after {
 }
 
 @media all and (-ms-high-contrast:none) {
-    *::-ms-backdrop, .approachLine.approachLineMiddle {
+    *::-ms-backdrop,
+    .approachLine.approachLineMiddle {
         top: -14px
     }
 }
@@ -8185,7 +8839,11 @@ a.js-close-modal:after {
     }
 }
 
-.animated, .fadeInLeft, .fadeOutLeft, .fadeInRight, .fadeOutRight {
+.animated,
+.fadeInLeft,
+.fadeOutLeft,
+.fadeInRight,
+.fadeOutRight {
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
@@ -8370,11 +9028,13 @@ a.js-close-modal:after {
     padding: 20px 0
 }
 
-.graphFeatures .leftTextData ul li, .graphFeatures .rightTextData ul li {
+.graphFeatures .leftTextData ul li,
+.graphFeatures .rightTextData ul li {
     padding-bottom: 10px
 }
 
-.graphFeatures .leftTextData ul, .graphFeatures .rightTextData ul {
+.graphFeatures .leftTextData ul,
+.graphFeatures .rightTextData ul {
     margin-top: 20px
 }
 
@@ -8405,29 +9065,35 @@ a.js-close-modal:after {
     border-bottom: 1px solid #ebebeb
 }
 
-.graphAccordion .useCaseOdd h2, .graphAccordion .useCaseEven h2 {
+.graphAccordion .useCaseOdd h2,
+.graphAccordion .useCaseEven h2 {
     font-family: 'OpenSansSemibold'
 }
 
-.useCaseOdd .graphLeft, .useCaseEven .graphRight {
+.useCaseOdd .graphLeft,
+.useCaseEven .graphRight {
     width: 60%
 }
 
-.useCaseOdd .graphRight, .useCaseEven .graphLeft {
+.useCaseOdd .graphRight,
+.useCaseEven .graphLeft {
     width: 40%
 }
 
-.useCaseOdd, .useCaseEven {
+.useCaseOdd,
+.useCaseEven {
     display: table;
     margin-top: 70px;
     width: 100%
 }
 
-.testPlan .useCaseOdd, .testPlan .useCaseEven {
+.testPlan .useCaseOdd,
+.testPlan .useCaseEven {
     margin-top: 60px
 }
 
-.useCaseOdd h2, .useCaseOdd p {
+.useCaseOdd h2,
+.useCaseOdd p {
     text-align: right
 }
 
@@ -8435,15 +9101,18 @@ a.js-close-modal:after {
     width: 100%
 }
 
-.useCaseOdd .graphLeft, .useCaseEven .graphLeft {
+.useCaseOdd .graphLeft,
+.useCaseEven .graphLeft {
     padding-right: 5%
 }
 
-.useCaseOdd .graphRight, .useCaseEven .graphRight {
+.useCaseOdd .graphRight,
+.useCaseEven .graphRight {
     padding-left: 5%
 }
 
-.usecaseSection .graphLeft, .usecaseSection .graphRight {
+.usecaseSection .graphLeft,
+.usecaseSection .graphRight {
     margin-top: 0
 }
 
@@ -8455,7 +9124,8 @@ a.js-close-modal:after {
     line-height: 27px
 }
 
-.graphLeft, .graphRight {
+.graphLeft,
+.graphRight {
     display: table-cell;
     vertical-align: middle
 }
@@ -8567,14 +9237,17 @@ a.js-close-modal:after {
     padding-bottom: 20px
 }
 
-.leftContent, .middleContent, .rightContent {
+.leftContent,
+.middleContent,
+.rightContent {
     float: left;
     width: 33.33%;
     margin-top: 20px;
     box-sizing: border-box
 }
 
-.leftContent, .middleContent {
+.leftContent,
+.middleContent {
     padding-right: 30px
 }
 
@@ -8598,7 +9271,9 @@ a.js-close-modal:after {
     padding: 9px 0
 }
 
-.whitepaperText .rightcontainer .heading, .videoText .rightcontainer .heading, .fpText .rightcontainer .heading {
+.whitepaperText .rightcontainer .heading,
+.videoText .rightcontainer .heading,
+.fpText .rightcontainer .heading {
     vertical-align: baseline
 }
 
@@ -8635,7 +9310,8 @@ a.js-close-modal:after {
     background-color: #000
 }
 
-.contentHold video, .clientVideoWrapper video {
+.contentHold video,
+.clientVideoWrapper video {
     width: 100%
 }
 
@@ -8710,7 +9386,8 @@ ul.boxes li:hover {
     overflow: hidden!important
 }
 
-.umbracoCaseStudyButton, .viewCasestudy {
+.umbracoCaseStudyButton,
+.viewCasestudy {
     padding: 10px
 }
 
@@ -8731,7 +9408,8 @@ ul.boxes li:hover {
     padding-bottom: 60px
 }
 
-#id_signupEmail-error, #id_signupPhoneNumber-error {
+#id_signupEmail-error,
+#id_signupPhoneNumber-error {
     text-align: left;
     width: auto;
     padding-left: 13px;
@@ -8739,11 +9417,18 @@ ul.boxes li:hover {
     color: #03AEEF
 }
 
-.subMenuWrapper, .product #mobMenuHolder, .mobileHead {
+.subMenuWrapper,
+.product #mobMenuHolder,
+.mobileHead {
     display: none
 }
 
-.mobileAppCasestudies .casestudiesBtn, .microsoft-bi .casestudiesBtn, #inqBtn, .page-links button, .adjustLinks button, .playButton {
+.mobileAppCasestudies .casestudiesBtn,
+.microsoft-bi .casestudiesBtn,
+#inqBtn,
+.page-links button,
+.adjustLinks button,
+.playButton {
     background: white;
     width: auto;
     line-height: 30px;
@@ -8771,7 +9456,10 @@ ul.boxes li:hover {
     color: #fff
 }
 
-#inqBtn, .mobileWebRightContainer .listCont, .penQContent .listCont, .clearConsoleList .listCont {
+#inqBtn,
+.mobileWebRightContainer .listCont,
+.penQContent .listCont,
+.clearConsoleList .listCont {
     display: inline-block
 }
 
@@ -8920,7 +9608,9 @@ li.testimonialCnt {
     float: left
 }
 
-input[type="text"], input[type="button"], input[type="submit"] {
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
     -webkit-appearance: none;
     border-radius: 0
 }
@@ -8961,7 +9651,8 @@ input[type="text"], input[type="button"], input[type="submit"] {
     width: 50%
 }
 
-.defaultWrapper, .screenshotWrapper {
+.defaultWrapper,
+.screenshotWrapper {
     width: 91%;
     margin: 0 auto;
     max-width: 1500px
@@ -8980,7 +9671,8 @@ input[type="text"], input[type="button"], input[type="submit"] {
     font-weight: 800
 }
 
-.managementBlock, .productBlock {
+.managementBlock,
+.productBlock {
     text-align: center
 }
 
@@ -9042,7 +9734,9 @@ input[type="text"], input[type="button"], input[type="submit"] {
     background-color: #f9fafc
 }
 
-.surveyBuzDescHead, .featurePara, .screenshotSubhead {
+.surveyBuzDescHead,
+.featurePara,
+.screenshotSubhead {
     padding-bottom: 20px
 }
 
@@ -9068,9 +9762,11 @@ input[type="text"], input[type="button"], input[type="submit"] {
 .paraPadding p {
     padding-bottom: 20px
 }
-.bg-white{
-    background:#ffffff;
+
+.bg-white {
+    background: #ffffff;
 }
+
 .contentInnerWrapper {
     width: 91%;
     margin: 0 auto;
@@ -9179,10 +9875,11 @@ ul.listTextCommon li {
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     position: absolute;
     top: 20px;
     padding: 6px;
@@ -9208,7 +9905,8 @@ ul.listTextCommon li {
     height: auto
 }
 
-.owl-prev.disabled, .owl-next.disabled {
+.owl-prev.disabled,
+.owl-next.disabled {
     color: #a3a3a3
 }
 
@@ -9218,7 +9916,12 @@ ul.listTextCommon li {
     font-weight: 400
 }
 
-.productsTabWrapper.wrapper2 ul .active span, .productsTabWrapper.wrapper2 ul .owl-item.active li a.active span {
+a.hyperlink {
+    color: #ffffff;
+}
+
+.productsTabWrapper.wrapper2 ul .active span,
+.productsTabWrapper.wrapper2 ul .owl-item.active li a.active span {
     color: #03AEEF;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -9233,11 +9936,14 @@ ul.listTextCommon li {
     background-image: url(../images/homeImg/client.png)
 }
 
-.frontEndClientLogos li span, .androidHolder li span {
+.frontEndClientLogos li span,
+.androidHolder li span {
     background-image: url(../images/responsive/service/web/webSprites.png)
 }
 
-.frontEndClientLogos li span, .mobileWebClientLogos li span, .androidHolder li span {
+.frontEndClientLogos li span,
+.mobileWebClientLogos li span,
+.androidHolder li span {
     height: 94px;
     margin: auto;
     max-width: 165px;
@@ -9297,7 +10003,8 @@ ul.listTextCommon li {
     background-position: -1065px 9px
 }
 
-.frontEndClientLogos li:first-child span, .frontEndClientLogos li:nth-child(2) span {
+.frontEndClientLogos li:first-child span,
+.frontEndClientLogos li:nth-child(2) span {
     max-width: 250px
 }
 
@@ -9326,7 +10033,8 @@ ul.listTextCommon li {
     background-position: -953px -6px
 }
 
-.imgHolder.riaHolder.frontEndClientLogos li:first-child, .imgHolder.riaHolder.frontEndClientLogos li:nth-child(2) {
+.imgHolder.riaHolder.frontEndClientLogos li:first-child,
+.imgHolder.riaHolder.frontEndClientLogos li:nth-child(2) {
     width: 35%
 }
 
@@ -9360,11 +10068,13 @@ ul.listTextCommon li {
     color: #000
 }
 
-#menuIconInquiry.inquiryMobile, .getinTouchMob {
+#menuIconInquiry.inquiryMobile,
+.getinTouchMob {
     display: none
 }
 
-#footer p, #footer span {
+#footer p,
+#footer span {
     font-family: 'Heebo', sans-serif
 }
 
@@ -9373,10 +10083,12 @@ ul.listTextCommon li {
     display: flex;
     flex-direction: column;
 }
-.footer{
-   background-image: url("../images/homeImg/footer-image.jpg");
-   background-size:cover;
+
+.footer {
+    background-image: url("../images/homeImg/footer-image.jpg");
+    background-size: cover;
 }
+
 .footerFlex {
     display: flex;
     align-items: flex-end
@@ -9398,7 +10110,8 @@ ul.listTextCommon li {
     padding-bottom: 20px
 }
 
-.inquiryButton, #copyright {
+.inquiryButton,
+#copyright {
     padding: 0 0 0 25%
 }
 
@@ -9406,13 +10119,16 @@ ul.listTextCommon li {
     padding-right: 20px;
     box-sizing: border-box
 }
-.footer-icon-svg svg{
+
+.footer-icon-svg svg {
     fill: #ffffff;
-    width:18px;
+    width: 18px;
 }
-.py-3{
-    padding:1rem 0;
+
+.py-3 {
+    padding: 1rem 0;
 }
+
 .footerAddrs {
     display: flex;
     flex-direction: column;
@@ -9442,7 +10158,8 @@ ul.listTextCommon li {
     padding: 30px 0
 }
 
-#copyright p, #copyright a {
+#copyright p,
+#copyright a {
     color: #4d4d4d;
     font-size: 12px;
     padding: 0;
@@ -9471,7 +10188,8 @@ ul.listTextCommon li {
     flex: 1
 }
 
-.socialIcons a:hover, .viewallLocationWrapper .arrowText:hover .arrowTextSpan {
+.socialIcons a:hover,
+.viewallLocationWrapper .arrowText:hover .arrowTextSpan {
     color: #03AEEF
 }
 
@@ -9499,7 +10217,8 @@ ul.listTextCommon li {
     content: "\e918"
 }
 
-.footerAddrs>*, .viewallLocationWrapper .arrowTextSpan {
+.footerAddrs>*,
+.viewallLocationWrapper .arrowTextSpan {
     color: #fff
 }
 
@@ -9516,12 +10235,14 @@ ul.listTextCommon li {
 .frontendTabWrapper .owl-stage-outer {
     width: 99.8%
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1024px) {
     .socialIcons {
         width: 110px;
-        margin:auto;
+        margin: auto;
     }
 }
+
 @media screen and (min-width:1024px) {
     .subMenus #mobMenuHolder {
         opacity: 1!important;
@@ -9530,20 +10251,23 @@ ul.listTextCommon li {
 }
 
 @media screen and (min-width:1024px) and (max-width:1041px) {
-    #postmapcont .subMenus ul.menuSelected, #postmapcont .subMenus ul.menuSelected li {
+    #postmapcont .subMenus ul.menuSelected,
+    #postmapcont .subMenus ul.menuSelected li {
         background-color: #f7f7f7
     }
 }
 
 @media screen and (min-width:1024px) and (max-width:1039px) {
-    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(7), .Asia-Pacific-Contacts.addrs_section ul li:nth-child(8) {
+    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(7),
+    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(8) {
         border-bottom: 1px dashed #cdcdcd
     }
     .addrs_section ul li div {
         padding: 0 10px;
         box-sizing: border-box
     }
-    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(5), .Asia-Pacific-Contacts.addrs_section ul li:nth-child(6) {
+    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(5),
+    .Asia-Pacific-Contacts.addrs_section ul li:nth-child(6) {
         border-top: 0
     }
 }
@@ -9603,7 +10327,11 @@ ul.listTextCommon li {
         display: flex;
         align-items: center
     }
-    .footerAddrs, .footerContent>div, .inquiryButton, #copyright, .viewallLocationWrapper {
+    .footerAddrs,
+    .footerContent>div,
+    .inquiryButton,
+    #copyright,
+    .viewallLocationWrapper {
         align-items: center;
         padding: 30px 20px;
         text-align: center
@@ -9626,21 +10354,30 @@ ul.listTextCommon li {
         opacity: 1;
         right: -38px
     }
-    .footerFlex>figure, .footerFlex>div {
+    .footerFlex>figure,
+    .footerFlex>div {
         text-align: center;
         flex: inherit
     }
-    .menuSliderOuterWrapper, .rightMenuContainer {
+    .menuSliderOuterWrapper,
+    .rightMenuContainer {
         height: calc(100vh - 270px);
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         overflow-y: auto
     }
-    .bodyWrapper .main-menu>*, .getinTouchMob, .menuSliderOuterWrapper.slideActive {
+    .bodyWrapper .main-menu>*,
+    .getinTouchMob,
+    .menuSliderOuterWrapper.slideActive {
         display: block
     }
-    .menuSliderOuterWrapper, .slideMenuWrapper, .slideActiveMenu .rightMenuContainer, .backgroundScroll .bodyWrapper>*, #cloudList, .getinTouchDesk {
+    .menuSliderOuterWrapper,
+    .slideMenuWrapper,
+    .slideActiveMenu .rightMenuContainer,
+    .backgroundScroll .bodyWrapper>*,
+    #cloudList,
+    .getinTouchDesk {
         display: none
     }
     body.inqy-open .bodyWrapper>*:not(.inquiryModel) {
@@ -9668,7 +10405,9 @@ ul.listTextCommon li {
         background: #fff;
         padding: 40px
     }
-    .dropMenu, .slideMenuWrapper .digitalTransformation, .slideActiveMenu .rightMenuContainer {
+    .dropMenu,
+    .slideMenuWrapper .digitalTransformation,
+    .slideActiveMenu .rightMenuContainer {
         display: none
     }
     .rightMenuContainer .collapse-content {
@@ -9785,14 +10524,14 @@ ul.listTextCommon li {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .digitalContentWrapper > div {
+    .digitalContentWrapper>div {
         position: relative;
         display: block;
         width: 100%;
         text-align: left;
-        padding-top:30px;
+        padding-top: 30px;
     }
-    .digitalTransformationMob > div span {
+    .digitalTransformationMob>div span {
         position: relative;
         left: 0;
         right: 0;
