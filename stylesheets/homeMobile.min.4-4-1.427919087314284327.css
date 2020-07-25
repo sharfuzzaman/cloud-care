@@ -61,11 +61,18 @@
 
 .bannerHead span:first-child {
     font-size: 40px;
+    display: table;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
 }
 
 .bannerHead span:nth-child(2) {
-    font-size: 25px
+    font-size: 25px;
+    display: table;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 5px;
 }
 
 .bannerTextWrapper {
