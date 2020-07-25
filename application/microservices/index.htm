@@ -9,7 +9,7 @@
     <meta name="description" content="Should you break your monolith into microservices? Understand when and how to implement a microservice architecture.">
 
     <meta property="og:title" content="Considerations for Cloud-Native Application Development">
-    <meta property="og:image" content="https://www.CLOUD CARE INTERNATIONAL.com/images/cloudNative.jpg">
+    <meta property="og:image" content="">
     <meta property="og:description" content="Best practices and guidelines for building cloud-native applications and growing applications in cloud maturity.">
 
     <meta name="google-site-verification" content="HQs3U6i3CoTEoyzBm-eJlA6lBMkqI9G0Ic9WGWZLZ3o">
@@ -376,7 +376,8 @@
                     <p class="expandTitle">Eventually, Service-Oriented Architecture (SOA) where the Web Service layer is vertically split into different services and the DB layer into corresponding storage solutions came to be a viable design for easy scaling. Microservice
                         architecture can be seen as the progressive evolution of SOA.</p>
                     <p class="expandTitle">Below is the representation of a sample retailer application with microservice architecture. Each service is responsible for a single business functionality. At the same time, the microservices communicate with each other for required
-                        information.</p>
+                        information.
+                    </p>
                     <figure class="microserviceImgWrapper">
                         <img src="../../images/responsive/service/appService/microServices/microserviceArchitecture.svg" alt="Example of microservice architecture in eCommerce application">
                     </figure>
@@ -589,7 +590,8 @@
                                         an error without making calls to the service after a certain threshold of failed responses. Connection to this service is reinstated only if periodic checks are successful; otherwise, the circuit remains open.</p>
                                     <p>As microservices grow in number, handling service-to-service communication becomes even more challenging. Service discovery, load balancing, circuit breaking, authentication, and several other functionalities that are
                                         necessary for every individual microservice can be extracted to a separate layer common to all. Such an infrastructure layer to handle communication between services in a microservice architecture is the service
-                                        mesh.</p>
+                                        mesh.
+                                    </p>
                                     <p>With most of the network communication offloaded to the service mesh, developers can focus on business logic. Microservices written in any language will work with the service mesh, which is language agnostic. Istio,
                                         Linkerd, and Conduit are some of the common implementations, with Conduit considered ideal for Kubernetes environments.</p>
                                 </div>

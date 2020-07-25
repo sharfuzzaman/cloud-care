@@ -9,7 +9,7 @@
     <meta name="description" content="Identify your security risks and vulnerabilities and build a strong security posture with our comprehensive cloud security services.">
 
     <meta property="og:title" content="Considerations for Cloud-Native Application Development">
-    <meta property="og:image" content="https://www.qburst.com/images/cloudNative.jpg">
+    <meta property="og:image" content="">
     <meta property="og:description" content="Best practices and guidelines for building cloud-native applications and growing applications in cloud maturity.">
 
     <meta name="google-site-verification" content="HQs3U6i3CoTEoyzBm-eJlA6lBMkqI9G0Ic9WGWZLZ3o">
@@ -533,7 +533,8 @@
                                 to be aware of this when they deploy containerized applications. The practice of running containers with specific users and groups in the system should be followed.</p>
                             <p><span class="bulletBold">Image provenance: </span>Any application is only as secure as the image on top of which it is built. Image identification and trust mechanisms are important to secure container-based infrastructure.
                                 Having a private authenticated repository that makes use of certificates and digital signatures helps. Repository of trusted images are kept encrypted and audit is held on the repository to ensure compliance with security
-                                processes.</p>
+                                processes.
+                            </p>
                             <p><span class="bulletBold">Security testing: </span>Any image should also undergo security testing before being deployed to the environment. Ideally, the security tests should be a part of the CI/CD pipeline, and run similar
                                 to how unit tests do. Only if the built image passes the security tests should the pipeline deploy the container to your stack.</p>
                         </div>
