@@ -293,13 +293,38 @@ img.nav-icon {
     -moz-transition: all ease 1s;
     -o-transition: all ease 1s;
     -webkit-transition: all ease 1s;
-    background: #f0f2f5;
-    padding: 20px 0;
+    background: #ffffff;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) and (min-width: 280px) {
+    #headerWrapper .logoHolder .logo {
+        height: 43px!important;
+        width: 200px!important;
+        margin: 0!important;
+    }
+    #navigation {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #navigation {
+        padding-top: 6%;
+    }
+    .menuinquiry,
+    .menusrchicon {
+        font-size: 22px !important;
+    }
+    .menuicon {
+        font-size: 20px !important;
+        ;
+    }
 }
 
 #header.moveHead {
@@ -322,7 +347,7 @@ img.nav-icon {
 
 #headerWrapper .logoHolder .logo {
     height: 48px;
-    width: 246px;
+    width: 320px;
     margin: 0;
     display: inline-block;
     position: relative;
@@ -382,7 +407,6 @@ img.nav-icon {
     font-size: 16px;
     cursor: pointer;
     position: relative;
-    bottom: 2px;
 }
 
 .menuinquiry,
@@ -400,7 +424,6 @@ img.nav-icon {
 #menuIconInquiry {
     background-color: transparent;
     display: table;
-    margin-top: 2px;
     margin-bottom: -2px;
 }
 

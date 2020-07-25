@@ -631,7 +631,7 @@ button {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    width: 246px;
+    width: 320px;
     height: 48px;
 }
 
@@ -891,7 +891,7 @@ body.inqy-open {
 }
 
 #menuIconInquiry {
-    margin-top: 7px
+    margin-top: 0;
 }
 
 #navMenuWrap {
