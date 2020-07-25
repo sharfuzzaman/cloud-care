@@ -1452,16 +1452,14 @@ body {
     font-size: 32px;
 }
 
-.homeContentWrapper {
-    padding-bottom: 150px;
-}
+.homeContentWrapper {}
 
 .homeContentWrapper:last-child {
     padding-bottom: 200px;
 }
 
 .main {
-    padding: 40px 0 150px 0;
+    padding: 40px 0 40px 0;
 }
 
 .homeContentContainer,
@@ -1657,7 +1655,7 @@ body {
 }
 
 .arrowDown {
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
