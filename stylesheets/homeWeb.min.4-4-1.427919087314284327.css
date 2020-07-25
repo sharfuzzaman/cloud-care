@@ -629,7 +629,7 @@ img {
         font-size: 55px
     }
     #headerWrapper {
-        width: 84%
+        width: 84%;
     }
     #navigation nav {
         margin-left: 120px
@@ -662,6 +662,9 @@ img {
     .homeContentWrapper .arrowTextSpan span:nth-child(2) {
         line-height: 17px;
         font-size: 12px
+    }
+    #headerWrapper {
+        width: 84%;
     }
 }
 
