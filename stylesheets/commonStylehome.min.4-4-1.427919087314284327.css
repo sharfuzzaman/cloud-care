@@ -1717,6 +1717,7 @@ body {
 .footer-icon-svg svg {
     fill: #ffffff;
     width: 18px;
+    -ms-height: 18px;
 }
 
 .py-3 {
